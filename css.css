@@ -3,7 +3,7 @@
 body {
 	background: black;
 	font-family: "Roboto Condensed", sans-serif;
-	margin: 20px 20px;
+	margin: 20px;
 	position: relative;
 }
 
@@ -36,8 +36,8 @@ a {
 	height: 50px;
 	position: fixed;
 	right: 20px;
-	width: 50px;
 	transition-duration: 100ms;
+	width: 50px;
 }
 
 a:hover {
@@ -173,31 +173,31 @@ td {
 .rb.start::after, .rb.end::after { content: "Rewinding Breeze" }
 .events .rb::after { background: linear-gradient(90deg, #dd5f20, #faa03a) }
 .mn.start::after, .mn.end::after { content: "Maria Nearl" }
-.events .mn::after { background: #4972e6 }
+.events .mn::after { background: #517cf1 }
 .fmn.start::after, .fmn.end::after { content: "Forget Me Not" }
 .events .fmn::after { background: linear-gradient(90deg, #dca8df, #adb4fa); font-style: italic }
 .cc3.start::after, .cc3.end::after { content: "Contingency C... #3" }
-.events .cc3::after { background: linear-gradient(90deg, #6d4d8a, #9676bb) }
+.events .cc3::after { background: linear-gradient(90deg, #795699, #a683ce) }
 .cobr.start::after, .cobr.end::after { content: "Code of Brawl Rerun" }
-.events .cobr::after { background: linear-gradient(90deg, #5571ff 70%, #ffe018) }
+.events .cobr::after { background: linear-gradient(90deg, #6f87ff 70%, #ffe957) }
 .mb.start::after, .mb.end::after { content: "Mansfield Break" }
-.events .mb::after { background: #d64731 }
+.events .mb::after { background: #dd523d }
 .bh.start::after, .bh.end::after { content: "Beyond Here" }
 .events .bh::after { background: linear-gradient(90deg, #ff8902, #ffde2c) }
 .cc4.start::after, .cc4.end::after { content: "Contingency Contract #4" }
-.events .cc4::after { background: linear-gradient(90deg, #198c8f, #276368, #1d4fc2) }
+.events .cc4::after { background: linear-gradient(90deg, #2d8c8f, #2d6b70, #2454c2) }
 .wir.start::after, .wir.end::after { content: "Who is Real" }
-.events .wir::after { background: linear-gradient(90deg, #5c8077 30%, #bed8be) }
+.events .wir::after { background: linear-gradient(90deg, #648a80 30%, #bed8be) }
 .ood.start::after, .ood.end::after { content: "Operation Originium Dust" }
-.events .ood::after { background: linear-gradient(90deg, #99541c 20%, #f7b819) }
+.events .ood::after { background: linear-gradient(90deg, #a05d27 20%, #f7b819) }
 .dmr.start::after, .dmr.end::after { content: "Darknights Memoir Rerun" }
-.events .dmr::after { background: linear-gradient(90deg, #6f7188 30%, #6a2017) }
+.events .dmr::after { background: linear-gradient(90deg, #76788f 30%, #6a2017) }
 .awitd.start::after, .awitd.end::after { content: "A Walk in the Dust" }
-.events .awitd::after { background: linear-gradient(90deg, #ded9d3, #445f6e, #585858) }
+.events .awitd::after { background: linear-gradient(90deg, #ded9d3, #516a77, #585858) }
 .ut.start::after, .ut.end::after { content: "Under Tides" }
-.events .ut::after { background: linear-gradient(90deg, #2e534c, #40423f) }
+.events .ut::after { background: linear-gradient(90deg, #345c54, #484b47) }
 .cc5.start::after, .cc5.end::after { content: "C..." }
-.events .cc5::after { background: linear-gradient(90deg, #1a72cf, #3e5796 35%, #e43547) }
+.events .cc5::after { background: linear-gradient(90deg, #2479d3, #435c9b 35%, #ec4152) }
 
 .rb.start ~ .rb.end::after,
 .mn.start ~ .mn.end::after,
