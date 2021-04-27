@@ -12,7 +12,7 @@ main {
 	width: 600px;
 }
 
-@media (max-width: 655px) {
+@media (max-width: 650px) {
 	main {
 		width: 100%;
 	}
