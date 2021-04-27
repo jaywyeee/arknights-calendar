@@ -120,12 +120,10 @@ td {
 	font-size: 0.87rem;
 	height: 30%;
 	padding: 0 6px;
-	position: absolute;
 	place-items: center left;
-	width: 100%;
+	position: absolute;
 	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	width: 100%;
 }
 .events .start::after {
 	border-radius: 2px;
@@ -143,7 +141,7 @@ td {
 .events .mn::after { background: #4972e6 }
 .fmn.start::after, .fmn.end::after { content: "Forget Me Not" }
 .events .fmn::after { background: linear-gradient(90deg, #dca8df, #adb4fa); font-style: italic }
-.cc3.start::after, .cc3.end::after { content: "Contingency Contract #3" }
+.cc3.start::after, .cc3.end::after { content: "Contingency C... #3" }
 .events .cc3::after { background: linear-gradient(90deg, #6d4d8a, #9676bb) }
 .cobr.start::after, .cobr.end::after { content: "Code of Brawl Rerun" }
 .events .cobr::after { background: linear-gradient(90deg, #5571ff 70%, #ffe018) }
@@ -155,8 +153,8 @@ td {
 .events .cc4::after { background: linear-gradient(90deg, #198c8f, #276368, #1d4fc2) }
 .wir.start::after, .wir.end::after { content: "Who is Real" }
 .events .wir::after { background: linear-gradient(90deg, #5c8077 30%, #bed8be) }
-.ood.start::after, .ood.end::after { content: "" }
-.events .ood::after { content: "Operation Originium Dust"; background: linear-gradient(90deg, #99541c 20%, #f7b819) }
+.ood.start::after, .ood.end::after { content: "Operation Originium Dust" }
+.events .ood::after { background: linear-gradient(90deg, #99541c 20%, #f7b819) }
 .dmr.start::after, .dmr.end::after { content: "Darknights Memoir Rerun" }
 .events .dmr::after { background: linear-gradient(90deg, #6f7188 30%, #6A2017) }
 .awitd.start::after, .awitd.end::after { content: "A Walk in the Dust" }
