@@ -1,0 +1,215 @@
+*, *::after, *::before { box-sizing: border-box }
+
+body {
+	background: black;
+	font-family: "Roboto Condensed", sans-serif;
+	margin: 20px;
+	position: relative;
+}
+
+main { 
+	margin: auto;
+	width: 600px;
+}
+
+@media (max-width: 650px) {
+	main {
+		width: 100%;
+	}
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid grey;
+	margin-bottom: 20px;
+}
+
+::-webkit-scrollbar { width: 10px }
+::-webkit-scrollbar-thumb { background: grey }
+
+
+/* GitHub link */
+a {
+	background: center / contain no-repeat url("github.svg");
+	bottom: 20px;
+	display: block;
+	height: 50px;
+	position: fixed;
+	right: 20px;
+	transition-duration: 100ms;
+	width: 50px;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+	a {
+		height: 40px;
+		position: unset;
+		width: 100%;
+	}
+}
+
+
+/* Calendar */
+/* Header */
+header {
+	color: white;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+/* Dates */
+header + div {
+	position: relative;
+}
+
+.row-5 { height: 370px }
+.row-6 { height: 444px }
+
+table, .events {
+	height: 100%;
+	width: 100%;
+}
+
+.row-5 tr, .row-5 .events div { height: calc(100% / 5) }
+.row-6 tr, .row-6 .events div { height: calc(100% / 6) }
+
+td {
+	color: white;
+	font-size: 0.75rem;
+	vertical-align: top;
+	width: calc(100% / 7);
+}
+
+.apr-2020 { counter-reset: apr-20; counter-set: apr-20 -4 }
+.apr-2020 td::before { counter-increment: apr-20; content: counter(apr-20) }
+.apr-2020 tr:first-child td:nth-of-type(-n+4)::before,
+.apr-2020 tr:last-child td:nth-of-type(n+7)::before { content: "" }
+.may-2020 { counter-reset: may-20; counter-set: may-20 -6 }
+.may-2020 td::before { counter-increment: may-20; content: counter(may-20) }
+.may-2020 tr:first-child td:nth-of-type(-n+6)::before,
+.may-2020 tr:last-child td:nth-of-type(n+3)::before { content: "" }
+.jun-2020 { counter-reset: jun-20; counter-set: jun-20 -2 }
+.jun-2020 td::before { counter-increment: jun-20; content: counter(jun-20) }
+.jun-2020 tr:first-child td:nth-of-type(-n+2)::before,
+.jun-2020 tr:last-child td:nth-of-type(n+5)::before { content: "" }
+.jul-2020 { counter-reset: jul-20; counter-set: jul-20 -4 }
+.jul-2020 td::before { counter-increment: jul-20; content: counter(jul-20) }
+.jul-2020 tr:first-child td:nth-of-type(-n+4)::before { content: "" }
+.aug-2020 { counter-reset: aug-20 }
+.aug-2020 td::before { counter-increment: aug-20; content: counter(aug-20) }
+.aug-2020 tr:last-child td:nth-of-type(n+4)::before { content: "" }
+.sep-2020 { counter-reset: sep-20; counter-set: sep-20 -3 }
+.sep-2020 td::before { counter-increment: sep-20; content: counter(sep-20) }
+.sep-2020 tr:first-child td:nth-of-type(-n+3)::before,
+.sep-2020 tr:last-child td:nth-of-type(n+6)::before { content: "" }
+.oct-2020 { counter-reset: oct-20; counter-set: oct-20 -5 }
+.oct-2020 td::before { counter-increment: oct-20; content: counter(oct-20) }
+.oct-2020 tr:first-child td:nth-of-type(-n+5)::before,
+.oct-2020 tr:last-child td:nth-of-type(n+2)::before { content: "" }
+.nov-2020 { counter-reset: nov-20; counter-set: nov-20 -1 }
+.nov-2020 td::before { counter-increment: nov-20; content: counter(nov-20) }
+.nov-2020 tr:first-child td:nth-of-type(-n+1)::before,
+.nov-2020 tr:last-child td:nth-of-type(n+4)::before { content: "" }
+.dec-2020 { counter-reset: dec-20; counter-set: dec-20 -3 }
+.dec-2020 td::before { counter-increment: dec-20; content: counter(dec-20) }
+.dec-2020 tr:first-child td:nth-of-type(-n+3)::before,
+.dec-2020 tr:last-child td:nth-of-type(n+7)::before { content: "" }
+
+/* Events */
+.events {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+}
+
+.empty-7, .filled-7 { width: 100% }
+.empty-6, .filled-6 { width: calc(100% / 7 * 6) }
+.empty-5, .filled-5 { width: calc(100% / 7 * 5) }
+.empty-4, .filled-4 { width: calc(100% / 7 * 4) }
+.empty-3, .filled-3 { width: calc(100% / 7 * 3) }
+.empty-2, .filled-2 { width: calc(100% / 7 * 2) }
+.empty-1, .filled-1 { width: calc(100% / 7 * 1) }
+.empty-65, .filled-65 { width: calc(100% / 7 * 6.5) }
+.empty-55, .filled-55 { width: calc(100% / 7 * 5.5) }
+.empty-45, .filled-45 { width: calc(100% / 7 * 4.5) }
+.empty-35, .filled-35 { width: calc(100% / 7 * 3.5) }
+.empty-25, .filled-25 { width: calc(100% / 7 * 2.5) }
+.empty-15, .filled-15 { width: calc(100% / 7 * 1.5) }
+.empty-05, .filled-05 { width: calc(100% / 7 * 0.5) }
+
+.events div {
+	overflow: hidden;
+	position: relative;
+}
+
+.events [class|="filled"]::after {
+	background: magenta;
+	bottom: 28%;
+	content: "";
+	display: grid;
+	font-size: 0.87rem;
+	height: 30%;
+	padding: 0 6px;
+	place-items: center left;
+	position: absolute;
+	white-space: nowrap;
+	width: 100%;
+}
+.events .start::after {
+	border-radius: 2px;
+	left: 10px;
+}
+.events .end::after {
+	border-radius: 2px;
+	place-items: center right;
+	right: 10px;
+}
+
+.rb.start::after, .rb.end::after { content: "Rewinding Breeze" }
+.events .rb::after { background: linear-gradient(90deg, #dd5f20, #faa03a) }
+.mn.start::after, .mn.end::after { content: "Maria Nearl" }
+.events .mn::after { background: #517cf1 }
+.fmn.start::after, .fmn.end::after { content: "Forget Me Not" }
+.events .fmn::after { background: linear-gradient(90deg, #dca8df, #adb4fa); font-style: italic }
+.cc3.start::after, .cc3.end::after { content: "Contingency C... #3" }
+.events .cc3::after { background: linear-gradient(90deg, #795699, #a683ce) }
+.cobr.start::after, .cobr.end::after { content: "Code of Brawl Rerun" }
+.events .cobr::after { background: linear-gradient(90deg, #6f87ff 70%, #ffe957) }
+.mb.start::after, .mb.end::after { content: "Mansfield Break" }
+.events .mb::after { background: #dd523d }
+.bh.start::after, .bh.end::after { content: "Beyond Here" }
+.events .bh::after { background: linear-gradient(90deg, #ff8902, #ffde2c) }
+.cc4.start::after, .cc4.end::after { content: "Contingency Contract #4" }
+.events .cc4::after { background: linear-gradient(90deg, #2d8c8f, #2d6b70, #2454c2) }
+.wir.start::after, .wir.end::after { content: "Who is Real" }
+.events .wir::after { background: linear-gradient(90deg, #648a80 30%, #bed8be) }
+.ood.start::after, .ood.end::after { content: "Operation Originium Dust" }
+.events .ood::after { background: linear-gradient(90deg, #a05d27 20%, #f7b819) }
+.dmr.start::after, .dmr.end::after { content: "Darknights Memoir Rerun" }
+.events .dmr::after { background: linear-gradient(90deg, #76788f 30%, #6a2017) }
+.awitd.start::after, .awitd.end::after { content: "A Walk in the Dust" }
+.events .awitd::after { background: linear-gradient(90deg, #ded9d3, #516a77, #585858) }
+.ut.start::after, .ut.end::after { content: "Under Tides" }
+.events .ut::after { background: linear-gradient(90deg, #345c54, #484b47) }
+.cc5.start::after, .cc5.end::after { content: "C..." }
+.events .cc5::after { background: linear-gradient(90deg, #2479d3, #435c9b 35%, #ec4152) }
+
+.rb.start ~ .rb.end::after,
+.mn.start ~ .mn.end::after,
+.fmn.start ~ .fmn.end::after,
+.cc3.start ~ .cc3.end::after,
+.cobr.start ~ .cobr.end::after,
+.mb.start ~ .mb.end::after,
+.bh.start ~ .bh.end::after,
+.cc4.start ~ .cc4.end::after,
+.wir.start ~ .wir.end::after,
+.ood.start ~ .ood.end::after,
+.dmr.start ~ .dmr.end::after,
+.awitd.start ~ .awitd.end::after,
+.ut.start ~ .ut.end::after,
+.cc5.start ~ .cc5.end::after { content: "" }
