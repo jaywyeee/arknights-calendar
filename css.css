@@ -3,18 +3,53 @@
 body {
 	background: black;
 	font-family: "Roboto Condensed", sans-serif;
-	margin: 20px 0;
+	margin: 20px 20px;
+	position: relative;
 }
 
-.wrapper { 
+main { 
 	margin: auto;
 	width: 600px;
 }
 
+@media (max-width: 655px) {
+	main {
+		width: 100%;
+	}
+}
+
 hr {
 	border: 0;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid grey;
 	margin-bottom: 20px;
+}
+
+::-webkit-scrollbar { width: 10px }
+::-webkit-scrollbar-thumb { background: grey }
+
+
+/* GitHub link */
+a {
+	background: center / contain no-repeat url("github.svg");
+	bottom: 20px;
+	display: block;
+	height: 50px;
+	position: fixed;
+	right: 20px;
+	width: 50px;
+	transition-duration: 100ms;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+	a {
+		height: 40px;
+		position: unset;
+		width: 100%;
+	}
 }
 
 
@@ -156,7 +191,7 @@ td {
 .ood.start::after, .ood.end::after { content: "Operation Originium Dust" }
 .events .ood::after { background: linear-gradient(90deg, #99541c 20%, #f7b819) }
 .dmr.start::after, .dmr.end::after { content: "Darknights Memoir Rerun" }
-.events .dmr::after { background: linear-gradient(90deg, #6f7188 30%, #6A2017) }
+.events .dmr::after { background: linear-gradient(90deg, #6f7188 30%, #6a2017) }
 .awitd.start::after, .awitd.end::after { content: "A Walk in the Dust" }
 .events .awitd::after { background: linear-gradient(90deg, #ded9d3, #445f6e, #585858) }
 .ut.start::after, .ut.end::after { content: "Under Tides" }
