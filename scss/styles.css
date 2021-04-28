@@ -70,120 +70,120 @@ td {
   width: calc(100% / 7);
 }
 
-.apr-20 {
-  counter-reset: apr-20;
-  counter-set: apr-20 -4;
+.apr-21 {
+  counter-reset: apr-21;
+  counter-set: apr-21 -4;
 }
-.apr-20 td::before {
-  counter-increment: apr-20;
-  content: counter(apr-20);
+.apr-21 td::before {
+  counter-increment: apr-21;
+  content: counter(apr-21);
 }
-.apr-20 tr:first-child td:nth-of-type(-n+4)::before,
-.apr-20 tr:last-child td:nth-of-type(n+7)::before {
+.apr-21 tr:first-child td:nth-of-type(-n+4)::before,
+.apr-21 tr:last-child td:nth-of-type(n+7)::before {
   content: "";
 }
 
-.may-20 {
-  counter-reset: may-20;
-  counter-set: may-20 -6;
+.may-21 {
+  counter-reset: may-21;
+  counter-set: may-21 -6;
 }
-.may-20 td::before {
-  counter-increment: may-20;
-  content: counter(may-20);
+.may-21 td::before {
+  counter-increment: may-21;
+  content: counter(may-21);
 }
-.may-20 tr:first-child td:nth-of-type(-n+6)::before,
-.may-20 tr:last-child td:nth-of-type(n+3)::before {
+.may-21 tr:first-child td:nth-of-type(-n+6)::before,
+.may-21 tr:last-child td:nth-of-type(n+3)::before {
   content: "";
 }
 
-.jun-20 {
-  counter-reset: jun-20;
-  counter-set: jun-20 -2;
+.jun-21 {
+  counter-reset: jun-21;
+  counter-set: jun-21 -2;
 }
-.jun-20 td::before {
-  counter-increment: jun-20;
-  content: counter(jun-20);
+.jun-21 td::before {
+  counter-increment: jun-21;
+  content: counter(jun-21);
 }
-.jun-20 tr:first-child td:nth-of-type(-n+2)::before,
-.jun-20 tr:last-child td:nth-of-type(n+5)::before {
+.jun-21 tr:first-child td:nth-of-type(-n+2)::before,
+.jun-21 tr:last-child td:nth-of-type(n+5)::before {
   content: "";
 }
 
-.jul-20 {
-  counter-reset: jul-20;
-  counter-set: jul-20 -4;
+.jul-21 {
+  counter-reset: jul-21;
+  counter-set: jul-21 -4;
 }
-.jul-20 td::before {
-  counter-increment: jul-20;
-  content: counter(jul-20);
+.jul-21 td::before {
+  counter-increment: jul-21;
+  content: counter(jul-21);
 }
-.jul-20 tr:first-child td:nth-of-type(-n+4)::before,
-.jul-20 tr:last-child td:nth-of-type(n+0)::before {
+.jul-21 tr:first-child td:nth-of-type(-n+4)::before,
+.jul-21 tr:last-child td:nth-of-type(n+0)::before {
   content: "";
 }
 
-.aug-20 {
-  counter-reset: aug-20;
-  counter-set: aug-20 -0;
+.aug-21 {
+  counter-reset: aug-21;
+  counter-set: aug-21 -0;
 }
-.aug-20 td::before {
-  counter-increment: aug-20;
-  content: counter(aug-20);
+.aug-21 td::before {
+  counter-increment: aug-21;
+  content: counter(aug-21);
 }
-.aug-20 tr:first-child td:nth-of-type(-n+0)::before,
-.aug-20 tr:last-child td:nth-of-type(n+4)::before {
+.aug-21 tr:first-child td:nth-of-type(-n+0)::before,
+.aug-21 tr:last-child td:nth-of-type(n+4)::before {
   content: "";
 }
 
-.sep-20 {
-  counter-reset: sep-20;
-  counter-set: sep-20 -3;
+.sep-21 {
+  counter-reset: sep-21;
+  counter-set: sep-21 -3;
 }
-.sep-20 td::before {
-  counter-increment: sep-20;
-  content: counter(sep-20);
+.sep-21 td::before {
+  counter-increment: sep-21;
+  content: counter(sep-21);
 }
-.sep-20 tr:first-child td:nth-of-type(-n+3)::before,
-.sep-20 tr:last-child td:nth-of-type(n+6)::before {
+.sep-21 tr:first-child td:nth-of-type(-n+3)::before,
+.sep-21 tr:last-child td:nth-of-type(n+6)::before {
   content: "";
 }
 
-.oct-20 {
-  counter-reset: oct-20;
-  counter-set: oct-20 -5;
+.oct-21 {
+  counter-reset: oct-21;
+  counter-set: oct-21 -5;
 }
-.oct-20 td::before {
-  counter-increment: oct-20;
-  content: counter(oct-20);
+.oct-21 td::before {
+  counter-increment: oct-21;
+  content: counter(oct-21);
 }
-.oct-20 tr:first-child td:nth-of-type(-n+5)::before,
-.oct-20 tr:last-child td:nth-of-type(n+2)::before {
+.oct-21 tr:first-child td:nth-of-type(-n+5)::before,
+.oct-21 tr:last-child td:nth-of-type(n+2)::before {
   content: "";
 }
 
-.nov-20 {
-  counter-reset: nov-20;
-  counter-set: nov-20 -1;
+.nov-21 {
+  counter-reset: nov-21;
+  counter-set: nov-21 -1;
 }
-.nov-20 td::before {
-  counter-increment: nov-20;
-  content: counter(nov-20);
+.nov-21 td::before {
+  counter-increment: nov-21;
+  content: counter(nov-21);
 }
-.nov-20 tr:first-child td:nth-of-type(-n+1)::before,
-.nov-20 tr:last-child td:nth-of-type(n+4)::before {
+.nov-21 tr:first-child td:nth-of-type(-n+1)::before,
+.nov-21 tr:last-child td:nth-of-type(n+4)::before {
   content: "";
 }
 
-.dec-20 {
-  counter-reset: dec-20;
-  counter-set: dec-20 -3;
+.dec-21 {
+  counter-reset: dec-21;
+  counter-set: dec-21 -3;
 }
-.dec-20 td::before {
-  counter-increment: dec-20;
-  content: counter(dec-20);
+.dec-21 td::before {
+  counter-increment: dec-21;
+  content: counter(dec-21);
 }
-.dec-20 tr:first-child td:nth-of-type(-n+3)::before,
-.dec-20 tr:last-child td:nth-of-type(n+7)::before {
+.dec-21 tr:first-child td:nth-of-type(-n+3)::before,
+.dec-21 tr:last-child td:nth-of-type(n+7)::before {
   content: "";
 }
 
@@ -199,7 +199,7 @@ td {
 }
 .events [class|=filled]::after {
   background: magenta;
-  bottom: 28%;
+  bottom: 30%;
   content: "";
   display: grid;
   font-size: 0.87rem;
@@ -333,7 +333,7 @@ td {
 }
 
 .events .cc3::after {
-  background: linear-gradient(90deg, #dca8df, #adb4fa);
+  background: linear-gradient(90deg, #795699, #a683ce);
 }
 
 .cobr.start::after, .cobr.end::after {
