@@ -18,19 +18,13 @@ main {
 	}
 }
 
-hr {
-	border: 0;
-	border-bottom: 1px solid grey;
-	margin-bottom: 20px;
-}
-
 ::-webkit-scrollbar { width: 10px }
 ::-webkit-scrollbar-thumb { background: grey }
 
 
 /* GitHub link */
 a {
-	background: center / contain no-repeat url("github.svg");
+	background: center / contain no-repeat url("../svg/github.svg");
 	bottom: 20px;
 	display: block;
 	height: 50px;
@@ -56,9 +50,15 @@ a:hover {
 /* Calendar */
 /* Header */
 header {
+	border-top: 1px solid grey;
 	color: white;
 	font-size: 1.2rem;
-	margin-bottom: 10px;
+	margin: 20px 0 10px;
+	padding-top: 20px;
+}
+header:first-of-type {
+	border: none;
+	padding-top: 10px;
 }
 
 /* Dates */
@@ -84,40 +84,40 @@ td {
 	width: calc(100% / 7);
 }
 
-.apr-2020 { counter-reset: apr-20; counter-set: apr-20 -4 }
-.apr-2020 td::before { counter-increment: apr-20; content: counter(apr-20) }
-.apr-2020 tr:first-child td:nth-of-type(-n+4)::before,
-.apr-2020 tr:last-child td:nth-of-type(n+7)::before { content: "" }
-.may-2020 { counter-reset: may-20; counter-set: may-20 -6 }
-.may-2020 td::before { counter-increment: may-20; content: counter(may-20) }
-.may-2020 tr:first-child td:nth-of-type(-n+6)::before,
-.may-2020 tr:last-child td:nth-of-type(n+3)::before { content: "" }
-.jun-2020 { counter-reset: jun-20; counter-set: jun-20 -2 }
-.jun-2020 td::before { counter-increment: jun-20; content: counter(jun-20) }
-.jun-2020 tr:first-child td:nth-of-type(-n+2)::before,
-.jun-2020 tr:last-child td:nth-of-type(n+5)::before { content: "" }
-.jul-2020 { counter-reset: jul-20; counter-set: jul-20 -4 }
-.jul-2020 td::before { counter-increment: jul-20; content: counter(jul-20) }
-.jul-2020 tr:first-child td:nth-of-type(-n+4)::before { content: "" }
-.aug-2020 { counter-reset: aug-20 }
-.aug-2020 td::before { counter-increment: aug-20; content: counter(aug-20) }
-.aug-2020 tr:last-child td:nth-of-type(n+4)::before { content: "" }
-.sep-2020 { counter-reset: sep-20; counter-set: sep-20 -3 }
-.sep-2020 td::before { counter-increment: sep-20; content: counter(sep-20) }
-.sep-2020 tr:first-child td:nth-of-type(-n+3)::before,
-.sep-2020 tr:last-child td:nth-of-type(n+6)::before { content: "" }
-.oct-2020 { counter-reset: oct-20; counter-set: oct-20 -5 }
-.oct-2020 td::before { counter-increment: oct-20; content: counter(oct-20) }
-.oct-2020 tr:first-child td:nth-of-type(-n+5)::before,
-.oct-2020 tr:last-child td:nth-of-type(n+2)::before { content: "" }
-.nov-2020 { counter-reset: nov-20; counter-set: nov-20 -1 }
-.nov-2020 td::before { counter-increment: nov-20; content: counter(nov-20) }
-.nov-2020 tr:first-child td:nth-of-type(-n+1)::before,
-.nov-2020 tr:last-child td:nth-of-type(n+4)::before { content: "" }
-.dec-2020 { counter-reset: dec-20; counter-set: dec-20 -3 }
-.dec-2020 td::before { counter-increment: dec-20; content: counter(dec-20) }
-.dec-2020 tr:first-child td:nth-of-type(-n+3)::before,
-.dec-2020 tr:last-child td:nth-of-type(n+7)::before { content: "" }
+.apr-20 { counter-reset: apr-20; counter-set: apr-20 -4 }
+.apr-20 td::before { counter-increment: apr-20; content: counter(apr-20) }
+.apr-20 tr:first-child td:nth-of-type(-n+4)::before,
+.apr-20 tr:last-child td:nth-of-type(n+7)::before { content: "" }
+.may-20 { counter-reset: may-20; counter-set: may-20 -6 }
+.may-20 td::before { counter-increment: may-20; content: counter(may-20) }
+.may-20 tr:first-child td:nth-of-type(-n+6)::before,
+.may-20 tr:last-child td:nth-of-type(n+3)::before { content: "" }
+.jun-20 { counter-reset: jun-20; counter-set: jun-20 -2 }
+.jun-20 td::before { counter-increment: jun-20; content: counter(jun-20) }
+.jun-20 tr:first-child td:nth-of-type(-n+2)::before,
+.jun-20 tr:last-child td:nth-of-type(n+5)::before { content: "" }
+.jul-20 { counter-reset: jul-20; counter-set: jul-20 -4 }
+.jul-20 td::before { counter-increment: jul-20; content: counter(jul-20) }
+.jul-20 tr:first-child td:nth-of-type(-n+4)::before { content: "" }
+.aug-20 { counter-reset: aug-20 }
+.aug-20 td::before { counter-increment: aug-20; content: counter(aug-20) }
+.aug-20 tr:last-child td:nth-of-type(n+4)::before { content: "" }
+.sep-20 { counter-reset: sep-20; counter-set: sep-20 -3 }
+.sep-20 td::before { counter-increment: sep-20; content: counter(sep-20) }
+.sep-20 tr:first-child td:nth-of-type(-n+3)::before,
+.sep-20 tr:last-child td:nth-of-type(n+6)::before { content: "" }
+.oct-20 { counter-reset: oct-20; counter-set: oct-20 -5 }
+.oct-20 td::before { counter-increment: oct-20; content: counter(oct-20) }
+.oct-20 tr:first-child td:nth-of-type(-n+5)::before,
+.oct-20 tr:last-child td:nth-of-type(n+2)::before { content: "" }
+.nov-20 { counter-reset: nov-20; counter-set: nov-20 -1 }
+.nov-20 td::before { counter-increment: nov-20; content: counter(nov-20) }
+.nov-20 tr:first-child td:nth-of-type(-n+1)::before,
+.nov-20 tr:last-child td:nth-of-type(n+4)::before { content: "" }
+.dec-20 { counter-reset: dec-20; counter-set: dec-20 -3 }
+.dec-20 td::before { counter-increment: dec-20; content: counter(dec-20) }
+.dec-20 tr:first-child td:nth-of-type(-n+3)::before,
+.dec-20 tr:last-child td:nth-of-type(n+7)::before { content: "" }
 
 /* Events */
 .events {
@@ -127,20 +127,20 @@ td {
 	top: 0;
 }
 
-.empty-7, .filled-7 { width: 100% }
-.empty-6, .filled-6 { width: calc(100% / 7 * 6) }
-.empty-5, .filled-5 { width: calc(100% / 7 * 5) }
-.empty-4, .filled-4 { width: calc(100% / 7 * 4) }
-.empty-3, .filled-3 { width: calc(100% / 7 * 3) }
-.empty-2, .filled-2 { width: calc(100% / 7 * 2) }
-.empty-1, .filled-1 { width: calc(100% / 7 * 1) }
-.empty-65, .filled-65 { width: calc(100% / 7 * 6.5) }
-.empty-55, .filled-55 { width: calc(100% / 7 * 5.5) }
-.empty-45, .filled-45 { width: calc(100% / 7 * 4.5) }
-.empty-35, .filled-35 { width: calc(100% / 7 * 3.5) }
-.empty-25, .filled-25 { width: calc(100% / 7 * 2.5) }
-.empty-15, .filled-15 { width: calc(100% / 7 * 1.5) }
-.empty-05, .filled-05 { width: calc(100% / 7 * 0.5) }
+.blank-7, .filled-7 { width: 100% }
+.blank-6, .filled-6 { width: calc(100% / 7 * 6) }
+.blank-5, .filled-5 { width: calc(100% / 7 * 5) }
+.blank-4, .filled-4 { width: calc(100% / 7 * 4) }
+.blank-3, .filled-3 { width: calc(100% / 7 * 3) }
+.blank-2, .filled-2 { width: calc(100% / 7 * 2) }
+.blank-1, .filled-1 { width: calc(100% / 7 * 1) }
+.blank-65, .filled-65 { width: calc(100% / 7 * 6.5) }
+.blank-55, .filled-55 { width: calc(100% / 7 * 5.5) }
+.blank-45, .filled-45 { width: calc(100% / 7 * 4.5) }
+.blank-35, .filled-35 { width: calc(100% / 7 * 3.5) }
+.blank-25, .filled-25 { width: calc(100% / 7 * 2.5) }
+.blank-15, .filled-15 { width: calc(100% / 7 * 1.5) }
+.blank-05, .filled-05 { width: calc(100% / 7 * 0.5) }
 
 .events div {
 	overflow: hidden;
