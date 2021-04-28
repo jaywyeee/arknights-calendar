@@ -1,215 +1,478 @@
-*, *::after, *::before { box-sizing: border-box }
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 
 body {
-	background: black;
-	font-family: "Roboto Condensed", sans-serif;
-	margin: 20px;
-	position: relative;
+  background: black;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 20px;
 }
 
-main { 
-	margin: auto;
-	width: 600px;
+main {
+  margin: auto;
+  width: 600px;
 }
-
 @media (max-width: 650px) {
-	main {
-		width: 100%;
-	}
+  main {
+    width: 100%;
+  }
 }
 
-::-webkit-scrollbar { width: 10px }
-::-webkit-scrollbar-thumb { background: grey }
-
-
-/* GitHub link */
-a {
-	background: center / contain no-repeat url("../svg/github.svg");
-	bottom: 20px;
-	display: block;
-	height: 50px;
-	position: fixed;
-	right: 20px;
-	transition-duration: 100ms;
-	width: 50px;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-a:hover {
-	opacity: 0.6;
+::-webkit-scrollbar-thumb {
+  background: grey;
 }
 
-@media (max-width: 800px) {
-	a {
-		height: 40px;
-		position: unset;
-		width: 100%;
-	}
-}
-
-
-/* Calendar */
-/* Header */
 header {
-	border-top: 1px solid grey;
-	color: white;
-	font-size: 1.2rem;
-	margin: 20px 0 10px;
-	padding-top: 20px;
+  border-top: 1px solid grey;
+  color: white;
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
+  padding-top: 20px;
 }
 header:first-of-type {
-	border: none;
-	padding-top: 10px;
+  border: none;
+  padding-top: 10px;
 }
 
-/* Dates */
 header + div {
-	position: relative;
+  position: relative;
 }
 
-.row-5 { height: 370px }
-.row-6 { height: 444px }
+.row-5 {
+  height: 370px;
+}
+
+.row-6 {
+  height: 444px;
+}
 
 table, .events {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
-.row-5 tr, .row-5 .events div { height: calc(100% / 5) }
-.row-6 tr, .row-6 .events div { height: calc(100% / 6) }
+.row-5 tr, .row-5 .events div {
+  height: calc(100% / 5);
+}
+
+.row-6 tr, .row-6 .events div {
+  height: calc(100% / 6);
+}
 
 td {
-	color: white;
-	font-size: 0.75rem;
-	vertical-align: top;
-	width: calc(100% / 7);
+  color: white;
+  font-size: 0.75rem;
+  vertical-align: top;
+  width: calc(100% / 7);
 }
 
-.apr-20 { counter-reset: apr-20; counter-set: apr-20 -4 }
-.apr-20 td::before { counter-increment: apr-20; content: counter(apr-20) }
+.apr-20 {
+  counter-reset: apr-20;
+  counter-set: apr-20 -4;
+}
+.apr-20 td::before {
+  counter-increment: apr-20;
+  content: counter(apr-20);
+}
 .apr-20 tr:first-child td:nth-of-type(-n+4)::before,
-.apr-20 tr:last-child td:nth-of-type(n+7)::before { content: "" }
-.may-20 { counter-reset: may-20; counter-set: may-20 -6 }
-.may-20 td::before { counter-increment: may-20; content: counter(may-20) }
+.apr-20 tr:last-child td:nth-of-type(n+7)::before {
+  content: "";
+}
+
+.may-20 {
+  counter-reset: may-20;
+  counter-set: may-20 -6;
+}
+.may-20 td::before {
+  counter-increment: may-20;
+  content: counter(may-20);
+}
 .may-20 tr:first-child td:nth-of-type(-n+6)::before,
-.may-20 tr:last-child td:nth-of-type(n+3)::before { content: "" }
-.jun-20 { counter-reset: jun-20; counter-set: jun-20 -2 }
-.jun-20 td::before { counter-increment: jun-20; content: counter(jun-20) }
+.may-20 tr:last-child td:nth-of-type(n+3)::before {
+  content: "";
+}
+
+.jun-20 {
+  counter-reset: jun-20;
+  counter-set: jun-20 -2;
+}
+.jun-20 td::before {
+  counter-increment: jun-20;
+  content: counter(jun-20);
+}
 .jun-20 tr:first-child td:nth-of-type(-n+2)::before,
-.jun-20 tr:last-child td:nth-of-type(n+5)::before { content: "" }
-.jul-20 { counter-reset: jul-20; counter-set: jul-20 -4 }
-.jul-20 td::before { counter-increment: jul-20; content: counter(jul-20) }
-.jul-20 tr:first-child td:nth-of-type(-n+4)::before { content: "" }
-.aug-20 { counter-reset: aug-20 }
-.aug-20 td::before { counter-increment: aug-20; content: counter(aug-20) }
-.aug-20 tr:last-child td:nth-of-type(n+4)::before { content: "" }
-.sep-20 { counter-reset: sep-20; counter-set: sep-20 -3 }
-.sep-20 td::before { counter-increment: sep-20; content: counter(sep-20) }
+.jun-20 tr:last-child td:nth-of-type(n+5)::before {
+  content: "";
+}
+
+.jul-20 {
+  counter-reset: jul-20;
+  counter-set: jul-20 -4;
+}
+.jul-20 td::before {
+  counter-increment: jul-20;
+  content: counter(jul-20);
+}
+.jul-20 tr:first-child td:nth-of-type(-n+4)::before,
+.jul-20 tr:last-child td:nth-of-type(n+0)::before {
+  content: "";
+}
+
+.aug-20 {
+  counter-reset: aug-20;
+  counter-set: aug-20 -0;
+}
+.aug-20 td::before {
+  counter-increment: aug-20;
+  content: counter(aug-20);
+}
+.aug-20 tr:first-child td:nth-of-type(-n+0)::before,
+.aug-20 tr:last-child td:nth-of-type(n+4)::before {
+  content: "";
+}
+
+.sep-20 {
+  counter-reset: sep-20;
+  counter-set: sep-20 -3;
+}
+.sep-20 td::before {
+  counter-increment: sep-20;
+  content: counter(sep-20);
+}
 .sep-20 tr:first-child td:nth-of-type(-n+3)::before,
-.sep-20 tr:last-child td:nth-of-type(n+6)::before { content: "" }
-.oct-20 { counter-reset: oct-20; counter-set: oct-20 -5 }
-.oct-20 td::before { counter-increment: oct-20; content: counter(oct-20) }
+.sep-20 tr:last-child td:nth-of-type(n+6)::before {
+  content: "";
+}
+
+.oct-20 {
+  counter-reset: oct-20;
+  counter-set: oct-20 -5;
+}
+.oct-20 td::before {
+  counter-increment: oct-20;
+  content: counter(oct-20);
+}
 .oct-20 tr:first-child td:nth-of-type(-n+5)::before,
-.oct-20 tr:last-child td:nth-of-type(n+2)::before { content: "" }
-.nov-20 { counter-reset: nov-20; counter-set: nov-20 -1 }
-.nov-20 td::before { counter-increment: nov-20; content: counter(nov-20) }
+.oct-20 tr:last-child td:nth-of-type(n+2)::before {
+  content: "";
+}
+
+.nov-20 {
+  counter-reset: nov-20;
+  counter-set: nov-20 -1;
+}
+.nov-20 td::before {
+  counter-increment: nov-20;
+  content: counter(nov-20);
+}
 .nov-20 tr:first-child td:nth-of-type(-n+1)::before,
-.nov-20 tr:last-child td:nth-of-type(n+4)::before { content: "" }
-.dec-20 { counter-reset: dec-20; counter-set: dec-20 -3 }
-.dec-20 td::before { counter-increment: dec-20; content: counter(dec-20) }
+.nov-20 tr:last-child td:nth-of-type(n+4)::before {
+  content: "";
+}
+
+.dec-20 {
+  counter-reset: dec-20;
+  counter-set: dec-20 -3;
+}
+.dec-20 td::before {
+  counter-increment: dec-20;
+  content: counter(dec-20);
+}
 .dec-20 tr:first-child td:nth-of-type(-n+3)::before,
-.dec-20 tr:last-child td:nth-of-type(n+7)::before { content: "" }
+.dec-20 tr:last-child td:nth-of-type(n+7)::before {
+  content: "";
+}
 
-/* Events */
 .events {
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
 }
-
-.blank-7, .filled-7 { width: 100% }
-.blank-6, .filled-6 { width: calc(100% / 7 * 6) }
-.blank-5, .filled-5 { width: calc(100% / 7 * 5) }
-.blank-4, .filled-4 { width: calc(100% / 7 * 4) }
-.blank-3, .filled-3 { width: calc(100% / 7 * 3) }
-.blank-2, .filled-2 { width: calc(100% / 7 * 2) }
-.blank-1, .filled-1 { width: calc(100% / 7 * 1) }
-.blank-65, .filled-65 { width: calc(100% / 7 * 6.5) }
-.blank-55, .filled-55 { width: calc(100% / 7 * 5.5) }
-.blank-45, .filled-45 { width: calc(100% / 7 * 4.5) }
-.blank-35, .filled-35 { width: calc(100% / 7 * 3.5) }
-.blank-25, .filled-25 { width: calc(100% / 7 * 2.5) }
-.blank-15, .filled-15 { width: calc(100% / 7 * 1.5) }
-.blank-05, .filled-05 { width: calc(100% / 7 * 0.5) }
-
 .events div {
-	overflow: hidden;
-	position: relative;
+  overflow: hidden;
+  position: relative;
 }
-
-.events [class|="filled"]::after {
-	background: magenta;
-	bottom: 28%;
-	content: "";
-	display: grid;
-	font-size: 0.87rem;
-	height: 30%;
-	padding: 0 6px;
-	place-items: center left;
-	position: absolute;
-	white-space: nowrap;
-	width: 100%;
+.events [class|=filled]::after {
+  background: magenta;
+  bottom: 28%;
+  content: "";
+  display: grid;
+  font-size: 0.87rem;
+  height: 30%;
+  padding: 0 6px;
+  place-items: center left;
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
 }
 .events .start::after {
-	border-radius: 2px;
-	left: 10px;
+  border-radius: 2px;
+  left: 10px;
 }
 .events .end::after {
-	border-radius: 2px;
-	place-items: center right;
-	right: 10px;
+  border-radius: 2px;
+  place-items: center right;
+  right: 10px;
 }
 
-.rb.start::after, .rb.end::after { content: "Rewinding Breeze" }
-.events .rb::after { background: linear-gradient(90deg, #dd5f20, #faa03a) }
-.mn.start::after, .mn.end::after { content: "Maria Nearl" }
-.events .mn::after { background: #517cf1 }
-.fmn.start::after, .fmn.end::after { content: "Forget Me Not" }
-.events .fmn::after { background: linear-gradient(90deg, #dca8df, #adb4fa); font-style: italic }
-.cc3.start::after, .cc3.end::after { content: "Contingency C... #3" }
-.events .cc3::after { background: linear-gradient(90deg, #795699, #a683ce) }
-.cobr.start::after, .cobr.end::after { content: "Code of Brawl Rerun" }
-.events .cobr::after { background: linear-gradient(90deg, #6f87ff 70%, #ffe957) }
-.mb.start::after, .mb.end::after { content: "Mansfield Break" }
-.events .mb::after { background: #dd523d }
-.bh.start::after, .bh.end::after { content: "Beyond Here" }
-.events .bh::after { background: linear-gradient(90deg, #ff8902, #ffde2c) }
-.cc4.start::after, .cc4.end::after { content: "Contingency Contract #4" }
-.events .cc4::after { background: linear-gradient(90deg, #2d8c8f, #2d6b70, #2454c2) }
-.wir.start::after, .wir.end::after { content: "Who is Real" }
-.events .wir::after { background: linear-gradient(90deg, #648a80 30%, #bed8be) }
-.ood.start::after, .ood.end::after { content: "Operation Originium Dust" }
-.events .ood::after { background: linear-gradient(90deg, #a05d27 20%, #f7b819) }
-.dmr.start::after, .dmr.end::after { content: "Darknights Memoir Rerun" }
-.events .dmr::after { background: linear-gradient(90deg, #76788f 30%, #6a2017) }
-.awitd.start::after, .awitd.end::after { content: "A Walk in the Dust" }
-.events .awitd::after { background: linear-gradient(90deg, #ded9d3, #516a77, #585858) }
-.ut.start::after, .ut.end::after { content: "Under Tides" }
-.events .ut::after { background: linear-gradient(90deg, #345c54, #484b47) }
-.cc5.start::after, .cc5.end::after { content: "C..." }
-.events .cc5::after { background: linear-gradient(90deg, #2479d3, #435c9b 35%, #ec4152) }
+.blank-0, .filled-0 {
+  width: calc(100% / 7 * 0);
+}
 
-.rb.start ~ .rb.end::after,
-.mn.start ~ .mn.end::after,
-.fmn.start ~ .fmn.end::after,
-.cc3.start ~ .cc3.end::after,
-.cobr.start ~ .cobr.end::after,
-.mb.start ~ .mb.end::after,
-.bh.start ~ .bh.end::after,
-.cc4.start ~ .cc4.end::after,
-.wir.start ~ .wir.end::after,
-.ood.start ~ .ood.end::after,
-.dmr.start ~ .dmr.end::after,
-.awitd.start ~ .awitd.end::after,
-.ut.start ~ .ut.end::after,
-.cc5.start ~ .cc5.end::after { content: "" }
+.blank-05, .filled-05 {
+  width: calc(100% / 7 * 0.5);
+}
+
+.blank-1, .filled-1 {
+  width: calc(100% / 7 * 1);
+}
+
+.blank-15, .filled-15 {
+  width: calc(100% / 7 * 1.5);
+}
+
+.blank-2, .filled-2 {
+  width: calc(100% / 7 * 2);
+}
+
+.blank-25, .filled-25 {
+  width: calc(100% / 7 * 2.5);
+}
+
+.blank-3, .filled-3 {
+  width: calc(100% / 7 * 3);
+}
+
+.blank-35, .filled-35 {
+  width: calc(100% / 7 * 3.5);
+}
+
+.blank-4, .filled-4 {
+  width: calc(100% / 7 * 4);
+}
+
+.blank-45, .filled-45 {
+  width: calc(100% / 7 * 4.5);
+}
+
+.blank-5, .filled-5 {
+  width: calc(100% / 7 * 5);
+}
+
+.blank-55, .filled-55 {
+  width: calc(100% / 7 * 5.5);
+}
+
+.blank-6, .filled-6 {
+  width: calc(100% / 7 * 6);
+}
+
+.blank-65, .filled-65 {
+  width: calc(100% / 7 * 6.5);
+}
+
+.blank-7, .filled-7 {
+  width: calc(100% / 7 * 7);
+}
+
+.blank-75, .filled-75 {
+  width: calc(100% / 7 * 7.5);
+}
+
+.rb.start::after, .rb.end::after {
+  content: "Rewinding Breeze";
+}
+
+.rb.start ~ .rb.end::after {
+  content: "";
+}
+
+.events .rb::after {
+  background: linear-gradient(90deg, #dd5f20, #faa03a);
+}
+
+.mn.start::after, .mn.end::after {
+  content: "Maria Nearl";
+}
+
+.mn.start ~ .mn.end::after {
+  content: "";
+}
+
+.events .mn::after {
+  background: #517cf1;
+}
+
+.fmn.start::after, .fmn.end::after {
+  content: "Forget Me Not";
+}
+
+.fmn.start ~ .fmn.end::after {
+  content: "";
+}
+
+.fmn::after {
+  font-style: italic;
+}
+
+.events .fmn::after {
+  background: linear-gradient(90deg, #dca8df, #adb4fa);
+}
+
+.cc3.start::after, .cc3.end::after {
+  content: "Contingency C... #3";
+}
+
+.cc3.start ~ .cc3.end::after {
+  content: "";
+}
+
+.events .cc3::after {
+  background: linear-gradient(90deg, #dca8df, #adb4fa);
+}
+
+.cobr.start::after, .cobr.end::after {
+  content: "Code of Brawl Rerun";
+}
+
+.cobr.start ~ .cobr.end::after {
+  content: "";
+}
+
+.events .cobr::after {
+  background: linear-gradient(90deg, #6f87ff 70%, #ffe957);
+}
+
+.mb.start::after, .mb.end::after {
+  content: "Mansfield Break";
+}
+
+.mb.start ~ .mb.end::after {
+  content: "";
+}
+
+.events .mb::after {
+  background: #dd523d;
+}
+
+.bh.start::after, .bh.end::after {
+  content: "Beyond Here";
+}
+
+.bh.start ~ .bh.end::after {
+  content: "";
+}
+
+.events .bh::after {
+  background: linear-gradient(90deg, #ff8902, #ffde2c);
+}
+
+.cc4.start::after, .cc4.end::after {
+  content: "Contingency Contract #4";
+}
+
+.cc4.start ~ .cc4.end::after {
+  content: "";
+}
+
+.events .cc4::after {
+  background: linear-gradient(90deg, #2d8c8f, #2d6b70, #2454c2);
+}
+
+.wir.start::after, .wir.end::after {
+  content: "Who is Real";
+}
+
+.wir.start ~ .wir.end::after {
+  content: "";
+}
+
+.events .wir::after {
+  background: linear-gradient(90deg, #648a80 30%, #bed8be);
+}
+
+.ood.start::after, .ood.end::after {
+  content: "Operation Originium Dust";
+}
+
+.ood.start ~ .ood.end::after {
+  content: "";
+}
+
+.events .ood::after {
+  background: linear-gradient(90deg, #a05d27 20%, #f7b819);
+}
+
+.dmr.start::after, .dmr.end::after {
+  content: "Darknights Memoir Rerun";
+}
+
+.dmr.start ~ .dmr.end::after {
+  content: "";
+}
+
+.events .dmr::after {
+  background: linear-gradient(90deg, #76788f 30%, #6a2017);
+}
+
+.awitd.start::after, .awitd.end::after {
+  content: "A Walk in the Dust";
+}
+
+.awitd.start ~ .awitd.end::after {
+  content: "";
+}
+
+.events .awitd::after {
+  background: linear-gradient(90deg, #ded9d3, #516a77, #585858);
+}
+
+.ut.start::after, .ut.end::after {
+  content: "Under Tides";
+}
+
+.ut.start ~ .ut.end::after {
+  content: "";
+}
+
+.events .ut::after {
+  background: linear-gradient(90deg, #345c54, #484b47);
+}
+
+.cc5.start::after, .cc5.end::after {
+  content: "C...";
+}
+
+.cc5.start ~ .cc5.end::after {
+  content: "";
+}
+
+.events .cc5::after {
+  background: linear-gradient(90deg, #2479d3, #435c9b 35%, #ec4152);
+}
+
+a {
+  background: center/contain no-repeat url("../svg/github.svg");
+  bottom: 20px;
+  display: block;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  transition-duration: 100ms;
+  width: 50px;
+}
+a:hover {
+  opacity: 0.6;
+}
+@media (max-width: 800px) {
+  a {
+    height: 40px;
+    position: unset;
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

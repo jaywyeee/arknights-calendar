@@ -1,0 +1,42 @@
+@use "sass:string" as *;
+
+// Create dates for calendar table
+@mixin counter($month, $indent, $outdent) {
+	.#{$month} {
+		counter-reset: $month;
+		counter-set: $month -#{$indent};
+
+		td::before {
+			counter-increment: $month;
+			content: counter($month);
+		}
+
+		tr:first-child td:nth-of-type(-n+#{$indent})::before,
+		tr:last-child td:nth-of-type(n+#{$outdent})::before {
+			content: ""
+		}
+	}
+}
+
+// Used to create styles for widths from 0.5/7 to 7/7 for event overlay elements
+@mixin width($n) {
+	.blank-#{$n}, .filled-#{$n} { width: calc(100% / 7 * #{$n}) }
+	.blank-#{$n}5, .filled-#{$n}5 { width: calc(100% / 7 * #{$n}.5) }
+}
+
+// Label and color event overlays
+@mixin overlay($initials, $color, $name, $italic: false, $override: false) {
+	.#{$initials}.start::after, .#{$initials}.end::after { content: "#{$name}" }
+	.#{$initials}.start ~ .#{$initials}.end::after { content: "" }
+	@if $override {
+		.#{$initials}.end::after { content: "#{$override}" }
+	}
+
+	@if $italic { .#{$initials}::after { font-style: italic } }
+
+	@if index(#{$color}, " ") {
+		.events .#{$initials}::after { background: linear-gradient(90deg, $color) }
+	} @else {
+		.events .#{$initials}::after { background: $color }
+	}
+}

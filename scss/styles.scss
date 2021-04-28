@@ -1,0 +1,162 @@
+@use "mixins" as *;
+
+// General
+*, ::after, ::before { box-sizing: border-box }
+
+body {
+	background: black;
+	font-family: "Roboto Condensed", sans-serif;
+	margin: 20px;
+}
+
+main { 
+	margin: auto;
+	width: 600px;
+
+	@media (max-width: 650px) { width: 100% }
+}
+
+::-webkit-scrollbar { width: 10px }
+::-webkit-scrollbar-thumb { background: grey }
+
+
+
+// Calendar
+// Header
+header {
+	border-top: 1px solid grey;
+	color: white;
+	font-size: 1.2rem;
+	margin: 20px 0 10px;
+	padding-top: 20px;
+
+	&:first-of-type {
+		border: none;
+		padding-top: 10px;
+	}
+}
+
+// Dates
+header + div { position: relative }
+
+.row-5 { height: 370px }
+.row-6 { height: 444px }
+
+table, .events { height: 100%; width: 100% }
+
+.row-5 tr, .row-5 .events div { height: calc(100% / 5) }
+.row-6 tr, .row-6 .events div { height: calc(100% / 6) }
+
+td {
+	color: white;
+	font-size: 0.75rem;
+	vertical-align: top;
+	width: calc(100% / 7);
+}
+
+@include counter(apr-20, 4, 7);
+@include counter(may-20, 6, 3);
+@include counter(jun-20, 2, 5);
+@include counter(jul-20, 4, 0);
+@include counter(aug-20, 0, 4);
+@include counter(sep-20, 3, 6);
+@include counter(oct-20, 5, 2);
+@include counter(nov-20, 1, 4);
+@include counter(dec-20, 3, 7);
+
+
+
+// Events
+.events {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+	
+	div {
+		overflow: hidden;
+		position: relative;
+	}
+
+	[class|="filled"]::after {
+		background: magenta;
+		bottom: 28%;
+		content: "";
+		display: grid;
+		font-size: 0.87rem;
+		height: 30%;
+		padding: 0 6px;
+		place-items: center left;
+		position: absolute;
+		white-space: nowrap;
+		width: 100%;
+	}
+
+	.start::after {
+		border-radius: 2px;
+		left: 10px;
+	}
+	.end::after {
+		border-radius: 2px;
+		place-items: center right;
+		right: 10px;
+	}
+}
+
+@for $i from 0 through 7 {
+	@include width($i);
+}
+
+$rb:    #dd5f20, #faa03a;
+$mn:    #517cf1;
+$fmn:   #dca8df, #adb4fa;
+$cc3:   #dca8df, #adb4fa;
+$cobr:  #6f87ff 70%, #ffe957;
+$mb:    #dd523d;
+$bh:    #ff8902, #ffde2c;
+$cc4:   #2d8c8f, #2d6b70, #2454c2;
+$wir:   #648a80 30%, #bed8be;
+$ood:   #a05d27 20%, #f7b819;
+$dmr:   #76788f 30%, #6a2017;
+$awitd: #ded9d3, #516a77, #585858;
+$ut:    #345c54, #484b47;
+$cc5:   #2479d3, #435c9b 35%, #ec4152;
+
+@include overlay(rb, $rb, Rewinding Breeze);
+@include overlay(mn, $mn, Maria Nearl);
+@include overlay(fmn, $fmn, Forget Me Not, true);
+@include overlay(cc3, $cc3, "Contingency C... #3");
+@include overlay(cobr, $cobr, Code of Brawl Rerun);
+@include overlay(mb, $mb, Mansfield Break);
+@include overlay(bh, $bh, Beyond Here);
+@include overlay(cc4, $cc4, "Contingency Contract #4");
+@include overlay(wir, $wir, Who is Real);
+@include overlay(ood, $ood, Operation Originium Dust);
+@include overlay(dmr, $dmr, Darknights Memoir Rerun);
+@include overlay(awitd, $awitd, A Walk in the Dust);
+@include overlay(ut, $ut, Under Tides);
+@include overlay(cc5, $cc5, "C...");
+
+
+
+// GitHub link 
+a {
+	background: center / contain no-repeat url("../svg/github.svg");
+	bottom: 20px;
+	display: block;
+	height: 50px;
+	position: fixed;
+	right: 20px;
+	transition-duration: 100ms;
+	width: 50px;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	@media (max-width: 800px) {
+		height: 40px;
+		position: unset;
+		width: 100%;
+	}
+}
