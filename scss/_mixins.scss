@@ -34,7 +34,7 @@
 
 	@if $italic { .#{$initials}::after { font-style: italic } }
 
-	@if index(#{$color}, " ") {
+	@if index(#{$color}, ",") {
 		.events .#{$initials}::after { background: linear-gradient(90deg, $color) }
 	} @else {
 		.events .#{$initials}::after { background: $color }
