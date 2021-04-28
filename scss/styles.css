@@ -118,7 +118,7 @@ td {
   content: counter(jul-21);
 }
 .jul-21 tr:first-child td:nth-of-type(-n+4)::before,
-.jul-21 tr:last-child td:nth-of-type(n+0)::before {
+.jul-21 tr:last-child td:nth-of-type(n+8)::before {
   content: "";
 }
 
