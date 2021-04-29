@@ -18,6 +18,10 @@ main {
   }
 }
 
+p {
+  color: #8f8f8f;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
