@@ -215,8 +215,8 @@ td {
 }
 .events .start::after {
   border-radius: 2px;
-  place-items: center left;
   left: 10px;
+  place-items: center left;
 }
 .events .end::after {
   border-radius: 2px;
@@ -344,15 +344,15 @@ td {
   background-image: linear-gradient(90deg, #795699, #a683ce);
 }
 
-.cob.start::after, .cob.end::after {
+.cobr.start::after, .cobr.end::after {
   content: "Code of Brawl Rerun";
 }
 
-.cob.start ~ .cob.end::after {
+.cobr.start ~ .cobr.end::after {
   content: "";
 }
 
-.events .cob::after {
+.events .cobr::after {
   background-image: linear-gradient(90deg, #6f87ff 70%, #ffe957);
 }
 
@@ -416,15 +416,15 @@ td {
   background-image: linear-gradient(90deg, #a05d27 20%, #f7b819);
 }
 
-.dm.start::after, .dm.end::after {
+.dmr.start::after, .dmr.end::after {
   content: "Darknights Memoir Rerun";
 }
 
-.dm.start ~ .dm.end::after {
+.dmr.start ~ .dmr.end::after {
   content: "";
 }
 
-.events .dm::after {
+.events .dmr::after {
   background-image: linear-gradient(90deg, #76788f 30%, #6a2017);
 }
 

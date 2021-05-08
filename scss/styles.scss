@@ -95,8 +95,8 @@ td {
 
 	.start::after {
 		border-radius: 2px;
-		place-items: center left;
 		left: 10px;
+		place-items: center left;
 	}
 	.end::after {
 		border-radius: 2px;
@@ -128,13 +128,13 @@ $wir:   #648a80 30%, #bed8be;
 @include overlay(mn, $mn, Maria Nearl);
 @include overlay(fmn, $fmn, Forget Me Not, true);
 @include overlay(cc3, $cc3, "Contingency C... #3", $override: "Contingency Contract #3");
-@include overlay(cob, $cob, Code of Brawl Rerun);
+@include overlay(cobr, $cob, Code of Brawl Rerun);
 @include overlay(mb, $mb, Mansfield Break);
 @include overlay(bh, $bh, Beyond Here);
 @include overlay(cc4, $cc4, "Contingency Contract #4");
 @include overlay(wir, $wir, Who is Real);
 @include overlay(ood, $ood, Operation Originium Dust);
-@include overlay(dm, $dm, Darknights Memoir Rerun);
+@include overlay(dmr, $dm, Darknights Memoir Rerun);
 @include overlay(awitd, $awitd, A Walk in the Dust);
 @include overlay(ut, $ut, Under Tides);
 @include overlay(cc5, $cc5, "C...");
