@@ -3,7 +3,7 @@
 }
 
 body {
-  background: black;
+  background-color: black;
   font-family: "Roboto Condensed", sans-serif;
   margin: 20px;
 }
@@ -27,7 +27,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: grey;
+  background-color: grey;
 }
 
 header {
@@ -202,20 +202,20 @@ td {
   position: relative;
 }
 .events [class|=filled]::after {
-  background: magenta;
+  background-color: magenta;
   bottom: 30%;
   content: "";
   display: grid;
   font-size: 0.87rem;
   height: 30%;
   padding: 0 6px;
-  place-items: center left;
   position: absolute;
   white-space: nowrap;
   width: 100%;
 }
 .events .start::after {
   border-radius: 2px;
+  place-items: center left;
   left: 10px;
 }
 .events .end::after {
@@ -297,7 +297,7 @@ td {
 }
 
 .events .rb::after {
-  background: linear-gradient(90deg, #dd5f20, #faa03a);
+  background-image: linear-gradient(90deg, #dd5f20, #faa03a);
 }
 
 .mn.start::after, .mn.end::after {
@@ -309,7 +309,7 @@ td {
 }
 
 .events .mn::after {
-  background: #517cf1;
+  background-color: #517cf1;
 }
 
 .fmn.start::after, .fmn.end::after {
@@ -325,7 +325,7 @@ td {
 }
 
 .events .fmn::after {
-  background: linear-gradient(90deg, #dca8df, #adb4fa);
+  background-image: linear-gradient(90deg, #dca8df, #adb4fa);
 }
 
 .cc3.start::after, .cc3.end::after {
@@ -336,20 +336,24 @@ td {
   content: "";
 }
 
-.events .cc3::after {
-  background: linear-gradient(90deg, #795699, #a683ce);
+.cc3.end::after {
+  content: "Contingency Contract #3";
 }
 
-.cobr.start::after, .cobr.end::after {
+.events .cc3::after {
+  background-image: linear-gradient(90deg, #795699, #a683ce);
+}
+
+.cob.start::after, .cob.end::after {
   content: "Code of Brawl Rerun";
 }
 
-.cobr.start ~ .cobr.end::after {
+.cob.start ~ .cob.end::after {
   content: "";
 }
 
-.events .cobr::after {
-  background: linear-gradient(90deg, #6f87ff 70%, #ffe957);
+.events .cob::after {
+  background-image: linear-gradient(90deg, #6f87ff 70%, #ffe957);
 }
 
 .mb.start::after, .mb.end::after {
@@ -361,7 +365,7 @@ td {
 }
 
 .events .mb::after {
-  background: #dd523d;
+  background-color: #dd523d;
 }
 
 .bh.start::after, .bh.end::after {
@@ -373,7 +377,7 @@ td {
 }
 
 .events .bh::after {
-  background: linear-gradient(90deg, #ff8902, #ffde2c);
+  background-image: linear-gradient(90deg, #ff8902, #ffde2c);
 }
 
 .cc4.start::after, .cc4.end::after {
@@ -385,7 +389,7 @@ td {
 }
 
 .events .cc4::after {
-  background: linear-gradient(90deg, #2d8c8f, #2d6b70, #2454c2);
+  background-image: linear-gradient(90deg, #2d8c8f, #2d6b70, #2454c2);
 }
 
 .wir.start::after, .wir.end::after {
@@ -397,7 +401,7 @@ td {
 }
 
 .events .wir::after {
-  background: linear-gradient(90deg, #648a80 30%, #bed8be);
+  background-image: linear-gradient(90deg, #648a80 30%, #bed8be);
 }
 
 .ood.start::after, .ood.end::after {
@@ -409,19 +413,19 @@ td {
 }
 
 .events .ood::after {
-  background: linear-gradient(90deg, #a05d27 20%, #f7b819);
+  background-image: linear-gradient(90deg, #a05d27 20%, #f7b819);
 }
 
-.dmr.start::after, .dmr.end::after {
+.dm.start::after, .dm.end::after {
   content: "Darknights Memoir Rerun";
 }
 
-.dmr.start ~ .dmr.end::after {
+.dm.start ~ .dm.end::after {
   content: "";
 }
 
-.events .dmr::after {
-  background: linear-gradient(90deg, #76788f 30%, #6a2017);
+.events .dm::after {
+  background-image: linear-gradient(90deg, #76788f 30%, #6a2017);
 }
 
 .awitd.start::after, .awitd.end::after {
@@ -433,7 +437,7 @@ td {
 }
 
 .events .awitd::after {
-  background: linear-gradient(90deg, #ded9d3, #516a77, #585858);
+  background-image: linear-gradient(90deg, #ded9d3, #516a77, #585858);
 }
 
 .ut.start::after, .ut.end::after {
@@ -445,7 +449,7 @@ td {
 }
 
 .events .ut::after {
-  background: linear-gradient(90deg, #345c54, #484b47);
+  background-image: linear-gradient(90deg, #345c54, #484b47);
 }
 
 .cc5.start::after, .cc5.end::after {
@@ -457,7 +461,7 @@ td {
 }
 
 .events .cc5::after {
-  background: linear-gradient(90deg, #2479d3, #435c9b 35%, #ec4152);
+  background-image: linear-gradient(90deg, #2479d3, #435c9b 35%, #ec4152);
 }
 
 a {

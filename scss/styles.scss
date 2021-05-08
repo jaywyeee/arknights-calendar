@@ -4,7 +4,7 @@
 *, ::after, ::before { box-sizing: border-box }
 
 body {
-	background: black;
+	background-color: black;
 	font-family: "Roboto Condensed", sans-serif;
 	margin: 20px;
 }
@@ -19,7 +19,7 @@ main {
 p { color: #8f8f8f }
 
 ::-webkit-scrollbar { width: 10px }
-::-webkit-scrollbar-thumb { background: grey }
+::-webkit-scrollbar-thumb { background-color: grey }
 
 
 
@@ -81,14 +81,13 @@ td {
 	}
 
 	[class|="filled"]::after {
-		background: magenta;
+		background-color: magenta;
 		bottom: 30%;
 		content: "";
 		display: grid;
 		font-size: 0.87rem;
 		height: 30%;
 		padding: 0 6px;
-		place-items: center left;
 		position: absolute;
 		white-space: nowrap;
 		width: 100%;
@@ -96,6 +95,7 @@ td {
 
 	.start::after {
 		border-radius: 2px;
+		place-items: center left;
 		left: 10px;
 	}
 	.end::after {
@@ -109,32 +109,32 @@ td {
 	@include width($i);
 }
 
-$rb:    #dd5f20, #faa03a;
-$mn:    #517cf1;
-$fmn:   #dca8df, #adb4fa;
-$cc3:   #795699, #a683ce;
-$cobr:  #6f87ff 70%, #ffe957;
-$mb:    #dd523d;
-$bh:    #ff8902, #ffde2c;
-$cc4:   #2d8c8f, #2d6b70, #2454c2;
-$wir:   #648a80 30%, #bed8be;
-$ood:   #a05d27 20%, #f7b819;
-$dmr:   #76788f 30%, #6a2017;
 $awitd: #ded9d3, #516a77, #585858;
-$ut:    #345c54, #484b47;
+$bh:    #ff8902, #ffde2c;
+$cc3:   #795699, #a683ce;
+$cc4:   #2d8c8f, #2d6b70, #2454c2;
 $cc5:   #2479d3, #435c9b 35%, #ec4152;
+$cob:   #6f87ff 70%, #ffe957;
+$dm:    #76788f 30%, #6a2017;
+$fmn:   #dca8df, #adb4fa;
+$mb:    #dd523d;
+$mn:    #517cf1;
+$ood:   #a05d27 20%, #f7b819;
+$rb:    #dd5f20, #faa03a;
+$ut:    #345c54, #484b47;
+$wir:   #648a80 30%, #bed8be;
 
 @include overlay(rb, $rb, Rewinding Breeze);
 @include overlay(mn, $mn, Maria Nearl);
 @include overlay(fmn, $fmn, Forget Me Not, true);
-@include overlay(cc3, $cc3, "Contingency C... #3");
-@include overlay(cobr, $cobr, Code of Brawl Rerun);
+@include overlay(cc3, $cc3, "Contingency C... #3", $override: "Contingency Contract #3");
+@include overlay(cob, $cob, Code of Brawl Rerun);
 @include overlay(mb, $mb, Mansfield Break);
 @include overlay(bh, $bh, Beyond Here);
 @include overlay(cc4, $cc4, "Contingency Contract #4");
 @include overlay(wir, $wir, Who is Real);
 @include overlay(ood, $ood, Operation Originium Dust);
-@include overlay(dmr, $dmr, Darknights Memoir Rerun);
+@include overlay(dm, $dm, Darknights Memoir Rerun);
 @include overlay(awitd, $awitd, A Walk in the Dust);
 @include overlay(ut, $ut, Under Tides);
 @include overlay(cc5, $cc5, "C...");
