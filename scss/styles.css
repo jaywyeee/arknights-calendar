@@ -341,7 +341,7 @@ td {
 }
 
 .events .cc3::after {
-  background-image: linear-gradient(90deg, #795699, #a683ce);
+  background-image: linear-gradient(90deg, #7d599e, #b996e0);
 }
 
 .cobr.start::after, .cobr.end::after {
@@ -353,7 +353,7 @@ td {
 }
 
 .events .cobr::after {
-  background-image: linear-gradient(90deg, #6f87ff 70%, #ffe957);
+  background-color: #6f87ff;
 }
 
 .mb.start::after, .mb.end::after {
@@ -365,7 +365,7 @@ td {
 }
 
 .events .mb::after {
-  background-color: #dd523d;
+  background-color: #df5944;
 }
 
 .bh.start::after, .bh.end::after {
@@ -389,7 +389,7 @@ td {
 }
 
 .events .cc4::after {
-  background-image: linear-gradient(90deg, #2d8c8f, #2d6b70, #2454c2);
+  background-image: linear-gradient(90deg, #3a9b9e, #2f7d83, #3361cc);
 }
 
 .wir.start::after, .wir.end::after {
@@ -425,7 +425,7 @@ td {
 }
 
 .events .dmr::after {
-  background-image: linear-gradient(90deg, #76788f 30%, #6a2017);
+  background-image: linear-gradient(90deg, #81849b 30%, #7a271c);
 }
 
 .awitd.start::after, .awitd.end::after {
@@ -449,7 +449,7 @@ td {
 }
 
 .events .ut::after {
-  background-image: linear-gradient(90deg, #345c54, #484b47);
+  background-image: linear-gradient(90deg, #407268, #5f5f5f);
 }
 
 .cc5.start::after, .cc5.end::after {
@@ -461,7 +461,7 @@ td {
 }
 
 .events .cc5::after {
-  background-image: linear-gradient(90deg, #2479d3, #435c9b 35%, #ec4152);
+  background-image: linear-gradient(90deg, #3685da, #4d67aa 35%, #ee5766);
 }
 
 a {
@@ -480,7 +480,7 @@ a:hover {
 @media (max-width: 800px) {
   a {
     height: 40px;
-    position: unset;
+    position: initial;
     width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
