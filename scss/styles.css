@@ -449,7 +449,7 @@ td {
 }
 
 .events .ut::after {
-  background-image: linear-gradient(90deg, #407268, #5f5f5f);
+  background-image: linear-gradient(90deg, #4d8075, #707070);
 }
 
 .cc5.start::after, .cc5.end::after {
