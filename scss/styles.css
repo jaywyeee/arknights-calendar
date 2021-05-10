@@ -353,7 +353,7 @@ td {
 }
 
 .events .cobr::after {
-  background-color: #6f87ff;
+  background-image: linear-gradient(90deg, #6f87ff 25%, #C062FF);
 }
 
 .mb.start::after, .mb.end::after {
