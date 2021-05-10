@@ -373,10 +373,13 @@ table td {
   background-image: linear-gradient(90deg, #ded9d3, #516a77, #585858);
 }
 .events .ut.start::after, .events .ut.end::after {
-  content: "Under Tides";
+  content: "Under Tid...";
 }
 .events .ut.start ~ .ut.end::after {
   content: "";
+}
+.events .ut.end::after {
+  content: "Under Tides";
 }
 .events .ut::after {
   background-image: linear-gradient(90deg, #4d8075, #707070);
