@@ -329,15 +329,11 @@ td {
 }
 
 .cc3.start::after, .cc3.end::after {
-  content: "Contingency C... #3";
+  content: "Contingency Contract #3";
 }
 
 .cc3.start ~ .cc3.end::after {
   content: "";
-}
-
-.cc3.end::after {
-  content: "Contingency Contract #3";
 }
 
 .events .cc3::after {
@@ -345,7 +341,7 @@ td {
 }
 
 .cobr.start::after, .cobr.end::after {
-  content: "Code of Brawl Rerun";
+  content: "Code of Brawl Re...";
 }
 
 .cobr.start ~ .cobr.end::after {
