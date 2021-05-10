@@ -1,21 +1,15 @@
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-
 body {
   background-color: black;
   font-family: "Roboto Condensed", sans-serif;
   margin: 20px;
 }
+body *, body ::after, body ::before {
+  box-sizing: border-box;
+}
 
 main {
   margin: auto;
-  width: 600px;
-}
-@media (max-width: 650px) {
-  main {
-    width: 100%;
-  }
+  width: min(100%, 600px);
 }
 
 p {
@@ -25,7 +19,6 @@ p {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: grey;
 }
@@ -34,40 +27,35 @@ header {
   border-top: 1px solid grey;
   color: white;
   font-size: 1.2rem;
-  margin: 20px 0 10px;
-  padding-top: 20px;
+  margin: 1.2em 0;
+  padding-top: 1.9em;
 }
 header:first-of-type {
   border: none;
-  padding-top: 10px;
-}
-
-header + div {
-  position: relative;
+  padding-top: 1em;
 }
 
 .row-5 {
   height: 370px;
+  position: relative;
 }
-
-.row-6 {
-  height: 444px;
-}
-
-table, .events {
-  height: 100%;
-  width: 100%;
-}
-
 .row-5 tr, .row-5 .events div {
   height: calc(100% / 5);
 }
 
+.row-6 {
+  height: 444px;
+  position: relative;
+}
 .row-6 tr, .row-6 .events div {
   height: calc(100% / 6);
 }
 
-td {
+table {
+  height: 100%;
+  width: 100%;
+}
+table td {
   color: white;
   font-size: 0.75rem;
   vertical-align: top;
@@ -194,8 +182,10 @@ td {
 .events {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   position: absolute;
   top: 0;
+  width: 100%;
 }
 .events div {
   overflow: hidden;
@@ -208,7 +198,7 @@ td {
   display: grid;
   font-size: 0.87rem;
   height: 30%;
-  padding: 0 6px;
+  padding: 0 0.5em;
   position: absolute;
   white-space: nowrap;
   width: 100%;
@@ -223,239 +213,180 @@ td {
   place-items: center right;
   right: 10px;
 }
-
-.blank-0, .filled-0 {
+.events .blank-0, .events .filled-0 {
   width: calc(100% / 7 * 0);
 }
-
-.blank-05, .filled-05 {
+.events .blank-05, .events .filled-05 {
   width: calc(100% / 7 * 0.5);
 }
-
-.blank-1, .filled-1 {
+.events .blank-1, .events .filled-1 {
   width: calc(100% / 7 * 1);
 }
-
-.blank-15, .filled-15 {
+.events .blank-15, .events .filled-15 {
   width: calc(100% / 7 * 1.5);
 }
-
-.blank-2, .filled-2 {
+.events .blank-2, .events .filled-2 {
   width: calc(100% / 7 * 2);
 }
-
-.blank-25, .filled-25 {
+.events .blank-25, .events .filled-25 {
   width: calc(100% / 7 * 2.5);
 }
-
-.blank-3, .filled-3 {
+.events .blank-3, .events .filled-3 {
   width: calc(100% / 7 * 3);
 }
-
-.blank-35, .filled-35 {
+.events .blank-35, .events .filled-35 {
   width: calc(100% / 7 * 3.5);
 }
-
-.blank-4, .filled-4 {
+.events .blank-4, .events .filled-4 {
   width: calc(100% / 7 * 4);
 }
-
-.blank-45, .filled-45 {
+.events .blank-45, .events .filled-45 {
   width: calc(100% / 7 * 4.5);
 }
-
-.blank-5, .filled-5 {
+.events .blank-5, .events .filled-5 {
   width: calc(100% / 7 * 5);
 }
-
-.blank-55, .filled-55 {
+.events .blank-55, .events .filled-55 {
   width: calc(100% / 7 * 5.5);
 }
-
-.blank-6, .filled-6 {
+.events .blank-6, .events .filled-6 {
   width: calc(100% / 7 * 6);
 }
-
-.blank-65, .filled-65 {
+.events .blank-65, .events .filled-65 {
   width: calc(100% / 7 * 6.5);
 }
-
-.blank-7, .filled-7 {
+.events .blank-7, .events .filled-7 {
   width: calc(100% / 7 * 7);
 }
-
-.blank-75, .filled-75 {
+.events .blank-75, .events .filled-75 {
   width: calc(100% / 7 * 7.5);
 }
-
-.rb.start::after, .rb.end::after {
+.events .rb.start::after, .events .rb.end::after {
   content: "Rewinding Breeze";
 }
-
-.rb.start ~ .rb.end::after {
+.events .rb.start ~ .rb.end::after {
   content: "";
 }
-
 .events .rb::after {
   background-image: linear-gradient(90deg, #dd5f20, #faa03a);
 }
-
-.mn.start::after, .mn.end::after {
+.events .mn.start::after, .events .mn.end::after {
   content: "Maria Nearl";
 }
-
-.mn.start ~ .mn.end::after {
+.events .mn.start ~ .mn.end::after {
   content: "";
 }
-
 .events .mn::after {
   background-color: #517cf1;
 }
-
-.fmn.start::after, .fmn.end::after {
+.events .fmn.start::after, .events .fmn.end::after {
   content: "Forget Me Not";
 }
-
-.fmn.start ~ .fmn.end::after {
+.events .fmn.start ~ .fmn.end::after {
   content: "";
 }
-
-.fmn::after {
+.events .fmn::after {
   font-style: italic;
 }
-
 .events .fmn::after {
   background-image: linear-gradient(90deg, #dca8df, #adb4fa);
 }
-
-.cc3.start::after, .cc3.end::after {
+.events .cc3.start::after, .events .cc3.end::after {
   content: "Contingency Contract #3";
 }
-
-.cc3.start ~ .cc3.end::after {
+.events .cc3.start ~ .cc3.end::after {
   content: "";
 }
-
 .events .cc3::after {
   background-image: linear-gradient(90deg, #7d599e, #b996e0);
 }
-
-.cobr.start::after, .cobr.end::after {
+.events .cobr.start::after, .events .cobr.end::after {
   content: "Code of Brawl Re...";
 }
-
-.cobr.start ~ .cobr.end::after {
+.events .cobr.start ~ .cobr.end::after {
   content: "";
 }
-
 .events .cobr::after {
   background-image: linear-gradient(90deg, #6f87ff 25%, #C062FF);
 }
-
-.mb.start::after, .mb.end::after {
+.events .mb.start::after, .events .mb.end::after {
   content: "Mansfield Break";
 }
-
-.mb.start ~ .mb.end::after {
+.events .mb.start ~ .mb.end::after {
   content: "";
 }
-
 .events .mb::after {
   background-color: #df5944;
 }
-
-.bh.start::after, .bh.end::after {
+.events .bh.start::after, .events .bh.end::after {
   content: "Beyond Here";
 }
-
-.bh.start ~ .bh.end::after {
+.events .bh.start ~ .bh.end::after {
   content: "";
 }
-
 .events .bh::after {
   background-image: linear-gradient(90deg, #ff8902, #ffde2c);
 }
-
-.cc4.start::after, .cc4.end::after {
+.events .cc4.start::after, .events .cc4.end::after {
   content: "Contingency Contract #4";
 }
-
-.cc4.start ~ .cc4.end::after {
+.events .cc4.start ~ .cc4.end::after {
   content: "";
 }
-
 .events .cc4::after {
   background-image: linear-gradient(90deg, #3a9b9e, #2f7d83, #3361cc);
 }
-
-.wir.start::after, .wir.end::after {
+.events .wir.start::after, .events .wir.end::after {
   content: "Who is Real";
 }
-
-.wir.start ~ .wir.end::after {
+.events .wir.start ~ .wir.end::after {
   content: "";
 }
-
 .events .wir::after {
   background-image: linear-gradient(90deg, #648a80 30%, #bed8be);
 }
-
-.ood.start::after, .ood.end::after {
+.events .ood.start::after, .events .ood.end::after {
   content: "Operation Originium Dust";
 }
-
-.ood.start ~ .ood.end::after {
+.events .ood.start ~ .ood.end::after {
   content: "";
 }
-
 .events .ood::after {
   background-image: linear-gradient(90deg, #a05d27 20%, #f7b819);
 }
-
-.dmr.start::after, .dmr.end::after {
+.events .dmr.start::after, .events .dmr.end::after {
   content: "Darknights Memoir Rerun";
 }
-
-.dmr.start ~ .dmr.end::after {
+.events .dmr.start ~ .dmr.end::after {
   content: "";
 }
-
 .events .dmr::after {
   background-image: linear-gradient(90deg, #81849b 30%, #7a271c);
 }
-
-.awitd.start::after, .awitd.end::after {
+.events .awitd.start::after, .events .awitd.end::after {
   content: "A Walk in the Dust";
 }
-
-.awitd.start ~ .awitd.end::after {
+.events .awitd.start ~ .awitd.end::after {
   content: "";
 }
-
 .events .awitd::after {
   background-image: linear-gradient(90deg, #ded9d3, #516a77, #585858);
 }
-
-.ut.start::after, .ut.end::after {
+.events .ut.start::after, .events .ut.end::after {
   content: "Under Tides";
 }
-
-.ut.start ~ .ut.end::after {
+.events .ut.start ~ .ut.end::after {
   content: "";
 }
-
 .events .ut::after {
   background-image: linear-gradient(90deg, #4d8075, #707070);
 }
-
-.cc5.start::after, .cc5.end::after {
+.events .cc5.start::after, .events .cc5.end::after {
   content: "C...";
 }
-
-.cc5.start ~ .cc5.end::after {
+.events .cc5.start ~ .cc5.end::after {
   content: "";
 }
-
 .events .cc5::after {
   background-image: linear-gradient(90deg, #3685da, #4d67aa 35%, #ee5766);
 }

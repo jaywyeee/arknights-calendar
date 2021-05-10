@@ -28,15 +28,13 @@
 @mixin overlay($initials, $color, $name, $italic: false, $override: false) {
 	.#{$initials}.start::after, .#{$initials}.end::after { content: "#{$name}" }
 	.#{$initials}.start ~ .#{$initials}.end::after { content: "" }
-	@if $override {
-		.#{$initials}.end::after { content: "#{$override}" }
-	}
-
+	
+	@if $override { .#{$initials}.end::after { content: "#{$override}" } }
 	@if $italic { .#{$initials}::after { font-style: italic } }
 
 	@if index(#{$color}, ",") {
-		.events .#{$initials}::after { background-image: linear-gradient(90deg, $color) }
+		.#{$initials}::after { background-image: linear-gradient(90deg, $color) }
 	} @else {
-		.events .#{$initials}::after { background-color: $color }
+		.#{$initials}::after { background-color: $color }
 	}
 }
