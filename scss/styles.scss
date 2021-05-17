@@ -115,6 +115,8 @@ table {
 		right: 10px;
 	}
 
+	[title]::after { cursor: help }
+
 	@for $i from 0 through 7 {
 		@include width($i);
 	}

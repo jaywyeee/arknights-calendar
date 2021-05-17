@@ -213,6 +213,9 @@ table td {
   place-items: center right;
   right: 10px;
 }
+.events [title]::after {
+  cursor: help;
+}
 .events .blank-0, .events .filled-0 {
   width: calc(100% / 7 * 0);
 }
