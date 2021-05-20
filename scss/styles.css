@@ -475,6 +475,8 @@ a:hover {
 }
 @media (max-width: 880px) {
   a {
+    height: 40px;
+    width: 40px;
     margin: auto;
     position: initial;
   }
