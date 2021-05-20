@@ -14,11 +14,11 @@ main {
 	width: min(100%, 600px);
 }
 
-p { color: #8f8f8f }
+p { color: hsl(0, 0%, 55%) }
 
 ::-webkit-scrollbar {
 	width: 10px;
-	&-thumb { background-color: grey }
+	&-thumb { background-color: hsl(0, 0%, 50%) }
 }
 
 
@@ -26,30 +26,28 @@ p { color: #8f8f8f }
 // Calendar
 // Header
 header {
-	border-top: 1px solid grey;
+	border-top: 1px solid hsl(0, 0%, 50%);
 	color: white;
 	font-size: 1.2rem;
-	margin: 1.2em 0;
-	padding-top: 1.9em;
+	margin: 1.1em 0;
+	padding-top: 1.8em;
 
 	&:first-of-type {
 		border: none;
-		padding-top: 1em;
+		padding-top: 0.5em;
 	}
 }
 
 // Container
-.row-5 {
-	height: 370px;
-	position: relative;
+header + div { position: relative }
 
+.row-5 {
+	height: 23rem;
 	tr, .events div { height: calc(100% / 5) }
 }
 
 .row-6 {
-	height: 444px;
-	position: relative;
-
+	height: (23rem / 5 * 6);
 	tr, .events div { height: calc(100% / 6) }
 }
 
@@ -85,72 +83,55 @@ table {
 	top: 0;
 	width: 100%;
 	
-	div {
-		overflow: hidden;
-		position: relative;
-	}
-
-	[class|="filled"]::after {
-		background-color: magenta;
-		bottom: 30%;
-		content: "";
-		display: grid;
-		font-size: 0.87rem;
-		height: 30%;
-		padding: 0 0.5em;
-		position: absolute;
-		white-space: nowrap;
-		width: 100%;
-	}
-
-	.start::after {
-		border-radius: 2px;
-		left: 10px;
-		place-items: center left;
-	}
-
-	.end::after {
-		border-radius: 2px;
-		place-items: center right;
-		right: 10px;
-	}
-
-	[title]::after { cursor: help }
-
-	@for $i from 0 through 7 {
-		@include width($i);
-	}
-	
-	$awitd: #ded9d3, #516a77, #585858;
-	$bh:    #ff8902, #ffde2c;
-	$cc3:   #7d599e, #b996e0;
-	$cc4:   #3a9b9e, #2f7d83, #3361cc;
-	$cc5:   #3685da, #4d67aa 35%, #ee5766;
-	$cob:   #6f87ff 25%, #C062FF;
-	$dm:    #81849b 30%, #7a271c;
-	$fmn:   #dca8df, #adb4fa;
-	$mb:    #df5944;
-	$mn:    #517cf1;
-	$ood:   #a05d27 20%, #f7b819;
-	$rb:    #dd5f20, #faa03a;
-	$ut:    #4d8075, #707070;
-	$wir:   #648a80 30%, #bed8be;
-	
-	@include overlay(rb, $rb, Rewinding Breeze);
-	@include overlay(mn, $mn, Maria Nearl);
-	@include overlay(fmn, $fmn, Forget Me Not, true);
-	@include overlay(cc3, $cc3, "Contingency Contract #3");
-	@include overlay(cobr, $cob, "Code of Brawl Re...");
-	@include overlay(mb, $mb, Mansfield Break);
-	@include overlay(bh, $bh, Beyond Here);
-	@include overlay(cc4, $cc4, "Contingency Contract #4");
-	@include overlay(wir, $wir, Who is Real);
-	@include overlay(ood, $ood, Operation Originium Dust);
-	@include overlay(dmr, $dm, Darknights Memoir Rerun);
-	@include overlay(awitd, $awitd, A Walk in the Dust);
-	@include overlay(ut, $ut, "Under Tid...", $override: Under Tides);
-	@include overlay(cc5, $cc5, "C...");
+	div { position: relative }
 }
+
+[class|="filled"]::after {
+	background-color: magenta;
+	content: "\00A0";
+	font-size: 0.87rem;
+	overflow: hidden;
+	padding: 0.2em 0.5em;
+	position: absolute;
+	text-overflow: ellipsis;
+	top: 40%;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.start::after {
+	border-radius: 2px 0 0 2px;
+	left: 10px;
+	width: calc(100% - 10px);
+}
+
+.end::after {
+	border-radius: 0 2px 2px 0;
+	right: 10px;
+	text-align: right;
+	width: calc(100% - 10px);
+}
+
+[title]::after { cursor: help }
+
+@for $i from 0 through 7 {
+	@include width($i);
+}
+
+@include overlay("awitd", "A Walk in the Dust", (hsl(33, 14%, 85%), hsl(201, 19%, 39%), hsl(0, 0%, 35%)));
+@include overlay("bh", "Beyond Here", (hsl(32, 100%, 50%), hsl(51, 100%, 59%)));
+@include overlay("cc3", "Contingency Contract #3", (hsl(271, 28%, 48%), hsl(268, 54%, 73%)));
+@include overlay("cc4", "Contingency Contract #4", (hsl(182, 46%, 42%), hsl(184, 47%, 35%), hsl(222, 60%, 50%)));
+@include overlay("cc5", "Contingency Contract #5", (hsl(211, 69%, 53%), hsl(223, 38%, 48%) 35%, hsl(354, 82%, 64%)));
+@include overlay("cobr", "Code of Brawl Rerun", (hsl(230, 100%, 72%) 25%, hsl(276, 100%, 69%)));
+@include overlay("dmr", "Darknights Memoir Rerun", (hsl(233, 12%, 56%) 30%, hsl(7, 63%, 29%)));
+@include overlay("fmn", "Forget Me Not", (hsl(297, 46%, 77%), hsl(235, 89%, 83%)), true);
+@include overlay("mb", "Mansfield Break", (hsl(8, 71%, 57%)));
+@include overlay("mn", "Maria Nearl", (hsl(224, 85%, 63%)));
+@include overlay("ood", "Operation Originium Dust", (hsl(27, 61%, 39%) 20%, hsl(43, 93%, 53%)));
+@include overlay("rb", "Rewinding Breeze", (hsl(20, 75%, 50%), hsl(32, 95%, 60%)));
+@include overlay("ut", "Under Tides", (hsl(167, 25%, 40%), hsl(0, 0%, 44%)));
+@include overlay("wir", "Who is Real", (hsl(164, 16%, 47%) 30%, hsl(120, 25%, 80%)));
 
 
 
@@ -165,13 +146,10 @@ a {
 	transition-duration: 100ms;
 	width: 50px;
 
-	&:hover {
-		opacity: 0.6;
-	}
+	&:hover { opacity: 0.6 }
 
-	@media (max-width: 800px) {
-		height: 40px;
+	@media (max-width: 880px) {
+		margin: auto;
 		position: initial;
-		width: 100%;
 	}
 }

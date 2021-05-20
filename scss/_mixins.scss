@@ -1,6 +1,6 @@
 @use "sass:string" as *;
 
-// Create dates for calendar table
+// Creates dates for calendar table
 @mixin counter($month, $indent, $outdent: 7) {
 	.#{$month} {
 		counter-reset: $month;
@@ -18,18 +18,17 @@
 	}
 }
 
-// Used to create styles for widths from 0.5/7 to 7/7 for event overlay elements
+// Creates widths for event overlays
 @mixin width($n) {
 	.blank-#{$n}, .filled-#{$n} { width: calc(100% / 7 * #{$n}) }
 	.blank-#{$n}5, .filled-#{$n}5 { width: calc(100% / 7 * #{$n}.5) }
 }
 
-// Label and color event overlays
-@mixin overlay($initials, $color, $name, $italic: false, $override: false) {
-	.#{$initials}.start::after, .#{$initials}.end::after { content: "#{$name}" }
-	.#{$initials}.start ~ .#{$initials}.end::after { content: "" }
-	
-	@if $override { .#{$initials}.end::after { content: "#{$override}" } }
+// Labels and colors event overlays
+@mixin overlay($initials, $name, $color, $italic: false) {
+	.#{$initials}.start::after, .#{$initials}.end::after { content: $name }
+	.#{$initials}.start ~ .#{$initials}.end::after { content: "\00A0" }
+
 	@if $italic { .#{$initials}::after { font-style: italic } }
 
 	@if index(#{$color}, ",") {
