@@ -424,6 +424,18 @@ table td {
   background-image: linear-gradient(90deg, #a05d27 20%, #f7b718);
 }
 
+.pl.start::after, .pl.end::after {
+  content: "Preluding Lights";
+}
+
+.pl.start ~ .pl.end::after {
+  content: " ";
+}
+
+.pl::after {
+  background-image: linear-gradient(90deg, #df7543 20%, #d8d6cf);
+}
+
 .rb.start::after, .rb.end::after {
   content: "Rewinding Breeze";
 }
@@ -434,6 +446,18 @@ table td {
 
 .rb::after {
   background-image: linear-gradient(90deg, #df6020, #fa9f38);
+}
+
+.towr.start::after, .towr.end::after {
+  content: "Twilight of Wolumonde Rerun";
+}
+
+.towr.start ~ .towr.end::after {
+  content: " ";
+}
+
+.towr::after {
+  background-image: linear-gradient(90deg, #d7bf60 40%, #3e3f42);
 }
 
 .ut.start::after, .ut.end::after {

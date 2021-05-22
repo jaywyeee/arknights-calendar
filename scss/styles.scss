@@ -130,7 +130,9 @@ table {
 @include overlay("mb", "Mansfield Break", (hsl(8, 71%, 57%)));
 @include overlay("mn", "Maria Nearl", (hsl(224, 85%, 63%)));
 @include overlay("ood", "Operation Originium Dust", (hsl(27, 61%, 39%) 20%, hsl(43, 93%, 53%)));
+@include overlay("pl", "Preluding Lights", (hsl(19, 71%, 57%) 20%, hsl(42, 11%, 83%)));
 @include overlay("rb", "Rewinding Breeze", (hsl(20, 75%, 50%), hsl(32, 95%, 60%)));
+@include overlay("towr", "Twilight of Wolumonde Rerun", (hsl(48, 60%, 61%) 40%, hsl(225, 3%, 25%)));
 @include overlay("ut", "Under Tides", (hsl(167, 25%, 40%), hsl(0, 0%, 44%)));
 @include overlay("wir", "Who is Real", (hsl(164, 16%, 47%) 30%, hsl(120, 25%, 80%)));
 
