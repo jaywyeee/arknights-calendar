@@ -297,7 +297,7 @@ table td {
 }
 
 .awitd::after {
-  background-image: linear-gradient(90deg, #ded9d3, #516976, #595959);
+  background-image: linear-gradient(90deg, #ded9d3, #7594a6, #7b7b7b);
 }
 
 .bh.start::after, .bh.end::after {
@@ -309,7 +309,7 @@ table td {
 }
 
 .bh::after {
-  background-image: linear-gradient(90deg, #ff8800, #ffe02e);
+  background-image: linear-gradient(90deg, #fb985d, #f0d200);
 }
 
 .cc3.start::after, .cc3.end::after {
@@ -321,7 +321,7 @@ table td {
 }
 
 .cc3::after {
-  background-image: linear-gradient(90deg, #7c589d, #b895df);
+  background-image: linear-gradient(90deg, #9f7ec1, #d7b3ff);
 }
 
 .cc4.start::after, .cc4.end::after {
@@ -333,7 +333,7 @@ table td {
 }
 
 .cc4::after {
-  background-image: linear-gradient(90deg, #3a999c, #2f7e83, #3361cc);
+  background-image: linear-gradient(90deg, #45b5b8, #3d9fa5, #5781f7);
 }
 
 .cc5.start::after, .cc5.end::after {
@@ -345,7 +345,7 @@ table td {
 }
 
 .cc5::after {
-  background-image: linear-gradient(90deg, #3484da, #4c66a9 35%, #ee5867);
+  background-image: linear-gradient(90deg, #4f99f3, #5b7ac8 35%, #f47d86);
 }
 
 .cobr.start::after, .cobr.end::after {
@@ -357,7 +357,7 @@ table td {
 }
 
 .cobr::after {
-  background-image: linear-gradient(90deg, #7088ff 25%, #c061ff);
+  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
 }
 
 .dmr.start::after, .dmr.end::after {
@@ -369,7 +369,7 @@ table td {
 }
 
 .dmr::after {
-  background-image: linear-gradient(90deg, #81849c 30%, #79261b);
+  background-image: linear-gradient(90deg, #9093a8 30%, #c1655d);
 }
 
 .fmn.start::after, .fmn.end::after {
@@ -397,7 +397,7 @@ table td {
 }
 
 .mb::after {
-  background-color: #df5843;
+  background-color: #ff8476;
 }
 
 .mn.start::after, .mn.end::after {
@@ -421,7 +421,7 @@ table td {
 }
 
 .ood::after {
-  background-image: linear-gradient(90deg, #a05d27 20%, #f7b718);
+  background-image: linear-gradient(90deg, #ecaf16 20%, #ce782f);
 }
 
 .pl.start::after, .pl.end::after {
@@ -433,7 +433,7 @@ table td {
 }
 
 .pl::after {
-  background-image: linear-gradient(90deg, #df7543 20%, #d8d6cf);
+  background-image: linear-gradient(90deg, #f3916b 20%, #d8d6cf);
 }
 
 .rb.start::after, .rb.end::after {
@@ -457,7 +457,7 @@ table td {
 }
 
 .towr::after {
-  background-image: linear-gradient(90deg, #d7bf60 40%, #3e3f42);
+  background-image: linear-gradient(90deg, #d7bf60 30%, #55575b);
 }
 
 .ut.start::after, .ut.end::after {
@@ -469,7 +469,7 @@ table td {
 }
 
 .ut::after {
-  background-image: linear-gradient(90deg, #4d8074, #707070);
+  background-image: linear-gradient(90deg, #539485, #8a908e);
 }
 
 .wir.start::after, .wir.end::after {
@@ -481,7 +481,7 @@ table td {
 }
 
 .wir::after {
-  background-image: linear-gradient(90deg, #658b81 30%, #bfd9bf);
+  background-image: linear-gradient(90deg, #7fb2a5 30%, #bfd9bf);
 }
 
 a {

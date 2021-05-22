@@ -119,22 +119,22 @@ table {
 	@include width($i);
 }
 
-@include overlay("awitd", "A Walk in the Dust", (hsl(33, 14%, 85%), hsl(201, 19%, 39%), hsl(0, 0%, 35%)));
-@include overlay("bh", "Beyond Here", (hsl(32, 100%, 50%), hsl(51, 100%, 59%)));
-@include overlay("cc3", "Contingency Contract #3", (hsl(271, 28%, 48%), hsl(268, 54%, 73%)));
-@include overlay("cc4", "Contingency Contract #4", (hsl(182, 46%, 42%), hsl(184, 47%, 35%), hsl(222, 60%, 50%)));
-@include overlay("cc5", "Contingency Contract #5", (hsl(211, 69%, 53%), hsl(223, 38%, 48%) 35%, hsl(354, 82%, 64%)));
-@include overlay("cobr", "Code of Brawl Rerun", (hsl(230, 100%, 72%) 25%, hsl(276, 100%, 69%)));
-@include overlay("dmr", "Darknights Memoir Rerun", (hsl(233, 12%, 56%) 30%, hsl(7, 63%, 29%)));
-@include overlay("fmn", "Forget Me Not", (hsl(297, 46%, 77%), hsl(235, 89%, 83%)), true);
-@include overlay("mb", "Mansfield Break", (hsl(8, 71%, 57%)));
-@include overlay("mn", "Maria Nearl", (hsl(224, 85%, 63%)));
-@include overlay("ood", "Operation Originium Dust", (hsl(27, 61%, 39%) 20%, hsl(43, 93%, 53%)));
-@include overlay("pl", "Preluding Lights", (hsl(19, 71%, 57%) 20%, hsl(42, 11%, 83%)));
-@include overlay("rb", "Rewinding Breeze", (hsl(20, 75%, 50%), hsl(32, 95%, 60%)));
-@include overlay("towr", "Twilight of Wolumonde Rerun", (hsl(48, 60%, 61%) 40%, hsl(225, 3%, 25%)));
-@include overlay("ut", "Under Tides", (hsl(167, 25%, 40%), hsl(0, 0%, 44%)));
-@include overlay("wir", "Who is Real", (hsl(164, 16%, 47%) 30%, hsl(120, 25%, 80%)));
+@include overlay("awitd", "A Walk in the Dust",          (#ded9d3, #7594a6, #7b7b7b));
+@include overlay("bh",    "Beyond Here",                 (#fb985d, #f0d200));
+@include overlay("cc3",   "Contingency Contract #3",     (#9f7ec1, #d7b3ff));
+@include overlay("cc4",   "Contingency Contract #4",     (#45b5b8, #3d9fa5, #5781f7));
+@include overlay("cc5",   "Contingency Contract #5",     (#4f99f3, #5b7ac8 35%, #f47d86));
+@include overlay("cobr",  "Code of Brawl Rerun",         (#758af0 25%, #b975e7));
+@include overlay("dmr",   "Darknights Memoir Rerun",     (#9093a8 30%, #c1655d));
+@include overlay("fmn",   "Forget Me Not",               (#dda9df, #adb3fa), true);
+@include overlay("mb",    "Mansfield Break",             (#ff8476));
+@include overlay("mn",    "Maria Nearl",                 (#507bf1));
+@include overlay("ood",   "Operation Originium Dust",    (#ecaf16 20%, #ce782f));
+@include overlay("pl",    "Preluding Lights",            (#f3916b 20%, #d8d6cf));
+@include overlay("rb",    "Rewinding Breeze",            (#df6020, #fa9f38));
+@include overlay("towr",  "Twilight of Wolumonde Rerun", (#d7bf60 30%, #55575b));
+@include overlay("ut",    "Under Tides",                 (#539485, #8a908e));
+@include overlay("wir",   "Who is Real",                 (#7fb2a5 30%, #bfd9bf));
 
 
 
