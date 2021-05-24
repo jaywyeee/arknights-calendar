@@ -2,12 +2,12 @@
 @use "mixins" as *;
 
 // General
+*, ::after, ::before { box-sizing: border-box }
+
 body {
 	background-color: black;
 	font-family: "Roboto Condensed", sans-serif;
 	margin: 20px;
-
-	*, ::after, ::before { box-sizing: border-box }
 }
 
 main { 

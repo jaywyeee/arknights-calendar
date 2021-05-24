@@ -6,13 +6,13 @@
 		counter-reset: $month;
 		counter-set: $month -#{$indent};
 
-		td::before {
+		td::after {
 			counter-increment: $month;
 			content: counter($month);
 		}
 
-		tr:first-child td:nth-of-type(-n+#{$indent})::before,
-		tr:last-child td:nth-of-type(n+#{1 + $outdent})::before {
+		tr:first-child td:nth-of-type(-n+#{$indent})::after,
+		tr:last-child td:nth-of-type(n+#{1 + $outdent})::after {
 			content: ""
 		}
 	}
