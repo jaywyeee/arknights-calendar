@@ -1,0 +1,45 @@
+@use "mixins" as *;
+
+// Moved to partial to prevent cascade overriding
+[class|="filled"]::after {
+	background-color: magenta;
+	content: "\00A0";
+};
+
+@include overlay("awitd",     "A Walk in the Dust",                                         (#ded9d3, #7594a6, #7b7b7b));
+@include overlay("bh",        "Beyond Here",                                                (#fb985d, #f0d200));
+@include overlay("cc3",       "Contingency Contract #3",                                    (#9f7ec1, #d7b3ff));
+@include overlay("cc4",       "Contingency Contract #4",                                    (#45b5b8, #3d9fa5, #5781f7));
+@include overlay("cc5",       "Contingency Contract #5",                                    (#4f99f3, #5b7ac8 35%, #f47d86));
+@include overlay("cob",       "Code of Brawl",                                              (#758af0 25%, #b975e7));
+@include overlay("cob-cc",    "Code of Brawl + Contingency Contract",                       (#758af0 25%, #b975e7));
+@include overlay("cobr",      "Code of Brawl Rerun",                                        (#758af0 25%, #b975e7));
+@include overlay("dm",        "Darknights Memoir",                                          (#9093a8 30%, #c1655d));
+@include overlay("dmr",       "Darknights Memoir Rerun",                                    (#9093a8 30%, #c1655d));
+@include overlay("fmn",       "Forget Me Not",                                              (#dda9df, #adb3fa), true);
+@include overlay("mb",        "Mansfield Break",                                            (#ff8476));
+@include overlay("mn",        "Maria Nearl",                                                (#507bf1));
+@include overlay("ood-ridp",  "Operation Originium Dust + Rhodes Island Defence Protocols", (#ecaf16 20%, #ce782f));
+@include overlay("pl",        "Preluding Lights",                                           (#f3916b 20%, #d8d6cf));
+@include overlay("rb",        "Rewinding Breeze",                                           (#df6020, #fa9f38));
+@include overlay("tow",       "Twilight of Wolumonde",                                      (#d7bf60 30%, #55575b));
+@include overlay("towr",      "Twilight of Wolumonde Rerun",                                (#d7bf60 30%, #55575b));
+@include overlay("ut",        "Under Tides",                                                (#539485, #8a908e));
+@include overlay("wir",       "Who is Real",                                                (#7fb2a5 30%, #bfd9bf));
+
+@include overlay("gatkt",     "Grani and the Knights' Treasure",                            (white));
+@include overlay("hosf",      "Heart of Surging Flame",                                     (white));
+@include overlay("oi",        "Operational Intelligence",                                   (white));
+@include overlay("af",        "Ancient Forge",                                              (white));
+@include overlay("soa",       "Stories of Afternoon",                                       (white));
+@include overlay("cc0",       "Contingency Contract #0",                                    (white));
+@include overlay("dm-clw",    "Darknights Memoir + Cremation Last Wish",                    (white), true);
+@include overlay("cc1",       "Contingency Contract #1",                                    (white));
+@include overlay("cou",       "Children of Ursus",                                          (white));
+@include overlay("cc2",       "Contingency Contract #2",                                    (white));
+@include overlay("hosfr",     "Heart of Surging Flame Rerun",                               (white));
+@include overlay("gtgcr-cfm", "Gavial the Great Chief Returns + Ceobe's Fungi Mist",        (white), true);
+@include overlay("cfm",       "Ceobe's Fungi Mist",                                         (lightblue));
+@include overlay("gatktr",    "Grani and the Knights' Treasure Rerun",                      (white));
+@include overlay("cc",        "Contingency Contract",                                       (white));
+@include overlay("clw",       "Cremation Last Wish",                                        (lightblue), true);

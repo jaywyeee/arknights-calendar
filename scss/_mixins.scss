@@ -3,16 +3,16 @@
 // Creates dates for calendar table
 @mixin counter($month, $indent, $outdent: 7) {
 	.#{$month} {
-		counter-reset: $month;
-		counter-set: $month -#{$indent};
+		counter-reset: unquote($month);
+		counter-set: #{$month} -#{$indent};
 
 		td::after {
-			counter-increment: $month;
-			content: counter($month);
+			counter-increment: unquote($month);
+			content: counter(unquote($month));
 		}
 
 		tr:first-child td:nth-of-type(-n+#{$indent})::after,
-		tr:last-child td:nth-of-type(n+#{1 + $outdent})::after {
+		tr:last-child td:nth-of-type(n+#{8 - $outdent})::after {
 			content: ""
 		}
 	}

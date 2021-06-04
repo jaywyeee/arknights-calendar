@@ -1,13 +1,19 @@
 @charset "UTF-8";
 @use "mixins" as *;
+@use "counters";
+@use "overlays";
 
 // General
 *, ::after, ::before { box-sizing: border-box }
 
 body {
+	--fonts: "Roboto Condensed", sans-serif;
+	--page-margin: 20px;
+	--gray: hsl(0, 0%, 50%);
+
 	background-color: black;
-	font-family: "Roboto Condensed", sans-serif;
-	margin: 20px;
+	font-family: var(--fonts);
+	margin: var(--page-margin);
 }
 
 main { 
@@ -15,21 +21,66 @@ main {
 	width: min(100%, 600px);
 }
 
-p { color: hsl(0, 0%, 55%) }
+article:not(.selected) { display: none }
+
+p { color: var(--gray) }
 
 ::-webkit-scrollbar {
 	width: 10px;
-	&-thumb { background-color: hsl(0, 0%, 50%) }
+	&-thumb { background-color: var(--gray) }
+}
+
+
+
+// Navigation
+nav {
+	display: flex;
+	gap: 0.4rem;
+	left: var(--page-margin);
+	position: fixed;
+	top: var(--page-margin);
+	width: fit-content;
+
+	@media (min-width: 950px) and (max-width: 1270px) {
+		flex-direction: column;
+	}
+
+	@media (max-width: 950px) {
+		margin: 0 auto 1.4em auto;
+		position: initial;
+	}
+}
+
+button {
+	background-color: transparent;
+	border-radius: 15px;
+	border: 1px solid var(--gray);
+	color: white;
+	cursor: pointer;
+	font-family: var(--fonts);
+	font-size: 1rem;
+	padding: 0.2em 0.7em;
+	transition-duration: 100ms;
+
+	&.selected {
+		background-color: white;
+		border-color: white;
+		color: initial;
+	}
+
+	&:hover { opacity: 0.8 }
+	&:active { opacity: 0.9 }
 }
 
 
 
 // Calendar
 // Header
-header {
-	border-top: 1px solid hsl(0, 0%, 50%);
+h1 {
+	border-top: 1px solid var(--gray);
 	color: white;
 	font-size: 1.2rem;
+	font-weight: normal;
 	margin: 1.1em 0;
 	padding-top: 1.8em;
 
@@ -40,7 +91,7 @@ header {
 }
 
 // Container
-header + div { position: relative }
+article > div { position: relative }
 
 .row-5 {
 	height: 23rem;
@@ -65,18 +116,9 @@ table {
 	}
 }
 
-@include counter(apr-21, 4, 6);
-@include counter(may-21, 6, 2);
-@include counter(jun-21, 2, 4);
-@include counter(jul-21, 4);
-@include counter(aug-21, 0, 3);
-@include counter(sep-21, 3, 5);
-@include counter(oct-21, 5, 1);
-@include counter(nov-21, 1, 3);
-@include counter(dec-21, 3, 6);
-
 // Events
 .events {
+	align-content: flex-start;
 	display: flex;
 	flex-wrap: wrap;
 	height: 100%;
@@ -88,8 +130,7 @@ table {
 }
 
 [class|="filled"]::after {
-	background-color: magenta;
-	content: "\00A0";
+	// Partially in overlay.scss
 	font-size: 0.87rem;
 	overflow: hidden;
 	padding: 0.2em 0.5em;
@@ -119,42 +160,26 @@ table {
 	@include width($i);
 }
 
-@include overlay("awitd", "A Walk in the Dust",          (#ded9d3, #7594a6, #7b7b7b));
-@include overlay("bh",    "Beyond Here",                 (#fb985d, #f0d200));
-@include overlay("cc3",   "Contingency Contract #3",     (#9f7ec1, #d7b3ff));
-@include overlay("cc4",   "Contingency Contract #4",     (#45b5b8, #3d9fa5, #5781f7));
-@include overlay("cc5",   "Contingency Contract #5",     (#4f99f3, #5b7ac8 35%, #f47d86));
-@include overlay("cobr",  "Code of Brawl Rerun",         (#758af0 25%, #b975e7));
-@include overlay("dmr",   "Darknights Memoir Rerun",     (#9093a8 30%, #c1655d));
-@include overlay("fmn",   "Forget Me Not",               (#dda9df, #adb3fa), true);
-@include overlay("mb",    "Mansfield Break",             (#ff8476));
-@include overlay("mn",    "Maria Nearl",                 (#507bf1));
-@include overlay("ood",   "Operation Originium Dust",    (#ecaf16 20%, #ce782f));
-@include overlay("pl",    "Preluding Lights",            (#f3916b 20%, #d8d6cf));
-@include overlay("rb",    "Rewinding Breeze",            (#df6020, #fa9f38));
-@include overlay("towr",  "Twilight of Wolumonde Rerun", (#d7bf60 30%, #55575b));
-@include overlay("ut",    "Under Tides",                 (#539485, #8a908e));
-@include overlay("wir",   "Who is Real",                 (#7fb2a5 30%, #bfd9bf));
-
 
 
 // GitHub link 
 a {
+	--icon-size: 50px;
 	background: center / contain no-repeat url("../svg/github.svg");
-	bottom: 20px;
+	bottom: var(--page-margin);
 	display: block;
-	height: 50px;
+	height: var(--icon-size);
 	position: fixed;
-	right: 20px;
+	right: var(--page-margin);
 	transition-duration: 100ms;
-	width: 50px;
+	width: var(--icon-size);
 
 	&:hover { opacity: 0.6 }
 
-	@media (max-width: 880px) {
-		height: 40px;
-		width: 40px;
+	@media (max-width: 850px) {
+		--icon-size: 40px;
 		margin: auto;
+		margin-top: 1.2rem;
 		position: initial;
 	}
 }

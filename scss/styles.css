@@ -1,69 +1,301 @@
 @charset "UTF-8";
-*, ::after, ::before {
-  box-sizing: border-box;
+.may-19 {
+  counter-reset: may-19;
+  counter-set: may-19 -3;
+}
+.may-19 td::after {
+  counter-increment: may-19;
+  content: counter(may-19);
+}
+.may-19 tr:first-child td:nth-of-type(-n+3)::after,
+.may-19 tr:last-child td:nth-of-type(n+7)::after {
+  content: "";
 }
 
-body {
-  background-color: black;
-  font-family: "Roboto Condensed", sans-serif;
-  margin: 20px;
+.jun-19 {
+  counter-reset: jun-19;
+  counter-set: jun-19 -6;
+}
+.jun-19 td::after {
+  counter-increment: jun-19;
+  content: counter(jun-19);
+}
+.jun-19 tr:first-child td:nth-of-type(-n+6)::after,
+.jun-19 tr:last-child td:nth-of-type(n+2)::after {
+  content: "";
 }
 
-main {
-  margin: auto;
-  width: min(100%, 600px);
+.jul-19 {
+  counter-reset: jul-19;
+  counter-set: jul-19 -1;
+}
+.jul-19 td::after {
+  counter-increment: jul-19;
+  content: counter(jul-19);
+}
+.jul-19 tr:first-child td:nth-of-type(-n+1)::after,
+.jul-19 tr:last-child td:nth-of-type(n+5)::after {
+  content: "";
 }
 
-p {
-  color: #8c8c8c;
+.aug-19 {
+  counter-reset: aug-19;
+  counter-set: aug-19 -4;
+}
+.aug-19 td::after {
+  counter-increment: aug-19;
+  content: counter(aug-19);
+}
+.aug-19 tr:first-child td:nth-of-type(-n+4)::after,
+.aug-19 tr:last-child td:nth-of-type(n+8)::after {
+  content: "";
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+.sep-19 {
+  counter-reset: sep-19;
+  counter-set: sep-19 -0;
 }
-::-webkit-scrollbar-thumb {
-  background-color: gray;
+.sep-19 td::after {
+  counter-increment: sep-19;
+  content: counter(sep-19);
 }
-
-header {
-  border-top: 1px solid gray;
-  color: white;
-  font-size: 1.2rem;
-  margin: 1.1em 0;
-  padding-top: 1.8em;
-}
-header:first-of-type {
-  border: none;
-  padding-top: 0.5em;
+.sep-19 tr:first-child td:nth-of-type(-n+0)::after,
+.sep-19 tr:last-child td:nth-of-type(n+3)::after {
+  content: "";
 }
 
-header + div {
-  position: relative;
+.oct-19 {
+  counter-reset: oct-19;
+  counter-set: oct-19 -2;
+}
+.oct-19 td::after {
+  counter-increment: oct-19;
+  content: counter(oct-19);
+}
+.oct-19 tr:first-child td:nth-of-type(-n+2)::after,
+.oct-19 tr:last-child td:nth-of-type(n+6)::after {
+  content: "";
 }
 
-.row-5 {
-  height: 23rem;
+.nov-19 {
+  counter-reset: nov-19;
+  counter-set: nov-19 -5;
 }
-.row-5 tr, .row-5 .events div {
-  height: calc(100% / 5);
+.nov-19 td::after {
+  counter-increment: nov-19;
+  content: counter(nov-19);
+}
+.nov-19 tr:first-child td:nth-of-type(-n+5)::after,
+.nov-19 tr:last-child td:nth-of-type(n+8)::after {
+  content: "";
 }
 
-.row-6 {
-  height: 27.6rem;
+.dec-19 {
+  counter-reset: dec-19;
+  counter-set: dec-19 -0;
 }
-.row-6 tr, .row-6 .events div {
-  height: calc(100% / 6);
+.dec-19 td::after {
+  counter-increment: dec-19;
+  content: counter(dec-19);
+}
+.dec-19 tr:first-child td:nth-of-type(-n+0)::after,
+.dec-19 tr:last-child td:nth-of-type(n+4)::after {
+  content: "";
 }
 
-table {
-  height: 100%;
-  width: 100%;
+.jan-20 {
+  counter-reset: jan-20;
+  counter-set: jan-20 -3;
 }
-table td {
-  color: white;
-  font-size: 0.75rem;
-  vertical-align: top;
-  width: calc(100% / 7);
+.jan-20 td::after {
+  counter-increment: jan-20;
+  content: counter(jan-20);
+}
+.jan-20 tr:first-child td:nth-of-type(-n+3)::after,
+.jan-20 tr:last-child td:nth-of-type(n+7)::after {
+  content: "";
+}
+
+.feb-20 {
+  counter-reset: feb-20;
+  counter-set: feb-20 -6;
+}
+.feb-20 td::after {
+  counter-increment: feb-20;
+  content: counter(feb-20);
+}
+.feb-20 tr:first-child td:nth-of-type(-n+6)::after,
+.feb-20 tr:last-child td:nth-of-type(n+8)::after {
+  content: "";
+}
+
+.mar-20 {
+  counter-reset: mar-20;
+  counter-set: mar-20 -0;
+}
+.mar-20 td::after {
+  counter-increment: mar-20;
+  content: counter(mar-20);
+}
+.mar-20 tr:first-child td:nth-of-type(-n+0)::after,
+.mar-20 tr:last-child td:nth-of-type(n+4)::after {
+  content: "";
+}
+
+.apr-20 {
+  counter-reset: apr-20;
+  counter-set: apr-20 -3;
+}
+.apr-20 td::after {
+  counter-increment: apr-20;
+  content: counter(apr-20);
+}
+.apr-20 tr:first-child td:nth-of-type(-n+3)::after,
+.apr-20 tr:last-child td:nth-of-type(n+6)::after {
+  content: "";
+}
+
+.may-20 {
+  counter-reset: may-20;
+  counter-set: may-20 -5;
+}
+.may-20 td::after {
+  counter-increment: may-20;
+  content: counter(may-20);
+}
+.may-20 tr:first-child td:nth-of-type(-n+5)::after,
+.may-20 tr:last-child td:nth-of-type(n+2)::after {
+  content: "";
+}
+
+.jun-20 {
+  counter-reset: jun-20;
+  counter-set: jun-20 -1;
+}
+.jun-20 td::after {
+  counter-increment: jun-20;
+  content: counter(jun-20);
+}
+.jun-20 tr:first-child td:nth-of-type(-n+1)::after,
+.jun-20 tr:last-child td:nth-of-type(n+4)::after {
+  content: "";
+}
+
+.jul-20 {
+  counter-reset: jul-20;
+  counter-set: jul-20 -3;
+}
+.jul-20 td::after {
+  counter-increment: jul-20;
+  content: counter(jul-20);
+}
+.jul-20 tr:first-child td:nth-of-type(-n+3)::after,
+.jul-20 tr:last-child td:nth-of-type(n+7)::after {
+  content: "";
+}
+
+.aug-20 {
+  counter-reset: aug-20;
+  counter-set: aug-20 -6;
+}
+.aug-20 td::after {
+  counter-increment: aug-20;
+  content: counter(aug-20);
+}
+.aug-20 tr:first-child td:nth-of-type(-n+6)::after,
+.aug-20 tr:last-child td:nth-of-type(n+3)::after {
+  content: "";
+}
+
+.sep-20 {
+  counter-reset: sep-20;
+  counter-set: sep-20 -2;
+}
+.sep-20 td::after {
+  counter-increment: sep-20;
+  content: counter(sep-20);
+}
+.sep-20 tr:first-child td:nth-of-type(-n+2)::after,
+.sep-20 tr:last-child td:nth-of-type(n+5)::after {
+  content: "";
+}
+
+.oct-20 {
+  counter-reset: oct-20;
+  counter-set: oct-20 -4;
+}
+.oct-20 td::after {
+  counter-increment: oct-20;
+  content: counter(oct-20);
+}
+.oct-20 tr:first-child td:nth-of-type(-n+4)::after,
+.oct-20 tr:last-child td:nth-of-type(n+8)::after {
+  content: "";
+}
+
+.nov-20 {
+  counter-reset: nov-20;
+  counter-set: nov-20 -0;
+}
+.nov-20 td::after {
+  counter-increment: nov-20;
+  content: counter(nov-20);
+}
+.nov-20 tr:first-child td:nth-of-type(-n+0)::after,
+.nov-20 tr:last-child td:nth-of-type(n+3)::after {
+  content: "";
+}
+
+.dec-20 {
+  counter-reset: dec-20;
+  counter-set: dec-20 -2;
+}
+.dec-20 td::after {
+  counter-increment: dec-20;
+  content: counter(dec-20);
+}
+.dec-20 tr:first-child td:nth-of-type(-n+2)::after,
+.dec-20 tr:last-child td:nth-of-type(n+6)::after {
+  content: "";
+}
+
+.jan-21 {
+  counter-reset: jan-21;
+  counter-set: jan-21 -5;
+}
+.jan-21 td::after {
+  counter-increment: jan-21;
+  content: counter(jan-21);
+}
+.jan-21 tr:first-child td:nth-of-type(-n+5)::after,
+.jan-21 tr:last-child td:nth-of-type(n+2)::after {
+  content: "";
+}
+
+.feb-21 {
+  counter-reset: feb-21;
+  counter-set: feb-21 -1;
+}
+.feb-21 td::after {
+  counter-increment: feb-21;
+  content: counter(feb-21);
+}
+.feb-21 tr:first-child td:nth-of-type(-n+1)::after,
+.feb-21 tr:last-child td:nth-of-type(n+2)::after {
+  content: "";
+}
+
+.mar-21 {
+  counter-reset: mar-21;
+  counter-set: mar-21 -1;
+}
+.mar-21 td::after {
+  counter-increment: mar-21;
+  content: counter(mar-21);
+}
+.mar-21 tr:first-child td:nth-of-type(-n+1)::after,
+.mar-21 tr:last-child td:nth-of-type(n+5)::after {
+  content: "";
 }
 
 .apr-21 {
@@ -183,7 +415,594 @@ table td {
   content: "";
 }
 
+.jan-22 {
+  counter-reset: jan-22;
+  counter-set: jan-22 -6;
+}
+.jan-22 td::after {
+  counter-increment: jan-22;
+  content: counter(jan-22);
+}
+.jan-22 tr:first-child td:nth-of-type(-n+6)::after,
+.jan-22 tr:last-child td:nth-of-type(n+3)::after {
+  content: "";
+}
+
+[class|=filled]::after {
+  background-color: magenta;
+  content: " ";
+}
+
+.awitd.start::after, .awitd.end::after {
+  content: "A Walk in the Dust";
+}
+
+.awitd.start ~ .awitd.end::after {
+  content: " ";
+}
+
+.awitd::after {
+  background-image: linear-gradient(90deg, #ded9d3, #7594a6, #7b7b7b);
+}
+
+.bh.start::after, .bh.end::after {
+  content: "Beyond Here";
+}
+
+.bh.start ~ .bh.end::after {
+  content: " ";
+}
+
+.bh::after {
+  background-image: linear-gradient(90deg, #fb985d, #f0d200);
+}
+
+.cc3.start::after, .cc3.end::after {
+  content: "Contingency Contract #3";
+}
+
+.cc3.start ~ .cc3.end::after {
+  content: " ";
+}
+
+.cc3::after {
+  background-image: linear-gradient(90deg, #9f7ec1, #d7b3ff);
+}
+
+.cc4.start::after, .cc4.end::after {
+  content: "Contingency Contract #4";
+}
+
+.cc4.start ~ .cc4.end::after {
+  content: " ";
+}
+
+.cc4::after {
+  background-image: linear-gradient(90deg, #45b5b8, #3d9fa5, #5781f7);
+}
+
+.cc5.start::after, .cc5.end::after {
+  content: "Contingency Contract #5";
+}
+
+.cc5.start ~ .cc5.end::after {
+  content: " ";
+}
+
+.cc5::after {
+  background-image: linear-gradient(90deg, #4f99f3, #5b7ac8 35%, #f47d86);
+}
+
+.cob.start::after, .cob.end::after {
+  content: "Code of Brawl";
+}
+
+.cob.start ~ .cob.end::after {
+  content: " ";
+}
+
+.cob::after {
+  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
+}
+
+.cob-cc.start::after, .cob-cc.end::after {
+  content: "Code of Brawl + Contingency Contract";
+}
+
+.cob-cc.start ~ .cob-cc.end::after {
+  content: " ";
+}
+
+.cob-cc::after {
+  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
+}
+
+.cobr.start::after, .cobr.end::after {
+  content: "Code of Brawl Rerun";
+}
+
+.cobr.start ~ .cobr.end::after {
+  content: " ";
+}
+
+.cobr::after {
+  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
+}
+
+.dm.start::after, .dm.end::after {
+  content: "Darknights Memoir";
+}
+
+.dm.start ~ .dm.end::after {
+  content: " ";
+}
+
+.dm::after {
+  background-image: linear-gradient(90deg, #9093a8 30%, #c1655d);
+}
+
+.dmr.start::after, .dmr.end::after {
+  content: "Darknights Memoir Rerun";
+}
+
+.dmr.start ~ .dmr.end::after {
+  content: " ";
+}
+
+.dmr::after {
+  background-image: linear-gradient(90deg, #9093a8 30%, #c1655d);
+}
+
+.fmn.start::after, .fmn.end::after {
+  content: "Forget Me Not";
+}
+
+.fmn.start ~ .fmn.end::after {
+  content: " ";
+}
+
+.fmn::after {
+  font-style: italic;
+}
+
+.fmn::after {
+  background-image: linear-gradient(90deg, #dda9df, #adb3fa);
+}
+
+.mb.start::after, .mb.end::after {
+  content: "Mansfield Break";
+}
+
+.mb.start ~ .mb.end::after {
+  content: " ";
+}
+
+.mb::after {
+  background-color: #ff8476;
+}
+
+.mn.start::after, .mn.end::after {
+  content: "Maria Nearl";
+}
+
+.mn.start ~ .mn.end::after {
+  content: " ";
+}
+
+.mn::after {
+  background-color: #507bf1;
+}
+
+.ood-ridp.start::after, .ood-ridp.end::after {
+  content: "Operation Originium Dust + Rhodes Island Defence Protocols";
+}
+
+.ood-ridp.start ~ .ood-ridp.end::after {
+  content: " ";
+}
+
+.ood-ridp::after {
+  background-image: linear-gradient(90deg, #ecaf16 20%, #ce782f);
+}
+
+.pl.start::after, .pl.end::after {
+  content: "Preluding Lights";
+}
+
+.pl.start ~ .pl.end::after {
+  content: " ";
+}
+
+.pl::after {
+  background-image: linear-gradient(90deg, #f3916b 20%, #d8d6cf);
+}
+
+.rb.start::after, .rb.end::after {
+  content: "Rewinding Breeze";
+}
+
+.rb.start ~ .rb.end::after {
+  content: " ";
+}
+
+.rb::after {
+  background-image: linear-gradient(90deg, #df6020, #fa9f38);
+}
+
+.tow.start::after, .tow.end::after {
+  content: "Twilight of Wolumonde";
+}
+
+.tow.start ~ .tow.end::after {
+  content: " ";
+}
+
+.tow::after {
+  background-image: linear-gradient(90deg, #d7bf60 30%, #55575b);
+}
+
+.towr.start::after, .towr.end::after {
+  content: "Twilight of Wolumonde Rerun";
+}
+
+.towr.start ~ .towr.end::after {
+  content: " ";
+}
+
+.towr::after {
+  background-image: linear-gradient(90deg, #d7bf60 30%, #55575b);
+}
+
+.ut.start::after, .ut.end::after {
+  content: "Under Tides";
+}
+
+.ut.start ~ .ut.end::after {
+  content: " ";
+}
+
+.ut::after {
+  background-image: linear-gradient(90deg, #539485, #8a908e);
+}
+
+.wir.start::after, .wir.end::after {
+  content: "Who is Real";
+}
+
+.wir.start ~ .wir.end::after {
+  content: " ";
+}
+
+.wir::after {
+  background-image: linear-gradient(90deg, #7fb2a5 30%, #bfd9bf);
+}
+
+.gatkt.start::after, .gatkt.end::after {
+  content: "Grani and the Knights' Treasure";
+}
+
+.gatkt.start ~ .gatkt.end::after {
+  content: " ";
+}
+
+.gatkt::after {
+  background-color: white;
+}
+
+.hosf.start::after, .hosf.end::after {
+  content: "Heart of Surging Flame";
+}
+
+.hosf.start ~ .hosf.end::after {
+  content: " ";
+}
+
+.hosf::after {
+  background-color: white;
+}
+
+.oi.start::after, .oi.end::after {
+  content: "Operational Intelligence";
+}
+
+.oi.start ~ .oi.end::after {
+  content: " ";
+}
+
+.oi::after {
+  background-color: white;
+}
+
+.af.start::after, .af.end::after {
+  content: "Ancient Forge";
+}
+
+.af.start ~ .af.end::after {
+  content: " ";
+}
+
+.af::after {
+  background-color: white;
+}
+
+.soa.start::after, .soa.end::after {
+  content: "Stories of Afternoon";
+}
+
+.soa.start ~ .soa.end::after {
+  content: " ";
+}
+
+.soa::after {
+  background-color: white;
+}
+
+.cc0.start::after, .cc0.end::after {
+  content: "Contingency Contract #0";
+}
+
+.cc0.start ~ .cc0.end::after {
+  content: " ";
+}
+
+.cc0::after {
+  background-color: white;
+}
+
+.dm-clw.start::after, .dm-clw.end::after {
+  content: "Darknights Memoir + Cremation Last Wish";
+}
+
+.dm-clw.start ~ .dm-clw.end::after {
+  content: " ";
+}
+
+.dm-clw::after {
+  font-style: italic;
+}
+
+.dm-clw::after {
+  background-color: white;
+}
+
+.cc1.start::after, .cc1.end::after {
+  content: "Contingency Contract #1";
+}
+
+.cc1.start ~ .cc1.end::after {
+  content: " ";
+}
+
+.cc1::after {
+  background-color: white;
+}
+
+.cou.start::after, .cou.end::after {
+  content: "Children of Ursus";
+}
+
+.cou.start ~ .cou.end::after {
+  content: " ";
+}
+
+.cou::after {
+  background-color: white;
+}
+
+.cc2.start::after, .cc2.end::after {
+  content: "Contingency Contract #2";
+}
+
+.cc2.start ~ .cc2.end::after {
+  content: " ";
+}
+
+.cc2::after {
+  background-color: white;
+}
+
+.hosfr.start::after, .hosfr.end::after {
+  content: "Heart of Surging Flame Rerun";
+}
+
+.hosfr.start ~ .hosfr.end::after {
+  content: " ";
+}
+
+.hosfr::after {
+  background-color: white;
+}
+
+.gtgcr-cfm.start::after, .gtgcr-cfm.end::after {
+  content: "Gavial the Great Chief Returns + Ceobe's Fungi Mist";
+}
+
+.gtgcr-cfm.start ~ .gtgcr-cfm.end::after {
+  content: " ";
+}
+
+.gtgcr-cfm::after {
+  font-style: italic;
+}
+
+.gtgcr-cfm::after {
+  background-color: white;
+}
+
+.cfm.start::after, .cfm.end::after {
+  content: "Ceobe's Fungi Mist";
+}
+
+.cfm.start ~ .cfm.end::after {
+  content: " ";
+}
+
+.cfm::after {
+  background-color: lightblue;
+}
+
+.gatktr.start::after, .gatktr.end::after {
+  content: "Grani and the Knights' Treasure Rerun";
+}
+
+.gatktr.start ~ .gatktr.end::after {
+  content: " ";
+}
+
+.gatktr::after {
+  background-color: white;
+}
+
+.cc.start::after, .cc.end::after {
+  content: "Contingency Contract";
+}
+
+.cc.start ~ .cc.end::after {
+  content: " ";
+}
+
+.cc::after {
+  background-color: white;
+}
+
+.clw.start::after, .clw.end::after {
+  content: "Cremation Last Wish";
+}
+
+.clw.start ~ .clw.end::after {
+  content: " ";
+}
+
+.clw::after {
+  font-style: italic;
+}
+
+.clw::after {
+  background-color: lightblue;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  --fonts: "Roboto Condensed", sans-serif;
+  --page-margin: 20px;
+  --gray: hsl(0, 0%, 50%);
+  background-color: black;
+  font-family: var(--fonts);
+  margin: var(--page-margin);
+}
+
+main {
+  margin: auto;
+  width: min(100%, 600px);
+}
+
+article:not(.selected) {
+  display: none;
+}
+
+p {
+  color: var(--gray);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+}
+
+nav {
+  display: flex;
+  gap: 0.4rem;
+  left: var(--page-margin);
+  position: fixed;
+  top: var(--page-margin);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 950px) and (max-width: 1270px) {
+  nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 950px) {
+  nav {
+    margin: 0 auto 1.4em auto;
+    position: initial;
+  }
+}
+
+button {
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid var(--gray);
+  color: white;
+  cursor: pointer;
+  font-family: var(--fonts);
+  font-size: 1rem;
+  padding: 0.2em 0.7em;
+  transition-duration: 100ms;
+}
+button.selected {
+  background-color: white;
+  border-color: white;
+  color: initial;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  opacity: 0.9;
+}
+
+h1 {
+  border-top: 1px solid var(--gray);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 1.1em 0;
+  padding-top: 1.8em;
+}
+h1:first-of-type {
+  border: none;
+  padding-top: 0.5em;
+}
+
+article > div {
+  position: relative;
+}
+
+.row-5 {
+  height: 23rem;
+}
+.row-5 tr, .row-5 .events div {
+  height: calc(100% / 5);
+}
+
+.row-6 {
+  height: 27.6rem;
+}
+.row-6 tr, .row-6 .events div {
+  height: calc(100% / 6);
+}
+
+table {
+  height: 100%;
+  width: 100%;
+}
+table td {
+  color: white;
+  font-size: 0.75rem;
+  vertical-align: top;
+  width: calc(100% / 7);
+}
+
 .events {
+  align-content: flex-start;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -196,8 +1015,6 @@ table td {
 }
 
 [class|=filled]::after {
-  background-color: magenta;
-  content: " ";
   font-size: 0.87rem;
   overflow: hidden;
   padding: 0.2em 0.5em;
@@ -289,220 +1106,25 @@ table td {
   width: calc(100% / 7 * 7.5);
 }
 
-.awitd.start::after, .awitd.end::after {
-  content: "A Walk in the Dust";
-}
-
-.awitd.start ~ .awitd.end::after {
-  content: " ";
-}
-
-.awitd::after {
-  background-image: linear-gradient(90deg, #ded9d3, #7594a6, #7b7b7b);
-}
-
-.bh.start::after, .bh.end::after {
-  content: "Beyond Here";
-}
-
-.bh.start ~ .bh.end::after {
-  content: " ";
-}
-
-.bh::after {
-  background-image: linear-gradient(90deg, #fb985d, #f0d200);
-}
-
-.cc3.start::after, .cc3.end::after {
-  content: "Contingency Contract #3";
-}
-
-.cc3.start ~ .cc3.end::after {
-  content: " ";
-}
-
-.cc3::after {
-  background-image: linear-gradient(90deg, #9f7ec1, #d7b3ff);
-}
-
-.cc4.start::after, .cc4.end::after {
-  content: "Contingency Contract #4";
-}
-
-.cc4.start ~ .cc4.end::after {
-  content: " ";
-}
-
-.cc4::after {
-  background-image: linear-gradient(90deg, #45b5b8, #3d9fa5, #5781f7);
-}
-
-.cc5.start::after, .cc5.end::after {
-  content: "Contingency Contract #5";
-}
-
-.cc5.start ~ .cc5.end::after {
-  content: " ";
-}
-
-.cc5::after {
-  background-image: linear-gradient(90deg, #4f99f3, #5b7ac8 35%, #f47d86);
-}
-
-.cobr.start::after, .cobr.end::after {
-  content: "Code of Brawl Rerun";
-}
-
-.cobr.start ~ .cobr.end::after {
-  content: " ";
-}
-
-.cobr::after {
-  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
-}
-
-.dmr.start::after, .dmr.end::after {
-  content: "Darknights Memoir Rerun";
-}
-
-.dmr.start ~ .dmr.end::after {
-  content: " ";
-}
-
-.dmr::after {
-  background-image: linear-gradient(90deg, #9093a8 30%, #c1655d);
-}
-
-.fmn.start::after, .fmn.end::after {
-  content: "Forget Me Not";
-}
-
-.fmn.start ~ .fmn.end::after {
-  content: " ";
-}
-
-.fmn::after {
-  font-style: italic;
-}
-
-.fmn::after {
-  background-image: linear-gradient(90deg, #dda9df, #adb3fa);
-}
-
-.mb.start::after, .mb.end::after {
-  content: "Mansfield Break";
-}
-
-.mb.start ~ .mb.end::after {
-  content: " ";
-}
-
-.mb::after {
-  background-color: #ff8476;
-}
-
-.mn.start::after, .mn.end::after {
-  content: "Maria Nearl";
-}
-
-.mn.start ~ .mn.end::after {
-  content: " ";
-}
-
-.mn::after {
-  background-color: #507bf1;
-}
-
-.ood.start::after, .ood.end::after {
-  content: "Operation Originium Dust";
-}
-
-.ood.start ~ .ood.end::after {
-  content: " ";
-}
-
-.ood::after {
-  background-image: linear-gradient(90deg, #ecaf16 20%, #ce782f);
-}
-
-.pl.start::after, .pl.end::after {
-  content: "Preluding Lights";
-}
-
-.pl.start ~ .pl.end::after {
-  content: " ";
-}
-
-.pl::after {
-  background-image: linear-gradient(90deg, #f3916b 20%, #d8d6cf);
-}
-
-.rb.start::after, .rb.end::after {
-  content: "Rewinding Breeze";
-}
-
-.rb.start ~ .rb.end::after {
-  content: " ";
-}
-
-.rb::after {
-  background-image: linear-gradient(90deg, #df6020, #fa9f38);
-}
-
-.towr.start::after, .towr.end::after {
-  content: "Twilight of Wolumonde Rerun";
-}
-
-.towr.start ~ .towr.end::after {
-  content: " ";
-}
-
-.towr::after {
-  background-image: linear-gradient(90deg, #d7bf60 30%, #55575b);
-}
-
-.ut.start::after, .ut.end::after {
-  content: "Under Tides";
-}
-
-.ut.start ~ .ut.end::after {
-  content: " ";
-}
-
-.ut::after {
-  background-image: linear-gradient(90deg, #539485, #8a908e);
-}
-
-.wir.start::after, .wir.end::after {
-  content: "Who is Real";
-}
-
-.wir.start ~ .wir.end::after {
-  content: " ";
-}
-
-.wir::after {
-  background-image: linear-gradient(90deg, #7fb2a5 30%, #bfd9bf);
-}
-
 a {
+  --icon-size: 50px;
   background: center/contain no-repeat url("../svg/github.svg");
-  bottom: 20px;
+  bottom: var(--page-margin);
   display: block;
-  height: 50px;
+  height: var(--icon-size);
   position: fixed;
-  right: 20px;
+  right: var(--page-margin);
   transition-duration: 100ms;
-  width: 50px;
+  width: var(--icon-size);
 }
 a:hover {
   opacity: 0.6;
 }
-@media (max-width: 880px) {
+@media (max-width: 850px) {
   a {
-    height: 40px;
-    width: 40px;
+    --icon-size: 40px;
     margin: auto;
+    margin-top: 1.2rem;
     position: initial;
   }
 }/*# sourceMappingURL=styles.css.map */
