@@ -154,6 +154,8 @@ table {
 	width: calc(100% - 10px);
 }
 
+.italic::after { font-style: italic }
+
 [title]::after { cursor: help }
 
 @for $i from 0 through 7 {

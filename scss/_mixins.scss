@@ -25,11 +25,9 @@
 }
 
 // Labels and colors event overlays
-@mixin overlay($initials, $name, $color, $italic: false) {
+@mixin overlay($initials, $name, $color) {
 	.#{$initials}.start::after, .#{$initials}.end::after { content: $name }
 	.#{$initials}.start ~ .#{$initials}.end::after { content: "\00A0" }
-
-	@if $italic { .#{$initials}::after { font-style: italic } }
 
 	@if index(#{$color}, ",") {
 		.#{$initials}::after { background-image: linear-gradient(90deg, $color) }

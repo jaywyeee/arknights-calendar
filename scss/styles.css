@@ -433,6 +433,18 @@
   content: " ";
 }
 
+.af.start::after, .af.end::after {
+  content: "Ancient Forge";
+}
+
+.af.start ~ .af.end::after {
+  content: " ";
+}
+
+.af::after {
+  background-image: linear-gradient(90deg, #b8b8b8 20%, #ac2021);
+}
+
 .awitd.start::after, .awitd.end::after {
   content: "A Walk in the Dust";
 }
@@ -454,7 +466,55 @@
 }
 
 .bh::after {
-  background-image: linear-gradient(90deg, #fb985d, #f0d200);
+  background-image: linear-gradient(90deg, #fb985d, #fbce00);
+}
+
+.cc.start::after, .cc.end::after {
+  content: "Contingency Contract";
+}
+
+.cc.start ~ .cc.end::after {
+  content: " ";
+}
+
+.cc::after {
+  background-image: linear-gradient(90deg, #b79a8f, #867068);
+}
+
+.cc0.start::after, .cc0.end::after {
+  content: "Contingency Contract #0";
+}
+
+.cc0.start ~ .cc0.end::after {
+  content: " ";
+}
+
+.cc0::after {
+  background-image: linear-gradient(90deg, #f07373, #d63636);
+}
+
+.cc1.start::after, .cc1.end::after {
+  content: "Contingency Contract #1";
+}
+
+.cc1.start ~ .cc1.end::after {
+  content: " ";
+}
+
+.cc1::after {
+  background-image: linear-gradient(90deg, #f7dc5a, #c38921);
+}
+
+.cc2.start::after, .cc2.end::after {
+  content: "Contingency Contract #2";
+}
+
+.cc2.start ~ .cc2.end::after {
+  content: " ";
+}
+
+.cc2::after {
+  background-image: linear-gradient(90deg, #ff8d6a, #fd4b42);
 }
 
 .cc3.start::after, .cc3.end::after {
@@ -490,7 +550,31 @@
 }
 
 .cc5::after {
-  background-image: linear-gradient(90deg, #4f99f3, #5b7ac8 35%, #f47d86);
+  background-image: linear-gradient(90deg, #4f99f3, #f5858d);
+}
+
+.cfm.start::after, .cfm.end::after {
+  content: "Ceobe's Fungi Mist";
+}
+
+.cfm.start ~ .cfm.end::after {
+  content: " ";
+}
+
+.cfm::after {
+  background-color: #76d6f7;
+}
+
+.clw.start::after, .clw.end::after {
+  content: "Cremation Last Wish";
+}
+
+.clw.start ~ .clw.end::after {
+  content: " ";
+}
+
+.clw::after {
+  background-image: linear-gradient(90deg, #cbc46f, #db8396);
 }
 
 .cob.start::after, .cob.end::after {
@@ -502,7 +586,7 @@
 }
 
 .cob::after {
-  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
+  background-image: linear-gradient(90deg, #8094f8 25%, #c07dee);
 }
 
 .cob-cc.start::after, .cob-cc.end::after {
@@ -514,7 +598,7 @@
 }
 
 .cob-cc::after {
-  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
+  background-image: linear-gradient(90deg, #8094f8 25%, #c07dee);
 }
 
 .cobr.start::after, .cobr.end::after {
@@ -526,7 +610,19 @@
 }
 
 .cobr::after {
-  background-image: linear-gradient(90deg, #758af0 25%, #b975e7);
+  background-image: linear-gradient(90deg, #8094f8 25%, #c07dee);
+}
+
+.cou.start::after, .cou.end::after {
+  content: "Children of Ursus";
+}
+
+.cou.start ~ .cou.end::after {
+  content: " ";
+}
+
+.cou::after {
+  background-image: linear-gradient(90deg, #f5a204, #f3781e);
 }
 
 .dm.start::after, .dm.end::after {
@@ -539,6 +635,18 @@
 
 .dm::after {
   background-image: linear-gradient(90deg, #9093a8 30%, #c1655d);
+}
+
+.dm-clw.start::after, .dm-clw.end::after {
+  content: "Darknights Memoir + Cremation Last Wish";
+}
+
+.dm-clw.start ~ .dm-clw.end::after {
+  content: " ";
+}
+
+.dm-clw::after {
+  background-color: #adafc0;
 }
 
 .dmr.start::after, .dmr.end::after {
@@ -562,11 +670,67 @@
 }
 
 .fmn::after {
-  font-style: italic;
+  background-image: linear-gradient(90deg, #dda9df, #adb3fa);
 }
 
-.fmn::after {
-  background-image: linear-gradient(90deg, #dda9df, #adb3fa);
+.gatkt.start::after, .gatkt.end::after {
+  content: "Grani and the Knights' Treasure";
+}
+
+.gatkt.start ~ .gatkt.end::after {
+  content: " ";
+}
+
+.gatkt::after {
+  background-color: #b1acb1;
+}
+
+.gatktr.start::after, .gatktr.end::after {
+  content: "Grani and the Knights' Treasure Rerun";
+}
+
+.gatktr.start ~ .gatktr.end::after {
+  content: " ";
+}
+
+.gatktr::after {
+  background-color: #b1acb1;
+}
+
+.gtgcr-cfm.start::after, .gtgcr-cfm.end::after {
+  content: "Gavial the Great Chief Returns + Ceobe's Fungi Mist";
+}
+
+.gtgcr-cfm.start ~ .gtgcr-cfm.end::after {
+  content: " ";
+}
+
+.gtgcr-cfm::after {
+  background-image: linear-gradient(90deg, #00fdfb, #6870ff);
+}
+
+.hosf.start::after, .hosf.end::after {
+  content: "Heart of Surging Flame";
+}
+
+.hosf.start ~ .hosf.end::after {
+  content: " ";
+}
+
+.hosf::after {
+  background-image: linear-gradient(90deg, #d9e6df, #a4fdfd);
+}
+
+.hosfr.start::after, .hosfr.end::after {
+  content: "Heart of Surging Flame Rerun";
+}
+
+.hosfr.start ~ .hosfr.end::after {
+  content: " ";
+}
+
+.hosfr::after {
+  background-image: linear-gradient(90deg, #d9e6df, #a4fdfd);
 }
 
 .mb.start::after, .mb.end::after {
@@ -578,7 +742,7 @@
 }
 
 .mb::after {
-  background-color: #ff8476;
+  background-color: #e37e74;
 }
 
 .mn.start::after, .mn.end::after {
@@ -590,7 +754,19 @@
 }
 
 .mn::after {
-  background-color: #507bf1;
+  background-color: #6a8eff;
+}
+
+.oi.start::after, .oi.end::after {
+  content: "Operational Intelligence";
+}
+
+.oi.start ~ .oi.end::after {
+  content: " ";
+}
+
+.oi::after {
+  background-color: #e8d138;
 }
 
 .ood-ridp.start::after, .ood-ridp.end::after {
@@ -602,7 +778,7 @@
 }
 
 .ood-ridp::after {
-  background-image: linear-gradient(90deg, #ecaf16 20%, #ce782f);
+  background-image: linear-gradient(90deg, #ecaf28 20%, #ce782f);
 }
 
 .pl.start::after, .pl.end::after {
@@ -614,7 +790,7 @@
 }
 
 .pl::after {
-  background-image: linear-gradient(90deg, #f3916b 20%, #d8d6cf);
+  background-image: linear-gradient(90deg, #e78f70 20%, #d8d6cf);
 }
 
 .rb.start::after, .rb.end::after {
@@ -626,7 +802,19 @@
 }
 
 .rb::after {
-  background-image: linear-gradient(90deg, #df6020, #fa9f38);
+  background-image: linear-gradient(90deg, #ff7c4a, #fa9f38);
+}
+
+.soa.start::after, .soa.end::after {
+  content: "Stories of Afternoon";
+}
+
+.soa.start ~ .soa.end::after {
+  content: " ";
+}
+
+.soa::after {
+  background-image: linear-gradient(90deg, #0bb1fe, #2a82ff);
 }
 
 .tow.start::after, .tow.end::after {
@@ -638,7 +826,7 @@
 }
 
 .tow::after {
-  background-image: linear-gradient(90deg, #d7bf60 30%, #55575b);
+  background-image: linear-gradient(90deg, #d7bf60 20%, #606266);
 }
 
 .towr.start::after, .towr.end::after {
@@ -650,7 +838,7 @@
 }
 
 .towr::after {
-  background-image: linear-gradient(90deg, #d7bf60 30%, #55575b);
+  background-image: linear-gradient(90deg, #d7bf60 20%, #606266);
 }
 
 .ut.start::after, .ut.end::after {
@@ -662,7 +850,7 @@
 }
 
 .ut::after {
-  background-image: linear-gradient(90deg, #539485, #8a908e);
+  background-image: linear-gradient(90deg, #559889, #737977);
 }
 
 .wir.start::after, .wir.end::after {
@@ -675,210 +863,6 @@
 
 .wir::after {
   background-image: linear-gradient(90deg, #7fb2a5 30%, #bfd9bf);
-}
-
-.gatkt.start::after, .gatkt.end::after {
-  content: "Grani and the Knights' Treasure";
-}
-
-.gatkt.start ~ .gatkt.end::after {
-  content: " ";
-}
-
-.gatkt::after {
-  background-color: white;
-}
-
-.hosf.start::after, .hosf.end::after {
-  content: "Heart of Surging Flame";
-}
-
-.hosf.start ~ .hosf.end::after {
-  content: " ";
-}
-
-.hosf::after {
-  background-color: white;
-}
-
-.oi.start::after, .oi.end::after {
-  content: "Operational Intelligence";
-}
-
-.oi.start ~ .oi.end::after {
-  content: " ";
-}
-
-.oi::after {
-  background-color: white;
-}
-
-.af.start::after, .af.end::after {
-  content: "Ancient Forge";
-}
-
-.af.start ~ .af.end::after {
-  content: " ";
-}
-
-.af::after {
-  background-color: white;
-}
-
-.soa.start::after, .soa.end::after {
-  content: "Stories of Afternoon";
-}
-
-.soa.start ~ .soa.end::after {
-  content: " ";
-}
-
-.soa::after {
-  background-color: white;
-}
-
-.cc0.start::after, .cc0.end::after {
-  content: "Contingency Contract #0";
-}
-
-.cc0.start ~ .cc0.end::after {
-  content: " ";
-}
-
-.cc0::after {
-  background-color: white;
-}
-
-.dm-clw.start::after, .dm-clw.end::after {
-  content: "Darknights Memoir + Cremation Last Wish";
-}
-
-.dm-clw.start ~ .dm-clw.end::after {
-  content: " ";
-}
-
-.dm-clw::after {
-  font-style: italic;
-}
-
-.dm-clw::after {
-  background-color: white;
-}
-
-.cc1.start::after, .cc1.end::after {
-  content: "Contingency Contract #1";
-}
-
-.cc1.start ~ .cc1.end::after {
-  content: " ";
-}
-
-.cc1::after {
-  background-color: white;
-}
-
-.cou.start::after, .cou.end::after {
-  content: "Children of Ursus";
-}
-
-.cou.start ~ .cou.end::after {
-  content: " ";
-}
-
-.cou::after {
-  background-color: white;
-}
-
-.cc2.start::after, .cc2.end::after {
-  content: "Contingency Contract #2";
-}
-
-.cc2.start ~ .cc2.end::after {
-  content: " ";
-}
-
-.cc2::after {
-  background-color: white;
-}
-
-.hosfr.start::after, .hosfr.end::after {
-  content: "Heart of Surging Flame Rerun";
-}
-
-.hosfr.start ~ .hosfr.end::after {
-  content: " ";
-}
-
-.hosfr::after {
-  background-color: white;
-}
-
-.gtgcr-cfm.start::after, .gtgcr-cfm.end::after {
-  content: "Gavial the Great Chief Returns + Ceobe's Fungi Mist";
-}
-
-.gtgcr-cfm.start ~ .gtgcr-cfm.end::after {
-  content: " ";
-}
-
-.gtgcr-cfm::after {
-  font-style: italic;
-}
-
-.gtgcr-cfm::after {
-  background-color: white;
-}
-
-.cfm.start::after, .cfm.end::after {
-  content: "Ceobe's Fungi Mist";
-}
-
-.cfm.start ~ .cfm.end::after {
-  content: " ";
-}
-
-.cfm::after {
-  background-color: lightblue;
-}
-
-.gatktr.start::after, .gatktr.end::after {
-  content: "Grani and the Knights' Treasure Rerun";
-}
-
-.gatktr.start ~ .gatktr.end::after {
-  content: " ";
-}
-
-.gatktr::after {
-  background-color: white;
-}
-
-.cc.start::after, .cc.end::after {
-  content: "Contingency Contract";
-}
-
-.cc.start ~ .cc.end::after {
-  content: " ";
-}
-
-.cc::after {
-  background-color: white;
-}
-
-.clw.start::after, .clw.end::after {
-  content: "Cremation Last Wish";
-}
-
-.clw.start ~ .clw.end::after {
-  content: " ";
-}
-
-.clw::after {
-  font-style: italic;
-}
-
-.clw::after {
-  background-color: lightblue;
 }
 
 *, ::after, ::before {
@@ -1036,6 +1020,10 @@ table td {
   right: 10px;
   text-align: right;
   width: calc(100% - 10px);
+}
+
+.italic::after {
+  font-style: italic;
 }
 
 [title]::after {
