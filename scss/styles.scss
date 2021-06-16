@@ -35,11 +35,14 @@ p { color: var(--gray) }
 // Navigation
 nav {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 0.4rem;
+	justify-content: center;
 	left: var(--page-margin);
 	position: fixed;
 	top: var(--page-margin);
 	width: fit-content;
+	z-index: 1;
 
 	@media (min-width: 950px) and (max-width: 1270px) {
 		flex-direction: column;
@@ -47,20 +50,20 @@ nav {
 
 	@media (max-width: 950px) {
 		margin: 0 auto 1.4em auto;
-		position: initial;
+		position: sticky;
 	}
 }
 
 button {
-	background-color: transparent;
+	background-color: black;
 	border-radius: 15px;
 	border: 1px solid var(--gray);
 	color: white;
-	cursor: pointer;
 	font-family: var(--fonts);
 	font-size: 1rem;
 	padding: 0.2em 0.7em;
 	transition-duration: 100ms;
+	user-select: none;
 
 	&.selected {
 		background-color: white;
@@ -68,7 +71,11 @@ button {
 		color: initial;
 	}
 
-	&:hover { opacity: 0.8 }
+	@media (hover: hover) {
+		cursor: pointer;
+		&:hover { opacity: 0.8 }
+	}
+	
 	&:active { opacity: 0.9 }
 }
 
