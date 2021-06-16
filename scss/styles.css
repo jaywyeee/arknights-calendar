@@ -906,8 +906,6 @@ nav {
   left: var(--page-margin);
   position: fixed;
   top: var(--page-margin);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   z-index: 1;
 }
@@ -924,34 +922,30 @@ nav {
 }
 
 button {
+  -webkit-tap-highlight-color: transparent;
   background-color: black;
   border-radius: 15px;
   border: 1px solid var(--gray);
   color: white;
+  cursor: pointer;
   font-family: var(--fonts);
   font-size: 1rem;
   padding: 0.2em 0.7em;
   transition-duration: 100ms;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 button.selected {
   background-color: white;
   border-color: white;
   color: initial;
 }
-@media (hover: hover) {
-  button {
-    cursor: pointer;
-  }
+@media (min-width: 950px) {
   button:hover {
     opacity: 0.8;
   }
-}
-button:active {
-  opacity: 0.9;
+  button:active {
+    opacity: 0.9;
+  }
 }
 
 h1 {

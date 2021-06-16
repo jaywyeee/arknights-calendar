@@ -55,10 +55,12 @@ nav {
 }
 
 button {
+	-webkit-tap-highlight-color: transparent;
 	background-color: black;
 	border-radius: 15px;
 	border: 1px solid var(--gray);
 	color: white;
+	cursor: pointer;
 	font-family: var(--fonts);
 	font-size: 1rem;
 	padding: 0.2em 0.7em;
@@ -71,12 +73,10 @@ button {
 		color: initial;
 	}
 
-	@media (hover: hover) {
-		cursor: pointer;
+	@media (min-width: 950px) {
 		&:hover { opacity: 0.8 }
+		&:active { opacity: 0.9 }
 	}
-	
-	&:active { opacity: 0.9 }
 }
 
 
