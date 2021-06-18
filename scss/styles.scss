@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @use "mixins" as *;
-@use "counters";
-@use "overlays";
+@use "events";
+@use "months";
 
 // General
 *, ::after, ::before { box-sizing: border-box }
@@ -123,6 +123,10 @@ table {
 	}
 }
 
+@each $month, $indent, $outdent in months.$list {
+	@include counter($month, $indent, $outdent);
+}
+
 // Events
 .events {
 	align-content: flex-start;
@@ -137,7 +141,8 @@ table {
 }
 
 [class|="filled"]::after {
-	// Partially declared in overlays.scss.
+	background-color: magenta;
+	content: "\00A0";
 	font-size: 0.87rem;
 	overflow: hidden;
 	padding: 0.2em 0.5em;
@@ -161,9 +166,12 @@ table {
 	width: calc(100% - 10px);
 }
 
+[title]::after { cursor: help }
 .italic::after { font-style: italic }
 
-[title]::after { cursor: help }
+@each $initials, $name, $color in events.$list {
+	@include overlay($initials, $name, $color);
+}
 
 @for $i from 0 through 7 {
 	@include width($i);
