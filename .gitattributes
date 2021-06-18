@@ -3,4 +3,5 @@
 
 # Exclude generated code.
 *.css linguist-generated -diff
+*.css.map -diff
 *.html linguist-generated -diff
