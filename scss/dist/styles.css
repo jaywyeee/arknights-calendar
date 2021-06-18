@@ -609,7 +609,7 @@ table td {
 }
 
 .af::after {
-  background-image: linear-gradient(90deg, #b8b8b8 20%, #ac2021);
+  background-image: linear-gradient(90deg, #B8B8B8 20%, #AC2021);
 }
 
 .awitd.start::after, .awitd.end::after {
@@ -621,7 +621,7 @@ table td {
 }
 
 .awitd::after {
-  background-image: linear-gradient(90deg, #ded9d3, #7594a6, #7b7b7b);
+  background-image: linear-gradient(90deg, #DED9D3, #7594A6, #7B7B7B);
 }
 
 .bh.start::after, .bh.end::after {
@@ -633,7 +633,7 @@ table td {
 }
 
 .bh::after {
-  background-image: linear-gradient(90deg, #fb985d, #fbce00);
+  background-image: linear-gradient(90deg, #FB985D, #FBCE00);
 }
 
 .cc.start::after, .cc.end::after {
@@ -645,7 +645,7 @@ table td {
 }
 
 .cc::after {
-  background-image: linear-gradient(90deg, #b79a8f, #867068);
+  background-image: linear-gradient(90deg, #B79A8F, #867068);
 }
 
 .cc0.start::after, .cc0.end::after {
@@ -657,7 +657,7 @@ table td {
 }
 
 .cc0::after {
-  background-image: linear-gradient(90deg, #f07373, #d63636);
+  background-image: linear-gradient(90deg, #F07373, #D63636);
 }
 
 .cc1.start::after, .cc1.end::after {
@@ -669,7 +669,7 @@ table td {
 }
 
 .cc1::after {
-  background-image: linear-gradient(90deg, #f7dc5a, #c38921);
+  background-image: linear-gradient(90deg, #F7DC5A, #C38921);
 }
 
 .cc2.start::after, .cc2.end::after {
@@ -681,7 +681,7 @@ table td {
 }
 
 .cc2::after {
-  background-image: linear-gradient(90deg, #ff8d6a, #fd4b42);
+  background-image: linear-gradient(90deg, #FF8D6A, #FD4B42);
 }
 
 .cc3.start::after, .cc3.end::after {
@@ -693,7 +693,7 @@ table td {
 }
 
 .cc3::after {
-  background-image: linear-gradient(90deg, #9f7ec1, #d7b3ff);
+  background-image: linear-gradient(90deg, #9F7EC1, #D7B3FF);
 }
 
 .cc4.start::after, .cc4.end::after {
@@ -705,7 +705,7 @@ table td {
 }
 
 .cc4::after {
-  background-image: linear-gradient(90deg, #45b5b8, #3d9fa5, #5781f7);
+  background-image: linear-gradient(90deg, #45B5B8, #3D9FA5, #5781F7);
 }
 
 .cc5.start::after, .cc5.end::after {
@@ -717,7 +717,7 @@ table td {
 }
 
 .cc5::after {
-  background-image: linear-gradient(90deg, #4f99f3, #f5858d);
+  background-image: linear-gradient(90deg, #4F99F3, #F5858D);
 }
 
 .cfm.start::after, .cfm.end::after {
@@ -729,7 +729,7 @@ table td {
 }
 
 .cfm::after {
-  background-color: #76d6f7;
+  background-color: #76D6F7;
 }
 
 .clw.start::after, .clw.end::after {
@@ -741,7 +741,7 @@ table td {
 }
 
 .clw::after {
-  background-image: linear-gradient(90deg, #cbc46f, #db8396);
+  background-image: linear-gradient(90deg, #CBC46F, #DB8396);
 }
 
 .cob.start::after, .cob.end::after {
@@ -753,7 +753,7 @@ table td {
 }
 
 .cob::after {
-  background-image: linear-gradient(90deg, #8094f8 25%, #c07dee);
+  background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
 
 .cob-cc.start::after, .cob-cc.end::after {
@@ -765,7 +765,7 @@ table td {
 }
 
 .cob-cc::after {
-  background-image: linear-gradient(90deg, #8094f8 25%, #c07dee);
+  background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
 
 .cobr.start::after, .cobr.end::after {
@@ -777,7 +777,7 @@ table td {
 }
 
 .cobr::after {
-  background-image: linear-gradient(90deg, #8094f8 25%, #c07dee);
+  background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
 
 .cou.start::after, .cou.end::after {
@@ -789,7 +789,7 @@ table td {
 }
 
 .cou::after {
-  background-image: linear-gradient(90deg, #f5a204, #f3781e);
+  background-image: linear-gradient(90deg, #F5A204, #F3781E);
 }
 
 .dm.start::after, .dm.end::after {
@@ -801,7 +801,7 @@ table td {
 }
 
 .dm::after {
-  background-image: linear-gradient(90deg, #9093a8 30%, #c1655d);
+  background-image: linear-gradient(90deg, #9093A8 30%, #C1655D);
 }
 
 .dm-clw.start::after, .dm-clw.end::after {
@@ -813,7 +813,7 @@ table td {
 }
 
 .dm-clw::after {
-  background-color: #adafc0;
+  background-color: #ADAFC0;
 }
 
 .dmr.start::after, .dmr.end::after {
@@ -825,7 +825,7 @@ table td {
 }
 
 .dmr::after {
-  background-image: linear-gradient(90deg, #9093a8 30%, #c1655d);
+  background-image: linear-gradient(90deg, #9093A8 30%, #C1655D);
 }
 
 .fmn.start::after, .fmn.end::after {
@@ -837,7 +837,7 @@ table td {
 }
 
 .fmn::after {
-  background-image: linear-gradient(90deg, #dda9df, #adb3fa);
+  background-image: linear-gradient(90deg, #DDA9DF, #ADB3FA);
 }
 
 .gatkt.start::after, .gatkt.end::after {
@@ -849,7 +849,7 @@ table td {
 }
 
 .gatkt::after {
-  background-color: #b1acb1;
+  background-color: #B1ACB1;
 }
 
 .gatktr.start::after, .gatktr.end::after {
@@ -861,7 +861,7 @@ table td {
 }
 
 .gatktr::after {
-  background-color: #b1acb1;
+  background-color: #B1ACB1;
 }
 
 .gtgcr-cfm.start::after, .gtgcr-cfm.end::after {
@@ -873,7 +873,7 @@ table td {
 }
 
 .gtgcr-cfm::after {
-  background-image: linear-gradient(90deg, #00fdfb, #6870ff);
+  background-image: linear-gradient(90deg, #00FDFB, #6870FF);
 }
 
 .hosf.start::after, .hosf.end::after {
@@ -885,7 +885,7 @@ table td {
 }
 
 .hosf::after {
-  background-image: linear-gradient(90deg, #d9e6df, #a4fdfd);
+  background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
 }
 
 .hosfr.start::after, .hosfr.end::after {
@@ -897,7 +897,7 @@ table td {
 }
 
 .hosfr::after {
-  background-image: linear-gradient(90deg, #d9e6df, #a4fdfd);
+  background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
 }
 
 .mb.start::after, .mb.end::after {
@@ -909,7 +909,7 @@ table td {
 }
 
 .mb::after {
-  background-color: #e37e74;
+  background-color: #E37E74;
 }
 
 .mn.start::after, .mn.end::after {
@@ -921,7 +921,7 @@ table td {
 }
 
 .mn::after {
-  background-color: #6a8eff;
+  background-color: #6A8EFF;
 }
 
 .oi.start::after, .oi.end::after {
@@ -933,7 +933,7 @@ table td {
 }
 
 .oi::after {
-  background-color: #e8d138;
+  background-color: #E8D138;
 }
 
 .ood-ridp.start::after, .ood-ridp.end::after {
@@ -945,7 +945,7 @@ table td {
 }
 
 .ood-ridp::after {
-  background-image: linear-gradient(90deg, #ecaf28 20%, #ce782f);
+  background-image: linear-gradient(90deg, #ECAF28 20%, #CE782F);
 }
 
 .pl.start::after, .pl.end::after {
@@ -957,7 +957,7 @@ table td {
 }
 
 .pl::after {
-  background-image: linear-gradient(90deg, #e78f70 20%, #d8d6cf);
+  background-image: linear-gradient(90deg, #E78F70 20%, #D8D6CF);
 }
 
 .rb.start::after, .rb.end::after {
@@ -969,7 +969,7 @@ table td {
 }
 
 .rb::after {
-  background-image: linear-gradient(90deg, #ff7c4a, #fa9f38);
+  background-image: linear-gradient(90deg, #FF7C4A, #FA9F38);
 }
 
 .soa.start::after, .soa.end::after {
@@ -981,7 +981,7 @@ table td {
 }
 
 .soa::after {
-  background-image: linear-gradient(90deg, #0bb1fe, #2a82ff);
+  background-image: linear-gradient(90deg, #0BB1FE, #2A82FF);
 }
 
 .tow.start::after, .tow.end::after {
@@ -993,7 +993,7 @@ table td {
 }
 
 .tow::after {
-  background-image: linear-gradient(90deg, #d7bf60 20%, #606266);
+  background-image: linear-gradient(90deg, #D7BF60 20%, #606266);
 }
 
 .towr.start::after, .towr.end::after {
@@ -1005,7 +1005,7 @@ table td {
 }
 
 .towr::after {
-  background-image: linear-gradient(90deg, #d7bf60 20%, #606266);
+  background-image: linear-gradient(90deg, #D7BF60 20%, #606266);
 }
 
 .ut.start::after, .ut.end::after {
@@ -1029,7 +1029,7 @@ table td {
 }
 
 .wir::after {
-  background-image: linear-gradient(90deg, #7fb2a5 30%, #bfd9bf);
+  background-image: linear-gradient(90deg, #7FB2A5 30%, #BFD9BF);
 }
 
 .blank-0, .filled-0 {
