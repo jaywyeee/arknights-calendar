@@ -388,40 +388,40 @@ table td {
   counter-increment: jan-22;
   content: counter(jan-22);
 }
-.may-19 tr:first-child td:nth-of-type(-n+3)::after,
-.may-19 tr:last-child td:nth-of-type(n+7)::after, .jun-19 tr:first-child td:nth-of-type(-n+6)::after,
-.jun-19 tr:last-child td:nth-of-type(n+2)::after, .jul-19 tr:first-child td:nth-of-type(-n+1)::after,
-.jul-19 tr:last-child td:nth-of-type(n+5)::after, .aug-19 tr:first-child td:nth-of-type(-n+4)::after,
-.aug-19 tr:last-child td:nth-of-type(n+8)::after, .sep-19 tr:first-child td:nth-of-type(-n+0)::after,
-.sep-19 tr:last-child td:nth-of-type(n+3)::after, .oct-19 tr:first-child td:nth-of-type(-n+2)::after,
-.oct-19 tr:last-child td:nth-of-type(n+6)::after, .nov-19 tr:first-child td:nth-of-type(-n+5)::after,
-.nov-19 tr:last-child td:nth-of-type(n+8)::after, .dec-19 tr:first-child td:nth-of-type(-n+0)::after,
-.dec-19 tr:last-child td:nth-of-type(n+4)::after, .jan-20 tr:first-child td:nth-of-type(-n+3)::after,
-.jan-20 tr:last-child td:nth-of-type(n+7)::after, .feb-20 tr:first-child td:nth-of-type(-n+6)::after,
-.feb-20 tr:last-child td:nth-of-type(n+8)::after, .mar-20 tr:first-child td:nth-of-type(-n+0)::after,
-.mar-20 tr:last-child td:nth-of-type(n+4)::after, .apr-20 tr:first-child td:nth-of-type(-n+3)::after,
-.apr-20 tr:last-child td:nth-of-type(n+6)::after, .may-20 tr:first-child td:nth-of-type(-n+5)::after,
-.may-20 tr:last-child td:nth-of-type(n+2)::after, .jun-20 tr:first-child td:nth-of-type(-n+1)::after,
-.jun-20 tr:last-child td:nth-of-type(n+4)::after, .jul-20 tr:first-child td:nth-of-type(-n+3)::after,
-.jul-20 tr:last-child td:nth-of-type(n+7)::after, .aug-20 tr:first-child td:nth-of-type(-n+6)::after,
-.aug-20 tr:last-child td:nth-of-type(n+3)::after, .sep-20 tr:first-child td:nth-of-type(-n+2)::after,
-.sep-20 tr:last-child td:nth-of-type(n+5)::after, .oct-20 tr:first-child td:nth-of-type(-n+4)::after,
-.oct-20 tr:last-child td:nth-of-type(n+8)::after, .nov-20 tr:first-child td:nth-of-type(-n+0)::after,
-.nov-20 tr:last-child td:nth-of-type(n+3)::after, .dec-20 tr:first-child td:nth-of-type(-n+2)::after,
-.dec-20 tr:last-child td:nth-of-type(n+6)::after, .jan-21 tr:first-child td:nth-of-type(-n+5)::after,
-.jan-21 tr:last-child td:nth-of-type(n+2)::after, .feb-21 tr:first-child td:nth-of-type(-n+1)::after,
-.feb-21 tr:last-child td:nth-of-type(n+2)::after, .mar-21 tr:first-child td:nth-of-type(-n+1)::after,
-.mar-21 tr:last-child td:nth-of-type(n+5)::after, .apr-21 tr:first-child td:nth-of-type(-n+4)::after,
-.apr-21 tr:last-child td:nth-of-type(n+7)::after, .may-21 tr:first-child td:nth-of-type(-n+6)::after,
-.may-21 tr:last-child td:nth-of-type(n+3)::after, .jun-21 tr:first-child td:nth-of-type(-n+2)::after,
-.jun-21 tr:last-child td:nth-of-type(n+5)::after, .jul-21 tr:first-child td:nth-of-type(-n+4)::after,
-.jul-21 tr:last-child td:nth-of-type(n+8)::after, .aug-21 tr:first-child td:nth-of-type(-n+0)::after,
-.aug-21 tr:last-child td:nth-of-type(n+4)::after, .sep-21 tr:first-child td:nth-of-type(-n+3)::after,
-.sep-21 tr:last-child td:nth-of-type(n+6)::after, .oct-21 tr:first-child td:nth-of-type(-n+5)::after,
-.oct-21 tr:last-child td:nth-of-type(n+2)::after, .nov-21 tr:first-child td:nth-of-type(-n+1)::after,
-.nov-21 tr:last-child td:nth-of-type(n+4)::after, .dec-21 tr:first-child td:nth-of-type(-n+3)::after,
-.dec-21 tr:last-child td:nth-of-type(n+7)::after, .jan-22 tr:first-child td:nth-of-type(-n+6)::after,
-.jan-22 tr:last-child td:nth-of-type(n+3)::after {
+.may-19 tr:first-child td:nth-child(-n+3)::after,
+.may-19 tr:last-child td:nth-child(n+7)::after, .jun-19 tr:first-child td:nth-child(-n+6)::after,
+.jun-19 tr:last-child td:nth-child(n+2)::after, .jul-19 tr:first-child td:nth-child(-n+1)::after,
+.jul-19 tr:last-child td:nth-child(n+5)::after, .aug-19 tr:first-child td:nth-child(-n+4)::after,
+.aug-19 tr:last-child td:nth-child(n+8)::after, .sep-19 tr:first-child td:nth-child(-n+0)::after,
+.sep-19 tr:last-child td:nth-child(n+3)::after, .oct-19 tr:first-child td:nth-child(-n+2)::after,
+.oct-19 tr:last-child td:nth-child(n+6)::after, .nov-19 tr:first-child td:nth-child(-n+5)::after,
+.nov-19 tr:last-child td:nth-child(n+8)::after, .dec-19 tr:first-child td:nth-child(-n+0)::after,
+.dec-19 tr:last-child td:nth-child(n+4)::after, .jan-20 tr:first-child td:nth-child(-n+3)::after,
+.jan-20 tr:last-child td:nth-child(n+7)::after, .feb-20 tr:first-child td:nth-child(-n+6)::after,
+.feb-20 tr:last-child td:nth-child(n+8)::after, .mar-20 tr:first-child td:nth-child(-n+0)::after,
+.mar-20 tr:last-child td:nth-child(n+4)::after, .apr-20 tr:first-child td:nth-child(-n+3)::after,
+.apr-20 tr:last-child td:nth-child(n+6)::after, .may-20 tr:first-child td:nth-child(-n+5)::after,
+.may-20 tr:last-child td:nth-child(n+2)::after, .jun-20 tr:first-child td:nth-child(-n+1)::after,
+.jun-20 tr:last-child td:nth-child(n+4)::after, .jul-20 tr:first-child td:nth-child(-n+3)::after,
+.jul-20 tr:last-child td:nth-child(n+7)::after, .aug-20 tr:first-child td:nth-child(-n+6)::after,
+.aug-20 tr:last-child td:nth-child(n+3)::after, .sep-20 tr:first-child td:nth-child(-n+2)::after,
+.sep-20 tr:last-child td:nth-child(n+5)::after, .oct-20 tr:first-child td:nth-child(-n+4)::after,
+.oct-20 tr:last-child td:nth-child(n+8)::after, .nov-20 tr:first-child td:nth-child(-n+0)::after,
+.nov-20 tr:last-child td:nth-child(n+3)::after, .dec-20 tr:first-child td:nth-child(-n+2)::after,
+.dec-20 tr:last-child td:nth-child(n+6)::after, .jan-21 tr:first-child td:nth-child(-n+5)::after,
+.jan-21 tr:last-child td:nth-child(n+2)::after, .feb-21 tr:first-child td:nth-child(-n+1)::after,
+.feb-21 tr:last-child td:nth-child(n+2)::after, .mar-21 tr:first-child td:nth-child(-n+1)::after,
+.mar-21 tr:last-child td:nth-child(n+5)::after, .apr-21 tr:first-child td:nth-child(-n+4)::after,
+.apr-21 tr:last-child td:nth-child(n+7)::after, .may-21 tr:first-child td:nth-child(-n+6)::after,
+.may-21 tr:last-child td:nth-child(n+3)::after, .jun-21 tr:first-child td:nth-child(-n+2)::after,
+.jun-21 tr:last-child td:nth-child(n+5)::after, .jul-21 tr:first-child td:nth-child(-n+4)::after,
+.jul-21 tr:last-child td:nth-child(n+8)::after, .aug-21 tr:first-child td:nth-child(-n+0)::after,
+.aug-21 tr:last-child td:nth-child(n+4)::after, .sep-21 tr:first-child td:nth-child(-n+3)::after,
+.sep-21 tr:last-child td:nth-child(n+6)::after, .oct-21 tr:first-child td:nth-child(-n+5)::after,
+.oct-21 tr:last-child td:nth-child(n+2)::after, .nov-21 tr:first-child td:nth-child(-n+1)::after,
+.nov-21 tr:last-child td:nth-child(n+4)::after, .dec-21 tr:first-child td:nth-child(-n+3)::after,
+.dec-21 tr:last-child td:nth-child(n+7)::after, .jan-22 tr:first-child td:nth-child(-n+6)::after,
+.jan-22 tr:last-child td:nth-child(n+3)::after {
   content: "";
 }
 
@@ -453,6 +453,7 @@ table td {
 
 .start::after {
   border-radius: 2px 0 0 2px;
+  content: var(--name);
   left: 10px;
   width: calc(100% - 10px);
 }
@@ -460,8 +461,11 @@ table td {
 .end::after {
   border-radius: 0 2px 2px 0;
   right: 10px;
-  text-align: right;
   width: calc(100% - 10px);
+}
+.end:not(.start ~ *)::after, .end.label::after {
+  content: var(--name);
+  text-align: right;
 }
 
 [title]::after {
@@ -472,260 +476,184 @@ table td {
   font-style: italic;
 }
 
-.af.start::after, .af.end::after {
-  content: "Ancient Forge";
-}
 .af::after {
+  --name: "Ancient Forge";
   background-image: linear-gradient(90deg, #B8B8B8 20%, #AC2021);
 }
 
-.awitd.start::after, .awitd.end::after {
-  content: "A Walk in the Dust";
-}
 .awitd::after {
+  --name: "A Walk in the Dust";
   background-image: linear-gradient(90deg, #DED9D3, #7594A6, #7B7B7B);
 }
 
-.bh.start::after, .bh.end::after {
-  content: "Beyond Here";
-}
 .bh::after {
+  --name: "Beyond Here";
   background-image: linear-gradient(90deg, #FB985D, #FBCE00);
 }
 
-.cc.start::after, .cc.end::after {
-  content: "Contingency Contract";
-}
 .cc::after {
+  --name: "Contingency Contract";
   background-image: linear-gradient(90deg, #B79A8F, #867068);
 }
 
-.cc0.start::after, .cc0.end::after {
-  content: "Contingency Contract #0";
-}
 .cc0::after {
+  --name: "Contingency Contract #0";
   background-image: linear-gradient(90deg, #F07373, #D63636);
 }
 
-.cc1.start::after, .cc1.end::after {
-  content: "Contingency Contract #1";
-}
 .cc1::after {
+  --name: "Contingency Contract #1";
   background-image: linear-gradient(90deg, #F7DC5A, #C38921);
 }
 
-.cc2.start::after, .cc2.end::after {
-  content: "Contingency Contract #2";
-}
 .cc2::after {
+  --name: "Contingency Contract #2";
   background-image: linear-gradient(90deg, #FF8D6A, #FD4B42);
 }
 
-.cc3.start::after, .cc3.end::after {
-  content: "Contingency Contract #3";
-}
 .cc3::after {
+  --name: "Contingency Contract #3";
   background-image: linear-gradient(90deg, #9F7EC1, #D7B3FF);
 }
 
-.cc4.start::after, .cc4.end::after {
-  content: "Contingency Contract #4";
-}
 .cc4::after {
+  --name: "Contingency Contract #4";
   background-image: linear-gradient(90deg, #45B5B8, #3D9FA5, #5781F7);
 }
 
-.cc5.start::after, .cc5.end::after {
-  content: "Contingency Contract #5";
-}
 .cc5::after {
+  --name: "Contingency Contract #5";
   background-image: linear-gradient(90deg, #4F99F3, #F5858D);
 }
 
-.cfm.start::after, .cfm.end::after {
-  content: "Ceobe's Fungi Mist";
-}
 .cfm::after {
+  --name: "Ceobe's Fungi Mist";
   background-color: #76D6F7;
 }
 
-.clw.start::after, .clw.end::after {
-  content: "Cremation Last Wish";
-}
 .clw::after {
+  --name: "Cremation Last Wish";
   background-image: linear-gradient(90deg, #CBC46F, #DB8396);
 }
 
-.cob.start::after, .cob.end::after {
-  content: "Code of Brawl";
-}
 .cob::after {
+  --name: "Code of Brawl";
   background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
 
-.cob-cc.start::after, .cob-cc.end::after {
-  content: "Code of Brawl + Contingency Contract";
-}
 .cob-cc::after {
+  --name: "Code of Brawl + Contingency Contract";
   background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
 
-.cobr.start::after, .cobr.end::after {
-  content: "Code of Brawl Rerun";
-}
 .cobr::after {
+  --name: "Code of Brawl Rerun";
   background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
 
-.cou.start::after, .cou.end::after {
-  content: "Children of Ursus";
-}
 .cou::after {
+  --name: "Children of Ursus";
   background-image: linear-gradient(90deg, #F5A204, #F3781E);
 }
 
-.dm.start::after, .dm.end::after {
-  content: "Darknights Memoir";
-}
 .dm::after {
+  --name: "Darknights Memoir";
   background-image: linear-gradient(90deg, #9093A8 30%, #C1655D);
 }
 
-.dm-clw.start::after, .dm-clw.end::after {
-  content: "Darknights Memoir + Cremation Last Wish";
-}
 .dm-clw::after {
+  --name: "Darknights Memoir + Cremation Last Wish";
   background-color: #ADAFC0;
 }
 
-.dmr.start::after, .dmr.end::after {
-  content: "Darknights Memoir Rerun";
-}
 .dmr::after {
+  --name: "Darknights Memoir Rerun";
   background-image: linear-gradient(90deg, #9093A8 30%, #C1655D);
 }
 
-.fmn.start::after, .fmn.end::after {
-  content: "Forget Me Not";
-}
 .fmn::after {
+  --name: "Forget Me Not";
   background-image: linear-gradient(90deg, #DDA9DF, #ADB3FA);
 }
 
-.gatkt.start::after, .gatkt.end::after {
-  content: "Grani and the Knights' Treasure";
-}
 .gatkt::after {
+  --name: "Grani and the Knights' Treasure";
   background-color: #B1ACB1;
 }
 
-.gatktr.start::after, .gatktr.end::after {
-  content: "Grani and the Knights' Treasure Rerun";
-}
 .gatktr::after {
+  --name: "Grani and the Knights' Treasure Rerun";
   background-color: #B1ACB1;
 }
 
-.gtgcr-cfm.start::after, .gtgcr-cfm.end::after {
-  content: "Gavial the Great Chief Returns + Ceobe's Fungi Mist";
-}
 .gtgcr-cfm::after {
+  --name: "Gavial the Great Chief Returns + Ceobe's Fungi Mist";
   background-image: linear-gradient(90deg, #00FDFB, #6870FF);
 }
 
-.hosf.start::after, .hosf.end::after {
-  content: "Heart of Surging Flame";
-}
 .hosf::after {
+  --name: "Heart of Surging Flame";
   background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
 }
 
-.hosfr.start::after, .hosfr.end::after {
-  content: "Heart of Surging Flame Rerun";
-}
 .hosfr::after {
+  --name: "Heart of Surging Flame Rerun";
   background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
 }
 
-.mb.start::after, .mb.end::after {
-  content: "Mansfield Break";
-}
 .mb::after {
+  --name: "Mansfield Break";
   background-color: #E37E74;
 }
 
-.mn.start::after, .mn.end::after {
-  content: "Maria Nearl";
-}
 .mn::after {
+  --name: "Maria Nearl";
   background-color: #6A8EFF;
 }
 
-.oi.start::after, .oi.end::after {
-  content: "Operational Intelligence";
-}
 .oi::after {
+  --name: "Operational Intelligence";
   background-color: #E8D138;
 }
 
-.ood-ridp.start::after, .ood-ridp.end::after {
-  content: "Operation Originium Dust + Rhodes Island Defence Protocols";
-}
 .ood-ridp::after {
+  --name: "Operation Originium Dust + Rhodes Island Defence Protocols";
   background-image: linear-gradient(90deg, #ECAF28 20%, #CE782F);
 }
 
-.pl.start::after, .pl.end::after {
-  content: "Preluding Lights";
-}
 .pl::after {
+  --name: "Preluding Lights";
   background-image: linear-gradient(90deg, #E78F70 20%, #D8D6CF);
 }
 
-.rb.start::after, .rb.end::after {
-  content: "Rewinding Breeze";
-}
 .rb::after {
+  --name: "Rewinding Breeze";
   background-image: linear-gradient(90deg, #FF7C4A, #FA9F38);
 }
 
-.soa.start::after, .soa.end::after {
-  content: "Stories of Afternoon";
-}
 .soa::after {
+  --name: "Stories of Afternoon";
   background-image: linear-gradient(90deg, #0BB1FE, #2A82FF);
 }
 
-.tow.start::after, .tow.end::after {
-  content: "Twilight of Wolumonde";
-}
 .tow::after {
+  --name: "Twilight of Wolumonde";
   background-image: linear-gradient(90deg, #D7BF60 20%, #606266);
 }
 
-.towr.start::after, .towr.end::after {
-  content: "Twilight of Wolumonde Rerun";
-}
 .towr::after {
+  --name: "Twilight of Wolumonde Rerun";
   background-image: linear-gradient(90deg, #D7BF60 20%, #606266);
 }
 
-.ut.start::after, .ut.end::after {
-  content: "Under Tides";
-}
 .ut::after {
+  --name: "Under Tides";
   background-image: linear-gradient(90deg, #559889, #737977);
 }
 
-.wir.start::after, .wir.end::after {
-  content: "Who is Real";
-}
 .wir::after {
+  --name: "Who is Real";
   background-image: linear-gradient(90deg, #7FB2A5 30%, #BFD9BF);
-}
-
-.af.start ~ .af.end::after, .awitd.start ~ .awitd.end::after, .bh.start ~ .bh.end::after, .cc.start ~ .cc.end::after, .cc0.start ~ .cc0.end::after, .cc1.start ~ .cc1.end::after, .cc2.start ~ .cc2.end::after, .cc3.start ~ .cc3.end::after, .cc4.start ~ .cc4.end::after, .cc5.start ~ .cc5.end::after, .cfm.start ~ .cfm.end::after, .clw.start ~ .clw.end::after, .cob.start ~ .cob.end::after, .cob-cc.start ~ .cob-cc.end::after, .cobr.start ~ .cobr.end::after, .cou.start ~ .cou.end::after, .dm.start ~ .dm.end::after, .dm-clw.start ~ .dm-clw.end::after, .dmr.start ~ .dmr.end::after, .fmn.start ~ .fmn.end::after, .gatkt.start ~ .gatkt.end::after, .gatktr.start ~ .gatktr.end::after, .gtgcr-cfm.start ~ .gtgcr-cfm.end::after, .hosf.start ~ .hosf.end::after, .hosfr.start ~ .hosfr.end::after, .mb.start ~ .mb.end::after, .mn.start ~ .mn.end::after, .oi.start ~ .oi.end::after, .ood-ridp.start ~ .ood-ridp.end::after, .pl.start ~ .pl.end::after, .rb.start ~ .rb.end::after, .soa.start ~ .soa.end::after, .tow.start ~ .tow.end::after, .towr.start ~ .towr.end::after, .ut.start ~ .ut.end::after, .wir.start ~ .wir.end::after {
-  content: " ";
 }
 
 .blank-0, .filled-0 {
