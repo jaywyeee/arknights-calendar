@@ -132,11 +132,6 @@ table td {
   counter-increment: may-19;
   content: counter(may-19);
 }
-.may-19 tr:first-child td:nth-of-type(-n+3)::after,
-.may-19 tr:last-child td:nth-of-type(n+7)::after {
-  content: "";
-}
-
 .jun-19 {
   counter-reset: jun-19;
   counter-set: jun-19 -6;
@@ -145,11 +140,6 @@ table td {
   counter-increment: jun-19;
   content: counter(jun-19);
 }
-.jun-19 tr:first-child td:nth-of-type(-n+6)::after,
-.jun-19 tr:last-child td:nth-of-type(n+2)::after {
-  content: "";
-}
-
 .jul-19 {
   counter-reset: jul-19;
   counter-set: jul-19 -1;
@@ -158,11 +148,6 @@ table td {
   counter-increment: jul-19;
   content: counter(jul-19);
 }
-.jul-19 tr:first-child td:nth-of-type(-n+1)::after,
-.jul-19 tr:last-child td:nth-of-type(n+5)::after {
-  content: "";
-}
-
 .aug-19 {
   counter-reset: aug-19;
   counter-set: aug-19 -4;
@@ -171,11 +156,6 @@ table td {
   counter-increment: aug-19;
   content: counter(aug-19);
 }
-.aug-19 tr:first-child td:nth-of-type(-n+4)::after,
-.aug-19 tr:last-child td:nth-of-type(n+8)::after {
-  content: "";
-}
-
 .sep-19 {
   counter-reset: sep-19;
   counter-set: sep-19 -0;
@@ -184,11 +164,6 @@ table td {
   counter-increment: sep-19;
   content: counter(sep-19);
 }
-.sep-19 tr:first-child td:nth-of-type(-n+0)::after,
-.sep-19 tr:last-child td:nth-of-type(n+3)::after {
-  content: "";
-}
-
 .oct-19 {
   counter-reset: oct-19;
   counter-set: oct-19 -2;
@@ -197,11 +172,6 @@ table td {
   counter-increment: oct-19;
   content: counter(oct-19);
 }
-.oct-19 tr:first-child td:nth-of-type(-n+2)::after,
-.oct-19 tr:last-child td:nth-of-type(n+6)::after {
-  content: "";
-}
-
 .nov-19 {
   counter-reset: nov-19;
   counter-set: nov-19 -5;
@@ -210,11 +180,6 @@ table td {
   counter-increment: nov-19;
   content: counter(nov-19);
 }
-.nov-19 tr:first-child td:nth-of-type(-n+5)::after,
-.nov-19 tr:last-child td:nth-of-type(n+8)::after {
-  content: "";
-}
-
 .dec-19 {
   counter-reset: dec-19;
   counter-set: dec-19 -0;
@@ -223,11 +188,6 @@ table td {
   counter-increment: dec-19;
   content: counter(dec-19);
 }
-.dec-19 tr:first-child td:nth-of-type(-n+0)::after,
-.dec-19 tr:last-child td:nth-of-type(n+4)::after {
-  content: "";
-}
-
 .jan-20 {
   counter-reset: jan-20;
   counter-set: jan-20 -3;
@@ -236,11 +196,6 @@ table td {
   counter-increment: jan-20;
   content: counter(jan-20);
 }
-.jan-20 tr:first-child td:nth-of-type(-n+3)::after,
-.jan-20 tr:last-child td:nth-of-type(n+7)::after {
-  content: "";
-}
-
 .feb-20 {
   counter-reset: feb-20;
   counter-set: feb-20 -6;
@@ -249,11 +204,6 @@ table td {
   counter-increment: feb-20;
   content: counter(feb-20);
 }
-.feb-20 tr:first-child td:nth-of-type(-n+6)::after,
-.feb-20 tr:last-child td:nth-of-type(n+8)::after {
-  content: "";
-}
-
 .mar-20 {
   counter-reset: mar-20;
   counter-set: mar-20 -0;
@@ -262,11 +212,6 @@ table td {
   counter-increment: mar-20;
   content: counter(mar-20);
 }
-.mar-20 tr:first-child td:nth-of-type(-n+0)::after,
-.mar-20 tr:last-child td:nth-of-type(n+4)::after {
-  content: "";
-}
-
 .apr-20 {
   counter-reset: apr-20;
   counter-set: apr-20 -3;
@@ -275,11 +220,6 @@ table td {
   counter-increment: apr-20;
   content: counter(apr-20);
 }
-.apr-20 tr:first-child td:nth-of-type(-n+3)::after,
-.apr-20 tr:last-child td:nth-of-type(n+6)::after {
-  content: "";
-}
-
 .may-20 {
   counter-reset: may-20;
   counter-set: may-20 -5;
@@ -288,11 +228,6 @@ table td {
   counter-increment: may-20;
   content: counter(may-20);
 }
-.may-20 tr:first-child td:nth-of-type(-n+5)::after,
-.may-20 tr:last-child td:nth-of-type(n+2)::after {
-  content: "";
-}
-
 .jun-20 {
   counter-reset: jun-20;
   counter-set: jun-20 -1;
@@ -301,11 +236,6 @@ table td {
   counter-increment: jun-20;
   content: counter(jun-20);
 }
-.jun-20 tr:first-child td:nth-of-type(-n+1)::after,
-.jun-20 tr:last-child td:nth-of-type(n+4)::after {
-  content: "";
-}
-
 .jul-20 {
   counter-reset: jul-20;
   counter-set: jul-20 -3;
@@ -314,11 +244,6 @@ table td {
   counter-increment: jul-20;
   content: counter(jul-20);
 }
-.jul-20 tr:first-child td:nth-of-type(-n+3)::after,
-.jul-20 tr:last-child td:nth-of-type(n+7)::after {
-  content: "";
-}
-
 .aug-20 {
   counter-reset: aug-20;
   counter-set: aug-20 -6;
@@ -327,11 +252,6 @@ table td {
   counter-increment: aug-20;
   content: counter(aug-20);
 }
-.aug-20 tr:first-child td:nth-of-type(-n+6)::after,
-.aug-20 tr:last-child td:nth-of-type(n+3)::after {
-  content: "";
-}
-
 .sep-20 {
   counter-reset: sep-20;
   counter-set: sep-20 -2;
@@ -340,11 +260,6 @@ table td {
   counter-increment: sep-20;
   content: counter(sep-20);
 }
-.sep-20 tr:first-child td:nth-of-type(-n+2)::after,
-.sep-20 tr:last-child td:nth-of-type(n+5)::after {
-  content: "";
-}
-
 .oct-20 {
   counter-reset: oct-20;
   counter-set: oct-20 -4;
@@ -353,11 +268,6 @@ table td {
   counter-increment: oct-20;
   content: counter(oct-20);
 }
-.oct-20 tr:first-child td:nth-of-type(-n+4)::after,
-.oct-20 tr:last-child td:nth-of-type(n+8)::after {
-  content: "";
-}
-
 .nov-20 {
   counter-reset: nov-20;
   counter-set: nov-20 -0;
@@ -366,11 +276,6 @@ table td {
   counter-increment: nov-20;
   content: counter(nov-20);
 }
-.nov-20 tr:first-child td:nth-of-type(-n+0)::after,
-.nov-20 tr:last-child td:nth-of-type(n+3)::after {
-  content: "";
-}
-
 .dec-20 {
   counter-reset: dec-20;
   counter-set: dec-20 -2;
@@ -379,11 +284,6 @@ table td {
   counter-increment: dec-20;
   content: counter(dec-20);
 }
-.dec-20 tr:first-child td:nth-of-type(-n+2)::after,
-.dec-20 tr:last-child td:nth-of-type(n+6)::after {
-  content: "";
-}
-
 .jan-21 {
   counter-reset: jan-21;
   counter-set: jan-21 -5;
@@ -392,11 +292,6 @@ table td {
   counter-increment: jan-21;
   content: counter(jan-21);
 }
-.jan-21 tr:first-child td:nth-of-type(-n+5)::after,
-.jan-21 tr:last-child td:nth-of-type(n+2)::after {
-  content: "";
-}
-
 .feb-21 {
   counter-reset: feb-21;
   counter-set: feb-21 -1;
@@ -405,11 +300,6 @@ table td {
   counter-increment: feb-21;
   content: counter(feb-21);
 }
-.feb-21 tr:first-child td:nth-of-type(-n+1)::after,
-.feb-21 tr:last-child td:nth-of-type(n+2)::after {
-  content: "";
-}
-
 .mar-21 {
   counter-reset: mar-21;
   counter-set: mar-21 -1;
@@ -418,11 +308,6 @@ table td {
   counter-increment: mar-21;
   content: counter(mar-21);
 }
-.mar-21 tr:first-child td:nth-of-type(-n+1)::after,
-.mar-21 tr:last-child td:nth-of-type(n+5)::after {
-  content: "";
-}
-
 .apr-21 {
   counter-reset: apr-21;
   counter-set: apr-21 -4;
@@ -431,11 +316,6 @@ table td {
   counter-increment: apr-21;
   content: counter(apr-21);
 }
-.apr-21 tr:first-child td:nth-of-type(-n+4)::after,
-.apr-21 tr:last-child td:nth-of-type(n+7)::after {
-  content: "";
-}
-
 .may-21 {
   counter-reset: may-21;
   counter-set: may-21 -6;
@@ -444,11 +324,6 @@ table td {
   counter-increment: may-21;
   content: counter(may-21);
 }
-.may-21 tr:first-child td:nth-of-type(-n+6)::after,
-.may-21 tr:last-child td:nth-of-type(n+3)::after {
-  content: "";
-}
-
 .jun-21 {
   counter-reset: jun-21;
   counter-set: jun-21 -2;
@@ -457,11 +332,6 @@ table td {
   counter-increment: jun-21;
   content: counter(jun-21);
 }
-.jun-21 tr:first-child td:nth-of-type(-n+2)::after,
-.jun-21 tr:last-child td:nth-of-type(n+5)::after {
-  content: "";
-}
-
 .jul-21 {
   counter-reset: jul-21;
   counter-set: jul-21 -4;
@@ -470,11 +340,6 @@ table td {
   counter-increment: jul-21;
   content: counter(jul-21);
 }
-.jul-21 tr:first-child td:nth-of-type(-n+4)::after,
-.jul-21 tr:last-child td:nth-of-type(n+8)::after {
-  content: "";
-}
-
 .aug-21 {
   counter-reset: aug-21;
   counter-set: aug-21 -0;
@@ -483,11 +348,6 @@ table td {
   counter-increment: aug-21;
   content: counter(aug-21);
 }
-.aug-21 tr:first-child td:nth-of-type(-n+0)::after,
-.aug-21 tr:last-child td:nth-of-type(n+4)::after {
-  content: "";
-}
-
 .sep-21 {
   counter-reset: sep-21;
   counter-set: sep-21 -3;
@@ -496,11 +356,6 @@ table td {
   counter-increment: sep-21;
   content: counter(sep-21);
 }
-.sep-21 tr:first-child td:nth-of-type(-n+3)::after,
-.sep-21 tr:last-child td:nth-of-type(n+6)::after {
-  content: "";
-}
-
 .oct-21 {
   counter-reset: oct-21;
   counter-set: oct-21 -5;
@@ -509,11 +364,6 @@ table td {
   counter-increment: oct-21;
   content: counter(oct-21);
 }
-.oct-21 tr:first-child td:nth-of-type(-n+5)::after,
-.oct-21 tr:last-child td:nth-of-type(n+2)::after {
-  content: "";
-}
-
 .nov-21 {
   counter-reset: nov-21;
   counter-set: nov-21 -1;
@@ -522,11 +372,6 @@ table td {
   counter-increment: nov-21;
   content: counter(nov-21);
 }
-.nov-21 tr:first-child td:nth-of-type(-n+1)::after,
-.nov-21 tr:last-child td:nth-of-type(n+4)::after {
-  content: "";
-}
-
 .dec-21 {
   counter-reset: dec-21;
   counter-set: dec-21 -3;
@@ -535,11 +380,6 @@ table td {
   counter-increment: dec-21;
   content: counter(dec-21);
 }
-.dec-21 tr:first-child td:nth-of-type(-n+3)::after,
-.dec-21 tr:last-child td:nth-of-type(n+7)::after {
-  content: "";
-}
-
 .jan-22 {
   counter-reset: jan-22;
   counter-set: jan-22 -6;
@@ -548,7 +388,39 @@ table td {
   counter-increment: jan-22;
   content: counter(jan-22);
 }
-.jan-22 tr:first-child td:nth-of-type(-n+6)::after,
+.may-19 tr:first-child td:nth-of-type(-n+3)::after,
+.may-19 tr:last-child td:nth-of-type(n+7)::after, .jun-19 tr:first-child td:nth-of-type(-n+6)::after,
+.jun-19 tr:last-child td:nth-of-type(n+2)::after, .jul-19 tr:first-child td:nth-of-type(-n+1)::after,
+.jul-19 tr:last-child td:nth-of-type(n+5)::after, .aug-19 tr:first-child td:nth-of-type(-n+4)::after,
+.aug-19 tr:last-child td:nth-of-type(n+8)::after, .sep-19 tr:first-child td:nth-of-type(-n+0)::after,
+.sep-19 tr:last-child td:nth-of-type(n+3)::after, .oct-19 tr:first-child td:nth-of-type(-n+2)::after,
+.oct-19 tr:last-child td:nth-of-type(n+6)::after, .nov-19 tr:first-child td:nth-of-type(-n+5)::after,
+.nov-19 tr:last-child td:nth-of-type(n+8)::after, .dec-19 tr:first-child td:nth-of-type(-n+0)::after,
+.dec-19 tr:last-child td:nth-of-type(n+4)::after, .jan-20 tr:first-child td:nth-of-type(-n+3)::after,
+.jan-20 tr:last-child td:nth-of-type(n+7)::after, .feb-20 tr:first-child td:nth-of-type(-n+6)::after,
+.feb-20 tr:last-child td:nth-of-type(n+8)::after, .mar-20 tr:first-child td:nth-of-type(-n+0)::after,
+.mar-20 tr:last-child td:nth-of-type(n+4)::after, .apr-20 tr:first-child td:nth-of-type(-n+3)::after,
+.apr-20 tr:last-child td:nth-of-type(n+6)::after, .may-20 tr:first-child td:nth-of-type(-n+5)::after,
+.may-20 tr:last-child td:nth-of-type(n+2)::after, .jun-20 tr:first-child td:nth-of-type(-n+1)::after,
+.jun-20 tr:last-child td:nth-of-type(n+4)::after, .jul-20 tr:first-child td:nth-of-type(-n+3)::after,
+.jul-20 tr:last-child td:nth-of-type(n+7)::after, .aug-20 tr:first-child td:nth-of-type(-n+6)::after,
+.aug-20 tr:last-child td:nth-of-type(n+3)::after, .sep-20 tr:first-child td:nth-of-type(-n+2)::after,
+.sep-20 tr:last-child td:nth-of-type(n+5)::after, .oct-20 tr:first-child td:nth-of-type(-n+4)::after,
+.oct-20 tr:last-child td:nth-of-type(n+8)::after, .nov-20 tr:first-child td:nth-of-type(-n+0)::after,
+.nov-20 tr:last-child td:nth-of-type(n+3)::after, .dec-20 tr:first-child td:nth-of-type(-n+2)::after,
+.dec-20 tr:last-child td:nth-of-type(n+6)::after, .jan-21 tr:first-child td:nth-of-type(-n+5)::after,
+.jan-21 tr:last-child td:nth-of-type(n+2)::after, .feb-21 tr:first-child td:nth-of-type(-n+1)::after,
+.feb-21 tr:last-child td:nth-of-type(n+2)::after, .mar-21 tr:first-child td:nth-of-type(-n+1)::after,
+.mar-21 tr:last-child td:nth-of-type(n+5)::after, .apr-21 tr:first-child td:nth-of-type(-n+4)::after,
+.apr-21 tr:last-child td:nth-of-type(n+7)::after, .may-21 tr:first-child td:nth-of-type(-n+6)::after,
+.may-21 tr:last-child td:nth-of-type(n+3)::after, .jun-21 tr:first-child td:nth-of-type(-n+2)::after,
+.jun-21 tr:last-child td:nth-of-type(n+5)::after, .jul-21 tr:first-child td:nth-of-type(-n+4)::after,
+.jul-21 tr:last-child td:nth-of-type(n+8)::after, .aug-21 tr:first-child td:nth-of-type(-n+0)::after,
+.aug-21 tr:last-child td:nth-of-type(n+4)::after, .sep-21 tr:first-child td:nth-of-type(-n+3)::after,
+.sep-21 tr:last-child td:nth-of-type(n+6)::after, .oct-21 tr:first-child td:nth-of-type(-n+5)::after,
+.oct-21 tr:last-child td:nth-of-type(n+2)::after, .nov-21 tr:first-child td:nth-of-type(-n+1)::after,
+.nov-21 tr:last-child td:nth-of-type(n+4)::after, .dec-21 tr:first-child td:nth-of-type(-n+3)::after,
+.dec-21 tr:last-child td:nth-of-type(n+7)::after, .jan-22 tr:first-child td:nth-of-type(-n+6)::after,
 .jan-22 tr:last-child td:nth-of-type(n+3)::after {
   content: "";
 }
@@ -603,11 +475,6 @@ table td {
 .af.start::after, .af.end::after {
   content: "Ancient Forge";
 }
-
-.af.start ~ .af.end::after {
-  content: " ";
-}
-
 .af::after {
   background-image: linear-gradient(90deg, #B8B8B8 20%, #AC2021);
 }
@@ -615,11 +482,6 @@ table td {
 .awitd.start::after, .awitd.end::after {
   content: "A Walk in the Dust";
 }
-
-.awitd.start ~ .awitd.end::after {
-  content: " ";
-}
-
 .awitd::after {
   background-image: linear-gradient(90deg, #DED9D3, #7594A6, #7B7B7B);
 }
@@ -627,11 +489,6 @@ table td {
 .bh.start::after, .bh.end::after {
   content: "Beyond Here";
 }
-
-.bh.start ~ .bh.end::after {
-  content: " ";
-}
-
 .bh::after {
   background-image: linear-gradient(90deg, #FB985D, #FBCE00);
 }
@@ -639,11 +496,6 @@ table td {
 .cc.start::after, .cc.end::after {
   content: "Contingency Contract";
 }
-
-.cc.start ~ .cc.end::after {
-  content: " ";
-}
-
 .cc::after {
   background-image: linear-gradient(90deg, #B79A8F, #867068);
 }
@@ -651,11 +503,6 @@ table td {
 .cc0.start::after, .cc0.end::after {
   content: "Contingency Contract #0";
 }
-
-.cc0.start ~ .cc0.end::after {
-  content: " ";
-}
-
 .cc0::after {
   background-image: linear-gradient(90deg, #F07373, #D63636);
 }
@@ -663,11 +510,6 @@ table td {
 .cc1.start::after, .cc1.end::after {
   content: "Contingency Contract #1";
 }
-
-.cc1.start ~ .cc1.end::after {
-  content: " ";
-}
-
 .cc1::after {
   background-image: linear-gradient(90deg, #F7DC5A, #C38921);
 }
@@ -675,11 +517,6 @@ table td {
 .cc2.start::after, .cc2.end::after {
   content: "Contingency Contract #2";
 }
-
-.cc2.start ~ .cc2.end::after {
-  content: " ";
-}
-
 .cc2::after {
   background-image: linear-gradient(90deg, #FF8D6A, #FD4B42);
 }
@@ -687,11 +524,6 @@ table td {
 .cc3.start::after, .cc3.end::after {
   content: "Contingency Contract #3";
 }
-
-.cc3.start ~ .cc3.end::after {
-  content: " ";
-}
-
 .cc3::after {
   background-image: linear-gradient(90deg, #9F7EC1, #D7B3FF);
 }
@@ -699,11 +531,6 @@ table td {
 .cc4.start::after, .cc4.end::after {
   content: "Contingency Contract #4";
 }
-
-.cc4.start ~ .cc4.end::after {
-  content: " ";
-}
-
 .cc4::after {
   background-image: linear-gradient(90deg, #45B5B8, #3D9FA5, #5781F7);
 }
@@ -711,11 +538,6 @@ table td {
 .cc5.start::after, .cc5.end::after {
   content: "Contingency Contract #5";
 }
-
-.cc5.start ~ .cc5.end::after {
-  content: " ";
-}
-
 .cc5::after {
   background-image: linear-gradient(90deg, #4F99F3, #F5858D);
 }
@@ -723,11 +545,6 @@ table td {
 .cfm.start::after, .cfm.end::after {
   content: "Ceobe's Fungi Mist";
 }
-
-.cfm.start ~ .cfm.end::after {
-  content: " ";
-}
-
 .cfm::after {
   background-color: #76D6F7;
 }
@@ -735,11 +552,6 @@ table td {
 .clw.start::after, .clw.end::after {
   content: "Cremation Last Wish";
 }
-
-.clw.start ~ .clw.end::after {
-  content: " ";
-}
-
 .clw::after {
   background-image: linear-gradient(90deg, #CBC46F, #DB8396);
 }
@@ -747,11 +559,6 @@ table td {
 .cob.start::after, .cob.end::after {
   content: "Code of Brawl";
 }
-
-.cob.start ~ .cob.end::after {
-  content: " ";
-}
-
 .cob::after {
   background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
@@ -759,11 +566,6 @@ table td {
 .cob-cc.start::after, .cob-cc.end::after {
   content: "Code of Brawl + Contingency Contract";
 }
-
-.cob-cc.start ~ .cob-cc.end::after {
-  content: " ";
-}
-
 .cob-cc::after {
   background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
@@ -771,11 +573,6 @@ table td {
 .cobr.start::after, .cobr.end::after {
   content: "Code of Brawl Rerun";
 }
-
-.cobr.start ~ .cobr.end::after {
-  content: " ";
-}
-
 .cobr::after {
   background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
 }
@@ -783,11 +580,6 @@ table td {
 .cou.start::after, .cou.end::after {
   content: "Children of Ursus";
 }
-
-.cou.start ~ .cou.end::after {
-  content: " ";
-}
-
 .cou::after {
   background-image: linear-gradient(90deg, #F5A204, #F3781E);
 }
@@ -795,11 +587,6 @@ table td {
 .dm.start::after, .dm.end::after {
   content: "Darknights Memoir";
 }
-
-.dm.start ~ .dm.end::after {
-  content: " ";
-}
-
 .dm::after {
   background-image: linear-gradient(90deg, #9093A8 30%, #C1655D);
 }
@@ -807,11 +594,6 @@ table td {
 .dm-clw.start::after, .dm-clw.end::after {
   content: "Darknights Memoir + Cremation Last Wish";
 }
-
-.dm-clw.start ~ .dm-clw.end::after {
-  content: " ";
-}
-
 .dm-clw::after {
   background-color: #ADAFC0;
 }
@@ -819,11 +601,6 @@ table td {
 .dmr.start::after, .dmr.end::after {
   content: "Darknights Memoir Rerun";
 }
-
-.dmr.start ~ .dmr.end::after {
-  content: " ";
-}
-
 .dmr::after {
   background-image: linear-gradient(90deg, #9093A8 30%, #C1655D);
 }
@@ -831,11 +608,6 @@ table td {
 .fmn.start::after, .fmn.end::after {
   content: "Forget Me Not";
 }
-
-.fmn.start ~ .fmn.end::after {
-  content: " ";
-}
-
 .fmn::after {
   background-image: linear-gradient(90deg, #DDA9DF, #ADB3FA);
 }
@@ -843,11 +615,6 @@ table td {
 .gatkt.start::after, .gatkt.end::after {
   content: "Grani and the Knights' Treasure";
 }
-
-.gatkt.start ~ .gatkt.end::after {
-  content: " ";
-}
-
 .gatkt::after {
   background-color: #B1ACB1;
 }
@@ -855,11 +622,6 @@ table td {
 .gatktr.start::after, .gatktr.end::after {
   content: "Grani and the Knights' Treasure Rerun";
 }
-
-.gatktr.start ~ .gatktr.end::after {
-  content: " ";
-}
-
 .gatktr::after {
   background-color: #B1ACB1;
 }
@@ -867,11 +629,6 @@ table td {
 .gtgcr-cfm.start::after, .gtgcr-cfm.end::after {
   content: "Gavial the Great Chief Returns + Ceobe's Fungi Mist";
 }
-
-.gtgcr-cfm.start ~ .gtgcr-cfm.end::after {
-  content: " ";
-}
-
 .gtgcr-cfm::after {
   background-image: linear-gradient(90deg, #00FDFB, #6870FF);
 }
@@ -879,11 +636,6 @@ table td {
 .hosf.start::after, .hosf.end::after {
   content: "Heart of Surging Flame";
 }
-
-.hosf.start ~ .hosf.end::after {
-  content: " ";
-}
-
 .hosf::after {
   background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
 }
@@ -891,11 +643,6 @@ table td {
 .hosfr.start::after, .hosfr.end::after {
   content: "Heart of Surging Flame Rerun";
 }
-
-.hosfr.start ~ .hosfr.end::after {
-  content: " ";
-}
-
 .hosfr::after {
   background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
 }
@@ -903,11 +650,6 @@ table td {
 .mb.start::after, .mb.end::after {
   content: "Mansfield Break";
 }
-
-.mb.start ~ .mb.end::after {
-  content: " ";
-}
-
 .mb::after {
   background-color: #E37E74;
 }
@@ -915,11 +657,6 @@ table td {
 .mn.start::after, .mn.end::after {
   content: "Maria Nearl";
 }
-
-.mn.start ~ .mn.end::after {
-  content: " ";
-}
-
 .mn::after {
   background-color: #6A8EFF;
 }
@@ -927,11 +664,6 @@ table td {
 .oi.start::after, .oi.end::after {
   content: "Operational Intelligence";
 }
-
-.oi.start ~ .oi.end::after {
-  content: " ";
-}
-
 .oi::after {
   background-color: #E8D138;
 }
@@ -939,11 +671,6 @@ table td {
 .ood-ridp.start::after, .ood-ridp.end::after {
   content: "Operation Originium Dust + Rhodes Island Defence Protocols";
 }
-
-.ood-ridp.start ~ .ood-ridp.end::after {
-  content: " ";
-}
-
 .ood-ridp::after {
   background-image: linear-gradient(90deg, #ECAF28 20%, #CE782F);
 }
@@ -951,11 +678,6 @@ table td {
 .pl.start::after, .pl.end::after {
   content: "Preluding Lights";
 }
-
-.pl.start ~ .pl.end::after {
-  content: " ";
-}
-
 .pl::after {
   background-image: linear-gradient(90deg, #E78F70 20%, #D8D6CF);
 }
@@ -963,11 +685,6 @@ table td {
 .rb.start::after, .rb.end::after {
   content: "Rewinding Breeze";
 }
-
-.rb.start ~ .rb.end::after {
-  content: " ";
-}
-
 .rb::after {
   background-image: linear-gradient(90deg, #FF7C4A, #FA9F38);
 }
@@ -975,11 +692,6 @@ table td {
 .soa.start::after, .soa.end::after {
   content: "Stories of Afternoon";
 }
-
-.soa.start ~ .soa.end::after {
-  content: " ";
-}
-
 .soa::after {
   background-image: linear-gradient(90deg, #0BB1FE, #2A82FF);
 }
@@ -987,11 +699,6 @@ table td {
 .tow.start::after, .tow.end::after {
   content: "Twilight of Wolumonde";
 }
-
-.tow.start ~ .tow.end::after {
-  content: " ";
-}
-
 .tow::after {
   background-image: linear-gradient(90deg, #D7BF60 20%, #606266);
 }
@@ -999,11 +706,6 @@ table td {
 .towr.start::after, .towr.end::after {
   content: "Twilight of Wolumonde Rerun";
 }
-
-.towr.start ~ .towr.end::after {
-  content: " ";
-}
-
 .towr::after {
   background-image: linear-gradient(90deg, #D7BF60 20%, #606266);
 }
@@ -1011,11 +713,6 @@ table td {
 .ut.start::after, .ut.end::after {
   content: "Under Tides";
 }
-
-.ut.start ~ .ut.end::after {
-  content: " ";
-}
-
 .ut::after {
   background-image: linear-gradient(90deg, #559889, #737977);
 }
@@ -1023,19 +720,17 @@ table td {
 .wir.start::after, .wir.end::after {
   content: "Who is Real";
 }
-
-.wir.start ~ .wir.end::after {
-  content: " ";
-}
-
 .wir::after {
   background-image: linear-gradient(90deg, #7FB2A5 30%, #BFD9BF);
+}
+
+.af.start ~ .af.end::after, .awitd.start ~ .awitd.end::after, .bh.start ~ .bh.end::after, .cc.start ~ .cc.end::after, .cc0.start ~ .cc0.end::after, .cc1.start ~ .cc1.end::after, .cc2.start ~ .cc2.end::after, .cc3.start ~ .cc3.end::after, .cc4.start ~ .cc4.end::after, .cc5.start ~ .cc5.end::after, .cfm.start ~ .cfm.end::after, .clw.start ~ .clw.end::after, .cob.start ~ .cob.end::after, .cob-cc.start ~ .cob-cc.end::after, .cobr.start ~ .cobr.end::after, .cou.start ~ .cou.end::after, .dm.start ~ .dm.end::after, .dm-clw.start ~ .dm-clw.end::after, .dmr.start ~ .dmr.end::after, .fmn.start ~ .fmn.end::after, .gatkt.start ~ .gatkt.end::after, .gatktr.start ~ .gatktr.end::after, .gtgcr-cfm.start ~ .gtgcr-cfm.end::after, .hosf.start ~ .hosf.end::after, .hosfr.start ~ .hosfr.end::after, .mb.start ~ .mb.end::after, .mn.start ~ .mn.end::after, .oi.start ~ .oi.end::after, .ood-ridp.start ~ .ood-ridp.end::after, .pl.start ~ .pl.end::after, .rb.start ~ .rb.end::after, .soa.start ~ .soa.end::after, .tow.start ~ .tow.end::after, .towr.start ~ .towr.end::after, .ut.start ~ .ut.end::after, .wir.start ~ .wir.end::after {
+  content: " ";
 }
 
 .blank-0, .filled-0 {
   width: calc(100% / 7 * 0);
 }
-
 .blank-05, .filled-05 {
   width: calc(100% / 7 * 0.5);
 }
@@ -1043,7 +738,6 @@ table td {
 .blank-1, .filled-1 {
   width: calc(100% / 7 * 1);
 }
-
 .blank-15, .filled-15 {
   width: calc(100% / 7 * 1.5);
 }
@@ -1051,7 +745,6 @@ table td {
 .blank-2, .filled-2 {
   width: calc(100% / 7 * 2);
 }
-
 .blank-25, .filled-25 {
   width: calc(100% / 7 * 2.5);
 }
@@ -1059,7 +752,6 @@ table td {
 .blank-3, .filled-3 {
   width: calc(100% / 7 * 3);
 }
-
 .blank-35, .filled-35 {
   width: calc(100% / 7 * 3.5);
 }
@@ -1067,7 +759,6 @@ table td {
 .blank-4, .filled-4 {
   width: calc(100% / 7 * 4);
 }
-
 .blank-45, .filled-45 {
   width: calc(100% / 7 * 4.5);
 }
@@ -1075,7 +766,6 @@ table td {
 .blank-5, .filled-5 {
   width: calc(100% / 7 * 5);
 }
-
 .blank-55, .filled-55 {
   width: calc(100% / 7 * 5.5);
 }
@@ -1083,7 +773,6 @@ table td {
 .blank-6, .filled-6 {
   width: calc(100% / 7 * 6);
 }
-
 .blank-65, .filled-65 {
   width: calc(100% / 7 * 6.5);
 }
@@ -1091,7 +780,6 @@ table td {
 .blank-7, .filled-7 {
   width: calc(100% / 7 * 7);
 }
-
 .blank-75, .filled-75 {
   width: calc(100% / 7 * 7.5);
 }

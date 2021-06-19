@@ -13,25 +13,31 @@
 
 		tr:first-child td:nth-of-type(-n+#{$indent})::after,
 		tr:last-child td:nth-of-type(n+#{8 - $outdent})::after {
-			content: ""
+			// No semicolon breaks syntax highlighting.
+			@extend %counter-content;
 		}
 	}
 }
 
 // Creates widths for event overlays.
 @mixin width($n) {
-	.blank-#{$n}, .filled-#{$n} { width: calc(100% / 7 * #{$n}) }
-	.blank-#{$n}5, .filled-#{$n}5 { width: calc(100% / 7 * #{$n}.5) }
+	.blank-#{$n}, .filled-#{$n} {
+		width: calc(100% / 7 * #{$n});
+		&5 { width: calc(100% / 7 * #{$n}.5) }
+	}
 }
 
 // Labels and colors event overlays.
 @mixin overlay($initials, $name, $color) {
-	.#{$initials}.start::after, .#{$initials}.end::after { content: $name }
-	.#{$initials}.start ~ .#{$initials}.end::after { content: "\00A0" }
+	.#{$initials} {
+		&.start::after, &.end::after { content: $name }
+		// No semicolon breaks syntax highlighting.
+		&.start ~ &.end::after { @extend %overlay-content; }
 
-	@if index(#{$color}, ",") {
-		.#{$initials}::after { background-image: linear-gradient(90deg, $color) }
-	} @else {
-		.#{$initials}::after { background-color: $color }
+		@if index(#{$color}, ",") {
+			&::after { background-image: linear-gradient(90deg, $color) }
+		} @else {
+			&::after { background-color: $color }
+		}
 	}
 }

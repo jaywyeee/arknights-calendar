@@ -127,6 +127,9 @@ table {
 	@include counter($month, $indent, $outdent);
 }
 
+// Extended by counter mixin.
+%counter-content { content: "" }
+
 // Events
 .events {
 	align-content: flex-start;
@@ -172,6 +175,9 @@ table {
 @each $initials, $name, $color in events.$list {
 	@include overlay($initials, $name, $color);
 }
+
+// Extended by overlay mixin.
+%overlay-content { content: "\00A0" }
 
 @for $i from 0 through 7 {
 	@include width($i);
