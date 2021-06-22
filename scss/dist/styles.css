@@ -714,7 +714,7 @@ table td {
 
 a {
   --icon-size: 50px;
-  background: center/contain no-repeat url("../svg/github.svg");
+  background: center/contain no-repeat url("../../svg/github.svg");
   bottom: var(--page-margin);
   display: block;
   height: var(--icon-size);
