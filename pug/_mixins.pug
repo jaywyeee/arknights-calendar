@@ -1,6 +1,6 @@
 //- Calendar head template
 //- This is pretty spaghetti, please submit a pull request
-	if you are a Pug wizard and can make this more elegant
+	if you are a Pug wizard and can make this more elegant.
 mixin section(month, year, rows, hideYear)
 	- let shorten = function(month) {
 	- 	return month.toLowerCase().slice(0, 3)
@@ -19,7 +19,7 @@ mixin section(month, year, rows, hideYear)
 		.events
 			block
 
-//- Creates table for dates
+//- Creates table for dates.
 mixin table(rows)
 	table
 		tbody
@@ -34,3 +34,8 @@ mixin table(rows)
 					td
 					td
 					td
+
+//- Creates .blanks.
+mixin blank(...lengths)
+	each i in lengths
+		div(class="blank-" + i)
