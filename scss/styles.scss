@@ -195,6 +195,7 @@ table {
 // GitHub link 
 a {
 	--icon-size: 50px;
+	-webkit-tap-highlight-color: transparent;
 	background: center / contain no-repeat url("../../svg/github.svg");
 	bottom: var(--page-margin);
 	display: block;
