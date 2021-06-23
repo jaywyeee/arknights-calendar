@@ -1,4 +1,5 @@
 // Colors are not quoted so that Visual Studio Code color previews work.
+// Hex regex: #[A-Fa-f0-9]{6}
 $list: (
 	("af",        "Ancient Forge",                                              (#B8B8B8 20%, #AC2021)),
 	("awitd",     "A Walk in the Dust",                                         (#DED9D3, #7594A6, #7B7B7B)),
@@ -23,17 +24,20 @@ $list: (
 	("gatkt",     "Grani and the Knights' Treasure",                            (#B1ACB1)),
 	("gatktr",    "Grani and the Knights' Treasure Rerun",                      (#B1ACB1)),
 	("gtgcr-cfm", "Gavial the Great Chief Returns + Ceobe's Fungi Mist",        (#00FDFB, #6870FF)),
+	("gtgcrr",    "Gavial the Great Chief Returns Rerun",                       (#00FDFB, #6870FF)),
 	("hosf",      "Heart of Surging Flame",                                     (#D9E6DF, #A4FDFD)),
 	("hosfr",     "Heart of Surging Flame Rerun",                               (#D9E6DF, #A4FDFD)),
+	("hw",        "Hymnoi Wisdom",                                              (#FD9057)),
 	("mb",        "Mansfield Break",                                            (#E37E74)),
 	("mn",        "Maria Nearl",                                                (#6A8EFF)),
 	("oi",        "Operational Intelligence",                                   (#E8D138)),
 	("ood-ridp",  "Operation Originium Dust + Rhodes Island Defence Protocols", (#ECAF28 20%, #CE782F)),
-	("pl",        "Preluding Lights",                                           (#E78F70 20%, #D8D6CF)),
+	("pl",        "Preluding Lights",                                           (#E88864 20%, #D8D6CF)),
 	("rb",        "Rewinding Breeze",                                           (#FF7C4A, #FA9F38)),
 	("soa",       "Stories of Afternoon",                                       (#0BB1FE, #2A82FF)),
 	("tow",       "Twilight of Wolumonde",                                      (#D7BF60 20%, #606266)),
 	("towr",      "Twilight of Wolumonde Rerun",                                (#D7BF60 20%, #606266)),
 	("ut",        "Under Tides",                                                (#559889, #737977)),
+	("v",         "Vigilo",                                                     (#D6D7D9, #404A3C)),
 	("wir",       "Who is Real",                                                (#7FB2A5 30%, #BFD9BF)),
 );

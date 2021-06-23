@@ -591,6 +591,11 @@ table td {
   background-image: linear-gradient(90deg, #00FDFB, #6870FF);
 }
 
+.gtgcrr::after {
+  --name: "Gavial the Great Chief Returns Rerun";
+  background-image: linear-gradient(90deg, #00FDFB, #6870FF);
+}
+
 .hosf::after {
   --name: "Heart of Surging Flame";
   background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
@@ -599,6 +604,11 @@ table td {
 .hosfr::after {
   --name: "Heart of Surging Flame Rerun";
   background-image: linear-gradient(90deg, #D9E6DF, #A4FDFD);
+}
+
+.hw::after {
+  --name: "Hymnoi Wisdom";
+  background-color: #FD9057;
 }
 
 .mb::after {
@@ -623,7 +633,7 @@ table td {
 
 .pl::after {
   --name: "Preluding Lights";
-  background-image: linear-gradient(90deg, #E78F70 20%, #D8D6CF);
+  background-image: linear-gradient(90deg, #E88864 20%, #D8D6CF);
 }
 
 .rb::after {
@@ -649,6 +659,11 @@ table td {
 .ut::after {
   --name: "Under Tides";
   background-image: linear-gradient(90deg, #559889, #737977);
+}
+
+.v::after {
+  --name: "Vigilo";
+  background-image: linear-gradient(90deg, #D6D7D9, #404A3C);
 }
 
 .wir::after {
