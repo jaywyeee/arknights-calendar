@@ -12,10 +12,6 @@ for (let i = 0; i < buttons.length; ++i) {
 function switchTab() {
 	// Save scroll position of current tab
 	scrollPosition[currentTab] = window.scrollY;
-	// Set new current tab
-	currentTab = this.name;
-	// Scroll to saved position of new current tab
-	window.scrollTo(0, scrollPosition[currentTab])
 
 	for (let i = 0; i < buttons.length; ++i) {
 		buttons[i].classList.remove("selected");
@@ -24,4 +20,10 @@ function switchTab() {
 
 	this.classList.add("selected");
 	document.querySelector("#" + this.name).classList.add("selected");
+
+	// Set new current tab
+	currentTab = this.name;
+
+	// Scroll to saved position of new current tab
+	window.scrollTo(0, scrollPosition[currentTab])
 };
