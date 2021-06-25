@@ -531,11 +531,6 @@ table td {
   background-color: #76D6F7;
 }
 
-.clw::after {
-  --name: "Cremation Last Wish";
-  background-image: linear-gradient(90deg, #CBC46F, #DB8396);
-}
-
 .cob::after {
   --name: "Code of Brawl";
   background-image: linear-gradient(90deg, #8094F8 25%, #C07DEE);
@@ -559,11 +554,6 @@ table td {
 .dm::after {
   --name: "Darknights Memoir";
   background-image: linear-gradient(90deg, #9093A8 30%, #C1655D);
-}
-
-.dm-clw::after {
-  --name: "Darknights Memoir + Cremation Last Wish";
-  background-color: #ADAFC0;
 }
 
 .dmr::after {
