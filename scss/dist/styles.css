@@ -440,7 +440,7 @@ table td {
 
 [class|=filled]::after {
   background-color: magenta;
-  content: " ";
+  content: "​";
   font-size: 0.87rem;
   overflow: hidden;
   padding: 0.2em 0.5em;
