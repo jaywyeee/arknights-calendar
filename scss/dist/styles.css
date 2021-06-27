@@ -578,12 +578,12 @@ table td {
 
 .gtgcr-cfm::after {
   --name: "Gavial the Great Chief Returns + Ceobe's Fungi Mist";
-  background-image: linear-gradient(90deg, #00FDFB, #6870FF);
+  background-image: linear-gradient(90deg, #49EBE9, #6F75F7);
 }
 
 .gtgcrr::after {
   --name: "Gavial the Great Chief Returns Rerun";
-  background-image: linear-gradient(90deg, #00FDFB, #6870FF);
+  background-image: linear-gradient(90deg, #49EBE9, #6F75F7);
 }
 
 .hosf::after {
@@ -598,12 +598,12 @@ table td {
 
 .hw::after {
   --name: "Hymnoi Wisdom";
-  background-color: #FD9057;
+  background-color: #FF8943;
 }
 
 .mb::after {
   --name: "Mansfield Break";
-  background-color: #E37E74;
+  background-color: #EF776A;
 }
 
 .mn::after {
@@ -623,7 +623,7 @@ table td {
 
 .pl::after {
   --name: "Preluding Lights";
-  background-image: linear-gradient(90deg, #E88864 20%, #D8D6CF);
+  background-image: linear-gradient(90deg, #FF8C5C 20%, #D8D6CF);
 }
 
 .rb::after {
