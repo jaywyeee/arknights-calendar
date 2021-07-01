@@ -23,7 +23,7 @@ main {
 
 article:not(.selected) { display: none }
 
-p { color: var(--gray) }
+p { color: hsl(0, 0%, 60%) }
 
 ::-webkit-scrollbar {
 	width: 10px;

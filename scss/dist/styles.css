@@ -22,7 +22,7 @@ article:not(.selected) {
 }
 
 p {
-  color: var(--gray);
+  color: #999999;
 }
 
 ::-webkit-scrollbar {
@@ -523,7 +523,7 @@ table td {
 
 .cc5::after {
   --name: "Contingency Contract #5";
-  background-image: linear-gradient(90deg, #4F99F3, #F5858D);
+  background-image: linear-gradient(90deg, #4399FA, #FC818A);
 }
 
 .cfm::after {
