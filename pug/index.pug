@@ -18,9 +18,12 @@ html(lang="en")
 			button(type="button" name="cn") Past CN
 			button(type="button" name="en") Past EN
 		main
-			include _pr
-			include _cn
-			include _en
+			article#pr.selected
+				include _pr
+			article#cn
+				include _cn
+			article#en
+				include _en
 		aside
 			a(href="https://github.com/jaywyeee/arknights-calendar" aria-label="GitHub")
 		.scripts
