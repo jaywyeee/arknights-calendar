@@ -5,8 +5,9 @@
 
 body {
   --fonts: "Roboto Condensed", sans-serif;
-  --page-margin: 20px;
   --gray: hsl(0, 0%, 50%);
+  --overlay-margin: 0.625rem;
+  --page-margin: 20px;
   background-color: black;
   font-family: var(--fonts);
   margin: var(--page-margin);
@@ -23,6 +24,7 @@ article:not(.selected) {
 
 p {
   color: #999999;
+  margin-bottom: 2.5em;
 }
 
 ::-webkit-scrollbar {
@@ -35,7 +37,7 @@ p {
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.4em;
   justify-content: center;
   left: var(--page-margin);
   position: fixed;
@@ -82,21 +84,16 @@ button.selected {
   }
 }
 
-h1 {
-  border-top: 1px solid var(--gray);
-  color: white;
-  font-size: 1.2rem;
-  font-weight: normal;
-  margin: 1.1em 0;
-  padding-top: 1.8em;
-}
-h1:first-of-type {
-  border: none;
-  padding-top: 0.5em;
-}
-
-article > div {
+section {
   position: relative;
+}
+section:not(:first-of-type) {
+  margin-top: -4.6rem;
+}
+@media (max-width: 720px) {
+  section {
+    margin-left: 2.3rem;
+  }
 }
 
 .row-5 {
@@ -111,6 +108,34 @@ article > div {
 }
 .row-6 tr, .row-6 .events div {
   height: calc(100% / 6);
+}
+
+h1 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  left: -8.5em;
+  margin: 0;
+  position: absolute;
+  text-align: right;
+  width: 15ch;
+}
+h1 span {
+  color: var(--gray);
+  display: block;
+  font-size: 1rem;
+}
+@media (max-width: 855px) {
+  h1 {
+    font-size: 1.1rem;
+    left: -9.7em;
+    padding-inline-end: 0.2em;
+    transform-origin: top right;
+    transform: rotate(-90deg);
+  }
+  h1 span {
+    display: initial;
+  }
 }
 
 table {
@@ -159,6 +184,7 @@ table td {
 .sep-19 {
   counter-reset: sep-19;
   counter-set: sep-19 -0;
+  margin-top: 0 !important;
 }
 .sep-19 td::after {
   counter-increment: sep-19;
@@ -183,6 +209,7 @@ table td {
 .dec-19 {
   counter-reset: dec-19;
   counter-set: dec-19 -0;
+  margin-top: 0 !important;
 }
 .dec-19 td::after {
   counter-increment: dec-19;
@@ -207,6 +234,7 @@ table td {
 .mar-20 {
   counter-reset: mar-20;
   counter-set: mar-20 -0;
+  margin-top: 0 !important;
 }
 .mar-20 td::after {
   counter-increment: mar-20;
@@ -271,6 +299,7 @@ table td {
 .nov-20 {
   counter-reset: nov-20;
   counter-set: nov-20 -0;
+  margin-top: 0 !important;
 }
 .nov-20 td::after {
   counter-increment: nov-20;
@@ -343,6 +372,7 @@ table td {
 .aug-21 {
   counter-reset: aug-21;
   counter-set: aug-21 -0;
+  margin-top: 0 !important;
 }
 .aug-21 td::after {
   counter-increment: aug-21;
@@ -425,6 +455,13 @@ table td {
   content: "";
 }
 
+.may-19 tr:first-child td:nth-child(4)::after, .jun-19 tr:first-child td:nth-child(7)::after, .jul-19 tr:first-child td:nth-child(2)::after, .aug-19 tr:first-child td:nth-child(5)::after, .sep-19 tr:first-child td:nth-child(1)::after, .oct-19 tr:first-child td:nth-child(3)::after, .nov-19 tr:first-child td:nth-child(6)::after, .dec-19 tr:first-child td:nth-child(1)::after, .jan-20 tr:first-child td:nth-child(4)::after, .feb-20 tr:first-child td:nth-child(7)::after, .mar-20 tr:first-child td:nth-child(1)::after, .apr-20 tr:first-child td:nth-child(4)::after, .may-20 tr:first-child td:nth-child(6)::after, .jun-20 tr:first-child td:nth-child(2)::after, .jul-20 tr:first-child td:nth-child(4)::after, .aug-20 tr:first-child td:nth-child(7)::after, .sep-20 tr:first-child td:nth-child(3)::after, .oct-20 tr:first-child td:nth-child(5)::after, .nov-20 tr:first-child td:nth-child(1)::after, .dec-20 tr:first-child td:nth-child(3)::after, .jan-21 tr:first-child td:nth-child(6)::after, .feb-21 tr:first-child td:nth-child(2)::after, .mar-21 tr:first-child td:nth-child(2)::after, .apr-21 tr:first-child td:nth-child(5)::after, .may-21 tr:first-child td:nth-child(7)::after, .jun-21 tr:first-child td:nth-child(3)::after, .jul-21 tr:first-child td:nth-child(5)::after, .aug-21 tr:first-child td:nth-child(1)::after, .sep-21 tr:first-child td:nth-child(4)::after, .oct-21 tr:first-child td:nth-child(6)::after, .nov-21 tr:first-child td:nth-child(2)::after, .dec-21 tr:first-child td:nth-child(4)::after, .jan-22 tr:first-child td:nth-child(7)::after {
+  background-color: white;
+  border-radius: 50%;
+  color: initial;
+  padding: 0.14em 0.5em;
+}
+
 .events {
   align-content: flex-start;
   display: flex;
@@ -454,16 +491,16 @@ table td {
 .start::after {
   border-radius: 2px 0 0 2px;
   content: var(--name);
-  left: 10px;
-  width: calc(100% - 10px);
+  left: var(--overlay-margin);
+  width: calc(100% - var(--overlay-margin));
 }
 
 .end::after {
   border-radius: 0 2px 2px 0;
-  right: 10px;
-  width: calc(100% - 10px);
+  right: var(--overlay-margin);
+  width: calc(100% - var(--overlay-margin));
 }
-.end:not(.start ~ *)::after, .end.label::after {
+.end.label::after {
   content: var(--name);
   text-align: right;
 }

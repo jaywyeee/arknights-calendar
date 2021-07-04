@@ -8,13 +8,12 @@ mixin section(month, year, rows, hideYear)
 
 	- let shortMonth = shorten(month)
 
-	//- if hideYear
-	//- 	h1= month
-	//- else
-	//- 	h1= month + " " + "20" + year
+	section(class=`${shortMonth}-${year} row-${rows}`)
+		if hideYear
+			h1= month
+		else
+			h1 #{month} #[span 20#{year}]
 
-	h1= `${month}${hideYear ? "" : " " + "20" + year}`
-	div(class=`${shortMonth}-${year} row-${rows}`)
 		+table(rows)
 		.events
 			block

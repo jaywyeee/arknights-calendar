@@ -1,10 +1,12 @@
 @use "sass:string" as *;
 
 // Creates dates for calendar table.
-@mixin counter($month, $indent, $outdent: 7) {
+@mixin counter($month, $indent, $outdent) {
 	.#{$month} {
 		counter-reset: unquote($month);
-		counter-set: #{$month} -#{$indent};
+		counter-set: unquote($month) -#{$indent};
+
+		@if ($indent == 0) { margin-top: 0 !important; }
 
 		td::after {
 			counter-increment: unquote($month);
@@ -13,8 +15,11 @@
 
 		tr:first-child td:nth-child(-n+#{$indent})::after,
 		tr:last-child td:nth-child(n+#{8 - $outdent})::after {
-			// No semicolon breaks syntax highlighting.
 			@extend %counter-content;
+		}
+
+		tr:first-child td:nth-child(#{$indent + 1})::after {
+			@extend %first-counter;
 		}
 	}
 }
@@ -29,15 +34,13 @@
 
 // Labels and colors event overlays.
 @mixin overlay($initials, $name, $color) {
-	.#{$initials} {
-		&::after {
-			--name: "#{$name}";
+	.#{$initials}::after {
+		--name: "#{$name}";
 
-			@if index(#{$color}, ",") {
-				background-image: linear-gradient(90deg, $color);
-			} @else {
-				background-color: $color;
-			}
+		@if index(#{$color}, ",") {
+			background-image: linear-gradient(90deg, $color);
+		} @else {
+			background-color: $color;
 		}
 	}
 }
