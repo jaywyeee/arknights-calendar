@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @use "mixins" as *;
+@use "fonts";
 @use "events";
 @use "months";
 
@@ -11,6 +12,7 @@ body {
 	--gray: hsl(0, 0%, 50%);
 	--overlay-margin: 0.625rem;
 	--page-margin: 20px;
+	--row-height: 4.6rem;
 
 	background-color: black;
 	font-family: var(--fonts);
@@ -89,17 +91,17 @@ button {
 // Container
 section {
 	position: relative;
-	&:not(:first-of-type) { margin-top: -4.6rem }
-	@media (max-width: 720px) { margin-left: 2.3rem }
+	&:not(:first-of-type) { margin-top: calc(var(--row-height) * -1) }
+	@media (max-width: 695px) { margin-left: 1.4rem }
 }
 
 .row-5 {
-	height: 23rem;
+	height: calc(var(--row-height) * 5);
 	tr, .events div { height: calc(100% / 5) }
 }
 
 .row-6 {
-	height: (23rem / 5 * 6);
+	height: calc(var(--row-height) * 6);
 	tr, .events div { height: calc(100% / 6) }
 }
 
@@ -108,31 +110,42 @@ h1 {
 	color: white;
 	font-size: 1.2rem;
 	font-weight: 400;
-	left: -8.5em;
+	left: -1.2em;
 	margin: 0;
 	position: absolute;
 	text-align: right;
-	width: 15ch;
+	transform: translateX(-100%);
 
 	span {
 		color: var(--gray);
 		display: block;
+		font-family: "Bender", var(--fonts);
 		font-size: 1rem;
 	}
 
 	@media (max-width: 855px) {
-		font-size: 1.1rem;
-		left: -9.7em;
-		padding-inline-end: 0.2em;
-		transform-origin: top right;
-		transform: rotate(-90deg);
+		// letter-spacing adds extra space at the end.
+		font-size: 0.9rem;
+		left: -1.5em;
+		letter-spacing: 0.3em;
+		padding-left: 0.3em;
+		text-transform: uppercase;
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-90deg);
+		white-space: nowrap;
 
-		span { display: initial }
+		span {
+			display: initial;
+			font-size: 0.9rem;
+			letter-spacing: 0.2em;
+			padding-right: 0.1em;
+		}
 	}
 }
 
 // Dates
 table {
+	border-spacing: 0;
 	height: 100%;
 	width: 100%;
 
@@ -155,6 +168,7 @@ table {
 	background-color: white;
 	border-radius: 50%;
 	color: initial;
+	margin-left: -0.5em;
 	padding: 0.14em 0.5em;
 }
 
