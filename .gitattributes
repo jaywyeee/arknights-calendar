@@ -1,7 +1,7 @@
 # Set default behavior in case core.autocrlf is not set.
 * text=auto
 
-# Exclude generated code.
+# Mark generated code.
 *.css linguist-generated -diff
-*.css.map -diff
+*.css.map linguist-generated -diff
 *.html linguist-generated -diff
