@@ -1,9 +1,5 @@
-## Bender
-<details>
-<summary>SIL Open Font License 1.1</summary>
-
-<p></p>
-
+### Bender
+SIL Open Font License 1.1
 ```
 Copyright (c) <dates>, <Copyright Holder> (<URL|email>),
 with Reserved Font Name <Reserved Font Name>.
@@ -104,12 +100,9 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ```
-</details>
 
-## Material Icons
-<details>
-<summary>Apache License 2.0</summary>
-
+### Material Icons
+Apache License 2.0  
 https://github.com/google/material-design-icons/blob/master/LICENSE
 ```
 
@@ -315,12 +308,9 @@ https://github.com/google/material-design-icons/blob/master/LICENSE
    See the License for the specific language governing permissions and
    limitations under the License.
 ```
-</details>
 
-## Roboto Condensed
-<details>
-<summary>Apache License 2.0</summary>
-
+### Roboto Condensed
+Apache License 2.0  
 https://fonts.google.com/specimen/Roboto+Condensed#license
 ```
 
@@ -526,4 +516,3 @@ https://fonts.google.com/specimen/Roboto+Condensed#license
    See the License for the specific language governing permissions and
    limitations under the License.
 ```
-</details>
