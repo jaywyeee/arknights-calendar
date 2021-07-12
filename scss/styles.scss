@@ -182,7 +182,10 @@ table {
 	top: 0;
 	width: 100%;
 
-	div { position: relative }
+	div {
+		position: relative;
+		scroll-margin-top: var(--row-height);
+	}
 }
 
 [class|="filled"]::after {

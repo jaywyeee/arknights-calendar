@@ -490,6 +490,7 @@ table td {
 }
 .events div {
   position: relative;
+  scroll-margin-top: var(--row-height);
 }
 
 [class|=filled]::after {
