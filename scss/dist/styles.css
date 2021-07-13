@@ -776,16 +776,22 @@ a {
   --icon-size: 50px;
   -webkit-tap-highlight-color: transparent;
   background: center/contain no-repeat url("../../images/closure.svg");
+  border-radius: 50%;
   bottom: var(--page-margin);
   display: block;
   height: var(--icon-size);
   position: fixed;
   right: var(--page-margin);
-  transition-duration: 100ms;
+  transition: background-image 200ms ease-out, opacity 100ms;
   width: var(--icon-size);
 }
 a:hover {
+  background-image: url("../../images/github.svg");
+  transition-duration: 300ms;
+}
+a:active {
   opacity: 0.6;
+  transition-duration: 100ms;
 }
 @media (max-width: 850px) {
   a {
