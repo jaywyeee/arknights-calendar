@@ -66,16 +66,25 @@ if (params.get("cal")) {
 
 // Set URL on middle click.
 for (let i = 0; i < events.length; ++i) {
-	events[i].addEventListener("mouseup", setUrl);
+	events[i].addEventListener("mouseup", getPermalink);
 	// Disable middle click scroll.
 	events[i].addEventListener("mousedown", (e) => { if (e.button === 1) return e.preventDefault() });
 };
 
-function setUrl(e) {
+function getPermalink(e) {
 	if (e.button === 1) {
 		const urlParams = `?cal=${currentTab}&event=${this.classList[1]}`;
 		const newUrl = baseUrl + urlParams;
+		const targetEvents = document.querySelectorAll(`#${currentTab} .${this.classList[1]}`);
 
+		// Copy to clipboard and replace URL.
+		navigator.clipboard.writeText(newUrl);
 		window.history.replaceState({}, "", newUrl);
+
+		// Alert copy success.
+		for (let i = 0; i < targetEvents.length; ++i) {
+			targetEvents[i].classList.add("copied");
+			setTimeout(() => { targetEvents[i].classList.remove("copied") }, 2000);
+		};
 	};
 };

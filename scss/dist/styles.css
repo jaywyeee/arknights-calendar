@@ -523,12 +523,17 @@ table td {
   text-align: right;
 }
 
-[title]::after {
-  cursor: help;
+.copied::after {
+  --name: "Copied!" !important;
+  font-style: initial !important;
 }
 
 .italic::after {
   font-style: italic;
+}
+
+[title]::after {
+  cursor: help;
 }
 
 .af::after {

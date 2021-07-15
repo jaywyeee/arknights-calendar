@@ -221,8 +221,13 @@ table {
 	}
 }
 
-[title]::after { cursor: help }
+.copied::after {
+	--name: "Copied!" !important;
+	font-style: initial !important;
+}
+
 .italic::after { font-style: italic }
+[title]::after { cursor: help }
 
 @each $initials, $name, $color in events.$list {
 	@include overlay($initials, $name, $color);
