@@ -490,7 +490,12 @@ table td {
 }
 .events div {
   position: relative;
-  scroll-margin-top: var(--row-height);
+  scroll-margin-top: 2.2rem;
+}
+@media (max-width: 1270px) {
+  .events div {
+    scroll-margin-top: 5rem;
+  }
 }
 
 [class|=filled]::after {

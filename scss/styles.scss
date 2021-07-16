@@ -184,7 +184,9 @@ table {
 
 	div {
 		position: relative;
-		scroll-margin-top: var(--row-height);
+		scroll-margin-top: 2.2rem;
+
+		@media (max-width: 1270px) { scroll-margin-top: 5rem }
 	}
 }
 
