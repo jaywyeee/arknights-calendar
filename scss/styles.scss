@@ -1,22 +1,33 @@
 @charset "UTF-8";
 @use "mixins" as *;
-@use "fonts";
 @use "events";
 @use "months";
+@use "fonts";
+
+// Variables
+// Miscellaneous
+$fonts: "Roboto Condensed", sans-serif;
+$gray: hsl(0, 0%, 50%);
+
+// Dimensions
+$overlay-margin: 0.625rem;
+$page-margin: 20px;
+$row-height: 4.6rem;
+
+// Breakpoints
+$header-vertical: 855px;
+$header-merge: 695px;
+$nav-collapse: 1270px;
+$nav-sticky: 950px;
+
 
 // General
 *, ::after, ::before { box-sizing: border-box }
 
 body {
-	--fonts: "Roboto Condensed", sans-serif;
-	--gray: hsl(0, 0%, 50%);
-	--overlay-margin: 0.625rem;
-	--page-margin: 20px;
-	--row-height: 4.6rem;
-
 	background-color: black;
-	font-family: var(--fonts);
-	margin: var(--page-margin);
+	font-family: $fonts;
+	margin: $page-margin;
 }
 
 main {
@@ -33,9 +44,8 @@ p {
 
 ::-webkit-scrollbar {
 	width: 10px;
-	&-thumb { background-color: var(--gray) }
+	&-thumb { background-color: $gray }
 }
-
 
 
 // Navigation
@@ -44,17 +54,17 @@ nav {
 	flex-wrap: wrap;
 	gap: 0.4em;
 	justify-content: center;
-	left: var(--page-margin);
+	left: $page-margin;
 	position: fixed;
-	top: var(--page-margin);
+	top: $page-margin;
 	width: fit-content;
 	z-index: 1;
 
-	@media (min-width: 950px) and (max-width: 1270px) {
+	@media (min-width: $nav-sticky) and (max-width: $nav-collapse) {
 		flex-direction: column;
 	}
 
-	@media (max-width: 950px) {
+	@media (max-width: $nav-sticky) {
 		margin: 0 auto 1.4em auto;
 		position: sticky;
 	}
@@ -64,10 +74,10 @@ button {
 	-webkit-tap-highlight-color: transparent;
 	background-color: black;
 	border-radius: 15px;
-	border: 1px solid var(--gray);
+	border: 1px solid $gray;
 	color: white;
 	cursor: pointer;
-	font-family: var(--fonts);
+	font-family: $fonts;
 	font-size: 1rem;
 	padding: 0.2em 0.7em;
 	transition-duration: 100ms;
@@ -79,29 +89,28 @@ button {
 		color: initial;
 	}
 
-	@media (min-width: 950px) {
+	@media (min-width: $nav-sticky) {
 		&:hover { opacity: 0.8 }
 		&:active { opacity: 0.9 }
 	}
 }
 
 
-
 // Calendar
 // Container
 section {
 	position: relative;
-	&:not(:first-of-type) { margin-top: calc(var(--row-height) * -1) }
-	@media (max-width: 695px) { margin-left: 1.4rem }
+	&:not(:first-of-type) { margin-top: -#{$row-height}; }
+	@media (max-width: $header-merge) { margin-left: 1.4rem }
 }
 
 .row-5 {
-	height: calc(var(--row-height) * 5);
+	height: $row-height * 5;
 	tr, .events div { height: calc(100% / 5) }
 }
 
 .row-6 {
-	height: calc(var(--row-height) * 6);
+	height: $row-height * 6;
 	tr, .events div { height: calc(100% / 6) }
 }
 
@@ -117,13 +126,13 @@ h1 {
 	transform: translateX(-100%);
 
 	span {
-		color: var(--gray);
+		color: $gray;
 		display: block;
-		font-family: "Bender", var(--fonts);
+		font-family: "Bender", $fonts;
 		font-size: 1rem;
 	}
 
-	@media (max-width: 855px) {
+	@media (max-width: $header-vertical) {
 		// letter-spacing adds extra space at the end.
 		font-size: 0.9rem;
 		left: -1.5em;
@@ -186,7 +195,7 @@ table {
 		position: relative;
 		scroll-margin-top: 2.2rem;
 
-		@media (max-width: 1270px) { scroll-margin-top: 5rem }
+		@media (max-width: $nav-sticky) { scroll-margin-top: 5rem }
 	}
 }
 
@@ -206,15 +215,15 @@ table {
 .start::after {
 	border-radius: 2px 0 0 2px;
 	content: var(--name);
-	left: var(--overlay-margin);
-	width: calc(100% - var(--overlay-margin));
+	left: $overlay-margin;
+	width: calc(100% - #{$overlay-margin});
 }
 
 .end {
 	&::after {
 		border-radius: 0 2px 2px 0;
-		right: var(--overlay-margin);
-		width: calc(100% - var(--overlay-margin));
+		right: $overlay-margin;
+		width: calc(100% - #{$overlay-margin});
 	}
 
 	&.label::after {
@@ -240,20 +249,18 @@ table {
 }
 
 
-
 // GitHub link
 a {
-	--icon-size: 50px;
 	-webkit-tap-highlight-color: transparent;
 	background: center / contain no-repeat url("../../images/closure.svg");
 	border-radius: 50%;
-	bottom: var(--page-margin);
+	bottom: $page-margin;
 	display: block;
-	height: var(--icon-size);
+	height: 50px;
 	position: fixed;
-	right: var(--page-margin);
+	right: $page-margin;
 	transition: background-image 200ms ease-out, opacity 100ms;
-	width: var(--icon-size);
+	width: 50px;
 
 	&:hover {
 		background-image: url("../../images/github.svg");
@@ -265,10 +272,11 @@ a {
 		transition-duration: 100ms;
 	}
 
-	@media (max-width: 850px) {
-		--icon-size: 40px;
-		margin: auto;
+	@media (max-width: $header-vertical) {
+		height: 40px;
 		margin-top: 1.2rem;
+		margin: auto;
 		position: initial;
+		width: 40px;
 	}
 }
