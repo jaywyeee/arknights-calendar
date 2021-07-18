@@ -2,7 +2,7 @@
 A webpage displaying a projection of the future event schedule of Arknights, as well as past CN and EN schedules.
 
 ### Features
-* Middle click an event to copy a permalink to the clipboard.
+* Click an event to copy a permalink to the clipboard.
 
 ## Tools
 This project is developed in Visual Studio Code. The SCSS and Pug are compiled with the [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) and [Compile Hero](https://marketplace.visualstudio.com/items?itemName=Wscats.eno) extensions respectively.
