@@ -586,6 +586,11 @@ table td {
   background-image: linear-gradient(90deg, #4399FA, #FC818A);
 }
 
+.cc6::after {
+  --name: "Contingency Contract #6";
+  background-image: linear-gradient(90deg, #C3C176, #646C4C);
+}
+
 .cfm::after {
   --name: "Ceobe's Fungi Mist";
   background-color: #76D6F7;
@@ -609,6 +614,11 @@ table td {
 .cou::after {
   --name: "Children of Ursus";
   background-image: linear-gradient(90deg, #F5A204, #F3781E);
+}
+
+.dh::after {
+  --name: "Dossoles Holiday";
+  background-image: linear-gradient(90deg, #FF93AB, #EA0747);
 }
 
 .dm::after {
@@ -713,11 +723,11 @@ table td {
 
 .v::after {
   --name: "Vigilo";
-  background-image: linear-gradient(90deg, #D6D7D9, #404A3C);
+  background-image: linear-gradient(90deg, #D6D7D9, #3B4B33);
 }
 
 .wir::after {
-  --name: "Who is Real";
+  --name: "Who Is Real";
   background-image: linear-gradient(90deg, #7FB2A5 30%, #BFD9BF);
 }
 
