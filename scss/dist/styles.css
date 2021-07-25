@@ -429,6 +429,14 @@ table td {
   counter-increment: jan-22;
   content: counter(jan-22);
 }
+.feb-22 {
+  counter-reset: feb-22;
+  counter-set: feb-22 -2;
+}
+.feb-22 td::after {
+  counter-increment: feb-22;
+  content: counter(feb-22);
+}
 .may-19 tr:first-child td:nth-child(-n+3)::after,
 .may-19 tr:last-child td:nth-child(n+7)::after, .jun-19 tr:first-child td:nth-child(-n+6)::after,
 .jun-19 tr:last-child td:nth-child(n+2)::after, .jul-19 tr:first-child td:nth-child(-n+1)::after,
@@ -462,11 +470,12 @@ table td {
 .oct-21 tr:last-child td:nth-child(n+2)::after, .nov-21 tr:first-child td:nth-child(-n+1)::after,
 .nov-21 tr:last-child td:nth-child(n+4)::after, .dec-21 tr:first-child td:nth-child(-n+3)::after,
 .dec-21 tr:last-child td:nth-child(n+7)::after, .jan-22 tr:first-child td:nth-child(-n+6)::after,
-.jan-22 tr:last-child td:nth-child(n+3)::after {
+.jan-22 tr:last-child td:nth-child(n+3)::after, .feb-22 tr:first-child td:nth-child(-n+2)::after,
+.feb-22 tr:last-child td:nth-child(n+3)::after {
   content: "";
 }
 
-.may-19 tr:first-child td:nth-child(4)::after, .jun-19 tr:first-child td:nth-child(7)::after, .jul-19 tr:first-child td:nth-child(2)::after, .aug-19 tr:first-child td:nth-child(5)::after, .sep-19 tr:first-child td:nth-child(1)::after, .oct-19 tr:first-child td:nth-child(3)::after, .nov-19 tr:first-child td:nth-child(6)::after, .dec-19 tr:first-child td:nth-child(1)::after, .jan-20 tr:first-child td:nth-child(4)::after, .feb-20 tr:first-child td:nth-child(7)::after, .mar-20 tr:first-child td:nth-child(1)::after, .apr-20 tr:first-child td:nth-child(4)::after, .may-20 tr:first-child td:nth-child(6)::after, .jun-20 tr:first-child td:nth-child(2)::after, .jul-20 tr:first-child td:nth-child(4)::after, .aug-20 tr:first-child td:nth-child(7)::after, .sep-20 tr:first-child td:nth-child(3)::after, .oct-20 tr:first-child td:nth-child(5)::after, .nov-20 tr:first-child td:nth-child(1)::after, .dec-20 tr:first-child td:nth-child(3)::after, .jan-21 tr:first-child td:nth-child(6)::after, .feb-21 tr:first-child td:nth-child(2)::after, .mar-21 tr:first-child td:nth-child(2)::after, .apr-21 tr:first-child td:nth-child(5)::after, .may-21 tr:first-child td:nth-child(7)::after, .jun-21 tr:first-child td:nth-child(3)::after, .jul-21 tr:first-child td:nth-child(5)::after, .aug-21 tr:first-child td:nth-child(1)::after, .sep-21 tr:first-child td:nth-child(4)::after, .oct-21 tr:first-child td:nth-child(6)::after, .nov-21 tr:first-child td:nth-child(2)::after, .dec-21 tr:first-child td:nth-child(4)::after, .jan-22 tr:first-child td:nth-child(7)::after {
+.may-19 tr:first-child td:nth-child(4)::after, .jun-19 tr:first-child td:nth-child(7)::after, .jul-19 tr:first-child td:nth-child(2)::after, .aug-19 tr:first-child td:nth-child(5)::after, .sep-19 tr:first-child td:nth-child(1)::after, .oct-19 tr:first-child td:nth-child(3)::after, .nov-19 tr:first-child td:nth-child(6)::after, .dec-19 tr:first-child td:nth-child(1)::after, .jan-20 tr:first-child td:nth-child(4)::after, .feb-20 tr:first-child td:nth-child(7)::after, .mar-20 tr:first-child td:nth-child(1)::after, .apr-20 tr:first-child td:nth-child(4)::after, .may-20 tr:first-child td:nth-child(6)::after, .jun-20 tr:first-child td:nth-child(2)::after, .jul-20 tr:first-child td:nth-child(4)::after, .aug-20 tr:first-child td:nth-child(7)::after, .sep-20 tr:first-child td:nth-child(3)::after, .oct-20 tr:first-child td:nth-child(5)::after, .nov-20 tr:first-child td:nth-child(1)::after, .dec-20 tr:first-child td:nth-child(3)::after, .jan-21 tr:first-child td:nth-child(6)::after, .feb-21 tr:first-child td:nth-child(2)::after, .mar-21 tr:first-child td:nth-child(2)::after, .apr-21 tr:first-child td:nth-child(5)::after, .may-21 tr:first-child td:nth-child(7)::after, .jun-21 tr:first-child td:nth-child(3)::after, .jul-21 tr:first-child td:nth-child(5)::after, .aug-21 tr:first-child td:nth-child(1)::after, .sep-21 tr:first-child td:nth-child(4)::after, .oct-21 tr:first-child td:nth-child(6)::after, .nov-21 tr:first-child td:nth-child(2)::after, .dec-21 tr:first-child td:nth-child(4)::after, .jan-22 tr:first-child td:nth-child(7)::after, .feb-22 tr:first-child td:nth-child(3)::after {
   background-color: white;
   border-radius: 50%;
   color: initial;
