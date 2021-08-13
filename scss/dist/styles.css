@@ -566,37 +566,37 @@ table td {
 }
 
 .cc0::after {
-  --name: "Contingency Contract #0";
+  --name: "Contingency Contract #0: Barrenland";
   background-image: linear-gradient(90deg, #F07373, #D63636);
 }
 
 .cc1::after {
-  --name: "Contingency Contract #1";
+  --name: "Contingency Contract #1: Pyrite";
   background-image: linear-gradient(90deg, #F7DC5A, #C38921);
 }
 
 .cc2::after {
-  --name: "Contingency Contract #2";
+  --name: "Contingency Contract #2: Blade";
   background-image: linear-gradient(90deg, #FF8D6A, #FD4B42);
 }
 
 .cc3::after {
-  --name: "Contingency Contract #3";
+  --name: "Contingency Contract #3: Cinder";
   background-image: linear-gradient(90deg, #9F7EC1, #D7B3FF);
 }
 
 .cc4::after {
-  --name: "Contingency Contract #4";
+  --name: "Contingency Contract #4: Lead Seal";
   background-image: linear-gradient(90deg, #45B5B8, #3D9FA5, #5781F7);
 }
 
 .cc5::after {
-  --name: "Contingency Contract #5";
+  --name: "Contingency Contract #5: Spectrum";
   background-image: linear-gradient(90deg, #4399FA, #FC818A);
 }
 
 .cc6::after {
-  --name: "Contingency Contract #6";
+  --name: "Contingency Contract #6: Wild Scales";
   background-image: linear-gradient(90deg, #C3C176, #646C4C);
 }
 
@@ -695,8 +695,8 @@ table td {
   background-color: #E8D138;
 }
 
-.ood-ridp::after {
-  --name: "Operation Originium Dust + Rhodes Island Defence Protocols";
+.ood-dp::after {
+  --name: "Operation Originium Dust + Defence Protocols";
   background-image: linear-gradient(90deg, #ECAF28 20%, #CE782F);
 }
 
