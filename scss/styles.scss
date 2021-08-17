@@ -37,10 +37,7 @@ main {
 
 article:not(.selected) { display: none }
 
-p {
-	color: hsl(0, 0%, 60%);
-	margin-bottom: 2.5em;
-}
+p { color: hsl(0, 0%, 60%) }
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -100,6 +97,7 @@ button {
 // Container
 section {
 	position: relative;
+	p + &:first-of-type { margin-top: 2.5em !important }
 	&:not(:first-of-type) { margin-top: -#{$row-height}; }
 	@media (max-width: $header-merge) { margin-left: 1.4rem }
 }

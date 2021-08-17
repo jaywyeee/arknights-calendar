@@ -27,7 +27,6 @@ article:not(.selected) {
 
 p {
   color: #999999;
-  margin-bottom: 2.5em;
 }
 
 ::-webkit-scrollbar {
@@ -89,6 +88,9 @@ button.selected {
 
 section {
   position: relative;
+}
+p + section:first-of-type {
+  margin-top: 2.5em !important;
 }
 section:not(:first-of-type) {
   margin-top: -4.6rem;
