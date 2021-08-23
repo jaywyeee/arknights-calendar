@@ -568,37 +568,37 @@ table td {
 }
 
 .cc0::after {
-  --name: "Contingency Contract #0: Barrenland";
+  --name: "Contingency Contract #0: Operation Barrenland";
   background-image: linear-gradient(90deg, #F07373, #D63636);
 }
 
 .cc1::after {
-  --name: "Contingency Contract #1: Pyrite";
+  --name: "Contingency Contract #1: Operation Pyrite";
   background-image: linear-gradient(90deg, #F7DC5A, #C38921);
 }
 
 .cc2::after {
-  --name: "Contingency Contract #2: Blade";
+  --name: "Contingency Contract #2: Operation Blade";
   background-image: linear-gradient(90deg, #FF8D6A, #FD4B42);
 }
 
 .cc3::after {
-  --name: "Contingency Contract #3: Cinder";
+  --name: "Contingency Contract #3: Operation Cinder";
   background-image: linear-gradient(90deg, #9F7EC1, #D7B3FF);
 }
 
 .cc4::after {
-  --name: "Contingency Contract #4: Lead Seal";
+  --name: "Contingency Contract #4: Operation Lead Seal";
   background-image: linear-gradient(90deg, #45B5B8, #3D9FA5, #5781F7);
 }
 
 .cc5::after {
-  --name: "Contingency Contract #5: Spectrum";
+  --name: "Contingency Contract #5: Operation Spectrum";
   background-image: linear-gradient(90deg, #4399FA, #FC818A);
 }
 
 .cc6::after {
-  --name: "Contingency Contract #6: Wild Scales";
+  --name: "Contingency Contract #6: Operation Wild Scales";
   background-image: linear-gradient(90deg, #C3C176, #646C4C);
 }
 
