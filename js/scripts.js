@@ -1,15 +1,19 @@
 "use strict";
 
 // General
+const url = window.location.origin + window.location.pathname;
+let currentTab = "pr";
+
 // Disable persistent scroll position across refreshes.
 history.scrollRestoration = "manual";
 
 
 // Tabs
-let currentTab = "pr";
 const scrollPosition = { pr: 0, cn: 0, en: 0 };
 
-document.querySelector("nav").addEventListener("click", (e) => {
+document.querySelector("nav").addEventListener("click", switchTab);
+
+function switchTab(e) {
 	if (e.target.matches("button")) {
 		const previousTab = currentTab;
 		currentTab = e.target.name;
@@ -31,12 +35,29 @@ document.querySelector("nav").addEventListener("click", (e) => {
 		const newParams = (currentTab === "pr") ? "" : `?cal=${currentTab}`;
 		window.history.replaceState({}, "", url + newParams);
 	};
-});
+};
 
 
 // Permalinks
-const url = window.location.origin + window.location.pathname;
 const params = new URLSearchParams(window.location.search);
+
+document.querySelector("main").addEventListener("click", getPermalink);
+
+function getPermalink(e) {
+	if (e.target.matches("[class|=\"filled\"]")) {
+		const copyUrl = url + `?cal=${currentTab}&event=${e.target.classList[1]}`;
+		const targetEvent = document.querySelectorAll(`#${currentTab} .${e.target.classList[1]}`);
+
+		// Copy to clipboard.
+		navigator.clipboard.writeText(copyUrl);
+
+		// Alert copy completion.
+		targetEvent.forEach((item) => {
+			item.classList.add("copied");
+			setTimeout(() => { item.classList.remove("copied") }, 2000);
+		});
+	};
+};
 
 // Resolve initial parameters if any.
 if (params.get("cal")) {
@@ -48,20 +69,3 @@ if (params.get("cal")) {
 		targetEvent.scrollIntoView();
 	};
 };
-
-// Copy permalink on event click.
-document.querySelector("main").addEventListener("click", (e) => {
-	if (e.target.matches("[class|=\"filled\"]")) {
-		const copyUrl = url + `?cal=${currentTab}&event=${e.target.classList[1]}`;
-		const targetEvent = document.querySelectorAll(`#${currentTab} .${e.target.classList[1]}`);
-
-		// Copy to clipboard.
-		navigator.clipboard.writeText(copyUrl);
-
-		// Alert copy completion.
-		for (let i = 0; i < targetEvent.length; ++i) {
-			targetEvent[i].classList.add("copied");
-			setTimeout(() => { targetEvent[i].classList.remove("copied") }, 2000);
-		};
-	};
-});
