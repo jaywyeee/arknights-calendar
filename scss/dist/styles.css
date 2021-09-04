@@ -162,350 +162,350 @@ table td {
   width: calc(100% / 7);
 }
 
-.may-19 {
-  counter-reset: may-19;
-  counter-set: may-19 -3;
+.may-2019 {
+  counter-reset: may-2019;
+  counter-set: may-2019 -3;
 }
-.may-19 td::after {
-  counter-increment: may-19;
-  content: counter(may-19);
+.may-2019 td::after {
+  counter-increment: may-2019;
+  content: counter(may-2019);
 }
-.jun-19 {
-  counter-reset: jun-19;
-  counter-set: jun-19 -6;
+.jun-2019 {
+  counter-reset: jun-2019;
+  counter-set: jun-2019 -6;
 }
-.jun-19 td::after {
-  counter-increment: jun-19;
-  content: counter(jun-19);
+.jun-2019 td::after {
+  counter-increment: jun-2019;
+  content: counter(jun-2019);
 }
-.jul-19 {
-  counter-reset: jul-19;
-  counter-set: jul-19 -1;
+.jul-2019 {
+  counter-reset: jul-2019;
+  counter-set: jul-2019 -1;
 }
-.jul-19 td::after {
-  counter-increment: jul-19;
-  content: counter(jul-19);
+.jul-2019 td::after {
+  counter-increment: jul-2019;
+  content: counter(jul-2019);
 }
-.aug-19 {
-  counter-reset: aug-19;
-  counter-set: aug-19 -4;
+.aug-2019 {
+  counter-reset: aug-2019;
+  counter-set: aug-2019 -4;
 }
-.aug-19 td::after {
-  counter-increment: aug-19;
-  content: counter(aug-19);
+.aug-2019 td::after {
+  counter-increment: aug-2019;
+  content: counter(aug-2019);
 }
-.sep-19 {
-  counter-reset: sep-19;
-  counter-set: sep-19 -0;
+.sep-2019 {
+  counter-reset: sep-2019;
+  counter-set: sep-2019 -0;
   margin-top: 0 !important;
 }
-.sep-19 td::after {
-  counter-increment: sep-19;
-  content: counter(sep-19);
+.sep-2019 td::after {
+  counter-increment: sep-2019;
+  content: counter(sep-2019);
 }
-.oct-19 {
-  counter-reset: oct-19;
-  counter-set: oct-19 -2;
+.oct-2019 {
+  counter-reset: oct-2019;
+  counter-set: oct-2019 -2;
 }
-.oct-19 td::after {
-  counter-increment: oct-19;
-  content: counter(oct-19);
+.oct-2019 td::after {
+  counter-increment: oct-2019;
+  content: counter(oct-2019);
 }
-.nov-19 {
-  counter-reset: nov-19;
-  counter-set: nov-19 -5;
+.nov-2019 {
+  counter-reset: nov-2019;
+  counter-set: nov-2019 -5;
 }
-.nov-19 td::after {
-  counter-increment: nov-19;
-  content: counter(nov-19);
+.nov-2019 td::after {
+  counter-increment: nov-2019;
+  content: counter(nov-2019);
 }
-.dec-19 {
-  counter-reset: dec-19;
-  counter-set: dec-19 -0;
+.dec-2019 {
+  counter-reset: dec-2019;
+  counter-set: dec-2019 -0;
   margin-top: 0 !important;
 }
-.dec-19 td::after {
-  counter-increment: dec-19;
-  content: counter(dec-19);
+.dec-2019 td::after {
+  counter-increment: dec-2019;
+  content: counter(dec-2019);
 }
-.jan-20 {
-  counter-reset: jan-20;
-  counter-set: jan-20 -3;
+.jan-2020 {
+  counter-reset: jan-2020;
+  counter-set: jan-2020 -3;
 }
-.jan-20 td::after {
-  counter-increment: jan-20;
-  content: counter(jan-20);
+.jan-2020 td::after {
+  counter-increment: jan-2020;
+  content: counter(jan-2020);
 }
-.feb-20 {
-  counter-reset: feb-20;
-  counter-set: feb-20 -6;
+.feb-2020 {
+  counter-reset: feb-2020;
+  counter-set: feb-2020 -6;
 }
-.feb-20 td::after {
-  counter-increment: feb-20;
-  content: counter(feb-20);
+.feb-2020 td::after {
+  counter-increment: feb-2020;
+  content: counter(feb-2020);
 }
-.mar-20 {
-  counter-reset: mar-20;
-  counter-set: mar-20 -0;
+.mar-2020 {
+  counter-reset: mar-2020;
+  counter-set: mar-2020 -0;
   margin-top: 0 !important;
 }
-.mar-20 td::after {
-  counter-increment: mar-20;
-  content: counter(mar-20);
+.mar-2020 td::after {
+  counter-increment: mar-2020;
+  content: counter(mar-2020);
 }
-.apr-20 {
-  counter-reset: apr-20;
-  counter-set: apr-20 -3;
+.apr-2020 {
+  counter-reset: apr-2020;
+  counter-set: apr-2020 -3;
 }
-.apr-20 td::after {
-  counter-increment: apr-20;
-  content: counter(apr-20);
+.apr-2020 td::after {
+  counter-increment: apr-2020;
+  content: counter(apr-2020);
 }
-.may-20 {
-  counter-reset: may-20;
-  counter-set: may-20 -5;
+.may-2020 {
+  counter-reset: may-2020;
+  counter-set: may-2020 -5;
 }
-.may-20 td::after {
-  counter-increment: may-20;
-  content: counter(may-20);
+.may-2020 td::after {
+  counter-increment: may-2020;
+  content: counter(may-2020);
 }
-.jun-20 {
-  counter-reset: jun-20;
-  counter-set: jun-20 -1;
+.jun-2020 {
+  counter-reset: jun-2020;
+  counter-set: jun-2020 -1;
 }
-.jun-20 td::after {
-  counter-increment: jun-20;
-  content: counter(jun-20);
+.jun-2020 td::after {
+  counter-increment: jun-2020;
+  content: counter(jun-2020);
 }
-.jul-20 {
-  counter-reset: jul-20;
-  counter-set: jul-20 -3;
+.jul-2020 {
+  counter-reset: jul-2020;
+  counter-set: jul-2020 -3;
 }
-.jul-20 td::after {
-  counter-increment: jul-20;
-  content: counter(jul-20);
+.jul-2020 td::after {
+  counter-increment: jul-2020;
+  content: counter(jul-2020);
 }
-.aug-20 {
-  counter-reset: aug-20;
-  counter-set: aug-20 -6;
+.aug-2020 {
+  counter-reset: aug-2020;
+  counter-set: aug-2020 -6;
 }
-.aug-20 td::after {
-  counter-increment: aug-20;
-  content: counter(aug-20);
+.aug-2020 td::after {
+  counter-increment: aug-2020;
+  content: counter(aug-2020);
 }
-.sep-20 {
-  counter-reset: sep-20;
-  counter-set: sep-20 -2;
+.sep-2020 {
+  counter-reset: sep-2020;
+  counter-set: sep-2020 -2;
 }
-.sep-20 td::after {
-  counter-increment: sep-20;
-  content: counter(sep-20);
+.sep-2020 td::after {
+  counter-increment: sep-2020;
+  content: counter(sep-2020);
 }
-.oct-20 {
-  counter-reset: oct-20;
-  counter-set: oct-20 -4;
+.oct-2020 {
+  counter-reset: oct-2020;
+  counter-set: oct-2020 -4;
 }
-.oct-20 td::after {
-  counter-increment: oct-20;
-  content: counter(oct-20);
+.oct-2020 td::after {
+  counter-increment: oct-2020;
+  content: counter(oct-2020);
 }
-.nov-20 {
-  counter-reset: nov-20;
-  counter-set: nov-20 -0;
+.nov-2020 {
+  counter-reset: nov-2020;
+  counter-set: nov-2020 -0;
   margin-top: 0 !important;
 }
-.nov-20 td::after {
-  counter-increment: nov-20;
-  content: counter(nov-20);
+.nov-2020 td::after {
+  counter-increment: nov-2020;
+  content: counter(nov-2020);
 }
-.dec-20 {
-  counter-reset: dec-20;
-  counter-set: dec-20 -2;
+.dec-2020 {
+  counter-reset: dec-2020;
+  counter-set: dec-2020 -2;
 }
-.dec-20 td::after {
-  counter-increment: dec-20;
-  content: counter(dec-20);
+.dec-2020 td::after {
+  counter-increment: dec-2020;
+  content: counter(dec-2020);
 }
-.jan-21 {
-  counter-reset: jan-21;
-  counter-set: jan-21 -5;
+.jan-2021 {
+  counter-reset: jan-2021;
+  counter-set: jan-2021 -5;
 }
-.jan-21 td::after {
-  counter-increment: jan-21;
-  content: counter(jan-21);
+.jan-2021 td::after {
+  counter-increment: jan-2021;
+  content: counter(jan-2021);
 }
-.feb-21 {
-  counter-reset: feb-21;
-  counter-set: feb-21 -1;
+.feb-2021 {
+  counter-reset: feb-2021;
+  counter-set: feb-2021 -1;
 }
-.feb-21 td::after {
-  counter-increment: feb-21;
-  content: counter(feb-21);
+.feb-2021 td::after {
+  counter-increment: feb-2021;
+  content: counter(feb-2021);
 }
-.mar-21 {
-  counter-reset: mar-21;
-  counter-set: mar-21 -1;
+.mar-2021 {
+  counter-reset: mar-2021;
+  counter-set: mar-2021 -1;
 }
-.mar-21 td::after {
-  counter-increment: mar-21;
-  content: counter(mar-21);
+.mar-2021 td::after {
+  counter-increment: mar-2021;
+  content: counter(mar-2021);
 }
-.apr-21 {
-  counter-reset: apr-21;
-  counter-set: apr-21 -4;
+.apr-2021 {
+  counter-reset: apr-2021;
+  counter-set: apr-2021 -4;
 }
-.apr-21 td::after {
-  counter-increment: apr-21;
-  content: counter(apr-21);
+.apr-2021 td::after {
+  counter-increment: apr-2021;
+  content: counter(apr-2021);
 }
-.may-21 {
-  counter-reset: may-21;
-  counter-set: may-21 -6;
+.may-2021 {
+  counter-reset: may-2021;
+  counter-set: may-2021 -6;
 }
-.may-21 td::after {
-  counter-increment: may-21;
-  content: counter(may-21);
+.may-2021 td::after {
+  counter-increment: may-2021;
+  content: counter(may-2021);
 }
-.jun-21 {
-  counter-reset: jun-21;
-  counter-set: jun-21 -2;
+.jun-2021 {
+  counter-reset: jun-2021;
+  counter-set: jun-2021 -2;
 }
-.jun-21 td::after {
-  counter-increment: jun-21;
-  content: counter(jun-21);
+.jun-2021 td::after {
+  counter-increment: jun-2021;
+  content: counter(jun-2021);
 }
-.jul-21 {
-  counter-reset: jul-21;
-  counter-set: jul-21 -4;
+.jul-2021 {
+  counter-reset: jul-2021;
+  counter-set: jul-2021 -4;
 }
-.jul-21 td::after {
-  counter-increment: jul-21;
-  content: counter(jul-21);
+.jul-2021 td::after {
+  counter-increment: jul-2021;
+  content: counter(jul-2021);
 }
-.aug-21 {
-  counter-reset: aug-21;
-  counter-set: aug-21 -0;
+.aug-2021 {
+  counter-reset: aug-2021;
+  counter-set: aug-2021 -0;
   margin-top: 0 !important;
 }
-.aug-21 td::after {
-  counter-increment: aug-21;
-  content: counter(aug-21);
+.aug-2021 td::after {
+  counter-increment: aug-2021;
+  content: counter(aug-2021);
 }
-.sep-21 {
-  counter-reset: sep-21;
-  counter-set: sep-21 -3;
+.sep-2021 {
+  counter-reset: sep-2021;
+  counter-set: sep-2021 -3;
 }
-.sep-21 td::after {
-  counter-increment: sep-21;
-  content: counter(sep-21);
+.sep-2021 td::after {
+  counter-increment: sep-2021;
+  content: counter(sep-2021);
 }
-.oct-21 {
-  counter-reset: oct-21;
-  counter-set: oct-21 -5;
+.oct-2021 {
+  counter-reset: oct-2021;
+  counter-set: oct-2021 -5;
 }
-.oct-21 td::after {
-  counter-increment: oct-21;
-  content: counter(oct-21);
+.oct-2021 td::after {
+  counter-increment: oct-2021;
+  content: counter(oct-2021);
 }
-.nov-21 {
-  counter-reset: nov-21;
-  counter-set: nov-21 -1;
+.nov-2021 {
+  counter-reset: nov-2021;
+  counter-set: nov-2021 -1;
 }
-.nov-21 td::after {
-  counter-increment: nov-21;
-  content: counter(nov-21);
+.nov-2021 td::after {
+  counter-increment: nov-2021;
+  content: counter(nov-2021);
 }
-.dec-21 {
-  counter-reset: dec-21;
-  counter-set: dec-21 -3;
+.dec-2021 {
+  counter-reset: dec-2021;
+  counter-set: dec-2021 -3;
 }
-.dec-21 td::after {
-  counter-increment: dec-21;
-  content: counter(dec-21);
+.dec-2021 td::after {
+  counter-increment: dec-2021;
+  content: counter(dec-2021);
 }
-.jan-22 {
-  counter-reset: jan-22;
-  counter-set: jan-22 -6;
+.jan-2022 {
+  counter-reset: jan-2022;
+  counter-set: jan-2022 -6;
 }
-.jan-22 td::after {
-  counter-increment: jan-22;
-  content: counter(jan-22);
+.jan-2022 td::after {
+  counter-increment: jan-2022;
+  content: counter(jan-2022);
 }
-.feb-22 {
-  counter-reset: feb-22;
-  counter-set: feb-22 -2;
+.feb-2022 {
+  counter-reset: feb-2022;
+  counter-set: feb-2022 -2;
 }
-.feb-22 td::after {
-  counter-increment: feb-22;
-  content: counter(feb-22);
+.feb-2022 td::after {
+  counter-increment: feb-2022;
+  content: counter(feb-2022);
 }
-.mar-22 {
-  counter-reset: mar-22;
-  counter-set: mar-22 -2;
+.mar-2022 {
+  counter-reset: mar-2022;
+  counter-set: mar-2022 -2;
 }
-.mar-22 td::after {
-  counter-increment: mar-22;
-  content: counter(mar-22);
+.mar-2022 td::after {
+  counter-increment: mar-2022;
+  content: counter(mar-2022);
 }
-.apr-22 {
-  counter-reset: apr-22;
-  counter-set: apr-22 -5;
+.apr-2022 {
+  counter-reset: apr-2022;
+  counter-set: apr-2022 -5;
 }
-.apr-22 td::after {
-  counter-increment: apr-22;
-  content: counter(apr-22);
+.apr-2022 td::after {
+  counter-increment: apr-2022;
+  content: counter(apr-2022);
 }
-.may-22 {
-  counter-reset: may-22;
-  counter-set: may-22 -0;
+.may-2022 {
+  counter-reset: may-2022;
+  counter-set: may-2022 -0;
   margin-top: 0 !important;
 }
-.may-22 td::after {
-  counter-increment: may-22;
-  content: counter(may-22);
+.may-2022 td::after {
+  counter-increment: may-2022;
+  content: counter(may-2022);
 }
-.may-19 tr:first-child td:nth-child(-n+3)::after,
-.may-19 tr:last-child td:nth-child(n+7)::after, .jun-19 tr:first-child td:nth-child(-n+6)::after,
-.jun-19 tr:last-child td:nth-child(n+2)::after, .jul-19 tr:first-child td:nth-child(-n+1)::after,
-.jul-19 tr:last-child td:nth-child(n+5)::after, .aug-19 tr:first-child td:nth-child(-n+4)::after,
-.aug-19 tr:last-child td:nth-child(n+8)::after, .sep-19 tr:first-child td:nth-child(-n+0)::after,
-.sep-19 tr:last-child td:nth-child(n+3)::after, .oct-19 tr:first-child td:nth-child(-n+2)::after,
-.oct-19 tr:last-child td:nth-child(n+6)::after, .nov-19 tr:first-child td:nth-child(-n+5)::after,
-.nov-19 tr:last-child td:nth-child(n+8)::after, .dec-19 tr:first-child td:nth-child(-n+0)::after,
-.dec-19 tr:last-child td:nth-child(n+4)::after, .jan-20 tr:first-child td:nth-child(-n+3)::after,
-.jan-20 tr:last-child td:nth-child(n+7)::after, .feb-20 tr:first-child td:nth-child(-n+6)::after,
-.feb-20 tr:last-child td:nth-child(n+8)::after, .mar-20 tr:first-child td:nth-child(-n+0)::after,
-.mar-20 tr:last-child td:nth-child(n+4)::after, .apr-20 tr:first-child td:nth-child(-n+3)::after,
-.apr-20 tr:last-child td:nth-child(n+6)::after, .may-20 tr:first-child td:nth-child(-n+5)::after,
-.may-20 tr:last-child td:nth-child(n+2)::after, .jun-20 tr:first-child td:nth-child(-n+1)::after,
-.jun-20 tr:last-child td:nth-child(n+4)::after, .jul-20 tr:first-child td:nth-child(-n+3)::after,
-.jul-20 tr:last-child td:nth-child(n+7)::after, .aug-20 tr:first-child td:nth-child(-n+6)::after,
-.aug-20 tr:last-child td:nth-child(n+3)::after, .sep-20 tr:first-child td:nth-child(-n+2)::after,
-.sep-20 tr:last-child td:nth-child(n+5)::after, .oct-20 tr:first-child td:nth-child(-n+4)::after,
-.oct-20 tr:last-child td:nth-child(n+8)::after, .nov-20 tr:first-child td:nth-child(-n+0)::after,
-.nov-20 tr:last-child td:nth-child(n+3)::after, .dec-20 tr:first-child td:nth-child(-n+2)::after,
-.dec-20 tr:last-child td:nth-child(n+6)::after, .jan-21 tr:first-child td:nth-child(-n+5)::after,
-.jan-21 tr:last-child td:nth-child(n+2)::after, .feb-21 tr:first-child td:nth-child(-n+1)::after,
-.feb-21 tr:last-child td:nth-child(n+2)::after, .mar-21 tr:first-child td:nth-child(-n+1)::after,
-.mar-21 tr:last-child td:nth-child(n+5)::after, .apr-21 tr:first-child td:nth-child(-n+4)::after,
-.apr-21 tr:last-child td:nth-child(n+7)::after, .may-21 tr:first-child td:nth-child(-n+6)::after,
-.may-21 tr:last-child td:nth-child(n+3)::after, .jun-21 tr:first-child td:nth-child(-n+2)::after,
-.jun-21 tr:last-child td:nth-child(n+5)::after, .jul-21 tr:first-child td:nth-child(-n+4)::after,
-.jul-21 tr:last-child td:nth-child(n+8)::after, .aug-21 tr:first-child td:nth-child(-n+0)::after,
-.aug-21 tr:last-child td:nth-child(n+4)::after, .sep-21 tr:first-child td:nth-child(-n+3)::after,
-.sep-21 tr:last-child td:nth-child(n+6)::after, .oct-21 tr:first-child td:nth-child(-n+5)::after,
-.oct-21 tr:last-child td:nth-child(n+2)::after, .nov-21 tr:first-child td:nth-child(-n+1)::after,
-.nov-21 tr:last-child td:nth-child(n+4)::after, .dec-21 tr:first-child td:nth-child(-n+3)::after,
-.dec-21 tr:last-child td:nth-child(n+7)::after, .jan-22 tr:first-child td:nth-child(-n+6)::after,
-.jan-22 tr:last-child td:nth-child(n+3)::after, .feb-22 tr:first-child td:nth-child(-n+2)::after,
-.feb-22 tr:last-child td:nth-child(n+3)::after, .mar-22 tr:first-child td:nth-child(-n+2)::after,
-.mar-22 tr:last-child td:nth-child(n+6)::after, .apr-22 tr:first-child td:nth-child(-n+5)::after,
-.apr-22 tr:last-child td:nth-child(n+8)::after, .may-22 tr:first-child td:nth-child(-n+0)::after,
-.may-22 tr:last-child td:nth-child(n+4)::after {
+.may-2019 tr:first-child td:nth-child(-n+3)::after,
+.may-2019 tr:last-child td:nth-child(n+7)::after, .jun-2019 tr:first-child td:nth-child(-n+6)::after,
+.jun-2019 tr:last-child td:nth-child(n+2)::after, .jul-2019 tr:first-child td:nth-child(-n+1)::after,
+.jul-2019 tr:last-child td:nth-child(n+5)::after, .aug-2019 tr:first-child td:nth-child(-n+4)::after,
+.aug-2019 tr:last-child td:nth-child(n+8)::after, .sep-2019 tr:first-child td:nth-child(-n+0)::after,
+.sep-2019 tr:last-child td:nth-child(n+3)::after, .oct-2019 tr:first-child td:nth-child(-n+2)::after,
+.oct-2019 tr:last-child td:nth-child(n+6)::after, .nov-2019 tr:first-child td:nth-child(-n+5)::after,
+.nov-2019 tr:last-child td:nth-child(n+8)::after, .dec-2019 tr:first-child td:nth-child(-n+0)::after,
+.dec-2019 tr:last-child td:nth-child(n+4)::after, .jan-2020 tr:first-child td:nth-child(-n+3)::after,
+.jan-2020 tr:last-child td:nth-child(n+7)::after, .feb-2020 tr:first-child td:nth-child(-n+6)::after,
+.feb-2020 tr:last-child td:nth-child(n+8)::after, .mar-2020 tr:first-child td:nth-child(-n+0)::after,
+.mar-2020 tr:last-child td:nth-child(n+4)::after, .apr-2020 tr:first-child td:nth-child(-n+3)::after,
+.apr-2020 tr:last-child td:nth-child(n+6)::after, .may-2020 tr:first-child td:nth-child(-n+5)::after,
+.may-2020 tr:last-child td:nth-child(n+2)::after, .jun-2020 tr:first-child td:nth-child(-n+1)::after,
+.jun-2020 tr:last-child td:nth-child(n+4)::after, .jul-2020 tr:first-child td:nth-child(-n+3)::after,
+.jul-2020 tr:last-child td:nth-child(n+7)::after, .aug-2020 tr:first-child td:nth-child(-n+6)::after,
+.aug-2020 tr:last-child td:nth-child(n+3)::after, .sep-2020 tr:first-child td:nth-child(-n+2)::after,
+.sep-2020 tr:last-child td:nth-child(n+5)::after, .oct-2020 tr:first-child td:nth-child(-n+4)::after,
+.oct-2020 tr:last-child td:nth-child(n+8)::after, .nov-2020 tr:first-child td:nth-child(-n+0)::after,
+.nov-2020 tr:last-child td:nth-child(n+3)::after, .dec-2020 tr:first-child td:nth-child(-n+2)::after,
+.dec-2020 tr:last-child td:nth-child(n+6)::after, .jan-2021 tr:first-child td:nth-child(-n+5)::after,
+.jan-2021 tr:last-child td:nth-child(n+2)::after, .feb-2021 tr:first-child td:nth-child(-n+1)::after,
+.feb-2021 tr:last-child td:nth-child(n+2)::after, .mar-2021 tr:first-child td:nth-child(-n+1)::after,
+.mar-2021 tr:last-child td:nth-child(n+5)::after, .apr-2021 tr:first-child td:nth-child(-n+4)::after,
+.apr-2021 tr:last-child td:nth-child(n+7)::after, .may-2021 tr:first-child td:nth-child(-n+6)::after,
+.may-2021 tr:last-child td:nth-child(n+3)::after, .jun-2021 tr:first-child td:nth-child(-n+2)::after,
+.jun-2021 tr:last-child td:nth-child(n+5)::after, .jul-2021 tr:first-child td:nth-child(-n+4)::after,
+.jul-2021 tr:last-child td:nth-child(n+8)::after, .aug-2021 tr:first-child td:nth-child(-n+0)::after,
+.aug-2021 tr:last-child td:nth-child(n+4)::after, .sep-2021 tr:first-child td:nth-child(-n+3)::after,
+.sep-2021 tr:last-child td:nth-child(n+6)::after, .oct-2021 tr:first-child td:nth-child(-n+5)::after,
+.oct-2021 tr:last-child td:nth-child(n+2)::after, .nov-2021 tr:first-child td:nth-child(-n+1)::after,
+.nov-2021 tr:last-child td:nth-child(n+4)::after, .dec-2021 tr:first-child td:nth-child(-n+3)::after,
+.dec-2021 tr:last-child td:nth-child(n+7)::after, .jan-2022 tr:first-child td:nth-child(-n+6)::after,
+.jan-2022 tr:last-child td:nth-child(n+3)::after, .feb-2022 tr:first-child td:nth-child(-n+2)::after,
+.feb-2022 tr:last-child td:nth-child(n+3)::after, .mar-2022 tr:first-child td:nth-child(-n+2)::after,
+.mar-2022 tr:last-child td:nth-child(n+6)::after, .apr-2022 tr:first-child td:nth-child(-n+5)::after,
+.apr-2022 tr:last-child td:nth-child(n+8)::after, .may-2022 tr:first-child td:nth-child(-n+0)::after,
+.may-2022 tr:last-child td:nth-child(n+4)::after {
   content: "";
 }
 
-.may-19 tr:first-child td:nth-child(4)::after, .jun-19 tr:first-child td:nth-child(7)::after, .jul-19 tr:first-child td:nth-child(2)::after, .aug-19 tr:first-child td:nth-child(5)::after, .sep-19 tr:first-child td:nth-child(1)::after, .oct-19 tr:first-child td:nth-child(3)::after, .nov-19 tr:first-child td:nth-child(6)::after, .dec-19 tr:first-child td:nth-child(1)::after, .jan-20 tr:first-child td:nth-child(4)::after, .feb-20 tr:first-child td:nth-child(7)::after, .mar-20 tr:first-child td:nth-child(1)::after, .apr-20 tr:first-child td:nth-child(4)::after, .may-20 tr:first-child td:nth-child(6)::after, .jun-20 tr:first-child td:nth-child(2)::after, .jul-20 tr:first-child td:nth-child(4)::after, .aug-20 tr:first-child td:nth-child(7)::after, .sep-20 tr:first-child td:nth-child(3)::after, .oct-20 tr:first-child td:nth-child(5)::after, .nov-20 tr:first-child td:nth-child(1)::after, .dec-20 tr:first-child td:nth-child(3)::after, .jan-21 tr:first-child td:nth-child(6)::after, .feb-21 tr:first-child td:nth-child(2)::after, .mar-21 tr:first-child td:nth-child(2)::after, .apr-21 tr:first-child td:nth-child(5)::after, .may-21 tr:first-child td:nth-child(7)::after, .jun-21 tr:first-child td:nth-child(3)::after, .jul-21 tr:first-child td:nth-child(5)::after, .aug-21 tr:first-child td:nth-child(1)::after, .sep-21 tr:first-child td:nth-child(4)::after, .oct-21 tr:first-child td:nth-child(6)::after, .nov-21 tr:first-child td:nth-child(2)::after, .dec-21 tr:first-child td:nth-child(4)::after, .jan-22 tr:first-child td:nth-child(7)::after, .feb-22 tr:first-child td:nth-child(3)::after, .mar-22 tr:first-child td:nth-child(3)::after, .apr-22 tr:first-child td:nth-child(6)::after, .may-22 tr:first-child td:nth-child(1)::after {
+.may-2019 tr:first-child td:nth-child(4)::after, .jun-2019 tr:first-child td:nth-child(7)::after, .jul-2019 tr:first-child td:nth-child(2)::after, .aug-2019 tr:first-child td:nth-child(5)::after, .sep-2019 tr:first-child td:nth-child(1)::after, .oct-2019 tr:first-child td:nth-child(3)::after, .nov-2019 tr:first-child td:nth-child(6)::after, .dec-2019 tr:first-child td:nth-child(1)::after, .jan-2020 tr:first-child td:nth-child(4)::after, .feb-2020 tr:first-child td:nth-child(7)::after, .mar-2020 tr:first-child td:nth-child(1)::after, .apr-2020 tr:first-child td:nth-child(4)::after, .may-2020 tr:first-child td:nth-child(6)::after, .jun-2020 tr:first-child td:nth-child(2)::after, .jul-2020 tr:first-child td:nth-child(4)::after, .aug-2020 tr:first-child td:nth-child(7)::after, .sep-2020 tr:first-child td:nth-child(3)::after, .oct-2020 tr:first-child td:nth-child(5)::after, .nov-2020 tr:first-child td:nth-child(1)::after, .dec-2020 tr:first-child td:nth-child(3)::after, .jan-2021 tr:first-child td:nth-child(6)::after, .feb-2021 tr:first-child td:nth-child(2)::after, .mar-2021 tr:first-child td:nth-child(2)::after, .apr-2021 tr:first-child td:nth-child(5)::after, .may-2021 tr:first-child td:nth-child(7)::after, .jun-2021 tr:first-child td:nth-child(3)::after, .jul-2021 tr:first-child td:nth-child(5)::after, .aug-2021 tr:first-child td:nth-child(1)::after, .sep-2021 tr:first-child td:nth-child(4)::after, .oct-2021 tr:first-child td:nth-child(6)::after, .nov-2021 tr:first-child td:nth-child(2)::after, .dec-2021 tr:first-child td:nth-child(4)::after, .jan-2022 tr:first-child td:nth-child(7)::after, .feb-2022 tr:first-child td:nth-child(3)::after, .mar-2022 tr:first-child td:nth-child(3)::after, .apr-2022 tr:first-child td:nth-child(6)::after, .may-2022 tr:first-child td:nth-child(1)::after {
   background-color: white;
   border-radius: 50%;
   color: initial;

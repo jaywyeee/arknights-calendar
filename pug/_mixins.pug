@@ -12,7 +12,7 @@ mixin section(month, year, rows, hideYear)
 		if hideYear
 			h1= month
 		else
-			h1 #{month} #[span 20#{year}]
+			h1 #{month} #[span #{year}]
 
 		+table(rows)
 		.events
