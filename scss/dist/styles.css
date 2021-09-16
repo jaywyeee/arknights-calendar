@@ -780,11 +780,6 @@ table td {
   background-image: linear-gradient(90deg, #7FB2A5 30%, #BFD9BF);
 }
 
-.e9::after {
-  --name: "Episode 9";
-  background-color: white;
-}
-
 .blank-0, .filled-0 {
   width: calc(100% / 7 * 0);
 }
