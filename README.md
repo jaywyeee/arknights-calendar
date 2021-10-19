@@ -4,9 +4,6 @@ A webpage displaying a projection of the future event schedule of Arknights, as 
 ### Features
 * Click an event to copy a permalink to the clipboard.
 
-## Tools
-This project is developed in Visual Studio Code. The SCSS and Pug are compiled with the [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) and [Compile Hero](https://marketplace.visualstudio.com/items?itemName=Wscats.eno) extensions respectively.
-
 ## Contributions
 Pull requests are welcome, but please be advised that they are not guaranteed to be merged. For any questions or suggestions, please visit [Discussions](https://github.com/jaywyeee/arknights-calendar/discussions).
 

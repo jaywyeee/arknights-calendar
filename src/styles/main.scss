@@ -11,6 +11,7 @@ $gray: hsl(0, 0%, 50%);
 
 // Dimensions
 $overlay-margin: 0.625rem;
+// $overlay-margin: 3.25rem;
 $page-margin: 20px;
 $row-height: 4.6rem;
 
@@ -35,7 +36,7 @@ main {
 	width: min(100%, 600px);
 }
 
-article:not(.selected) { display: none }
+article:not(.active) { display: none }
 
 p { color: hsl(0, 0%, 60%) }
 
@@ -55,7 +56,7 @@ nav {
 	position: fixed;
 	top: $page-margin;
 	width: fit-content;
-	z-index: 1;
+	z-index: 2;
 
 	@media (min-width: $nav-sticky) and (max-width: $nav-collapse) {
 		flex-direction: column;
@@ -81,7 +82,7 @@ button {
 	transition-duration: 100ms;
 	user-select: none;
 
-	&.selected {
+	&.active {
 		background-color: white;
 		border-color: white;
 		color: initial;
@@ -100,17 +101,8 @@ section {
 	position: relative;
 	p + &:first-of-type { margin-top: 2.5em !important }
 	&:not(:first-of-type) { margin-top: -#{$row-height}; }
+	&.no-margin { margin-top: 0 }
 	@media (max-width: $header-merge) { margin-left: 1.4rem }
-}
-
-.row-5 {
-	height: $row-height * 5;
-	tr, .events div { height: calc(100% / 5) }
-}
-
-.row-6 {
-	height: $row-height * 6;
-	tr, .events div { height: calc(100% / 6) }
 }
 
 // Header
@@ -152,106 +144,137 @@ h1 {
 }
 
 // Dates
-table {
-	border-spacing: 0;
-	height: 100%;
-	width: 100%;
+.calendar {
+	counter-reset: date;
+	display: grid;
+	grid-auto-rows: $row-height;
+	grid-template-columns: repeat(7, 1fr);
 
-	td {
-		color: white;
-		font-size: 0.75rem;
-		vertical-align: top;
-		width: calc(100% / 7);
+	div {
+		grid-column-start: var(--grid-start);   // Set inline.
+		
+		&::after {
+			color: white;
+			content: counter(date);
+			counter-increment: date;
+			font-size: 0.75rem;
+		}
+
+		&:first-child::after {
+			background-color: white;
+			border-radius: 50%;
+			color: initial;
+			margin-left: -0.5em;
+			padding: 0.14em 0.5em;
+		}
 	}
 }
 
-@each $month, $indent, $outdent in months.$list {
-	@include counter($month, $indent, $outdent);
-}
-
-// Extended by counter mixin.
-%counter-content { content: "" }
-
-%first-counter {
-	background-color: white;
-	border-radius: 50%;
-	color: initial;
-	margin-left: -0.5em;
-	padding: 0.14em 0.5em;
-}
 
 // Events
-.events {
-	align-content: flex-start;
-	display: flex;
-	flex-wrap: wrap;
-	height: 100%;
+.overlay {
+	display: grid;
+	grid-auto-rows: $row-height;
+	grid-template-columns: repeat(14, 1fr);
+	inset: 0;
 	position: absolute;
-	top: 0;
-	width: 100%;
 
-	div {
+	div:not(.episode) {
+		-webkit-tap-highlight-color: transparent;
+		cursor: pointer;
+		font-size: 0.87rem;
+		grid-column: var(--grid-column);   // Set inline.
+		grid-row: var(--grid-row);   // Set inline.
+		height: fit-content;
+		overflow: hidden;
+		padding: 0.2em 0.5em;
 		position: relative;
-		scroll-margin-top: 2.2rem;
+		scroll-margin-top: 4.5rem;
+		scroll-padding-top: 2rem;   // scroll-margin breaks without this?
+		text-overflow: ellipsis;
+		top: 2.4em;
+		white-space: nowrap;
+		z-index: 1;
+
+		&[title] { cursor: help }
+
+		&:not(.start)::after { content: "\00a0" }
+
+		&.top, &.bottom {
+			transform: scaleY(0.6);
+			top: 1.8em;
+			transition-duration: 150ms;
+			color: transparent;
+
+			&.expand {
+				transform: none;
+				color: initial;
+			}
+		}
+
+		&.bottom { top: calc(1.8em + 1.6em) }
 
 		@media (max-width: $nav-sticky) { scroll-margin-top: 5rem }
 	}
 }
 
-[class|="filled"]::after {
-	background-color: magenta;
-	content: "\200B";
-	font-size: 0.87rem;
-	overflow: hidden;
-	padding: 0.2em 0.5em;
-	position: absolute;
-	text-overflow: ellipsis;
-	top: 40%;
-	white-space: nowrap;
-	width: 100%;
-}
 
-.start::after {
+.start {
 	border-radius: 2px 0 0 2px;
-	content: var(--name);
 	left: $overlay-margin;
 	width: calc(100% - #{$overlay-margin});
 }
 
 .end {
-	&::after {
-		border-radius: 0 2px 2px 0;
-		right: $overlay-margin;
-		width: calc(100% - #{$overlay-margin});
-	}
-
-	&.label::after {
-		content: var(--name);
-		text-align: right;
-	}
+	border-radius: 0 2px 2px 0;
+	width: calc(100% - #{$overlay-margin});
+	
+	// &.label {
+	// 	content: var(--name);
+	// 	text-align: right;
+	// }
 }
 
-.copied::after {
-	--name: "Copied!" !important;
-	font-style: initial !important;
+@each $id, $color in events.$list {
+	@include overlay($id, $color);
 }
 
-.italic::after { font-style: italic }
-[title]::after { cursor: help }
-
-@each $initials, $name, $color in events.$list {
-	@include overlay($initials, $name, $color);
+.episode {
+	// margin: 0.4em 0 0 0.3em;
+	border: 0.18em solid white;
+	color: white;
+	filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.8));
+	font-size: 1.4rem;
+	font-weight: bold;
+	grid-column: var(--grid-column);   // Set inline.
+	grid-row: var(--grid-row);   // Set inline.
+	left: 0.17em;
+	line-height: 0.9;
+	padding: 0.14em 0.09em 0.07em;
+	place-self: center;
+	position: relative;
+	text-align: center;
+	top: 0.2em;
+	user-select: none;
+	z-index: 1;
 }
 
-@for $i from 0 through 7 {
-	@include width($i);
-}
+
+// Projection override
+// #pr section:first-of-type {
+// 	h1 { display: none }
+
+// 	.calendar {
+// 		margin-top: calc(-4.6rem * 4);
+// 		::after { all: initial }
+// 	}
+// }
 
 
 // GitHub link
 a {
 	-webkit-tap-highlight-color: transparent;
-	background: center / contain no-repeat url("../../images/closure.svg");
+	background: center / contain no-repeat url("../images/closure.svg");
 	border-radius: 50%;
 	bottom: $page-margin;
 	display: block;
@@ -262,7 +285,7 @@ a {
 	width: 50px;
 
 	&:hover {
-		background-image: url("../../images/github.svg");
+		background-image: url("../images/github.svg");
 		transition-duration: 300ms;
 	}
 
