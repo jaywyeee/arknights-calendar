@@ -54,7 +54,8 @@ export default {
 			output: true,
 			outputStyle: "compressed",
 			sass: require("sass"),
-			sourceMap: true,
+			// sourceMap: true,
+			// file: "src/styles/main.scss",
 			watch: "src/styles"
 		}),
 
