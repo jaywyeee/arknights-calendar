@@ -185,6 +185,7 @@ h1 {
 		font-size: 0.87rem;
 		grid-column: var(--grid-column);   // Set inline.
 		grid-row: var(--grid-row);   // Set inline.
+		height: -moz-fit-content;
 		height: fit-content;
 		overflow: hidden;
 		padding: 0.2em 0.5em;
