@@ -150,7 +150,7 @@
 
 				eventDivs[y][m].push({
 					event: event.event,
-					text: index === 0 ? true : false,
+					name: index === 0 ? true : false,
 					rerun: event.rerun || false,
 					order: order || null,
 					overlap: overlap || null,
@@ -194,12 +194,21 @@
 	};
 
 
-	// Override for future schedule.
+	// Exclude first month of future schedule if mostly empty.
 	if (page.id === "pr") {
-		months.shift();
-		const keys = Object.keys(eventDivs[startDate[0]]);
-		eventDivs[startDate[0]][startDate[1]][0].styles.row = "1";
-		eventDivs[startDate[0]][keys[1]].unshift(eventDivs[startDate[0]][startDate[1]][0]);
+		const y = startDate[0];
+		const m = startDate[1];
+
+		const firstDiv = eventDivs[y][m][0];
+		
+		if (firstDiv.styles.row >= 4) {
+			const lastDiv = eventDivs[y][m][eventDivs[y][m].length - 1];
+
+			months.shift();
+			lastDiv.styles.row = "1";
+			lastDiv.name = true;
+			eventDivs[y][Object.keys(eventDivs[y])[1]].unshift(lastDiv);
+		};
 	};
 </script>
 

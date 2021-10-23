@@ -4,12 +4,12 @@
 
 	export let div;
 
-	const { event, text, rerun, order, overlap, styles } = div;
+	const { event, name, rerun, order, overlap, styles } = div;
 
 
 	// Copy permalink on click.
 	const url = window.location.origin + window.location.pathname;
-	const name = `${eventNames[event]}${rerun ? " Rerun" : ""}`;
+	const text = `${eventNames[event]}${rerun ? " Rerun" : ""}`;
 
 	function getPermalink() {
 		const copyUrl = url + `?schedule=${$store.activePage}&event=${event}${rerun ? ".rerun" : ""}`;
@@ -22,7 +22,7 @@
 		for (const div of targets) {
 			if (div.textContent) {
 				div.textContent = "Copied!";
-				setTimeout(() => { div.textContent = name }, 2000);
+				setTimeout(() => { div.textContent = text }, 2000);
 			};
 		};
 	};
@@ -32,8 +32,8 @@
 	let element, title;
 
 	function addTitle() {
-		if (text) {
-			title = (element.scrollWidth > element.offsetWidth) ? name : undefined;
+		if (name) {
+			title = (element.scrollWidth > element.offsetWidth) ? text : undefined;
 		};
 	};
 
@@ -64,5 +64,5 @@
 	on:mouseenter={addTitle}
 	on:mouseenter={overlapHover}
 	on:mouseleave={overlapHover}>
-		{#if text} {name} {/if}
+		{#if name} {text} {/if}
 </div>

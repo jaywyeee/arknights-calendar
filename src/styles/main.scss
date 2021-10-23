@@ -153,7 +153,7 @@ h1 {
 
 	div {
 		grid-column-start: var(--grid-start);   // Set inline.
-		
+
 		&::after {
 			color: white;
 			content: counter(date);
@@ -200,7 +200,7 @@ h1 {
 
 		&[title] { cursor: help }
 
-		&:not(.start)::after { content: "\00a0" }
+		&:empty::after { content: "\00a0" }
 
 		&.top, &.bottom {
 			transform: scaleY(0.6);
@@ -229,6 +229,7 @@ h1 {
 .end {
 	border-radius: 0 2px 2px 0;
 	margin-right: $overlay-margin;
+	text-align: right;
 }
 
 @each $id, $color in events.$list {
@@ -280,7 +281,7 @@ a {
 	}
 
 	&:active {
-		opacity: 0.6; 
+		opacity: 0.6;
 		transition-duration: 100ms;
 	}
 

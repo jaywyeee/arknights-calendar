@@ -1,7 +1,6 @@
 export default {
 	pr: {
 		2021: [
-			{ start: [ 9, 30], duration: 14, event: "awitd" },
 			{ start: [10, 21], duration: 14, event: "ut" },
 			{ start: [11,  4], duration: 14, event: "cc5" },
 			{ start: [11, 23], duration:  7, event: "pl" },
