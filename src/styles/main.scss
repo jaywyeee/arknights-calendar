@@ -20,6 +20,7 @@ $header-vertical: 855px;
 $header-merge: 695px;
 $nav-collapse: 1270px;
 $nav-sticky: 950px;
+$main-shrink: 640px;
 
 
 // General
@@ -222,18 +223,12 @@ h1 {
 
 .start {
 	border-radius: 2px 0 0 2px;
-	left: $overlay-margin;
-	width: calc(100% - #{$overlay-margin});
+	margin-left: $overlay-margin;
 }
 
 .end {
 	border-radius: 0 2px 2px 0;
-	width: calc(100% - #{$overlay-margin});
-	
-	// &.label {
-	// 	content: var(--name);
-	// 	text-align: right;
-	// }
+	margin-right: $overlay-margin;
 }
 
 @each $id, $color in events.$list {
@@ -251,25 +246,19 @@ h1 {
 	grid-row: var(--grid-row);   // Set inline.
 	left: 0.17em;
 	line-height: 0.9;
-	padding: 0.14em 0.09em 0.07em;
+	padding: 0.14em 0.1em 0.06em 0.09em;
 	place-self: center;
 	position: relative;
 	text-align: center;
 	top: 0.2em;
 	user-select: none;
 	z-index: 1;
+
+	@media (max-width: $main-shrink) {
+		font-size: calc(0.5rem + 2.3vw);
+		top: calc(1.1em - 3vw);
+	}
 }
-
-
-// Projection override
-// #pr section:first-of-type {
-// 	h1 { display: none }
-
-// 	.calendar {
-// 		margin-top: calc(-4.6rem * 4);
-// 		::after { all: initial }
-// 	}
-// }
 
 
 // GitHub link
