@@ -17,7 +17,6 @@
 		// Edit URL to match page.
 		const parameters = (page.id === "pr") ? "" : `?schedule=${page.id}`;
 		window.history.replaceState({}, "", url + parameters);
-		console.log($store.scrollPosition)
 	};
 </script>
 
