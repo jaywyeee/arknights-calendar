@@ -23,6 +23,7 @@ export default {
 	mb:    "Mansfield Break",
 	mc1:   "Multivariate Cooperation: Defence Protocols",
 	mn:    "Maria Nearl",
+	nl:    "Near Light",
 	oi:    "Operational Intelligence",
 	ood:   "Operation Originium Dust",
 	pl:    "Preluding Lights",
@@ -33,5 +34,4 @@ export default {
 	ut:    "Under Tides",
 	v:     "Vigilo",
 	wir:   "Who Is Real",
-	tba:   "TBA"
 };
