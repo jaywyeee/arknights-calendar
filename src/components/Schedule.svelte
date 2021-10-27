@@ -38,8 +38,7 @@
 	const weekStarts = {};
 
 	for (const month of months) {
-		const y = month[0];
-		const m = month[1];
+		const [y, m] = month;
 
 		weekStarts[y] ??= {};
 		weekStarts[y][m] ??= [];
@@ -104,14 +103,13 @@
 			let nextEventCache = [];
 
 			for (const [index, { len, start }] of parts.entries()) {
-				let col, row;
+				const [y, m, d] = start;
 
-				let y = start[0];
-				let m = start[1];
-				let d = start[2];
 
 				let week = weekStarts[y][m].findIndex((date) => date > d);
 				week = (week != -1) ? week : weekStarts[y][m].length;
+
+				let col, row;
 
 				if (index === 0) {
 					row = week;
@@ -172,9 +170,8 @@
 	const episodeDivs = {};
 
 	for (const { date, episode } of episodes) {
-		const y = date[0];
-		const m = date[1] - 1;
-		const d = date[2];
+		let [y, m, d] = date;
+		m--;
 
 		let week = weekStarts[y][m].findIndex((date) => date > d);
 		week = (week != -1) ? week : weekStarts[y][m].length;
@@ -196,11 +193,10 @@
 
 	// Exclude first month of future schedule if mostly empty.
 	if (page.id === "pr") {
-		const y = startDate[0];
-		const m = startDate[1];
+		const [y, m] = startDate;
 
 		const firstDiv = eventDivs[y][m][0];
-		
+
 		if (firstDiv.styles.row >= 4) {
 			const lastDiv = eventDivs[y][m][eventDivs[y][m].length - 1];
 

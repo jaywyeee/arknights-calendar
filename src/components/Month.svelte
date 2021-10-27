@@ -4,8 +4,7 @@
 
 	export let date, eventDivs, episodeDivs;
 
-	const y = date[0];
-	const m = date[1];
+	const [y, m] = date;
 	const days = new Date(y, m + 1, 0).getDate();
 
 	date = new Date(...date);
