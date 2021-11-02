@@ -1,18 +1,12 @@
 <script>
-	import store from "../stores/store.js";
+	import { activePage } from "../stores/store.js";
 
 	export let page;
 
 	const url = window.location.origin + window.location.pathname;
 
 	function changePage() {
-		// Save scroll position of previous page.
-		$store.scrollPosition[$store.activePage] = window.scrollY;
-
-		$store.activePage = page.id;
-
-		// Restore scroll position of destination page.
-		requestAnimationFrame(() => window.scrollTo(0, $store.scrollPosition[page.id]));
+		$activePage = page.id;
 
 		// Edit URL to match page.
 		const parameters = (page.id === "pr") ? "" : `?schedule=${page.id}`;
@@ -22,7 +16,7 @@
 
 <button
 	type="button"
-	class:active={$store.activePage === page.id}
+	class:active={$activePage === page.id}
 	on:click={changePage}>
 		{page.name}
 </button>

@@ -2,7 +2,7 @@
 	import Month from "./Month.svelte";
 	import episodeSchedules from "../data/episodeSchedules.js";
 	import eventSchedules from "../data/eventSchedules.js";
-	import store from "../stores/store.js";
+	import { activePage } from "../stores/store.js";
 
 	export let page;
 
@@ -56,7 +56,7 @@
 	};
 
 
-	// Generate event div elements.
+	// Generate elements of events.
 	const eventDivs = {}
 	let lastDate;
 	let eventCache = [];
@@ -70,7 +70,7 @@
 			endDate[2] += event.duration;
 
 
-			// Calculate lengths of event div elements.
+			// Calculate length of elements.
 			const parts = [{ len: 0, start: startDate }];
 
 			for (
@@ -89,11 +89,11 @@
 			};
 
 
-			// Add spacing if event starts directly after the previous event.
-			let indent = false;
+			// Offset if event starts directly after the previous event.
+			let offset = false;
 
 			if (lastDate?.getTime() === new Date(...startDate).getTime()) {
-				indent = true;
+				offset = true;
 
 				let lastEventDiv = eventCache[eventCache.length - 1].styles;
 				lastEventDiv.col = `1 / span ${lastEventDiv.col.match(/\d+$/)[0] - 1}`
@@ -113,7 +113,7 @@
 
 				if (index === 0) {
 					row = week;
-					col = `span ${len * 2 - (indent ? 1 : 0)} / -1`;
+					col = `span ${len * 2 - (offset ? 1 : 0)} / -1`;
 				} else {
 					row = week;
 					col = `1 / span ${len * 2}`;
@@ -208,9 +208,11 @@
 	};
 </script>
 
-<article id={page.id} class:active={$store.activePage === page.id}>
-	<p>{page.description}</p>
-	{#each months as month}
-		<Month date={month} {eventDivs} {episodeDivs}/>
-	{/each}
+<article id={page.id} class:active={$activePage === page.id}>
+	<div>
+		<p>{page.description}</p>
+		{#each months as month}
+			<Month date={month} {eventDivs} {episodeDivs}/>
+		{/each}
+	</div>
 </article>

@@ -9,88 +9,139 @@ $fonts: "Roboto Condensed", sans-serif;
 $gray: hsl(0, 0%, 50%);
 
 // Dimensions
-$overlay-margin: 0.625rem;
-// $overlay-margin: 3.25rem;
 $page-margin: 20px;
 $row-height: 4.6rem;
 
 // Breakpoints
-$header-vertical: 855px;
-$header-merge: 695px;
+// $header-vertical: 855px;
+$header-vertical: 950px;
+$header-merge: 775px;
 $nav-collapse: 1270px;
 $nav-sticky: 950px;
-$main-shrink: 640px;
+$main-shrink: 730px;
+$bar-bottom: 600px;
 
 
 // General
 *, ::after, ::before { box-sizing: border-box }
 
+html, body {
+	height: -moz-available;
+	height: -webkit-fill-available;
+	height: stretch;
+}
+
 body {
 	background-color: black;
+	display: flex;
 	font-family: $fonts;
-	margin: $page-margin;
+	margin: 0;
+
+	@media (max-width: $bar-bottom) { flex-direction: column-reverse }
 }
 
-main {
-	margin: auto;
-	width: min(100%, 600px);
+p {
+	color: hsl(0, 0%, 60%);
+	margin-top: 0;
 }
 
-article:not(.active) { display: none }
-
-p { color: hsl(0, 0%, 60%) }
-
-::-webkit-scrollbar {
-	width: 10px;
-	&-thumb { background-color: $gray }
+@media (pointer: fine) {
+	::-webkit-scrollbar {
+		width: 10px;
+		&-thumb { background-color: $gray }
+	}
 }
 
+
+// Bar
+// Container
+.bar {
+	border-right: 1px solid #252525;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0;
+	gap: 1.3rem;
+	justify-content: space-between;
+	padding: 1rem 0.7rem;
+
+	@media (max-width: $bar-bottom) {
+		border-right: none;
+		border-top: 1px solid #252525;
+		flex-direction: initial;
+		padding: 0.7rem 1rem;
+	}
+}
 
 // Navigation
 nav {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 0.4em;
+	flex-direction: column;
+	gap: 1.3em;
 	justify-content: center;
-	left: $page-margin;
-	position: fixed;
-	top: $page-margin;
 	width: fit-content;
 	z-index: 2;
 
-	@media (min-width: $nav-sticky) and (max-width: $nav-collapse) {
-		flex-direction: column;
-	}
-
-	@media (max-width: $nav-sticky) {
-		margin: 0 auto 1.4em auto;
-		position: sticky;
+	@media (max-width: $bar-bottom) {
+		flex-direction: row;
+		gap: 0.8rem;
 	}
 }
 
 button {
 	-webkit-tap-highlight-color: transparent;
-	background-color: black;
+	background-color: transparent;
 	border-radius: 15px;
-	border: 1px solid $gray;
+	border: none;
 	color: white;
 	cursor: pointer;
 	font-family: $fonts;
 	font-size: 1rem;
 	min-width: 3.5em;
-	padding: 0.2em 0.7em;
+	padding: 0.3em 0.7em;
+	touch-action: none;
 	transition-duration: 100ms;
 	user-select: none;
 
 	&.active {
 		background-color: white;
-		border-color: white;
 		color: initial;
+		cursor: initial;
 	}
 
-	@media (min-width: $nav-sticky) {
-		&:hover { opacity: 0.8 }
-		&:active { opacity: 0.9 }
+	&:not(.active):hover {
+		background-color: #222;
+		opacity: 0.7;
+	}
+
+	&:active { opacity: 1 }
+}
+
+
+// Schedule
+// Wrapper
+main {
+	flex: 1 1;
+	position: relative;
+}
+
+// Container
+article {
+	height: -moz-available;
+	height: -webkit-fill-available;
+	height: stretch;
+	overflow-y: auto;
+	padding: $page-margin;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	
+	&:not(.active) { visibility: hidden }
+
+	> div {
+		width: min(100%, 600px);
+		margin: auto;
+
+		@media (max-width: $header-vertical) { width: min(100%, 600px + 1.4rem) }
 	}
 }
 
@@ -99,10 +150,10 @@ button {
 // Container
 section {
 	position: relative;
-	p + &:first-of-type { margin-top: 2.5em !important }
+	p + &:first-of-type { margin-top: 2.5rem !important }
 	&:not(:first-of-type) { margin-top: -#{$row-height}; }
 	&.no-margin { margin-top: 0 }
-	@media (max-width: $header-merge) { margin-left: 1.4rem }
+	@media (max-width: $header-vertical) { margin-left: 1.4rem }
 }
 
 // Header
@@ -151,13 +202,13 @@ h1 {
 	grid-template-columns: repeat(7, 1fr);
 
 	div {
+		color: white;
+		font-size: 0.75rem;
 		grid-column-start: var(--grid-start);   // Set inline.
 
 		&::after {
-			color: white;
 			content: counter(date);
 			counter-increment: date;
-			font-size: 0.75rem;
 		}
 
 		&:first-child::after {
@@ -171,7 +222,8 @@ h1 {
 }
 
 
-// Events
+// Events and episodes
+// Container
 .overlay {
 	display: grid;
 	grid-auto-rows: $row-height;
@@ -190,10 +242,10 @@ h1 {
 		overflow: hidden;
 		padding: 0.2em 0.5em;
 		position: relative;
-		scroll-margin-top: 4.5rem;
+		scroll-margin-top: 7rem;
 		scroll-padding-top: 2rem;   // scroll-margin breaks without this?
 		text-overflow: ellipsis;
-		top: 2.4em;
+		top: 40%;
 		white-space: nowrap;
 		z-index: 1;
 
@@ -202,32 +254,31 @@ h1 {
 		&:empty::after { content: "\00a0" }
 
 		&.top, &.bottom {
-			transform: scaleY(0.6);
-			top: 1.8em;
-			transition-duration: 150ms;
 			color: transparent;
+			top: 28%;
+			transform: scaleY(0.6);
+			transition: transform 150ms, color 150ms;
 
 			&.expand {
-				transform: none;
 				color: initial;
+				transform: none;
 			}
 		}
 
-		&.bottom { top: calc(1.8em + 1.6em) }
+		&.bottom { top: 59% }
 
 		@media (max-width: $nav-sticky) { scroll-margin-top: 5rem }
 	}
 }
 
-
 .start {
 	border-radius: 2px 0 0 2px;
-	margin-left: $overlay-margin;
+	margin-left: 0.625rem;
 }
 
 .end {
 	border-radius: 0 2px 2px 0;
-	margin-right: $overlay-margin;
+	margin-right: 0.625rem;
 	text-align: right;
 }
 
@@ -236,7 +287,6 @@ h1 {
 }
 
 .episode {
-	// margin: 0.4em 0 0 0.3em;
 	border: 0.18em solid white;
 	color: white;
 	filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.8));
@@ -246,11 +296,10 @@ h1 {
 	grid-row: var(--grid-row);   // Set inline.
 	left: 0.17em;
 	line-height: 0.9;
-	padding: 0.14em 0.1em 0.06em 0.09em;
+	padding: 0.14em 0.09em 0.07em;
 	place-self: center;
 	position: relative;
 	text-align: center;
-	top: 0.2em;
 	user-select: none;
 	z-index: 1;
 
@@ -262,17 +311,19 @@ h1 {
 
 
 // GitHub link
+aside {
+	display: grid;
+	place-items: center;
+}
+
 a {
 	-webkit-tap-highlight-color: transparent;
 	background: center / contain no-repeat url("../images/closure.svg");
 	border-radius: 50%;
-	bottom: $page-margin;
 	display: block;
-	height: 50px;
-	position: fixed;
-	right: $page-margin;
+	height: 1.8rem;
 	transition: background-image 200ms ease-out, opacity 100ms;
-	width: 50px;
+	width: 1.8rem;
 
 	&:hover {
 		background-image: url("../images/github.svg");
@@ -282,13 +333,5 @@ a {
 	&:active {
 		opacity: 0.6;
 		transition-duration: 100ms;
-	}
-
-	@media (max-width: $header-vertical) {
-		height: 40px;
-		margin-top: 1.2rem;
-		margin: auto;
-		position: initial;
-		width: 40px;
 	}
 }

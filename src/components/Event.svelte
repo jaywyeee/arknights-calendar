@@ -1,6 +1,6 @@
 <script>
 	import eventNames from "../data/eventNames.js";
-	import store from "../stores/store.js";
+	import { activePage } from "../stores/store.js";
 
 	export let div;
 
@@ -12,8 +12,8 @@
 	const text = `${eventNames[event]}${rerun ? " Rerun" : ""}`;
 
 	function getPermalink() {
-		const copyUrl = url + `?schedule=${$store.activePage}&event=${event}${rerun ? ".rerun" : ""}`;
-		const targets = document.querySelectorAll(`#${$store.activePage} .${event}${rerun ? ".rerun" : ":not(.rerun)"}`);
+		const copyUrl = url + `?schedule=${$activePage}&event=${event}${rerun ? ".rerun" : ""}`;
+		const targets = document.querySelectorAll(`#${$activePage} .${event}${rerun ? ".rerun" : ":not(.rerun)"}`);
 
 		// Copy to clipboard.
 		navigator.clipboard.writeText(copyUrl);
@@ -41,7 +41,7 @@
 	// Expand all overlapping divs on hover.
 	function overlapHover() {
 		if (overlap) {
-			const targets = document.querySelectorAll(`#${$store.activePage} .${event}${rerun ? ".rerun" : ":not(.rerun)"}.${overlap}`);
+			const targets = document.querySelectorAll(`#${$activePage} .${event}${rerun ? ".rerun" : ":not(.rerun)"}.${overlap}`);
 
 			for (const div of targets) {
 				div.classList.toggle("expand");
@@ -53,7 +53,7 @@
 <div
 	bind:this={element}
 	class="{event}"
-	class:rerun={rerun === true}
+	class:rerun
 	class:start={order === "start"}
 	class:end={order === "end"}
 	class:top={overlap === "top"}
