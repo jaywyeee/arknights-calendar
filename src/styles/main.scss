@@ -13,7 +13,6 @@ $page-margin: 20px;
 $row-height: 4.6rem;
 
 // Breakpoints
-// $header-vertical: 855px;
 $header-vertical: 950px;
 $header-merge: 775px;
 $nav-collapse: 1270px;
@@ -26,9 +25,8 @@ $bar-bottom: 600px;
 *, ::after, ::before { box-sizing: border-box }
 
 html, body {
-	height: -moz-available;
+	height: 100vh;
 	height: -webkit-fill-available;
-	height: stretch;
 }
 
 body {
@@ -59,9 +57,10 @@ p {
 	border-right: 1px solid #252525;
 	display: flex;
 	flex-direction: column;
-	flex: 0 0;
+	flex: 0 0 auto;
 	gap: 1.3rem;
 	justify-content: space-between;
+	overflow: auto;
 	padding: 1rem 0.7rem;
 
 	@media (max-width: $bar-bottom) {
@@ -120,15 +119,13 @@ button {
 // Schedule
 // Wrapper
 main {
-	flex: 1 1;
+	flex: 1 1 auto;
 	position: relative;
 }
 
 // Container
 article {
-	height: -moz-available;
-	height: -webkit-fill-available;
-	height: stretch;
+	height: 100%;
 	overflow-y: auto;
 	padding: $page-margin;
 	position: absolute;
