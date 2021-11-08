@@ -14,5 +14,11 @@ export default {
 		{ episode: 6, date: [2020,  6, 30] },
 		{ episode: 7, date: [2020, 12, 30] },
 		{ episode: 8, date: [2021,  4, 30] },
+	],
+	tw: [
+		{ episode: 5, date: [2020,  8, 13] },
+		{ episode: 6, date: [2020, 12, 24] },
+		{ episode: 7, date: [2021,  5, 27] },
+		{ episode: 8, date: [2021,  8, 26] }
 	]
 }

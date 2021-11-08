@@ -105,5 +105,36 @@ export default {
 			{ start: [ 9, 30], duration: 14, event: "awitd" },
 			{ start: [10, 21], duration: 14, event: "ut" },
 		],
+	},
+	tw: {
+		2020: [
+			{ start: [ 7, 23], duration: 14, event: "gatkt" },
+			{ start: [ 9, 10], duration:  7, event: "oi" },
+			{ start: [10, 14], duration: 14, event: "hosf" },
+			{ start: [11,  9], duration: 14, event: "cob" },
+			{ start: [12,  3], duration: 14, event: "cc" }
+		],
+		2021: [
+			{ start: [ 1, 21], duration:  7, event: "soa" },
+			{ start: [ 2,  4], duration:  7, event: "af" },
+			{ start: [ 3,  4], duration: 14, event: "cc0" },
+			{ start: [ 3, 18], duration:  7, event: "cou" },
+			{ start: [ 4,  1], duration: 14, event: "tow" },
+			{ start: [ 4, 15], duration: 14, event: "cc1" },
+			{ start: [ 4, 29], duration: 10, event: "gatkt", rerun: true },
+			{ start: [ 5, 13], duration: 21, event: "dm" },
+			{ start: [ 6, 10], duration: 11, event: "hosf", rerun: true },
+			{ start: [ 6, 24], duration: 14, event: "gtgcr" },
+			{ start: [ 6, 24], duration: 21, event: "is1" },
+			{ start: [ 7, 15], duration: 14, event: "cc2" },
+			{ start: [ 7, 29], duration:  7, event: "rb" },
+			{ start: [ 8, 12], duration: 14, event: "mn" },
+			{ start: [ 9,  9], duration: 14, event: "ood" },
+			{ start: [ 9,  9], duration: 14, event: "mc1" },
+			{ start: [ 9, 23], duration: 14, event: "cc3" },
+			{ start: [10, 14], duration: 11, event: "cob", rerun: true },
+			{ start: [10, 28], duration: 14, event: "mb" },
+			{ start: [11, 11], duration:  7, event: "bh" },
+		],
 	}
 }
