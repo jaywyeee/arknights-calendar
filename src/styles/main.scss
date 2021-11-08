@@ -135,7 +135,10 @@ article {
 	top: 0;
 	width: 100%;
 	
-	&:not(.active) { visibility: hidden }
+	&:not(.active) {
+		opacity: 0;
+		z-index: -10;
+	}
 
 	> div {
 		width: min(100%, 600px);
