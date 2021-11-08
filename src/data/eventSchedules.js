@@ -104,6 +104,7 @@ export default {
 			{ start: [ 9,  7], duration: 10, event: "dm", rerun: true },
 			{ start: [ 9, 30], duration: 14, event: "awitd" },
 			{ start: [10, 21], duration: 14, event: "ut" },
+			{ start: [11, 11], duration: 14, event: "cc5" },
 		],
 	},
 	tw: {
