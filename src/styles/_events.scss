@@ -1,5 +1,5 @@
-// Colors are not quoted so that Visual Studio Code color previews work.
-// Hex regex: #[AFaf09]{6}
+// Hex regex: #[A-Fa-f0-9]{6}
+
 $list: (
 	("af",    (#B8B8B8 20%, #AC2021)),
 	("awitd", (#DED9D3, #7594A6, #7B7B7B)),
@@ -12,7 +12,7 @@ $list: (
 	("cc4",   (#45B5B8, #3D9FA5, #5781F7)),
 	("cc5",   (#4399FA, #FC818A)),
 	("cc6",   (#C3C176, #646C4C)),
-	("cc7",   (#CCB789 15%, #49745B, #0a6487)),
+	("cc7",   (#CCB789 15%, #0B698E)),
 	("cob",   (#8094F8 25%, #C07DEE)),
 	("cou",   (#F5A204, #F3781E)),
 	("dh",    (#FF93AB, #FE2254)),
@@ -26,7 +26,7 @@ $list: (
 	("mb",    (#EF776A)),
 	("mc1",   (#EEBD1F, #777578)),
 	("mn",    (#6A8EFF)),
-	("nl",    (#4399FA, white, #FC818A)),
+	("nl",    (#6DA4F2, #E2E9F9, #ED8A90)),
 	("oi",    (#E8D138)),
 	("ood",   (#ECAF28 20%, #CE782F)),
 	("pl",    (#FF8C5C 20%, #D8D6CF)),
