@@ -2,4 +2,4 @@
 * text=auto
 
 # Exclude configuration files.
-/rollup.config.js linguist-vendored
+/*.config.js linguist-vendored
