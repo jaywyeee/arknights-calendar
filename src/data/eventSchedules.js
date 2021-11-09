@@ -4,7 +4,7 @@ export default {
 			{ start: [10, 21], duration: 14, event: "ut" },
 			{ start: [11, 11], duration: 14, event: "cc5" },
 			{ start: [11, 30], duration:  7, event: "pl" },
-			{ start: [12,  9], duration: 10, event: "tow", rerun: true },
+			{ start: [12,  7], duration: 10, event: "tow", rerun: true },
 			{ start: [12, 21], duration:  7, event: "ic1" },
 			{ start: [12, 28], duration:  7, event: "v" },
 		],
