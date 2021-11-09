@@ -1,8 +1,5 @@
 ## Arknights Calendar
-A webpage displaying a projection of the future event schedule of Arknights, as well as past CN and EN schedules.
-
-### Features
-* Click an event to copy a permalink to the clipboard.
+A webpage featuring a projection of the future event schedule of Arknights, as well as past CN, EN, and TW schedules.
 
 ## Contributions
 Pull requests are welcome, but please be advised that they are not guaranteed to be merged. For any questions or suggestions, please visit [Discussions](https://github.com/jaywyeee/arknights-calendar/discussions).
