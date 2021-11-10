@@ -15,9 +15,9 @@
 	const startYear = years[0];
 	const startDate = [startYear, schedule[startYear][0].start[0] - 1];
 
-	const endYear = years[years.length - 1];
+	const endYear = years.at(-1);
 	const endEvents = schedule[endYear];
-	const lastEvent = endEvents[endEvents.length - 1];
+	const lastEvent = endEvents.at(-1);
 	let endDate = [endYear, lastEvent.start[0] - 1]
 	endDate = [...endDate, lastEvent.start[1] + lastEvent.duration];
 
@@ -96,7 +96,7 @@
 			if (lastDate?.getTime() === new Date(...startDate).getTime()) {
 				offset = true;
 
-				let lastEventDiv = eventCache[eventCache.length - 1].styles;
+				let lastEventDiv = eventCache.at(-1).styles;
 				lastEventDiv.col = `1 / span ${lastEventDiv.col.match(/\d+$/)[0] - 1}`;
 
 				if (topOverlap) {
@@ -167,7 +167,7 @@
 					end: [y, m, d + len - 1]
 				});
 
-				nextEventCache.push(eventDivs[y][m][eventDivs[y][m].length - 1]);
+				nextEventCache.push(eventDivs[y][m].at(-1));
 			};
 
 			eventCache = nextEventCache;
@@ -209,7 +209,7 @@
 		const firstDiv = eventDivs[y][m][0];
 
 		if (firstDiv.styles.row >= 4) {
-			const lastDiv = eventDivs[y][m][eventDivs[y][m].length - 1];
+			const lastDiv = eventDivs[y][m].at(-1);
 
 			months.shift();
 			lastDiv.styles.row = "1";
