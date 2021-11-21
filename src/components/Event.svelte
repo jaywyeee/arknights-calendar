@@ -1,5 +1,5 @@
 <script>
-	import eventNames from "../data/eventNames.js";
+	import eventNames from "../data/eventNames.json";
 	import { activePage } from "../stores/store.js";
 
 	export let div;

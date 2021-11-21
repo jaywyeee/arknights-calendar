@@ -1,13 +1,13 @@
 <script>
 	import Month from "./Month.svelte";
-	import episodeSchedules from "../data/episodeSchedules.js";
-	import eventSchedules from "../data/eventSchedules.js";
+	import episodeData from "../data/episodes.json";
+	import eventData from "../data/events.json";
 	import { activePage, travel, opacity } from "../stores/store.js";
 	import { cubicOut } from 'svelte/easing';
 
 	export let page;
 
-	const schedule = eventSchedules[page.id];
+	const schedule = eventData[page.id];
 
 
 	// Generate list of months.
@@ -178,7 +178,7 @@
 
 
 	// Generate episode div elements.
-	const episodes = episodeSchedules[page.id];
+	const episodes = episodeData[page.id];
 	const episodeDivs = {};
 
 	for (const { date, episode } of episodes) {
