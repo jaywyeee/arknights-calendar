@@ -2,7 +2,8 @@
 	import Month from "./Month.svelte";
 	import episodeSchedules from "../data/episodeSchedules.js";
 	import eventSchedules from "../data/eventSchedules.js";
-	import { activePage } from "../stores/store.js";
+	import { activePage, travel, opacity } from "../stores/store.js";
+	import { cubicOut } from 'svelte/easing';
 
 	export let page;
 
@@ -217,13 +218,67 @@
 			eventDivs[y][Object.keys(eventDivs[y])[1]].unshift(lastDiv);
 		};
 	};
+
+	
+	// Swipe handling
+	let startX, startY, currentX, currentY, isChanging, notScrolling, pageChanged;
+	const thresholdX = 25;
+	const thresholdY = 50;
+	
+	const tweenOptions = { duration: 120, easing: cubicOut };
+	let direction;
+	// $: direction = (startX > currentX) ? "left" : "right";
+	$: pageExists = (direction === "left" && page.next) || (direction === "right" && page.prev);
+
+	function handleTouchstart(e) {
+		startX = e.touches[0].clientX;
+		startY = e.touches[0].clientY;
+	};
+
+	function handleTouchmove(e) {
+		currentX = e.touches[0].clientX;
+		currentY = e.touches[0].clientY;
+
+		direction = (startX > currentX) ? "left" : "right";
+		notScrolling = isChanging || ((currentY < startY + thresholdY) && (currentY > startY - thresholdY));
+		
+		if ((currentX > startX + thresholdX || currentX < startX - thresholdX) && notScrolling && pageExists) {
+			travel.set((Math.abs(startX - currentX) - thresholdX) / 100);
+			isChanging = true;
+
+			if ($travel >= 1) {
+				$activePage = (direction === "left") ? page.next : page.prev;
+				pageChanged = true;
+			};
+		};
+	};
+
+	async function handleTouchend() {
+		if (notScrolling && !pageChanged && pageExists && $travel > 0.15) {
+			await travel.set(1, tweenOptions);
+			$activePage = (direction === "left") ? page.next : page.prev;
+			travel.set(0, tweenOptions);
+		} else if ((isChanging || pageChanged) && pageExists && $travel > 0.15) {
+			travel.set(2, tweenOptions);
+		} else {
+			travel.set(0);
+		};
+
+		isChanging = notScrolling = pageChanged = null;
+	};
 </script>
 
-<article id={page.id} class:active={$activePage === page.id}>
-	<div>
-		<p>{page.description}</p>
-		{#each months as month}
-			<Month date={month} {eventDivs} {episodeDivs}/>
-		{/each}
-	</div>
+<article
+	style={$activePage === page.id ? `opacity: ${$opacity}` : undefined}
+	id={page.id}
+	class:active={$activePage === page.id}
+	on:touchstart|passive={handleTouchstart}
+	on:touchmove|passive={handleTouchmove}
+	on:touchend={handleTouchend}>
+		<div>
+			<p>{page.description}</p>
+			{#each months as month}
+				<Month date={month} {eventDivs} {episodeDivs}/>
+			{/each}
+		</div>
 </article>

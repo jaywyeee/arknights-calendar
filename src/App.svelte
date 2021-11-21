@@ -1,8 +1,8 @@
 <script>
-	import { onMount } from "svelte";
 	import Button from "./components/Button.svelte";
 	import Schedule from "./components/Schedule.svelte";
 	import { activePage } from "./stores/store.js";
+	import { onMount } from "svelte";
 
 	const pages = [
 		{ id: "pr", name: "Proj.", description: "This is a tentative projection based on the CN schedule and past trends which will be updated to reflect new information as it becomes available." },
@@ -12,6 +12,11 @@
 	];
 
 	$activePage = pages[0].id;
+
+	for (const [index, page] of pages.entries()) {
+		page.prev = pages[index - 1]?.id;
+		page.next = pages[index + 1]?.id;
+	};
 
 
 	// Permalinks
@@ -33,7 +38,6 @@
 
 
 <div class="bar">
-	<!-- <img src="images/calendar.svg" aria-hidden="true"> -->
 	<nav>
 		{#each pages as page}
 			<Button {page}/>
