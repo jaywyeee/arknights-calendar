@@ -100,19 +100,19 @@ button {
 	touch-action: none;
 	transition-duration: 100ms;
 	user-select: none;
-
+	
 	&.active {
 		background-color: white;
 		color: initial;
 		cursor: initial;
 	}
 
-	&:not(.active):hover {
-		background-color: #222;
-		opacity: 0.7;
+	@media (pointer: fine) {
+		&:not(.active):hover {
+			background-color: #222;
+			opacity: 0.7;
+		}
 	}
-
-	&:active { opacity: 1 }
 }
 
 
