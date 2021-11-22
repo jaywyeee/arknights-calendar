@@ -134,7 +134,8 @@
 			{ "start": [ 9, 23], "duration": 14, "event": "cc3" },
 			{ "start": [10, 14], "duration": 11, "event": "cob", "rerun": true },
 			{ "start": [10, 28], "duration": 14, "event": "mb" },
-			{ "start": [11, 11], "duration":  7, "event": "bh" }
+			{ "start": [11, 11], "duration":  7, "event": "bh" },
+			{ "start": [11, 25], "duration": 14, "event": "cc4" }
 		]
 	}
 }
