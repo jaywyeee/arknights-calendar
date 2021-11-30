@@ -2,11 +2,13 @@
 	import Month from "./Month.svelte";
 	import episodeData from "../data/episodes.json";
 	import eventData from "../data/events.json";
-	import { activePage, travel, opacity } from "../stores/store.js";
-	import { cubicOut } from 'svelte/easing';
+	import { activePage, opacity, travel } from "../stores/store.js";
+	import { setContext } from "svelte";
+	import { cubicOut } from "svelte/easing";
 
 	export let page;
 
+	setContext("id", page.id);
 	const schedule = eventData[page.id];
 
 
@@ -219,12 +221,12 @@
 		};
 	};
 
-	
+
 	// Swipe handling
 	let startX, startY, currentX, currentY, isChanging, notScrolling, pageChanged;
 	const thresholdX = 25;
 	const thresholdY = 50;
-	
+
 	const tweenOptions = { duration: 120, easing: cubicOut };
 	let direction;
 	// $: direction = (startX > currentX) ? "left" : "right";
@@ -241,7 +243,7 @@
 
 		direction = (startX > currentX) ? "left" : "right";
 		notScrolling = isChanging || ((currentY < startY + thresholdY) && (currentY > startY - thresholdY));
-		
+
 		if ((currentX > startX + thresholdX || currentX < startX - thresholdX) && notScrolling && pageExists) {
 			travel.set((Math.abs(startX - currentX) - thresholdX) / 100);
 			isChanging = true;

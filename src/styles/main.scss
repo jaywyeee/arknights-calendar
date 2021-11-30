@@ -100,7 +100,7 @@ button {
 	touch-action: none;
 	transition-duration: 100ms;
 	user-select: none;
-	
+
 	&.active {
 		background-color: white;
 		color: initial;
@@ -131,7 +131,7 @@ article {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	
+
 	&:not(.active) {
 		opacity: 0;
 		z-index: -10;
@@ -251,7 +251,7 @@ h1 {
 
 		&[title] { cursor: help }
 
-		&:empty::after { content: "\00a0" }
+		&:empty::after { content: "\2060" }
 
 		&.top, &.bottom {
 			color: transparent;
@@ -266,6 +266,8 @@ h1 {
 		}
 
 		&.bottom { top: 59% }
+
+		&.hidden { visibility: hidden }
 
 		@media (max-width: $nav-sticky) { scroll-margin-top: 5rem }
 	}

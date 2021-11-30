@@ -1,10 +1,12 @@
 <script>
 	import eventNames from "../data/eventNames.json";
 	import { activePage } from "../stores/store.js";
+	import { getContext } from "svelte";
 
 	export let div;
 
 	const { event, name, rerun, order, overlap, styles } = div;
+	const id = getContext("id");
 
 
 	// Copy permalink on click.
@@ -52,13 +54,14 @@
 
 <div
 	bind:this={element}
-	class="{event}"
+	class={event}
 	class:rerun
 	class:start={order === "start"}
 	class:end={order === "end"}
 	class:top={overlap === "top"}
 	class:bottom={overlap === "bottom"}
-	style="--grid-row:{styles.row}; --grid-column:{styles.col}"
+	class:hidden={name && $activePage !== id}
+	style="--grid-row: {styles.row}; --grid-column: {styles.col}"
 	title={title}
 	on:click={getPermalink}
 	on:mouseenter={addTitle}
