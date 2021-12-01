@@ -278,7 +278,9 @@
 	on:touchmove|passive={handleTouchmove}
 	on:touchend={handleTouchend}>
 		<div>
-			<p>{page.description}</p>
+			{#each page.description as description}
+				<p>{description}</p>
+			{/each}
 			{#each months as month}
 				<Month date={month} {eventDivs} {episodeDivs}/>
 			{/each}

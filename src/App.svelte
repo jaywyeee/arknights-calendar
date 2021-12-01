@@ -5,10 +5,10 @@
 	import { onMount } from "svelte";
 
 	const pages = [
-		{ id: "pr", name: "Proj.", description: "This is a tentative projection based on the CN schedule and past trends which will be updated to reflect new information as it becomes available." },
-		{ id: "cn", name: "CN", description: "This is a complete timeline of the CN schedule." },
-		{ id: "en", name: "EN", description: "This is a complete timeline of the EN schedule." },
-		{ id: "tw", name: "TW", description: "This is a complete timeline of the TW schedule." }
+		{ id: "pr", name: "Proj.", description: ["This is a tentative projection based on the CN schedule and past trends which will be updated to reflect new information as it becomes available."] },
+		{ id: "cn", name: "CN", description: ["This is a complete timeline of the CN schedule."] },
+		{ id: "en", name: "EN", description: ["This is a complete timeline of the EN schedule."] },
+		{ id: "tw", name: "TW", description: ["This is a complete timeline of the TW schedule."] }
 	];
 
 	$activePage = pages[0].id;
