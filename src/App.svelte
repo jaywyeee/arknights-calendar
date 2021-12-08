@@ -1,15 +1,9 @@
 <script>
 	import Button from "./components/Button.svelte";
 	import Schedule from "./components/Schedule.svelte";
+	import pages from "./data/pages.json";
 	import { activePage } from "./stores/store.js";
 	import { onMount } from "svelte";
-
-	const pages = [
-		{ id: "pr", name: "Proj.", description: ["This is a tentative projection based on the CN schedule and past trends which will be updated to reflect new information as it becomes available.", "The next update, Preluding Lights, will implement the collect all button which originally came with Interlocking Competition: Hymnoi Wisdom, suggesting that it might be pushed back."] },
-		{ id: "cn", name: "CN", description: ["This is a complete timeline of the CN schedule."] },
-		{ id: "en", name: "EN", description: ["This is a complete timeline of the EN schedule."] },
-		{ id: "tw", name: "TW", description: ["This is a complete timeline of the TW schedule."] }
-	];
 
 	$activePage = pages[0].id;
 

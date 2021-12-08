@@ -18,5 +18,5 @@
 	type="button"
 	class:active={$activePage === page.id}
 	on:click={changePage}>
-		{page.name}
+		{page.name || page.id.toUpperCase()}
 </button>
