@@ -1,5 +1,5 @@
 <script>
-	import eventNames from "../data/eventNames.json";
+	import names from "../data/names.json";
 	import { activePage } from "../stores/store.js";
 	import { getContext } from "svelte";
 
@@ -11,7 +11,7 @@
 
 	// Copy permalink on click.
 	const url = window.location.origin + window.location.pathname;
-	const text = `${eventNames[event]}${rerun ? " Rerun" : ""}`;
+	const text = `${names[event]}${rerun ? " Rerun" : ""}`;
 
 	function getPermalink() {
 		const copyUrl = url + `?schedule=${$activePage}&event=${event}${rerun ? ".rerun" : ""}`;
