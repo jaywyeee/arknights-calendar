@@ -2,14 +2,14 @@
 	"pr": {
 		"2021": [
 			{ "start": [12,  9], "duration":  7, "event": "pl" },
-			{ "start": [12, 16], "duration": 10, "event": "tow", "rerun": true },
-			{ "start": [12, 30], "duration": 21, "event": "dh" }
+			{ "start": [12, 21], "duration": 10, "event": "tow", "rerun": true }
 		],
 		"2022": [
-			{ "start": [ 1, 20], "duration": 10, "event": "gtgcr", "rerun": true },
-			{ "start": [ 2,  3], "duration": 14, "event": "cc6" },
-			{ "start": [ 2, 24], "duration":  7, "event": "ic1" },
-			{ "start": [ 3,  8], "duration":  7, "event": "v" },
+			{ "start": [ 1,  4], "duration": 21, "event": "dh" },
+			{ "start": [ 1, 25], "duration": 10, "event": "gtgcr", "rerun": true },
+			{ "start": [ 2,  8], "duration": 14, "event": "cc6" },
+			{ "start": [ 3,  3], "duration":  7, "event": "ic1" },
+			{ "start": [ 3, 10], "duration":  7, "event": "v" },
 			{ "start": [ 3, 31], "duration": 10, "event": "mn", "rerun": true },
 			{ "start": [ 4, 14], "duration":  7, "event": "ps" },
 			{ "start": [ 4, 29], "duration": 21, "event": "nl" },
@@ -65,7 +65,8 @@
 			{ "start": [10, 15], "duration":  7, "event": "ps" },
 			{ "start": [11,  1], "duration": 21, "event": "nl" },
 			{ "start": [11, 22], "duration": 14, "event": "cc7" },
-			{ "start": [12,  7], "duration": 10, "event": "mb", "rerun": true }
+			{ "start": [12,  7], "duration": 10, "event": "mb", "rerun": true },
+			{ "start": [12, 21], "duration": 14, "event": "bti" }
 		]
 	},
 	"en": {
