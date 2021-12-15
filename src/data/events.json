@@ -2,19 +2,21 @@
 	"pr": {
 		"2021": [
 			{ "start": [12,  9], "duration":  7, "event": "pl" },
-			{ "start": [12, 21], "duration": 10, "event": "tow", "rerun": true }
-		],
+			{ "start": [12, 17], "duration": 10, "event": "tow", "rerun": true },
+			{ "start": [12, 31], "duration": 21, "event": "dh" }
+			],
 		"2022": [
-			{ "start": [ 1,  4], "duration": 21, "event": "dh" },
-			{ "start": [ 1, 25], "duration": 10, "event": "gtgcr", "rerun": true },
-			{ "start": [ 2,  8], "duration": 14, "event": "cc6" },
-			{ "start": [ 3,  3], "duration":  7, "event": "ic1" },
-			{ "start": [ 3, 10], "duration":  7, "event": "v" },
-			{ "start": [ 3, 31], "duration": 10, "event": "mn", "rerun": true },
-			{ "start": [ 4, 14], "duration":  7, "event": "ps" },
+			{ "start": [ 1, 21], "duration": 10, "event": "gtgcr", "rerun": true },
+			{ "start": [ 2,  4], "duration": 14, "event": "cc6" },
+			{ "start": [ 2, 25], "duration":  7, "event": "ic1" },
+			{ "start": [ 3,  4], "duration":  7, "event": "v" },
+			{ "start": [ 4,  1], "duration": 10, "event": "mn", "rerun": true },
+			{ "start": [ 4, 15], "duration":  7, "event": "ps" },
 			{ "start": [ 4, 29], "duration": 21, "event": "nl" },
 			{ "start": [ 5, 20], "duration": 14, "event": "cc7" },
-			{ "start": [ 6,  3], "duration": 10, "event": "mb", "rerun": true }
+			{ "start": [ 6,  3], "duration": 10, "event": "mb", "rerun": true },
+			{ "start": [ 6, 17], "duration": 14, "event": "bti" },
+			{ "start": [ 7,  1], "duration": 10, "event": "wir", "rerun": true }
 		]
 	},
 	"cn": {
@@ -104,7 +106,8 @@
 			{ "start": [ 9, 30], "duration": 14, "event": "awitd" },
 			{ "start": [10, 21], "duration": 14, "event": "ut" },
 			{ "start": [11, 11], "duration": 14, "event": "cc5" },
-			{ "start": [12,  9], "duration":  7, "event": "pl" }
+			{ "start": [12,  9], "duration":  7, "event": "pl" },
+			{ "start": [12, 17], "duration": 10, "event": "tow", "rerun": true }
 		]
 	},
 	"tw": {
