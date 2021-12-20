@@ -140,7 +140,8 @@
 			{ "start": [10, 28], "duration": 14, "event": "mb" },
 			{ "start": [11, 11], "duration":  7, "event": "bh" },
 			{ "start": [11, 25], "duration": 14, "event": "cc4" },
-			{ "start": [12,  9], "duration": 11, "event": "dm", "rerun": true }
+			{ "start": [12,  9], "duration": 11, "event": "dm", "rerun": true },
+			{ "start": [12, 23], "duration": 14, "event": "wir" }
 		]
 	}
 }
