@@ -3,20 +3,20 @@
 		"2021": [
 			{ "start": [12,  9], "duration":  7, "event": "pl" },
 			{ "start": [12, 17], "duration": 10, "event": "tow", "rerun": true },
-			{ "start": [12, 31], "duration":  7, "event": "ic1" }
-			],
+			{ "start": [12, 29], "duration":  7, "event": "ic1" }
+		],
 		"2022": [
-			{ "start": [ 1,  7], "duration":  7, "event": "v" },
-			{ "start": [ 1, 14], "duration": 21, "event": "dh" },
-			{ "start": [ 2,  4], "duration": 10, "event": "gtgcr", "rerun": true },
-			{ "start": [ 2, 18], "duration": 14, "event": "cc6" },
-			{ "start": [ 3, 25], "duration": 10, "event": "mn", "rerun": true },
-			{ "start": [ 4,  8], "duration":  7, "event": "ps" },
+			{ "start": [ 1,  5], "duration":  7, "event": "v" },
+			{ "start": [ 1, 18], "duration": 21, "event": "dh" },
+			{ "start": [ 2,  8], "duration": 10, "event": "gtgcr", "rerun": true },
+			{ "start": [ 2, 22], "duration": 14, "event": "cc6" },
+			{ "start": [ 4,  1], "duration": 10, "event": "mn", "rerun": true },
+			{ "start": [ 4, 15], "duration":  7, "event": "ps" },
 			{ "start": [ 4, 29], "duration": 21, "event": "nl" },
 			{ "start": [ 5, 20], "duration": 14, "event": "cc7" },
-			{ "start": [ 6,  3], "duration": 10, "event": "mb", "rerun": true },
-			{ "start": [ 6, 17], "duration": 14, "event": "bti" },
-			{ "start": [ 7,  1], "duration": 10, "event": "wir", "rerun": true }
+			{ "start": [ 6,  7], "duration": 10, "event": "mb", "rerun": true },
+			{ "start": [ 6, 21], "duration": 14, "event": "bti" },
+			{ "start": [ 7,  5], "duration": 10, "event": "wir", "rerun": true }
 		]
 	},
 	"cn": {
@@ -107,7 +107,8 @@
 			{ "start": [10, 21], "duration": 14, "event": "ut" },
 			{ "start": [11, 11], "duration": 14, "event": "cc5" },
 			{ "start": [12,  9], "duration":  7, "event": "pl" },
-			{ "start": [12, 17], "duration": 10, "event": "tow", "rerun": true }
+			{ "start": [12, 17], "duration": 10, "event": "tow", "rerun": true },
+			{ "start": [12, 29], "duration":  7, "event": "ic1" }
 		]
 	},
 	"tw": {
