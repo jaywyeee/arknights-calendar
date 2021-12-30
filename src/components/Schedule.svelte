@@ -62,8 +62,7 @@
 	// Generate elements of events.
 	const eventDivs = {}
 	let eventCache = [];
-	let topOverlap;
-	let lastDate;
+	let topOverlap, lastDate;
 
 	for (const year in schedule) {
 		for (const event of schedule[year]) {
@@ -145,7 +144,7 @@
 
 				if (lastDate?.getTime() > new Date(...startDate).getTime()) {
 					for (const div of eventCache) {
-						if (new Date(y, m, d).getTime() < new Date(...div.end).getTime()) {
+						if (new Date(...start).getTime() < new Date(...div.end).getTime()) {
 							div.overlap = "top";
 							overlap = "bottom";
 
@@ -153,6 +152,10 @@
 								topOverlap = div;
 							};
 						};
+					};
+
+					if (eventCache[0].start.toString() === start.toString() && eventCache[0].order === "start") {
+						col = eventCache[0].styles.col;
 					};
 				};
 
@@ -167,6 +170,7 @@
 					order: order || null,
 					overlap: overlap || null,
 					styles: {row, col},
+					start,
 					end: [y, m, d + len - 1]
 				});
 
