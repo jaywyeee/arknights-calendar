@@ -1,8 +1,6 @@
 {
 	"pr": {
 		"2021": [
-			{ "start": [12,  9], "duration":  7, "event": "pl" },
-			{ "start": [12, 17], "duration": 10, "event": "tow", "rerun": true },
 			{ "start": [12, 29], "duration":  7, "event": "ic1" }
 		],
 		"2022": [
