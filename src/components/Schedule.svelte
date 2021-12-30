@@ -205,7 +205,7 @@
 	};
 
 
-	// Exclude first month of future schedule if mostly empty.
+	// Drop first month of future schedule if mostly empty.
 	if (page.id === "pr") {
 		const [y, m] = startDate;
 
@@ -217,7 +217,12 @@
 			months.shift();
 			lastDiv.styles.row = "1";
 			lastDiv.name = true;
-			eventDivs[y][Object.keys(eventDivs[y])[1]].unshift(lastDiv);
+
+			if (m === 11) {
+				eventDivs[y + 1][Object.keys(eventDivs[y + 1])[0]].unshift(lastDiv);
+			} else {
+				eventDivs[y][Object.keys(eventDivs[y])[1]].unshift(lastDiv);
+			}
 		};
 	};
 
