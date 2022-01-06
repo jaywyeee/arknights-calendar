@@ -67,6 +67,9 @@
 			{ "start": [11, 22], "duration": 14, "event": "cc7" },
 			{ "start": [12,  7], "duration": 10, "event": "mb", "rerun": true },
 			{ "start": [12, 21], "duration": 14, "event": "bti" }
+		],
+		"2022": [
+			{ "start": [ 1, 10], "duration": 10, "event": "wir", "rerun": true }
 		]
 	},
 	"en": {
@@ -141,6 +144,9 @@
 			{ "start": [11, 25], "duration": 14, "event": "cc4" },
 			{ "start": [12,  9], "duration": 11, "event": "dm", "rerun": true },
 			{ "start": [12, 23], "duration": 14, "event": "wir" }
+		],
+		"2022": [
+			{ "start": [ 1, 11], "duration": 14, "event": "awitd" }
 		]
 	}
 }
