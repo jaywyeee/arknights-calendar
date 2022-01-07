@@ -291,7 +291,7 @@ h1 {
 .episode {
 	border: 0.18em solid white;
 	color: white;
-	filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.8));
+	filter: drop-shadow(0 0 0.5em rgb(0 0 0 / 80%));
 	font-size: 1.4rem;
 	font-weight: bold;
 	grid-column: var(--grid-column);   // Set inline.
@@ -314,7 +314,7 @@ h1 {
 .is {
 	background: center / contain no-repeat url("../images/is.svg");
 	color: white;
-	filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.8));
+	filter: drop-shadow(0 0 0.5em rgb(0 0 0 / 80%));
 	font-size: 0.8rem;
 	font-weight: bold;
 	grid-column: var(--grid-column);   // Set inline.
