@@ -222,7 +222,7 @@ h1 {
 }
 
 
-// Events and episodes
+// Events
 // Container
 .overlay {
 	display: grid;
@@ -231,7 +231,7 @@ h1 {
 	inset: 0;
 	position: absolute;
 
-	div:not(.episode) {
+	div:not(.episode):not(.is) {
 		-webkit-tap-highlight-color: transparent;
 		cursor: pointer;
 		font-size: 0.87rem;
@@ -308,6 +308,39 @@ h1 {
 	@media (max-width: $main-shrink) {
 		font-size: calc(0.5rem + 2.3vw);
 		top: calc(1.1em - 3vw);
+	}
+}
+
+.is {
+	background: center / contain no-repeat url("../images/is.svg");
+	color: white;
+	filter: drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.8));
+	font-size: 0.8rem;
+	font-weight: bold;
+	grid-column: var(--grid-column);   // Set inline.
+	grid-row: var(--grid-row);   // Set inline.
+	height: 3.5rem;
+	left: 0.17em;
+	place-self: center;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 3.5rem;
+	z-index: 1;
+
+	&::after {
+		--shadow: 0 0 0.3em rgb(0 0 0 / 100%);
+		bottom: 0.25em;
+		content: var(--name);
+		font-style: italic;
+		letter-spacing: 0.15em;
+		position: absolute;
+		text-shadow: var(--shadow), var(--shadow);
+		transform: translateX(-50%);
+	}
+
+	@media (max-width: $main-shrink) {
+		font-size: calc(0.35rem + 1vw);
 	}
 }
 

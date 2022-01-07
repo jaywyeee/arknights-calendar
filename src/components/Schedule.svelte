@@ -2,6 +2,7 @@
 	import Month from "./Month.svelte";
 	import episodeData from "../data/episodes.json";
 	import eventData from "../data/events.json";
+	import isData from "../data/is.json";
 	import { activePage, opacity, travel } from "../stores/store.js";
 	import { setContext } from "svelte";
 	import { cubicOut } from "svelte/easing";
@@ -208,6 +209,33 @@
 		});
 	};
 
+	// Generate Integrated Strategies div elements.
+	const is = isData[page.id];
+	const isDivs = {};
+
+	if (is) {
+		for (const { date, id } of is) {
+			let [y, m, d] = date;
+			m--;
+
+			let week = weekStarts[y][m].findIndex((date) => date > d);
+			week = (week != -1) ? week : weekStarts[y][m].length;
+
+			const day = new Date(date).getDay();
+
+			const row = week;
+			const col = `${day * 2 + 1} / span 2`;
+
+			isDivs[y] ??= {};
+			isDivs[y][m] ??= [];
+
+			isDivs[y][m].push({
+				id,
+				styles: {row, col}
+			});
+		};
+	};
+
 
 	// Drop first month of future schedule if mostly empty.
 	if (page.id === "pr") {
@@ -291,7 +319,7 @@
 				<p>{description}</p>
 			{/each}
 			{#each months as month}
-				<Month date={month} {eventDivs} {episodeDivs}/>
+				<Month date={month} {eventDivs} {episodeDivs} {isDivs}/>
 			{/each}
 		</div>
 </article>

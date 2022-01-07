@@ -1,8 +1,9 @@
 <script>
 	import Episode from "./Episode.svelte";
 	import Event from "./Event.svelte";
+	import IS from "./IS.svelte";
 
-	export let date, eventDivs, episodeDivs;
+	export let date, eventDivs, episodeDivs, isDivs;
 
 	const [y, m] = date;
 	const days = new Date(y, m + 1, 0).getDate();
@@ -14,6 +15,7 @@
 
 	const events = eventDivs?.[y]?.[m];
 	const episodes = episodeDivs?.[y]?.[m];
+	const is = isDivs?.[y]?.[m];
 </script>
 
 <section class:no-margin={sundayStart}>
@@ -27,7 +29,7 @@
 			{/if}
 		{/each}
 	</div>
-	{#if events || episodes}
+	{#if events || episodes || is}
 		<div class="overlay">
 			{#if events}
 				{#each events as event}
@@ -37,6 +39,11 @@
 			{#if episodes}
 				{#each episodes as episode}
 					<Episode div={episode}/>
+				{/each}
+			{/if}
+			{#if is}
+				{#each is as isDiv}
+					<IS div={isDiv}/>
 				{/each}
 			{/if}
 		</div>
