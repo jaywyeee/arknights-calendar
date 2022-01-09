@@ -1,12 +1,9 @@
 {
 	"pr": {
-		"2021": [
-			{ "start": [12, 29], "duration":  7, "event": "ic1" }
-		],
 		"2022": [
-			{ "start": [ 1, 16], "duration": 21, "event": "dh" },
-			{ "start": [ 2,  8], "duration": 10, "event": "gtgcr", "rerun": true },
-			{ "start": [ 2, 22], "duration": 14, "event": "cc6" },
+			{ "start": [ 1, 28], "duration":  7, "event": "dh" },
+			{ "start": [ 2,  4], "duration": 10, "event": "gtgcr", "rerun": true },
+			{ "start": [ 2, 18], "duration": 14, "event": "cc6" },
 			{ "start": [ 3,  8], "duration":  7, "event": "v" },
 			{ "start": [ 4,  1], "duration": 10, "event": "mn", "rerun": true },
 			{ "start": [ 4, 15], "duration":  7, "event": "ps" },
@@ -110,6 +107,9 @@
 			{ "start": [12,  9], "duration":  7, "event": "pl" },
 			{ "start": [12, 17], "duration": 10, "event": "tow", "rerun": true },
 			{ "start": [12, 29], "duration":  7, "event": "ic1" }
+		],
+		"2022": [
+			{ "start": [ 1, 14], "duration": 21, "event": "dh" }
 		]
 	},
 	"tw": {
