@@ -148,7 +148,8 @@
 			{ "start": [12, 23], "duration": 14, "event": "wir" }
 		],
 		"2022": [
-			{ "start": [ 1, 11], "duration": 14, "event": "awitd" }
+			{ "start": [ 1, 11], "duration": 14, "event": "awitd" },
+			{ "start": [ 1, 26], "duration": 14, "event": "ut" }
 		]
 	}
 }
