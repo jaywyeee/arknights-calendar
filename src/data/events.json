@@ -111,7 +111,8 @@
 			{ "start": [12, 29], "duration":  7, "event": "ic1" }
 		],
 		"2022": [
-			{ "start": [ 1, 14], "duration": 21, "event": "dh" }
+			{ "start": [ 1, 14], "duration": 21, "event": "dh" },
+			{ "start": [ 2,  4], "duration": 10, "event": "gtgcr", "rerun": true }
 		]
 	},
 	"tw": {
