@@ -114,7 +114,8 @@
 		"2022": [
 			{ "start": [ 1, 14], "duration": 21, "event": "dh" },
 			{ "start": [ 2,  4], "duration": 10, "event": "gtgcr", "rerun": true },
-			{ "start": [ 2, 17], "duration":  7, "event": "v" }
+			{ "start": [ 2, 17], "duration":  7, "event": "v" },
+			{ "start": [ 3,  1], "duration": 14, "event": "cc6" }
 		]
 	},
 	"tw": {
