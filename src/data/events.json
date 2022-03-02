@@ -154,7 +154,8 @@
 		"2022": [
 			{ "start": [ 1, 11], "duration": 14, "event": "awitd" },
 			{ "start": [ 1, 26], "duration": 14, "event": "ut" },
-			{ "start": [ 2, 15], "duration": 14, "event": "cc5" }
+			{ "start": [ 2, 15], "duration": 14, "event": "cc5" },
+			{ "start": [ 3,  8], "duration":  7, "event": "pl" }
 		]
 	}
 }
