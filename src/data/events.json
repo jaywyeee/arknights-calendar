@@ -1,9 +1,8 @@
 {
 	"pr": {
 		"2022": [
-			{ "start": [ 3,  1], "duration": 14, "event": "cc6" },
-			{ "start": [ 4,  1], "duration": 10, "event": "mn", "rerun": true },
-			{ "start": [ 4, 15], "duration":  7, "event": "ps" },
+			{ "start": [ 3, 31], "duration": 10, "event": "mn", "rerun": true },
+			{ "start": [ 4, 14], "duration":  7, "event": "ps" },
 			{ "start": [ 4, 29], "duration": 21, "event": "nl" },
 			{ "start": [ 5, 20], "duration": 14, "event": "cc7" },
 			{ "start": [ 6,  7], "duration": 10, "event": "mb", "rerun": true },
