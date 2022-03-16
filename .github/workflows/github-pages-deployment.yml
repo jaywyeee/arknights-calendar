@@ -28,6 +28,7 @@ jobs:
         with:
           branch: github-pages
           folder: dist
+          target-folder: calendar
           git-config-name: github-actions[bot]
           git-config-email: github-actions[bot]@users.noreply.github.com
           commit-message: Deploy commit ${{ github.sha }}
