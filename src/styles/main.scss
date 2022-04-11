@@ -370,3 +370,22 @@ a {
 		transition-duration: 100ms;
 	}
 }
+
+
+// Temporary fix for Near Light
+#pr {
+	@media (min-width: $header-vertical) {
+		section:first-of-type {
+			margin-top: 7.1rem !important;
+			h1 { transform: translate(-100%, -4.6rem) }
+		}
+	}
+
+	@media (max-width: $header-vertical) {
+		section:first-of-type {
+			margin-top: 4.5rem !important;
+		}
+	}
+
+	.nl.start { top: -60% }
+}
