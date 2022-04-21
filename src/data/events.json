@@ -1,8 +1,8 @@
 {
 	"pr": {
 		"2022": [
-			{ "start": [ 4, 29], "duration": 21, "event": "nl" },
-			{ "start": [ 5, 20], "duration": 14, "event": "cc7" },
+			{ "start": [ 4, 28], "duration": 21, "event": "nl" },
+			{ "start": [ 5, 19], "duration": 14, "event": "cc7" },
 			{ "start": [ 6,  7], "duration": 10, "event": "mb", "rerun": true },
 			{ "start": [ 6, 21], "duration": 14, "event": "bti" },
 			{ "start": [ 7, 12], "duration": 10, "event": "wir", "rerun": true },
@@ -118,7 +118,8 @@
 			{ "start": [ 2, 17], "duration":  7, "event": "v" },
 			{ "start": [ 3,  1], "duration": 14, "event": "cc6" },
 			{ "start": [ 3, 31], "duration": 10, "event": "mn", "rerun": true },
-			{ "start": [ 4, 14], "duration":  7, "event": "ps" }
+			{ "start": [ 4, 14], "duration":  7, "event": "ps" },
+			{ "start": [ 4, 28], "duration": 21, "event": "nl" }
 		]
 	},
 	"tw": {
