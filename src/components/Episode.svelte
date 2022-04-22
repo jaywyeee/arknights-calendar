@@ -1,8 +1,8 @@
 <script>
 	export let div;
 
-	const { episode, styles } = div;
-	let number = episode.toString();
+	const { id, styles } = div;
+	let number = id.toString();
 
 	if (number.length === 1) {
 		number = "0" + number;

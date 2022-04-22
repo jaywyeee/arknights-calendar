@@ -184,57 +184,39 @@
 	};
 
 
-	// Generate episode div elements.
-	const episodes = episodeData[page.id];
-	const episodeDivs = {};
+	// Generate div elements for permanent events (e.g. Episodes, Integrated Strategies)
+	function createPermanents(data) {
+		const pageData = data[page.id];
+		const divs = {};
 
-	for (const { date, episode } of episodes) {
-		let [y, m, d] = date;
-		m--;
+		if (pageData) {
+			for (const { id, date } of pageData) {
+				let [y, m, d] = date;
+				m--;
 
-		let week = weekStarts[y][m].findIndex((date) => date > d);
-		week = (week !== -1) ? week : weekStarts[y][m].length;
+				let week = weekStarts[y][m].findIndex((date) => date > d);
+				week = (week !== -1) ? week : weekStarts[y][m].length;
 
-		const day = new Date(date).getDay();
+				const day = new Date(date).getDay();
 
-		const row = week;
-		const col = `${day * 2 + 1} / span 2`;
+				const row = week;
+				const col = `${day * 2 + 1} / span 2`;
 
-		episodeDivs[y] ??= {};
-		episodeDivs[y][m] ??= [];
+				divs[y] ??= {};
+				divs[y][m] ??= [];
 
-		episodeDivs[y][m].push({
-			episode,
-			styles: {row, col}
-		});
-	};
-
-	// Generate Integrated Strategies div elements.
-	const is = isData[page.id];
-	const isDivs = {};
-
-	if (is) {
-		for (const { date, id } of is) {
-			let [y, m, d] = date;
-			m--;
-
-			let week = weekStarts[y][m].findIndex((date) => date > d);
-			week = (week !== -1) ? week : weekStarts[y][m].length;
-
-			const day = new Date(date).getDay();
-
-			const row = week;
-			const col = `${day * 2 + 1} / span 2`;
-
-			isDivs[y] ??= {};
-			isDivs[y][m] ??= [];
-
-			isDivs[y][m].push({
-				id,
-				styles: {row, col}
-			});
+				divs[y][m].push({
+					id,
+					styles: {row, col}
+				});
+			};
 		};
+
+		return divs;
 	};
+
+	const episodeDivs = createPermanents(episodeData);
+	const isDivs = createPermanents(isData);
 
 
 	// Drop first month of future schedule if mostly empty.
