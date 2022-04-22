@@ -1,7 +1,19 @@
 ## Arknights Calendar
-A webpage featuring a projection of the future event schedule of Arknights, as well as past CN, EN, and TW schedules.
+A webpage featuring a projection of the future event schedule of the game Arknights, as well as past CN, EN, and TW schedules.
 
-## Contributions
+## Developing
+### Requirements
+* Git
+* Node.js
+
+### Steps
+1. Clone repository: `git clone https://github.com/jaywyeee/arknights-calendar.git --filter blob:none`
+2. Install dependencies: `npm ci`
+3. Preview webpage: `npm run dev`
+
+A quick and easy alternative is available using [StackBlitz](https://stackblitz.com/github/jaywyeee/arknights-calendar).
+
+## Contributing
 Pull requests are welcome, but please be advised that they are not guaranteed to be merged. For any questions or suggestions, please visit [Discussions](https://github.com/jaywyeee/arknights-calendar/discussions).
 
 ## License
