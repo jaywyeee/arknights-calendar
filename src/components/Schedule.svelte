@@ -194,21 +194,23 @@
 				let [y, m, d] = date;
 				m--;
 
-				let week = weekStarts[y][m].findIndex((date) => date > d);
-				week = (week !== -1) ? week : weekStarts[y][m].length;
+				if (months[0][0] <= y && months[0][1] <= m) {
+					let week = weekStarts[y][m].findIndex((date) => date > d);
+					week = (week !== -1) ? week : weekStarts[y][m].length;
 
-				const day = new Date(date).getDay();
+					const day = new Date(date).getDay();
 
-				const row = week;
-				const col = `${day * 2 + 1} / span 2`;
+					const row = week;
+					const col = `${day * 2 + 1} / span 2`;
 
-				divs[y] ??= {};
-				divs[y][m] ??= [];
+					divs[y] ??= {};
+					divs[y][m] ??= [];
 
-				divs[y][m].push({
-					id,
-					styles: {row, col}
-				});
+					divs[y][m].push({
+						id,
+						styles: {row, col}
+					});
+				};
 			};
 		};
 
