@@ -240,21 +240,28 @@
 	// Drop first month of future schedule if mostly empty.
 	if (page.id === "pr") {
 		const [y, m] = startDate;
-
 		const firstDiv = eventDivs[y][m][0];
+		const lastDiv = eventDivs[y][m].at(-1);
+		const sundayStart = new Date(y, m + 1, 1).getDay() === 0;
+		const nextMonth = m !== 11 ? eventDivs[y][m + 1] : eventDivs[y + 1][0];
 
-		if (firstDiv.styles.row >= 4) {
-			const lastDiv = eventDivs[y][m].at(-1);
-
+		if (firstDiv.styles.row >= 3) {
 			months.shift();
 			lastDiv.styles.row = "1";
-			lastDiv.name = true;
 
-			if (m === 11) {
-				eventDivs[y + 1][Object.keys(eventDivs[y + 1])[0]].unshift(lastDiv);
-			} else {
-				eventDivs[y][Object.keys(eventDivs[y])[1]].unshift(lastDiv);
-			}
+			if (lastDiv.order === "end") {
+				lastDiv.name = true;
+			} else if (!lastDiv.order || (sundayStart && lastDiv.order === "start")) {
+				const endDiv = nextMonth.find(div => {
+					return div.event === lastDiv.event && div.order === "end";
+				});
+
+				endDiv.name = true;
+			};
+
+			if (!sundayStart) {
+				nextMonth.unshift(lastDiv);
+			};
 		};
 	};
 
