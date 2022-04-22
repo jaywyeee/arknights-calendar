@@ -117,7 +117,7 @@
 
 
 				let week = weekStarts[y][m].findIndex((date) => date > d);
-				week = (week != -1) ? week : weekStarts[y][m].length;
+				week = (week !== -1) ? week : weekStarts[y][m].length;
 
 				let col, row;
 
@@ -193,7 +193,7 @@
 		m--;
 
 		let week = weekStarts[y][m].findIndex((date) => date > d);
-		week = (week != -1) ? week : weekStarts[y][m].length;
+		week = (week !== -1) ? week : weekStarts[y][m].length;
 
 		const day = new Date(date).getDay();
 
@@ -219,7 +219,7 @@
 			m--;
 
 			let week = weekStarts[y][m].findIndex((date) => date > d);
-			week = (week != -1) ? week : weekStarts[y][m].length;
+			week = (week !== -1) ? week : weekStarts[y][m].length;
 
 			const day = new Date(date).getDay();
 
