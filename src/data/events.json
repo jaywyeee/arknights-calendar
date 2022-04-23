@@ -10,7 +10,10 @@
 			{ "start": [ 8, 16], "duration":  7, "event": "alsid" },
 			{ "start": [ 8, 23], "duration": 14, "event": "cc8" },
 			{ "start": [ 9, 13], "duration": 14, "event": "ga" },
-			{ "start": [ 9, 27], "duration": 10, "event": "awitd", "rerun": true }
+			{ "start": [ 9, 27], "duration": 10, "event": "awitd", "rerun": true },
+			{ "start": [10, 27], "duration": 21, "event": "sn" },
+			{ "start": [11, 17], "duration": 14, "event": "cc9" },
+			{ "start": [12,  1], "duration": 10, "event": "ut", "rerun": true }
 		]
 	},
 	"cn": {
@@ -70,7 +73,9 @@
 			{ "start": [ 2, 15], "duration":  7, "event": "alsid" },
 			{ "start": [ 2, 24], "duration": 14, "event": "cc8" },
 			{ "start": [ 3, 15], "duration": 14, "event": "ga" },
-			{ "start": [ 3, 29], "duration": 10, "event": "awitd", "rerun": true }
+			{ "start": [ 3, 29], "duration": 10, "event": "awitd", "rerun": true },
+			{ "start": [ 5,  1], "duration": 21, "event": "sn" },
+			{ "start": [ 5, 19], "duration": 14, "event": "cc9" }
 		]
 	},
 	"en": {
