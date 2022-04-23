@@ -194,7 +194,10 @@
 				let [y, m, d] = date;
 				m--;
 
-				if (months[0][0] <= y && months[0][1] <= m) {
+				const scheduleStart = new Date(months[0][0], months[0][1]).getTime();
+				const eventStart = new Date(y, m).getTime();
+
+				if (scheduleStart <= eventStart) {
 					let week = weekStarts[y][m].findIndex((date) => date > d);
 					week = (week !== -1) ? week : weekStarts[y][m].length;
 
