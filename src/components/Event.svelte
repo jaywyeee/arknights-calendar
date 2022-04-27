@@ -42,11 +42,13 @@
 
 	// Expand all overlapping divs on hover.
 	function overlapHover() {
-		if (overlap) {
-			const targets = document.querySelectorAll(`#${$activePage} .${event}${rerun ? ".rerun" : ":not(.rerun)"}.${overlap}`);
+		const targets = document.querySelectorAll(`#${$activePage} .${event}${rerun ? ".rerun" : ":not(.rerun)"}`);
 
-			for (const div of targets) {
-				div.classList.toggle("expand");
+		for (const div of targets) {
+			const classes = div.classList;
+
+			if (classes.contains("top") || classes.contains("bottom")) {
+				classes.toggle("expand");
 			};
 		};
 	};

@@ -145,7 +145,7 @@
 
 				if (lastDate?.getTime() > new Date(...startDate).getTime()) {
 					for (const div of eventCache) {
-						if (new Date(...start).getTime() < new Date(...div.end).getTime()) {
+						if (new Date(...start).getTime() <= new Date(...div.end).getTime()) {
 							div.overlap = "top";
 							overlap = "bottom";
 
