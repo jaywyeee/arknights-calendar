@@ -12,6 +12,8 @@
 		page.next = pages[index + 1]?.id;
 	};
 
+	const base = import.meta.env.MODE === "production" ? import.meta.env.BASE_URL : "";
+
 
 	// Permalinks
 	const params = new URLSearchParams(window.location.search);
@@ -30,7 +32,10 @@
 	};
 </script>
 
-
+<svelte:head>
+	<link rel="icon" href="{base}images/calendar.svg">
+	<link rel="preload" href="{base}images/github.svg" as="image">
+</svelte:head>
 <div class="bar">
 	<nav>
 		{#each pages as page}
