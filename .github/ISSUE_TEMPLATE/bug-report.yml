@@ -3,24 +3,8 @@ description: Report something that is not working properly
 body:
   - type: textarea
     attributes:
-      label: Steps to reproduce
-      description: How we can reproduce the issue
-      placeholder: |
-        1. Click on...
-        2. Scroll down to...
-        3. See error
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Expected result
-      description: A clear description of what you expected to happen
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Actual result
-      description: A clear description of what actually happens
+      label: Description
+      description: A clear description of the issue, plus anything else you would like to add
     validations:
       required: true
   - type: textarea
@@ -41,7 +25,3 @@ body:
       placeholder: Google Chrome 100, Safari 15, etc.
     validations:
       required: true
-  - type: textarea
-    attributes:
-      label: Additional context
-      description: Any other context about the issue
