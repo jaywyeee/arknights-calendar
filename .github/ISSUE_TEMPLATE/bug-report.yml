@@ -1,0 +1,47 @@
+name: Bug report
+description: Report something that is not working properly
+body:
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: How we can reproduce the issue
+      placeholder: |
+        1. Click on...
+        2. Scroll down to...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected result
+      description: A clear description of what you expected to happen
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual result
+      description: A clear description of what actually happens
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshot/video
+      description: A screenshot or video to help explain the issue (if applicable)
+  - type: input
+    attributes:
+      label: Operating system
+      description: The operating system you are seeing the issue on
+      placeholder: Android 10, Windows 10, etc.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Browser
+      description: The browser you are seeing the issue on
+      placeholder: Google Chrome 100, Safari 15, etc.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Any other context about the issue
