@@ -66,8 +66,7 @@ p {
 	@media (max-width: $bar-bottom) {
 		border-right: none;
 		border-top: 1px solid #252525;
-		flex-direction: initial;
-		padding: 0.7rem 1rem;
+		padding: 0.4rem 0;
 	}
 }
 
@@ -75,37 +74,32 @@ p {
 nav {
 	display: flex;
 	flex-direction: column;
-	gap: 1.3em;
-	justify-content: center;
-	width: fit-content;
+	gap: 1.1em;
+	justify-content: space-evenly;
 	z-index: 2;
 
 	@media (max-width: $bar-bottom) {
 		flex-direction: row;
-		gap: 0.8rem;
+		gap: 0;
 	}
 }
 
 button {
 	-webkit-tap-highlight-color: transparent;
 	background-color: transparent;
-	border-radius: 15px;
+	border-radius: 5px;
 	border: none;
 	color: white;
 	cursor: pointer;
 	font-family: $fonts;
-	font-size: 1rem;
-	min-width: 3.5em;
+	font-size: 0.8rem;
+	min-width: 3.5rem;
 	padding: 0.3em 0.7em;
 	touch-action: none;
 	transition-duration: 100ms;
 	user-select: none;
 
-	&.active {
-		background-color: white;
-		color: initial;
-		cursor: initial;
-	}
+	&.active { cursor: initial }
 
 	@media (pointer: fine) {
 		&:not(.active):hover {
@@ -113,6 +107,44 @@ button {
 			opacity: 0.7;
 		}
 	}
+
+	.icon {
+		background: center / contain no-repeat;
+		filter: invert(1);
+		height: 1.8em;
+		margin-bottom: 0.5em;
+		position: relative;
+
+		&.bolt { background-image: url("../images/bolt.svg") }
+		&.elderly { background-image: url("../images/elderly.svg") }
+		&.premium { background-image: url("../images/premium.svg") }
+		&.schedule { background-image: url("../images/schedule.svg") }
+	}
+
+	&.active .icon {
+		filter: none;
+
+		&.premium { background-image: url("../images/premium_filled.svg") }
+		&.schedule { background-image: url("../images/schedule_filled.svg") }
+
+		&::before {
+			animation: 150ms pillExpand;
+			background-color: white;
+			border-radius: 15px;
+			content: "";
+			height: 110%;
+			position: absolute;
+			top: 0;
+			transform: translate(-50%, -5%);
+			width: 110%;
+			z-index: -1;
+		}
+	}
+}
+
+@keyframes pillExpand {
+	from { transform: translate(-50%, -5%) scaleX(30%) }
+	to { transform: translate(-50%, -5%) scaleX(100%) }
 }
 
 
@@ -349,6 +381,8 @@ h1 {
 aside {
 	display: grid;
 	place-items: center;
+
+	@media (max-width: $bar-bottom) { display: none }
 }
 
 a {
