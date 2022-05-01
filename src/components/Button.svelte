@@ -9,7 +9,7 @@
 		$activePage = page.id;
 
 		// Edit URL to match page.
-		const parameters = (page.id === "pr") ? "" : `?schedule=${page.id}`;
+		const parameters = (page.id === "future") ? "" : `?schedule=${page.id}`;
 		window.history.replaceState({}, "", url + parameters);
 	};
 </script>

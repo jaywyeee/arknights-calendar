@@ -225,7 +225,7 @@
 
 
 	// Drop first month of future schedule if mostly empty.
-	if (page.id === "pr") {
+	if (page.id === "future") {
 		const [y, m] = startDate;
 		const firstDiv = eventDivs[y][m][0];
 		const lastDiv = eventDivs[y][m][eventDivs[y][m].length - 1];

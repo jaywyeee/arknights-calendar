@@ -1,5 +1,5 @@
 {
-	"pr": {
+	"future": {
 		"2022": [
 			{ "start": [ 4, 28], "duration": 21, "event": "nl" },
 			{ "start": [ 5, 26], "duration": 10, "event": "mb", "rerun": true },
