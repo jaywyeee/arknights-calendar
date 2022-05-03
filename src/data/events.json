@@ -168,7 +168,8 @@
 			{ "start": [ 3, 22], "duration": 10, "event": "tow", "rerun": true },
 			{ "start": [ 4,  6], "duration":  7, "event": "ic1" },
 			{ "start": [ 4, 16], "duration":  7, "event": "v" },
-			{ "start": [ 4, 26], "duration": 10, "event": "gtgcr", "rerun": true }
+			{ "start": [ 4, 26], "duration": 10, "event": "gtgcr", "rerun": true },
+			{ "start": [ 5, 10], "duration": 21, "event": "dh" }
 		]
 	}
 }
