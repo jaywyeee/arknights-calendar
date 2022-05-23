@@ -1,7 +1,6 @@
 {
 	"future": {
 		"2022": [
-			{ "start": [ 4, 28], "duration": 21, "event": "nl" },
 			{ "start": [ 5, 26], "duration": 10, "event": "mb", "rerun": true },
 			{ "start": [ 6,  9], "duration": 14, "event": "cc7" },
 			{ "start": [ 6, 23], "duration": 14, "event": "bti" },
@@ -12,8 +11,8 @@
 			{ "start": [ 9, 13], "duration": 14, "event": "ga" },
 			{ "start": [ 9, 27], "duration": 10, "event": "awitd", "rerun": true },
 			{ "start": [10, 27], "duration": 21, "event": "sn" },
-			{ "start": [11, 17], "duration": 14, "event": "cc9" },
-			{ "start": [12,  1], "duration": 10, "event": "ut", "rerun": true }
+			{ "start": [11, 17], "duration": 10, "event": "ut", "rerun": true },
+			{ "start": [12,  1], "duration": 14, "event": "cc9" }
 		]
 	},
 	"cn": {
@@ -124,7 +123,8 @@
 			{ "start": [ 3,  1], "duration": 14, "event": "cc6" },
 			{ "start": [ 3, 31], "duration": 10, "event": "mn", "rerun": true },
 			{ "start": [ 4, 14], "duration":  7, "event": "ps" },
-			{ "start": [ 4, 28], "duration": 21, "event": "nl" }
+			{ "start": [ 4, 28], "duration": 21, "event": "nl" },
+			{ "start": [ 5, 26], "duration": 10, "event": "mb", "rerun": true }
 		]
 	},
 	"tw": {
