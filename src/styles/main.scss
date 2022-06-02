@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @use "mixins" as *;
-@use "events";
+@use "colors" as *;
 @use "fonts";
 
 // Variables
@@ -316,7 +316,7 @@ h1 {
 	text-align: right;
 }
 
-@each $id, $color in events.$list {
+@each $id, $color in $colors {
 	@include overlay($id, $color);
 }
 
