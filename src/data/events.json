@@ -127,7 +127,8 @@
 			{ "start": [ 3, 31], "duration": 10, "event": "mn", "rerun": true },
 			{ "start": [ 4, 14], "duration":  7, "event": "ps" },
 			{ "start": [ 4, 28], "duration": 21, "event": "nl" },
-			{ "start": [ 5, 26], "duration": 10, "event": "mb", "rerun": true }
+			{ "start": [ 5, 26], "duration": 10, "event": "mb", "rerun": true },
+			{ "start": [ 6,  9], "duration": 14, "event": "cc7" }
 		]
 	},
 	"tw": {
