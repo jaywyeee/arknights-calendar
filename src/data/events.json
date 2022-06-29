@@ -75,7 +75,8 @@
 			{ "start": [ 5,  1], "duration": 21, "event": "sn" },
 			{ "start": [ 5, 19], "duration": 14, "event": "cc9" },
 			{ "start": [ 5, 30], "duration": 10, "event": "ut", "rerun": true },
-			{ "start": [ 6,  9], "duration": 14, "event": "le" }
+			{ "start": [ 6,  9], "duration": 14, "event": "le" },
+			{ "start": [ 7,  5], "duration": 14, "event": "dv" }
 		]
 	},
 	"en": {
