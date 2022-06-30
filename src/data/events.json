@@ -3,7 +3,7 @@
 		"2022": [
 			{ "start": [ 6, 30], "duration": 14, "event": "bti" },
 			{ "start": [ 7, 14], "duration": 10, "event": "wir", "rerun": true },
-			{ "start": [ 7, 28], "duration": 14, "event": "itw" },
+			{ "start": [ 7, 29], "duration": 14, "event": "itw" },
 			{ "start": [ 8, 18], "duration":  7, "event": "alsid" },
 			{ "start": [ 8, 25], "duration": 14, "event": "cc8" },
 			{ "start": [ 9, 15], "duration": 14, "event": "ga" },
@@ -11,7 +11,8 @@
 			{ "start": [10, 27], "duration": 21, "event": "sn" },
 			{ "start": [11, 15], "duration": 14, "event": "cc9" },
 			{ "start": [11, 25], "duration": 10, "event": "ut", "rerun": true },
-			{ "start": [12,  6], "duration": 14, "event": "le" }
+			{ "start": [12,  8], "duration": 14, "event": "le" },
+			{ "start": [12, 29], "duration": 14, "event": "dv" }
 		]
 	},
 	"cn": {
@@ -174,7 +175,8 @@
 			{ "start": [ 4, 16], "duration":  7, "event": "v" },
 			{ "start": [ 4, 26], "duration": 10, "event": "gtgcr", "rerun": true },
 			{ "start": [ 5, 10], "duration": 21, "event": "dh" },
-			{ "start": [ 6,  1], "duration": 14, "event": "cc6" }
+			{ "start": [ 6,  1], "duration": 14, "event": "cc6" },
+			{ "start": [ 7,  6], "duration": 10, "event": "mn", "rerun": true }
 		]
 	}
 }
