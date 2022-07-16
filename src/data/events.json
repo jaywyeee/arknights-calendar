@@ -129,7 +129,8 @@
 			{ "start": [ 4, 28], "duration": 21, "event": "nl" },
 			{ "start": [ 5, 26], "duration": 10, "event": "mb", "rerun": true },
 			{ "start": [ 6,  9], "duration": 14, "event": "cc7" },
-			{ "start": [ 6, 30], "duration": 14, "event": "bti" }
+			{ "start": [ 6, 30], "duration": 14, "event": "bti" },
+			{ "start": [ 7, 14], "duration": 10, "event": "wir", "rerun": true }
 		]
 	},
 	"tw": {
@@ -176,7 +177,8 @@
 			{ "start": [ 4, 26], "duration": 10, "event": "gtgcr", "rerun": true },
 			{ "start": [ 5, 10], "duration": 21, "event": "dh" },
 			{ "start": [ 6,  1], "duration": 14, "event": "cc6" },
-			{ "start": [ 7,  6], "duration": 10, "event": "mn", "rerun": true }
+			{ "start": [ 7,  6], "duration": 10, "event": "mn", "rerun": true },
+			{ "start": [ 7, 20], "duration":  7, "event": "ps" }
 		]
 	}
 }
