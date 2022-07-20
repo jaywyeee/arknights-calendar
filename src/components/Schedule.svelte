@@ -201,7 +201,7 @@
 					let week = weekStarts[y][m].findIndex((date) => date > d);
 					week = (week !== -1) ? week : weekStarts[y][m].length;
 
-					const day = new Date(date).getDay();
+					const day = new Date(y, m, d).getDay();
 
 					const row = week;
 					const col = `${day * 2 + 1} / span 2`;
