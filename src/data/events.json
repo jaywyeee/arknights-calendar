@@ -78,7 +78,8 @@
 			{ "start": [ 5, 30], "duration": 10, "event": "ut", "rerun": true },
 			{ "start": [ 6,  9], "duration": 14, "event": "le" },
 			{ "start": [ 7,  5], "duration": 14, "event": "dv" },
-			{ "start": [ 7, 19], "duration":  7, "event": "tbc" }
+			{ "start": [ 7, 19], "duration":  7, "event": "tbc" },
+			{ "start": [ 7, 26], "duration": 10, "event": "dh", "rerun": true }
 		]
 	},
 	"en": {
