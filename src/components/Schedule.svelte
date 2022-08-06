@@ -4,7 +4,7 @@
 	import eventData from "../data/events.json";
 	import isData from "../data/is.json";
 	import { activePage, opacity, travel } from "../stores/store.js";
-	import { setContext } from "svelte";
+	import { onMount, setContext } from "svelte";
 	import { cubicOut } from "svelte/easing";
 
 	export let page;
@@ -252,6 +252,17 @@
 		};
 	};
 
+	// Temporary fix for 2022 summer event lineup
+	onMount(() => {
+		if (page.id === "future" || page.id === "cn") {
+			const iccites = document.querySelectorAll(`#${page.id} .iccites`);
+			const cc10 = document.querySelectorAll(`#${page.id} .cc10`);
+
+			iccites[iccites.length - 1].style.cssText = "--grid-row:5; --grid-column:1 / span 10;";
+			cc10[0].classList.add("bottom");
+			cc10[1].classList.add("bottom");
+		};
+	});
 
 	// Swipe handling
 	let startX, startY, currentX, currentY, isChanging, notScrolling, pageChanged;
