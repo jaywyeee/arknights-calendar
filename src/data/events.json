@@ -3,8 +3,8 @@
 		"2022": [
 			{ "start": [ 7, 29], "duration": 14, "event": "itw" },
 			{ "start": [ 8, 18], "duration":  7, "event": "alsid" },
-			{ "start": [ 8, 25], "duration": 14, "event": "cc8" },
-			{ "start": [ 9, 15], "duration": 14, "event": "ga" },
+			{ "start": [ 8, 30], "duration": 14, "event": "cc8" },
+			{ "start": [ 9, 13], "duration": 14, "event": "ga" },
 			{ "start": [10,  4], "duration": 10, "event": "awitd", "rerun": true },
 			{ "start": [10, 28], "duration": 21, "event": "sn" },
 			{ "start": [11, 11], "duration": 14, "event": "cc9" },
@@ -191,7 +191,8 @@
 			{ "start": [ 6,  1], "duration": 14, "event": "cc6" },
 			{ "start": [ 7,  6], "duration": 10, "event": "mn", "rerun": true },
 			{ "start": [ 7, 20], "duration":  7, "event": "ps" },
-			{ "start": [ 8,  4], "duration": 21, "event": "nl" }
+			{ "start": [ 8,  4], "duration": 21, "event": "nl" },
+			{ "start": [ 8, 30], "duration": 14, "event": "cc7" }
 		]
 	}
 }
