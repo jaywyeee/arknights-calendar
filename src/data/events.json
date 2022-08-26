@@ -1,10 +1,8 @@
 {
 	"future": {
 		"2022": [
-			{ "start": [ 7, 29], "duration": 14, "event": "itw" },
-			{ "start": [ 8, 18], "duration":  7, "event": "alsid" },
 			{ "start": [ 8, 30], "duration": 14, "event": "cc8" },
-			{ "start": [ 9, 13], "duration": 14, "event": "ga" },
+			{ "start": [ 9, 16], "duration": 14, "event": "ga" },
 			{ "start": [10,  4], "duration": 10, "event": "awitd", "rerun": true },
 			{ "start": [10, 28], "duration": 21, "event": "sn" },
 			{ "start": [11, 11], "duration": 14, "event": "cc9" },
@@ -142,7 +140,8 @@
 			{ "start": [ 6, 30], "duration": 14, "event": "bti" },
 			{ "start": [ 7, 14], "duration": 10, "event": "wir", "rerun": true },
 			{ "start": [ 7, 29], "duration": 14, "event": "itw" },
-			{ "start": [ 8, 18], "duration":  7, "event": "alsid" }
+			{ "start": [ 8, 18], "duration":  7, "event": "alsid" },
+			{ "start": [ 8, 30], "duration": 14, "event": "cc8" }
 		]
 	},
 	"tw": {
