@@ -15,7 +15,10 @@
 			{ "start": [ 1, 19], "duration":  7, "event": "tfn1" },
 			{ "start": [ 1, 26], "duration": 14, "event": "cc10" },
 			{ "start": [ 2,  9], "duration": 10, "event": "dh", "rerun": true },
-			{ "start": [ 2, 23], "duration":  7, "event": "tbc" }
+			{ "start": [ 2, 23], "duration":  7, "event": "tbc" },
+			{ "start": [ 3,  2], "duration":  7, "event": "aow" },
+			{ "start": [ 3,  9], "duration":  7, "event": "ibaw" },
+			{ "start": [ 3, 16], "duration": 10, "event": "nl", "rerun": true }
 		]
 	},
 	"cn": {
@@ -85,7 +88,8 @@
 			{ "start": [ 7, 26], "duration": 10, "event": "dh", "rerun": true },
 			{ "start": [ 8, 11], "duration": 21, "event": "iccites" },
 			{ "start": [ 8, 18], "duration":  7, "event": "tfn1" },
-			{ "start": [ 8, 25], "duration": 14, "event": "cc10" }
+			{ "start": [ 8, 25], "duration": 14, "event": "cc10" },
+			{ "start": [ 9,  8], "duration":  7, "event": "aow" }
 		]
 	},
 	"en": {
@@ -191,7 +195,8 @@
 			{ "start": [ 7,  6], "duration": 10, "event": "mn", "rerun": true },
 			{ "start": [ 7, 20], "duration":  7, "event": "ps" },
 			{ "start": [ 8,  4], "duration": 21, "event": "nl" },
-			{ "start": [ 8, 30], "duration": 14, "event": "cc7" }
+			{ "start": [ 8, 30], "duration": 14, "event": "cc7" },
+			{ "start": [ 9, 14], "duration": 10, "event": "mb", "rerun": true }
 		]
 	}
 }
