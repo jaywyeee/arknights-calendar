@@ -1,10 +1,11 @@
 {
 	"future": [
 		{ "id": "phantom", "date": [2022,  7, 14] },
-		{ "id": "mizuki",  "date": [2023,  4,  6] }
+		{ "id": "mizuki",  "date": [2023,  3, 23] }
 	],
 	"cn": [
-		{ "id": "phantom", "date": [2022,  1,  5] }
+		{ "id": "phantom", "date": [2022,  1,  5] },
+		{ "id": "mizuki",  "date": [2022,  9, 27] }
 	],
 	"en": [
 		{ "id": "phantom", "date": [2022,  7, 14] }

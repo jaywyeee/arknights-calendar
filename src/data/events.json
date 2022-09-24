@@ -147,7 +147,8 @@
 			{ "start": [ 7, 29], "duration": 14, "event": "itw" },
 			{ "start": [ 8, 18], "duration":  7, "event": "alsid" },
 			{ "start": [ 8, 30], "duration": 14, "event": "cc8" },
-			{ "start": [ 9, 16], "duration": 14, "event": "ga" }
+			{ "start": [ 9, 16], "duration": 14, "event": "ga" },
+			{ "start": [10,  4], "duration": 10, "event": "awitd", "rerun": true }
 		]
 	},
 	"tw": {
@@ -198,7 +199,8 @@
 			{ "start": [ 7, 20], "duration":  7, "event": "ps" },
 			{ "start": [ 8,  4], "duration": 21, "event": "nl" },
 			{ "start": [ 8, 30], "duration": 14, "event": "cc7" },
-			{ "start": [ 9, 14], "duration": 10, "event": "mb", "rerun": true }
+			{ "start": [ 9, 14], "duration": 10, "event": "mb", "rerun": true },
+			{ "start": [ 9, 29], "duration": 14, "event": "bti" }
 		]
 	}
 }
