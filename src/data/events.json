@@ -200,7 +200,8 @@
 			{ "start": [ 8,  4], "duration": 21, "event": "nl" },
 			{ "start": [ 8, 30], "duration": 14, "event": "cc7" },
 			{ "start": [ 9, 14], "duration": 10, "event": "mb", "rerun": true },
-			{ "start": [ 9, 29], "duration": 14, "event": "bti" }
+			{ "start": [ 9, 29], "duration": 14, "event": "bti" },
+			{ "start": [10, 13], "duration": 10, "event": "wir", "rerun": true }
 		]
 	}
 }
