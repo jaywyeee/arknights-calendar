@@ -252,15 +252,26 @@
 		};
 	};
 
-	// Temporary fix for 2022 summer event lineup
+	// Temporary fix for 2022 summer lineup
 	onMount(() => {
 		if (page.id === "future" || page.id === "cn") {
 			const iccites = document.querySelectorAll(`#${page.id} .iccites`);
 			const cc10 = document.querySelectorAll(`#${page.id} .cc10`);
+			const dh = document.querySelectorAll(`#${page.id} .dh.rerun`);
 
-			iccites[iccites.length - 1].style.cssText = "--grid-row:5; --grid-column:1 / span 10;";
-			cc10[0].classList.add("bottom");
-			cc10[1].classList.add("bottom");
+			const iccitesLast = iccites[iccites.length - 1];
+
+			if (page.id === "cn") {
+				iccitesLast.style.cssText = "--grid-row:5; --grid-column:1 / span 10;";
+				cc10[0].classList.add("bottom");
+				cc10[1].classList.add("bottom");
+			};
+
+			if (page.id === "future") {
+				iccitesLast.classList.remove("top")
+				iccitesLast.style.cssText = "--grid-row:2; --grid-column:1 / span 9;";
+				dh[0].style.cssText = "--grid-row:2; --grid-column:span 5 / -1;";
+			};
 		};
 	});
 

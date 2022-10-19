@@ -1,7 +1,6 @@
 {
 	"future": [
-		{ "id": "phantom", "date": [2022,  7, 14] },
-		{ "id": "mizuki",  "date": [2023,  3, 23] }
+		{ "id": "mizuki",  "date": [2023,  3, 30] }
 	],
 	"cn": [
 		{ "id": "phantom", "date": [2022,  1,  5] },
