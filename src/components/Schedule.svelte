@@ -257,7 +257,7 @@
 		if (page.id === "future" || page.id === "cn") {
 			const iccites = document.querySelectorAll(`#${page.id} .iccites`);
 			const cc10 = document.querySelectorAll(`#${page.id} .cc10`);
-			const dh = document.querySelectorAll(`#${page.id} .dh.rerun`);
+			const dv = document.querySelectorAll(`#${page.id} .dv`);
 
 			const iccitesLast = iccites[iccites.length - 1];
 
@@ -269,8 +269,8 @@
 
 			if (page.id === "future") {
 				iccitesLast.classList.remove("top")
-				iccitesLast.style.cssText = "--grid-row:2; --grid-column:1 / span 9;";
-				dh[0].style.cssText = "--grid-row:2; --grid-column:span 5 / -1;";
+				iccitesLast.style.cssText = "--grid-row:4; --grid-column:1 / span 9;";
+				dv[0].style.cssText = "--grid-row:4; --grid-column:span 5 / -1;";
 			};
 		};
 	});

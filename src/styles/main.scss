@@ -263,7 +263,7 @@ h1 {
 	inset: 0;
 	position: absolute;
 
-	div:not(.episode):not(.is) {
+	div:not(.episode):not(.inst) {
 		-webkit-tap-highlight-color: transparent;
 		cursor: pointer;
 		font-size: 0.87rem;
@@ -343,7 +343,7 @@ h1 {
 	}
 }
 
-.is {
+.inst {
 	background: center / contain no-repeat url("../images/is.svg");
 	color: white;
 	filter: drop-shadow(0 0 0.5em rgb(0 0 0 / 80%));
