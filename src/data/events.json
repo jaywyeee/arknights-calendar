@@ -92,7 +92,8 @@
 			{ "start": [ 9, 15], "duration":  7, "event": "ibaw" },
 			{ "start": [ 9, 22], "duration": 10, "event": "nl", "rerun": true },
 			{ "start": [11,  1], "duration": 21, "event": "is" },
-			{ "start": [11, 15], "duration": 14, "event": "cc11" }
+			{ "start": [11, 15], "duration": 14, "event": "cc11" },
+			{ "start": [12,  1], "duration": 10, "event": "bti", "rerun": true }
 		]
 	},
 	"en": {
