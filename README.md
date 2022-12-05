@@ -1,5 +1,5 @@
 ## Arknights Calendar
-A webpage featuring a projection of the future event schedule of the game Arknights, as well as past CN, EN, and TW schedules.
+A webpage featuring various event schedules of the game Arknights.
 
 ## Developing
 ### Requirements
