@@ -17,7 +17,10 @@
 			{ "start": [ 3, 30], "duration": 10, "event": "nl", "rerun": true },
 			{ "start": [ 4, 27], "duration": 21, "event": "is" },
 			{ "start": [ 5, 18], "duration": 10, "event": "bti", "rerun": true },
-			{ "start": [ 6,  1], "duration": 14, "event": "cc11" }
+			{ "start": [ 6,  1], "duration": 14, "event": "cc11" },
+			{ "start": [ 6, 15], "duration": 14, "event": "wtfc" },
+			{ "start": [ 7,  6], "duration": 10, "event": "itw", "rerun": true },
+			{ "start": [ 7, 20], "duration":  7, "event": "tfn2" }
 		]
 	},
 	"cn": {
@@ -93,7 +96,8 @@
 			{ "start": [ 9, 22], "duration": 10, "event": "nl", "rerun": true },
 			{ "start": [11,  1], "duration": 21, "event": "is" },
 			{ "start": [11, 15], "duration": 14, "event": "cc11" },
-			{ "start": [12,  1], "duration": 10, "event": "bti", "rerun": true }
+			{ "start": [12,  1], "duration": 10, "event": "bti", "rerun": true },
+			{ "start": [12, 15], "duration": 14, "event": "wtfc" }
 		]
 	},
 	"en": {
