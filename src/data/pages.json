@@ -4,7 +4,8 @@
 		"name": "Future",
 		"icon": "schedule",
 		"description": [
-			"This is a tentative projection based on the CN schedule and past trends which will be updated to reflect new information as it becomes available."
+			"This is a tentative projection based on the CN schedule and past trends which will be updated to reflect new information as it becomes available.",
+			"The schedule after Ideal City has become unpredictable and thus will be temporarily omitted."
 		]
 	},
 	{
@@ -15,7 +16,7 @@
 	{
 		"id": "en",
 		"icon": "elderly",
-		"description": ["This is a complete timeline of the EN schedule."]
+		"description": ["This is a complete timeline of the EN/JP/KR schedule."]
 	},
 	{
 		"id": "tw",

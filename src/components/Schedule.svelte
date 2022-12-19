@@ -269,8 +269,8 @@
 
 			if (page.id === "future") {
 				iccitesLast.classList.remove("top")
-				iccitesLast.style.cssText = "--grid-row:4; --grid-column:1 / span 9;";
-				dv[0].style.cssText = "--grid-row:4; --grid-column:span 5 / -1;";
+				// iccitesLast.style.cssText = "--grid-row:5; --grid-column:1 / span 9;";
+				// dv[0].style.cssText = "--grid-row:1; --grid-column:span 5 / -1;";
 			};
 		};
 	});
