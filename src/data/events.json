@@ -1,9 +1,7 @@
 {
 	"future": {
 		"2022": [
-			{ "start": [11, 25], "duration": 10, "event": "ut", "rerun": true },
-			{ "start": [12,  8], "duration": 14, "event": "cc9" },
-			{ "start": [12, 29], "duration": 14, "event": "le" }
+			{ "start": [12, 27], "duration": 14, "event": "le" }
 		],
 		"2023": [
 			{ "start": [ 1, 12], "duration": 21, "event": "iccites" },
