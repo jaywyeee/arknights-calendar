@@ -4,8 +4,20 @@
 			{ "start": [12, 27], "duration": 14, "event": "le" }
 		],
 		"2023": [
-			{ "start": [ 1, 12], "duration": 21, "event": "iccites" },
-			{ "start": [ 1, 19], "duration":  7, "event": "tfn1" }
+			{ "start": [ 1, 13], "duration": 21, "event": "iccites" },
+			{ "start": [ 1, 20], "duration":  7, "event": "tfn1" },
+			{ "start": [ 2,  3], "duration": 14, "event": "cc10" },
+			{ "start": [ 2, 21], "duration": 14, "event": "dv" },
+			{ "start": [ 3,  9], "duration": 10, "event": "dh", "rerun": true },
+			{ "start": [ 3, 21], "duration":  7, "event": "tbc" },
+			{ "start": [ 3, 30], "duration":  7, "event": "aow" },
+			{ "start": [ 4,  6], "duration": 10, "event": "nl", "rerun": true },
+			{ "start": [ 5,  4], "duration": 21, "event": "is" },
+			{ "start": [ 5, 25], "duration": 10, "event": "bti", "rerun": true },
+			{ "start": [ 6,  8], "duration": 14, "event": "cc11" },
+			{ "start": [ 6, 27], "duration":  7, "event": "ibaw" },
+			{ "start": [ 7,  4], "duration": 14, "event": "wtfc" },
+			{ "start": [ 7, 20], "duration": 10, "event": "itw", "rerun": true }
 		]
 	},
 	"cn": {
