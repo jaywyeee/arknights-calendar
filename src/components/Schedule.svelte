@@ -254,22 +254,20 @@
 
 	// Temporary fix for 2022 summer lineup
 	onMount(() => {
-		if (page.id === "future" || page.id === "cn") {
-			const iccites = document.querySelectorAll(`#${page.id} .iccites`);
+		if (["cn", "en"].includes(page.id)) {
+			const icec = document.querySelectorAll(`#${page.id} .icec.end`)[0];
 			const cc10 = document.querySelectorAll(`#${page.id} .cc10`);
 
-			const iccitesLast = iccites[iccites.length - 1];
-
 			if (page.id === "cn") {
-				iccitesLast.style.cssText = "--grid-row:5; --grid-column:1 / span 10;";
+				icec.style.cssText = "--grid-row:5; --grid-column:1 / span 10;";
 				cc10[0].classList.add("bottom");
 				cc10[1].classList.add("bottom");
 			};
 
-			if (page.id === "future") {
-				iccitesLast.classList.remove("top")
-				iccitesLast.style.cssText = "--grid-row:5; --grid-column:1 / span 11;";
-				cc10[0].style.cssText = "--grid-row:1; --grid-column:span 3 / -1;";
+			if (page.id === "en") {
+				icec.classList.remove("top");
+				// icec.style.cssText = "--grid-row:5; --grid-column:1 / span 11;";
+				// cc10[0].style.cssText = "--grid-row:1; --grid-column:span 3 / -1;";
 			};
 		};
 	});
