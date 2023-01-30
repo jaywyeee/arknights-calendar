@@ -14,8 +14,9 @@
 			{ "start": [ 6, 29], "duration": 10, "event": "nl", "rerun": true },
 			{ "start": [ 7, 13], "duration": 14, "event": "wtfc" },
 			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
-			{ "start": [ 8, 17], "duration": 10, "event": "itw", "rerun": true },
-			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" }
+			{ "start": [ 8, 15], "duration": 10, "event": "itw", "rerun": true },
+			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
+			{ "start": [ 9, 14], "duration":  7, "event": "ra1" }
 		]
 	},
 	"cn": {
@@ -97,7 +98,8 @@
 		"2023": [
 			{ "start": [ 1,  1], "duration": 10, "event": "itw", "rerun": true },
 			{ "start": [ 1, 10], "duration":  7, "event": "tfn2" },
-			{ "start": [ 1, 17], "duration": 14, "event": "wvwwnb" }
+			{ "start": [ 1, 17], "duration": 14, "event": "wvwwnb" },
+			{ "start": [ 1, 29], "duration":  7, "event": "ra1" }
 		]
 	},
 	"en": {
@@ -222,6 +224,9 @@
 			{ "start": [12,  1], "duration": 14, "event": "cc8" },
 			{ "start": [12, 15], "duration": 10, "event": "awitd", "rerun": true },
 			{ "start": [12, 29], "duration": 14, "event": "ga" }
+		],
+		"2023": [
+			{ "start": [ 1, 31], "duration": 21, "event": "sn" }
 		]
 	}
 }
