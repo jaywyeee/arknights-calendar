@@ -266,8 +266,8 @@
 
 			if (page.id === "en") {
 				icec.classList.remove("top");
-				// icec.style.cssText = "--grid-row:5; --grid-column:1 / span 11;";
-				// cc10[0].style.cssText = "--grid-row:1; --grid-column:span 3 / -1;";
+				icec.style.cssText = "--grid-row:5; --grid-column:1 / span 11;";
+				cc10[0].style.cssText = "--grid-row:1; --grid-column:span 3 / -1;";
 			};
 		};
 	});
