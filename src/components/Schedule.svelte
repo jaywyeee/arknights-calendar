@@ -253,7 +253,7 @@
 		};
 	};
 
-	// Temporary fix for 2022 summer lineup
+	// Temporary fix for Ideal City and Reclamation Algorithm
 	onMount(() => {
 		if (["cn", "en"].includes(page.id)) {
 			const icec = document.querySelectorAll(`#${page.id} .icec.end`)[0];
@@ -270,6 +270,12 @@
 				icec.style.cssText = "--grid-row:5; --grid-column:1 / span 11;";
 				cc10[0].style.cssText = "--grid-row:1; --grid-column:span 3 / -1;";
 			};
+		};
+
+		if (["future", "cn"].includes(page.id)) {
+			const ra1 = document.querySelectorAll(`#${page.id} .ra1`);
+			ra1[4].classList.remove("top");
+			ra1[5].classList.remove("top");
 		};
 	});
 
