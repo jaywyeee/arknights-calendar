@@ -16,7 +16,8 @@
 			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
 			{ "start": [ 8, 15], "duration": 10, "event": "itw", "rerun": true },
 			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
-			{ "start": [ 9, 14], "duration":  7, "event": "ra1" }
+			{ "start": [ 9, 14], "duration": 35, "event": "ra1" },
+			{ "start": [ 9, 28], "duration":  7, "event": "adic" }
 		]
 	},
 	"cn": {
@@ -99,7 +100,8 @@
 			{ "start": [ 1,  1], "duration": 10, "event": "itw", "rerun": true },
 			{ "start": [ 1, 10], "duration":  7, "event": "tfn2" },
 			{ "start": [ 1, 17], "duration": 14, "event": "wvwwnb" },
-			{ "start": [ 1, 29], "duration":  7, "event": "ra1" }
+			{ "start": [ 1, 29], "duration": 35, "event": "ra1" },
+			{ "start": [ 2, 14], "duration":  7, "event": "adic" }
 		]
 	},
 	"en": {

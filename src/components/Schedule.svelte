@@ -22,7 +22,8 @@
 	const endYear = years.at(-1);
 	const endEvents = schedule[endYear];
 	const lastEvent = endEvents.at(-1);
-	let endDate = [endYear, lastEvent.start[0] - 1]
+	// Temporary fix for A Death in Chunfen kicking out March
+	let endDate = (page.id !== "cn" ? [endYear, lastEvent.start[0] - 1] : [endYear, lastEvent.start[0]]);
 	endDate = [...endDate, lastEvent.start[1] + lastEvent.duration];
 
 	const months = [];
