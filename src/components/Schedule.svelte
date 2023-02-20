@@ -22,8 +22,7 @@
 	const endYear = years.at(-1);
 	const endEvents = schedule[endYear];
 	const lastEvent = endEvents.at(-1);
-	// Temporary fix for A Death in Chunfen kicking out March
-	let endDate = (page.id !== "cn" ? [endYear, lastEvent.start[0] - 1] : [endYear, lastEvent.start[0]]);
+	let endDate = [endYear, lastEvent.start[0] - 1];
 	endDate = [...endDate, lastEvent.start[1] + lastEvent.duration];
 
 	const months = [];
@@ -274,8 +273,14 @@
 
 		if (["future", "cn"].includes(page.id)) {
 			const ra1 = document.querySelectorAll(`#${page.id} .ra1`);
-			ra1[4].classList.remove("top");
-			ra1[5].classList.remove("top");
+			const ga = document.querySelectorAll(`#${page.id} .ga.rerun`);
+
+			ra1[4].classList.add("top");
+			if (page.id === "cn") { ra1[5].classList.remove("top") };
+
+			ga[0].classList.add("bottom");
+			ga[1].classList.add("bottom");
+			if (page.id === "future") ga[2].classList.add("bottom");
 		};
 	});
 
