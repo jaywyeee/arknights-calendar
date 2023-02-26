@@ -276,11 +276,13 @@
 			const ga = document.querySelectorAll(`#${page.id} .ga.rerun`);
 
 			ra1[4].classList.add("top");
-			if (page.id === "cn") { ra1[5].classList.remove("top") };
+			if (page.id === "cn") {
+				ra1[5].classList.remove("top")
+				ra1[5].style.cssText = "--grid-row:2; --grid-column:1 / span 2;"
+			};
 
 			ga[0].classList.add("bottom");
 			ga[1].classList.add("bottom");
-			if (page.id === "future") ga[2].classList.add("bottom");
 		};
 	});
 
