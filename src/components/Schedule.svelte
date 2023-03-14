@@ -252,7 +252,7 @@
 		};
 	};
 
-	// Temporary fix for Ideal City and Reclamation Algorithm
+	// Temporary fix for Ideal City, Reclamation Algorithm, and EP11/IS#3
 	onMount(() => {
 		if (["cn", "en"].includes(page.id)) {
 			const icec = document.querySelectorAll(`#${page.id} .icec.end`)[0];
@@ -284,6 +284,14 @@
 			ga[0].classList.add("bottom");
 			ga[1].classList.add("bottom");
 		};
+
+		if (page.id === "future") {
+			const ep11 = document.querySelectorAll(`#${page.id} .episode`)[0];
+			const is3 = document.querySelector(`#${page.id} .inst`);
+
+			ep11.style.transform = "translate(-30%, -10%) scale(0.9)";
+			is3.style.transform = "translate(30%, 30%) scale(0.9)";
+		}
 	});
 
 	// Swipe handling
