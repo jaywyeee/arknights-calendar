@@ -2,12 +2,12 @@
 	"future": {
 		"2023": [
 			{ "start": [ 3, 31], "duration":  7, "event": "aow" },
+			{ "start": [ 4,  7], "duration":  7, "event": "ibaw" },
 			{ "start": [ 4, 14], "duration": 10, "event": "nl", "rerun": true },
 			{ "start": [ 5, 11], "duration": 21, "event": "is" },
 			{ "start": [ 6,  1], "duration": 10, "event": "bti", "rerun": true },
 			{ "start": [ 6, 15], "duration": 14, "event": "cc11" },
-			{ "start": [ 7,  6], "duration":  7, "event": "ibaw" },
-			{ "start": [ 7, 13], "duration": 14, "event": "wtfc" },
+			{ "start": [ 7,  6], "duration": 14, "event": "wtfc" },
 			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" }
 		]
 	},
