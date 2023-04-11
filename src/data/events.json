@@ -95,7 +95,8 @@
 			{ "start": [ 2, 14], "duration":  7, "event": "adic" },
 			{ "start": [ 2, 21], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [ 3,  7], "duration": 14, "event": "lcf" },
-			{ "start": [ 3, 21], "duration": 14, "event": "cc12" }
+			{ "start": [ 3, 21], "duration": 14, "event": "cc12" },
+			{ "start": [ 4, 20], "duration": 10, "event": "sn", "rerun": true }
 		]
 	},
 	"en": {
@@ -167,7 +168,8 @@
 			{ "start": [ 2, 28], "duration": 10, "event": "dh", "rerun": true },
 			{ "start": [ 3, 14], "duration": 14, "event": "dv" },
 			{ "start": [ 3, 31], "duration":  7, "event": "aow" },
-			{ "start": [ 4,  7], "duration":  7, "event": "ibaw" }
+			{ "start": [ 4,  7], "duration":  7, "event": "ibaw" },
+			{ "start": [ 4, 14], "duration": 10, "event": "nl", "rerun": true }
 		]
 	},
 	"tw": {
@@ -231,7 +233,8 @@
 			{ "start": [ 1, 31], "duration": 21, "event": "sn" },
 			{ "start": [ 2, 23], "duration": 10, "event": "ut", "rerun": true },
 			{ "start": [ 3,  9], "duration": 14, "event": "cc9" },
-			{ "start": [ 3, 28], "duration": 14, "event": "le" }
+			{ "start": [ 3, 28], "duration": 14, "event": "le" },
+			{ "start": [ 4, 13], "duration": 14, "event": "dv" }
 		]
 	}
 }
