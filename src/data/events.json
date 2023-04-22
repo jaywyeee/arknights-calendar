@@ -96,7 +96,9 @@
 			{ "start": [ 2, 21], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [ 3,  7], "duration": 14, "event": "lcf" },
 			{ "start": [ 3, 21], "duration": 14, "event": "cc12" },
-			{ "start": [ 4, 20], "duration": 10, "event": "sn", "rerun": true }
+			{ "start": [ 4, 20], "duration": 10, "event": "sn", "rerun": true },
+			{ "start": [ 5,  1], "duration": 21, "event": "l" },
+			{ "start": [ 5, 22], "duration": 14, "event": "poeo" }
 		]
 	},
 	"en": {
@@ -234,7 +236,8 @@
 			{ "start": [ 2, 23], "duration": 10, "event": "ut", "rerun": true },
 			{ "start": [ 3,  9], "duration": 14, "event": "cc9" },
 			{ "start": [ 3, 28], "duration": 14, "event": "le" },
-			{ "start": [ 4, 13], "duration": 14, "event": "dv" }
+			{ "start": [ 4, 13], "duration": 14, "event": "dv" },
+			{ "start": [ 4, 27], "duration":  7, "event": "tbc" }
 		]
 	}
 }
