@@ -284,14 +284,6 @@
 			ga[0].classList.add("bottom");
 			ga[1].classList.add("bottom");
 		};
-
-		// if (page.id === "future") {
-		// 	const ep11 = document.querySelectorAll(`#${page.id} .episode`)[0];
-		// 	const is3 = document.querySelector(`#${page.id} .inst`);
-
-		// 	ep11.style.transform = "translate(-30%, -10%) scale(0.9)";
-		// 	is3.style.transform = "translate(30%, 30%) scale(0.9)";
-		// }
 	});
 
 	// Swipe handling

@@ -1,14 +1,23 @@
 {
 	"future": {
 		"2023": [
-			{ "start": [ 3, 31], "duration":  7, "event": "aow" },
-			{ "start": [ 4,  7], "duration":  7, "event": "ibaw" },
-			{ "start": [ 4, 14], "duration": 10, "event": "nl", "rerun": true },
-			{ "start": [ 5, 18], "duration": 21, "event": "is" },
-			{ "start": [ 6,  8], "duration": 10, "event": "bti", "rerun": true },
-			{ "start": [ 6, 22], "duration": 14, "event": "cc11" },
-			{ "start": [ 7, 11], "duration": 14, "event": "wtfc" },
-			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" }
+			{ "start": [ 5, 11], "duration": 21, "event": "is" },
+			{ "start": [ 6,  1], "duration": 10, "event": "bti", "rerun": true },
+			{ "start": [ 6, 15], "duration": 14, "event": "cc11" },
+			{ "start": [ 7,  6], "duration": 14, "event": "wtfc" },
+			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
+			{ "start": [ 8, 15], "duration": 10, "event": "itw", "rerun": true },
+			{ "start": [ 8, 29], "duration":  7, "event": "tfn2" },
+			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
+			{ "start": [ 9, 21], "duration":  7, "event": "adic" },
+			{ "start": [10,  5], "duration": 10, "event": "ga", "rerun": true },
+			{ "start": [10, 19], "duration": 14, "event": "lcf" },
+			{ "start": [11,  7], "duration": 14, "event": "cc12" },
+			{ "start": [12, 14], "duration": 10, "event": "sn", "rerun": true }
+		],
+		"2024": [
+			{ "start": [ 1,  4], "duration": 21, "event": "l" },
+			{ "start": [ 1, 25], "duration": 14, "event": "poeo" }
 		]
 	},
 	"cn": {
