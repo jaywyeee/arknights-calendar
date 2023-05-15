@@ -4,7 +4,7 @@ body:
   - type: textarea
     attributes:
       label: Description
-      description: A clear description of the issue, plus anything else you would like to add
+      description: A clear description of the issue plus anything else you would like to add
     validations:
       required: true
   - type: textarea
