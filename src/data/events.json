@@ -17,7 +17,8 @@
 			{ "start": [12, 28], "duration": 21, "event": "l" }
 		],
 		"2024": [
-			{ "start": [ 1, 18], "duration": 14, "event": "poeo" }
+			{ "start": [ 1, 18], "duration": 14, "event": "poeo" },
+			{ "start": [ 2,  1], "duration": 14, "event": "hde" }
 		]
 	},
 	"cn": {
@@ -107,7 +108,8 @@
 			{ "start": [ 3, 21], "duration": 14, "event": "cc12" },
 			{ "start": [ 4, 20], "duration": 10, "event": "sn", "rerun": true },
 			{ "start": [ 5,  1], "duration": 21, "event": "l" },
-			{ "start": [ 5, 22], "duration": 14, "event": "poeo" }
+			{ "start": [ 5, 22], "duration": 14, "event": "poeo" },
+			{ "start": [ 6,  8], "duration": 14, "event": "hde" }
 		]
 	},
 	"en": {
@@ -249,7 +251,9 @@
 			{ "start": [ 4, 13], "duration": 14, "event": "dv" },
 			{ "start": [ 4, 27], "duration":  7, "event": "tbc" },
 			{ "start": [ 5,  4], "duration": 10, "event": "dh", "rerun": true },
-			{ "start": [ 5, 16], "duration":  7, "event": "aow" }
+			{ "start": [ 5, 16], "duration":  7, "event": "aow" },
+			{ "start": [ 5, 30], "duration": 10, "event": "nl", "rerun": true },
+			{ "start": [ 6, 13], "duration":  7, "event": "ibaw" }
 		]
 	}
 }
