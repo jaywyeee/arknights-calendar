@@ -183,7 +183,8 @@
 			{ "start": [ 3, 31], "duration":  7, "event": "aow" },
 			{ "start": [ 4,  7], "duration":  7, "event": "ibaw" },
 			{ "start": [ 4, 14], "duration": 10, "event": "nl", "rerun": true },
-			{ "start": [ 5, 23], "duration": 21, "event": "is" }
+			{ "start": [ 5, 23], "duration": 21, "event": "is" },
+			{ "start": [ 6, 13], "duration": 10, "event": "bti", "rerun": true }
 		]
 	},
 	"tw": {
