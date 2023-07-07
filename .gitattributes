@@ -1,5 +1,5 @@
 # Set default behavior in case core.autocrlf is not set.
 * text=auto
 
-# Exclude configuration files.
+# Exclude configuration files from language detection.
 /*.config.js linguist-vendored
