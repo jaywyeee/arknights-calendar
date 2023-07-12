@@ -18,7 +18,8 @@
 			{ "start": [ 1, 18], "duration": 14, "event": "poeo" },
 			{ "start": [ 2,  1], "duration": 14, "event": "hde" },
 			{ "start": [ 2, 15], "duration": 10, "event": "le", "rerun": true },
-			{ "start": [ 2, 29], "duration":  7, "event": "ssved" }
+			{ "start": [ 2, 29], "duration":  7, "event": "ssved" },
+			{ "start": [ 3, 14], "duration": 10, "event": "dv", "rerun": true }
 		]
 	},
 	"cn": {
@@ -111,7 +112,8 @@
 			{ "start": [ 5, 22], "duration": 14, "event": "poeo" },
 			{ "start": [ 6,  8], "duration": 14, "event": "hde" },
 			{ "start": [ 6, 20], "duration": 10, "event": "le", "rerun": true },
-			{ "start": [ 7,  6], "duration":  7, "event": "ssved" }
+			{ "start": [ 7,  6], "duration":  7, "event": "ssved" },
+			{ "start": [ 7, 18], "duration": 10, "event": "dv", "rerun": true }
 		]
 	},
 	"en": {
@@ -187,7 +189,8 @@
 			{ "start": [ 4, 14], "duration": 10, "event": "nl", "rerun": true },
 			{ "start": [ 5, 23], "duration": 21, "event": "is" },
 			{ "start": [ 6, 13], "duration": 10, "event": "bti", "rerun": true },
-			{ "start": [ 6, 23], "duration": 14, "event": "cc11" }
+			{ "start": [ 6, 23], "duration": 14, "event": "cc11" },
+			{ "start": [ 7, 13], "duration": 14, "event": "wtfc" }
 		]
 	},
 	"tw": {
@@ -259,7 +262,8 @@
 			{ "start": [ 5, 30], "duration": 10, "event": "nl", "rerun": true },
 			{ "start": [ 6, 13], "duration":  7, "event": "ibaw" },
 			{ "start": [ 6, 20], "duration": 21, "event": "icec" },
-			{ "start": [ 6, 27], "duration":  7, "event": "tfn1" }
+			{ "start": [ 6, 27], "duration":  7, "event": "tfn1" },
+			{ "start": [ 7, 13], "duration": 14, "event": "cc10" }
 		]
 	}
 }
