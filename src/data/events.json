@@ -1,25 +1,25 @@
 {
 	"future": {
 		"2023": [
-			{ "start": [ 6, 23], "duration": 14, "event": "cc11" },
-			{ "start": [ 7, 13], "duration": 14, "event": "wtfc" },
 			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
 			{ "start": [ 8, 11], "duration": 10, "event": "itw", "rerun": true },
 			{ "start": [ 8, 24], "duration":  7, "event": "tfn2" },
-			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
-			{ "start": [ 9, 21], "duration":  7, "event": "adic" },
-			{ "start": [10,  5], "duration": 10, "event": "ga", "rerun": true },
-			{ "start": [10, 19], "duration": 14, "event": "lcf" },
-			{ "start": [11,  7], "duration": 14, "event": "cc12" },
-			{ "start": [12,  7], "duration": 10, "event": "sn", "rerun": true },
-			{ "start": [12, 28], "duration": 21, "event": "l" }
+			{ "start": [ 8, 31], "duration": 35, "event": "ra1" },
+			{ "start": [ 9, 14], "duration":  7, "event": "adic" },
+			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
+			{ "start": [10,  5], "duration": 14, "event": "lcf" },
+			{ "start": [10, 19], "duration": 14, "event": "cc12" },
+			{ "start": [11, 16], "duration": 10, "event": "sn", "rerun": true },
+			{ "start": [11, 30], "duration": 21, "event": "l" },
+			{ "start": [12, 21], "duration": 14, "event": "poeo" }
 		],
 		"2024": [
-			{ "start": [ 1, 18], "duration": 14, "event": "poeo" },
-			{ "start": [ 2,  1], "duration": 14, "event": "hde" },
-			{ "start": [ 2, 15], "duration": 10, "event": "le", "rerun": true },
-			{ "start": [ 2, 29], "duration":  7, "event": "ssved" },
-			{ "start": [ 3, 14], "duration": 10, "event": "dv", "rerun": true }
+			{ "start": [ 1,  4], "duration": 14, "event": "hde" },
+			{ "start": [ 1, 19], "duration": 21, "event": "sla" },
+			{ "start": [ 2,  9], "duration": 14, "event": "tfn3" },
+			{ "start": [ 2, 23], "duration": 10, "event": "le", "rerun": true },
+			{ "start": [ 3,  7], "duration":  7, "event": "ssved" },
+			{ "start": [ 3, 21], "duration": 10, "event": "dv", "rerun": true }
 		]
 	},
 	"cn": {
@@ -113,7 +113,9 @@
 			{ "start": [ 6,  8], "duration": 14, "event": "hde" },
 			{ "start": [ 6, 20], "duration": 10, "event": "le", "rerun": true },
 			{ "start": [ 7,  6], "duration":  7, "event": "ssved" },
-			{ "start": [ 7, 18], "duration": 10, "event": "dv", "rerun": true }
+			{ "start": [ 7, 18], "duration": 10, "event": "dv", "rerun": true },
+			{ "start": [ 8,  1], "duration": 21, "event": "sla" },
+			{ "start": [ 8, 18], "duration": 14, "event": "tfn3" }
 		]
 	},
 	"en": {
@@ -190,7 +192,8 @@
 			{ "start": [ 5, 23], "duration": 21, "event": "is" },
 			{ "start": [ 6, 13], "duration": 10, "event": "bti", "rerun": true },
 			{ "start": [ 6, 23], "duration": 14, "event": "cc11" },
-			{ "start": [ 7, 13], "duration": 14, "event": "wtfc" }
+			{ "start": [ 7, 13], "duration": 14, "event": "wtfc" },
+			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" }
 		]
 	},
 	"tw": {

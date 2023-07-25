@@ -252,7 +252,7 @@
 		};
 	};
 
-	// Temporary fix for Ideal City, Reclamation Algorithm, and EP11/IS#3
+	// "Temporary" fix for events not overlapping correctly
 	onMount(() => {
 		if (["cn", "en"].includes(page.id)) {
 			const icec = document.querySelectorAll(`#${page.id} .icec.end`)[0];
@@ -274,15 +274,20 @@
 		if (["future", "cn"].includes(page.id)) {
 			const ra1 = document.querySelectorAll(`#${page.id} .ra1`);
 			const ga = document.querySelectorAll(`#${page.id} .ga.rerun`);
+			const lcf = document.querySelectorAll(`#${page.id} .lcf`);
 
-			ra1[4].classList.add("top");
 			if (page.id === "cn") {
 				ra1[5].classList.remove("top")
-				ra1[5].style.cssText = "--grid-row:2; --grid-column:1 / span 2;"
+				ra1[5].style.cssText = "--grid-row: 2; --grid-column: 1 / span 2;"
 			};
 
-			ga[0].classList.add("bottom");
-			ga[1].classList.add("bottom");
+			if (page.id === "future") {
+				lcf[0].style.cssText = "--grid-row: 1; --grid-column: span 5 / -1;"
+			};
+
+			for (const part of ga) {
+				part.classList.add("bottom");
+			}
 		};
 	});
 

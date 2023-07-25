@@ -1,6 +1,6 @@
 {
 	"future": [
-		{ "id": "jǫklumarkar", "date": [2024,  3, 14] }
+		{ "id": "jǫklumarkar", "date": [2024,  3, 21] }
 	],
 	"cn": [
 		{ "id": "phantom",     "date": [2022,  1,  5] },
@@ -12,6 +12,7 @@
 		{ "id": "mizuki",  "date": [2023,  5, 23] }
 	],
 	"tw": [
-		{ "id": "phantom", "date": [2022, 10, 13] }
+		{ "id": "phantom", "date": [2022, 10, 13] },
+		{ "id": "mizuki",  "date": [2023,  7, 27] }
 	]
 }
