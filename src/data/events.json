@@ -3,9 +3,9 @@
 		"2023": [
 			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
 			{ "start": [ 8, 11], "duration": 10, "event": "itw", "rerun": true },
-			{ "start": [ 8, 24], "duration":  7, "event": "tfn2" },
-			{ "start": [ 8, 31], "duration": 35, "event": "ra1" },
-			{ "start": [ 9, 14], "duration":  7, "event": "adic" },
+			{ "start": [ 8, 22], "duration":  7, "event": "adic" },
+			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
+			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
 			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [10,  5], "duration": 14, "event": "lcf" },
 			{ "start": [10, 19], "duration": 14, "event": "cc12" },
@@ -15,12 +15,7 @@
 		],
 		"2024": [
 			{ "start": [ 1,  4], "duration": 14, "event": "hde" },
-			{ "start": [ 1, 19], "duration": 21, "event": "sla" },
-			{ "start": [ 2,  9], "duration": 14, "event": "tfn3" },
-			{ "start": [ 2, 23], "duration": 10, "event": "le", "rerun": true },
-			{ "start": [ 3,  7], "duration":  7, "event": "ssved" },
-			{ "start": [ 3, 21], "duration": 10, "event": "dv", "rerun": true },
-			{ "start": [ 4,  4], "duration": 10, "event": "icec", "rerun": true }
+			{ "start": [ 1, 19], "duration": 21, "event": "sla" }
 		]
 	},
 	"cn": {
@@ -196,7 +191,9 @@
 			{ "start": [ 6, 23], "duration": 14, "event": "cc11" },
 			{ "start": [ 7, 13], "duration": 14, "event": "wtfc" },
 			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
-			{ "start": [ 8, 11], "duration": 10, "event": "itw", "rerun": true }
+			{ "start": [ 8, 11], "duration": 10, "event": "itw", "rerun": true },
+			{ "start": [ 8, 22], "duration":  7, "event": "adic" },
+			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" }
 		]
 	},
 	"tw": {
@@ -269,7 +266,8 @@
 			{ "start": [ 6, 13], "duration":  7, "event": "ibaw" },
 			{ "start": [ 6, 20], "duration": 21, "event": "icec" },
 			{ "start": [ 6, 27], "duration":  7, "event": "tfn1" },
-			{ "start": [ 7, 13], "duration": 14, "event": "cc10" }
+			{ "start": [ 7, 13], "duration": 14, "event": "cc10" },
+			{ "start": [ 8, 29], "duration": 10, "event": "bti", "rerun": true }
 		]
 	}
 }

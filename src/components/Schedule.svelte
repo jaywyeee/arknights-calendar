@@ -279,15 +279,16 @@
 			if (page.id === "cn") {
 				ra1[5].classList.remove("top")
 				ra1[5].style.cssText = "--grid-row: 2; --grid-column: 1 / span 2;"
+
+				for (const part of ga) {
+					part.classList.add("bottom");
+				};
 			};
 
 			if (page.id === "future") {
-				lcf[0].style.cssText = "--grid-row: 1; --grid-column: span 5 / -1;"
+				lcf[0].classList.add("bottom");
+				lcf[1].classList.add("bottom");
 			};
-
-			for (const part of ga) {
-				part.classList.add("bottom");
-			}
 		};
 	});
 
