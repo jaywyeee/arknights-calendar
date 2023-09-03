@@ -14,7 +14,7 @@ A webpage featuring various event schedules of the game Arknights.
 A quick and easy alternative is available using [StackBlitz](https://stackblitz.com/github/jaywyeee/arknights-calendar).
 
 ## Contributing
-Pull requests are welcome, but please be advised that they are not guaranteed to be merged. For any questions or suggestions, please visit [Discussions](https://github.com/jaywyeee/arknights-calendar/discussions).
+Pull requests are highly welcomed. For any questions or suggestions, please visit [Discussions](https://github.com/jaywyeee/arknights-calendar/discussions).
 
 ## License
 This project is licensed under the MIT License, which can be found in full in [LICENSE.txt](LICENSE.txt). This project distributes third-party resources which are not covered under this license. Their respective licenses/attributions can be found in [THIRDPARTY.md](THIRDPARTY.md).
