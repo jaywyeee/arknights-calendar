@@ -1,21 +1,24 @@
 {
 	"future": {
 		"2023": [
-			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
-			{ "start": [ 8, 11], "duration": 10, "event": "itw", "rerun": true },
-			{ "start": [ 8, 22], "duration":  7, "event": "adic" },
 			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
-			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
+			{ "start": [ 9,  7], "duration": 14, "event": "lcf" },
+			{ "start": [ 9, 21], "duration": 35, "event": "ra1" },
 			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
-			{ "start": [10,  5], "duration": 14, "event": "lcf" },
-			{ "start": [10, 19], "duration": 14, "event": "cc12" },
-			{ "start": [11, 16], "duration": 10, "event": "sn", "rerun": true },
-			{ "start": [11, 30], "duration": 21, "event": "l" },
-			{ "start": [12, 21], "duration": 14, "event": "poeo" }
+			{ "start": [10,  5], "duration": 14, "event": "cc12" },
+			{ "start": [11,  2], "duration": 21, "event": "l" },
+			{ "start": [11, 23], "duration": 10, "event": "sn", "rerun": true },
+			{ "start": [12,  7], "duration": 14, "event": "poeo" },
+			{ "start": [12, 21], "duration": 14, "event": "hde" }
 		],
 		"2024": [
-			{ "start": [ 1,  4], "duration": 14, "event": "hde" },
-			{ "start": [ 1, 19], "duration": 21, "event": "slahafh" }
+			{ "start": [ 1,  4], "duration": 10, "event": "le", "rerun": true },
+			{ "start": [ 1, 19], "duration": 21, "event": "slahafh" },
+			{ "start": [ 2,  9], "duration":  7, "event": "ssved" },
+			{ "start": [ 2, 16], "duration": 10, "event": "dv", "rerun": true },
+			{ "start": [ 2, 29], "duration": 14, "event": "tfn3" },
+			{ "start": [ 3, 14], "duration": 10, "event": "icec", "rerun": true },
+			{ "start": [ 3, 28], "duration": 14, "event": "ccowov" }
 		]
 	},
 	"cn": {
@@ -112,7 +115,8 @@
 			{ "start": [ 7, 18], "duration": 10, "event": "dv", "rerun": true },
 			{ "start": [ 8,  1], "duration": 21, "event": "slahafh" },
 			{ "start": [ 8, 18], "duration": 14, "event": "tfn3" },
-			{ "start": [ 8, 31], "duration": 10, "event": "icec", "rerun": true }
+			{ "start": [ 8, 31], "duration": 10, "event": "icec", "rerun": true },
+			{ "start": [ 9,  5], "duration": 14, "event": "ccowov" }
 		]
 	},
 	"en": {

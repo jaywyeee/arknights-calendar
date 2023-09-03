@@ -274,7 +274,7 @@
 		if (["future", "cn"].includes(page.id)) {
 			const ra1 = document.querySelectorAll(`#${page.id} .ra1`);
 			const ga = document.querySelectorAll(`#${page.id} .ga.rerun`);
-			const lcf = document.querySelectorAll(`#${page.id} .lcf`);
+			const cc12 = document.querySelectorAll(`#${page.id} .cc12`);
 
 			if (page.id === "cn") {
 				ra1[5].classList.remove("top")
@@ -286,8 +286,9 @@
 			};
 
 			if (page.id === "future") {
-				lcf[0].classList.add("bottom");
-				lcf[1].classList.add("bottom");
+				for (const part of cc12) {
+					part.classList.add("bottom");
+				};
 			};
 		};
 	});
