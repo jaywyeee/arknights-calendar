@@ -2,8 +2,8 @@
 	"future": {
 		"2023": [
 			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
+			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
 			{ "start": [ 9,  7], "duration": 14, "event": "afttf" },
-			{ "start": [ 9, 21], "duration": 35, "event": "ra1" },
 			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [10,  5], "duration": 14, "event": "cc12" },
 			{ "start": [11,  2], "duration": 21, "event": "l" },

@@ -286,7 +286,10 @@
 			};
 
 			if (page.id === "future") {
-				for (const part of cc12) {
+				cc12[0].classList.add("bottom");
+				cc12[1].classList.add("bottom");
+
+				for (const part of ga) {
 					part.classList.add("bottom");
 				};
 			};
