@@ -2,7 +2,7 @@
 	"future": {
 		"2023": [
 			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
-			{ "start": [ 9,  7], "duration": 14, "event": "lcf" },
+			{ "start": [ 9,  7], "duration": 14, "event": "afttf" },
 			{ "start": [ 9, 21], "duration": 35, "event": "ra1" },
 			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [10,  5], "duration": 14, "event": "cc12" },
@@ -104,7 +104,7 @@
 			{ "start": [ 1, 29], "duration": 35, "event": "ra1" },
 			{ "start": [ 2, 14], "duration":  7, "event": "adic" },
 			{ "start": [ 2, 21], "duration": 10, "event": "ga", "rerun": true },
-			{ "start": [ 3,  7], "duration": 14, "event": "lcf" },
+			{ "start": [ 3,  7], "duration": 14, "event": "afttf" },
 			{ "start": [ 3, 21], "duration": 14, "event": "cc12" },
 			{ "start": [ 4, 20], "duration": 10, "event": "sn", "rerun": true },
 			{ "start": [ 5,  1], "duration": 21, "event": "l" },
