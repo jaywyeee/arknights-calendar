@@ -5,7 +5,7 @@
 			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
 			{ "start": [ 9,  7], "duration": 14, "event": "afttf" },
 			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
-			{ "start": [10,  5], "duration": 14, "event": "cc12" },
+			{ "start": [10,  1], "duration": 14, "event": "cc12" },
 			{ "start": [11,  2], "duration": 21, "event": "l" },
 			{ "start": [11, 23], "duration": 10, "event": "sn", "rerun": true },
 			{ "start": [12,  7], "duration": 14, "event": "poeo" },
@@ -197,7 +197,11 @@
 			{ "start": [ 7, 28], "duration": 14, "event": "wvwwnb" },
 			{ "start": [ 8, 11], "duration": 10, "event": "itw", "rerun": true },
 			{ "start": [ 8, 22], "duration":  7, "event": "adic" },
-			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" }
+			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
+			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
+			{ "start": [ 9,  7], "duration": 14, "event": "afttf" },
+			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
+			{ "start": [10,  1], "duration": 14, "event": "cc12" }
 		]
 	},
 	"tw": {
@@ -271,7 +275,9 @@
 			{ "start": [ 6, 20], "duration": 21, "event": "icec" },
 			{ "start": [ 6, 27], "duration":  7, "event": "tfn1" },
 			{ "start": [ 7, 13], "duration": 14, "event": "cc10" },
-			{ "start": [ 8, 29], "duration": 10, "event": "bti", "rerun": true }
+			{ "start": [ 8, 29], "duration": 10, "event": "bti", "rerun": true },
+			{ "start": [ 9, 12], "duration": 21, "event": "is" },
+			{ "start": [10,  3], "duration": 14, "event": "cc11" }
 		]
 	}
 }

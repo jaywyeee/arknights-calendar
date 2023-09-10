@@ -271,7 +271,7 @@
 			};
 		};
 
-		if (["future", "cn"].includes(page.id)) {
+		if (["future", "cn", "en"].includes(page.id)) {
 			const ra1 = document.querySelectorAll(`#${page.id} .ra1`);
 			const ga = document.querySelectorAll(`#${page.id} .ga.rerun`);
 			const cc12 = document.querySelectorAll(`#${page.id} .cc12`);
@@ -285,7 +285,7 @@
 				};
 			};
 
-			if (page.id === "future") {
+			if (["future", "en"].includes(page.id)) {
 				cc12[0].classList.add("bottom");
 				cc12[1].classList.add("bottom");
 
