@@ -1,10 +1,7 @@
 {
 	"future": {
 		"2023": [
-			{ "start": [ 8, 31], "duration":  7, "event": "tfn2" },
-			{ "start": [ 9,  7], "duration": 35, "event": "ra1" },
-			{ "start": [ 9,  7], "duration": 14, "event": "afttf" },
-			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
+			{ "start": [ 9, 28], "duration": 14, "event": "ra1" },
 			{ "start": [10,  1], "duration": 14, "event": "cc12" },
 			{ "start": [11,  7], "duration": 21, "event": "l" },
 			{ "start": [11, 28], "duration": 10, "event": "sn", "rerun": true },
