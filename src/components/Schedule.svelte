@@ -271,7 +271,7 @@
 			};
 		};
 
-		if (["future", "cn", "en"].includes(page.id)) {
+		if (["cn", "en"].includes(page.id)) {
 			const ra1 = document.querySelectorAll(`#${page.id} .ra1`);
 			const ga = document.querySelectorAll(`#${page.id} .ga.rerun`);
 			const cc12 = document.querySelectorAll(`#${page.id} .cc12`);
@@ -285,9 +285,10 @@
 				};
 			};
 
-			if (["future", "en"].includes(page.id)) {
+			if (page.id === "en") {
 				cc12[0].classList.add("bottom");
 				cc12[1].classList.add("bottom");
+				ra1[5].style.cssText = "--grid-row: 2; --grid-column: 1 / span 10;"
 
 				for (const part of ga) {
 					part.classList.add("bottom");
