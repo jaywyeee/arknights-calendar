@@ -9,11 +9,11 @@
 		"serve": "vite preview --open"
 	},
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^2.4.5",
-		"sass": "^1.66.1",
-		"vite": "^4.4.9"
+		"@sveltejs/vite-plugin-svelte": "^2.4.6",
+		"sass": "^1.69.4",
+		"vite": "^4.5.0"
 	},
 	"dependencies": {
-		"svelte": "^4.2.0"
+		"svelte": "^4.2.2"
 	}
 }
