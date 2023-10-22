@@ -21,6 +21,7 @@
 	"cc7":     "Contingency Contract #7: Operation Pine Soot",
 	"cc8":     "Contingency Contract #8: Operation Dawnseeker",
 	"cc9":     "Contingency Contract #9: Operation Deepness",
+	"ccb1":    "Contingency Contract #1: Battleplan Pyrolysis",
 	"ccowov":  "Come Catastrophes or Wakes of Vultures",
 	"cob":     "Code of Brawl",
 	"cou":     "Children of Ursus",
@@ -65,5 +66,6 @@
 	"v":       "Vigilo",
 	"wir":     "Who Is Real",
 	"wtfc":    "What the Firelight Casts",
-	"wvwwnb":  "Where Vernal Winds Will Never Blow"
+	"wvwwnb":  "Where Vernal Winds Will Never Blow",
+	"zih":     "Zwillingstürme im Herbst"
 }
