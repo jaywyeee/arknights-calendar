@@ -1,7 +1,6 @@
 {
 	"future": {
 		"2023": [
-			{ "start": [11,  7], "duration": 21, "event": "l" },
 			{ "start": [11, 28], "duration": 10, "event": "sn", "rerun": true },
 			{ "start": [12,  8], "duration": 14, "event": "poeo" },
 			{ "start": [12, 22], "duration": 14, "event": "hde" }
@@ -205,7 +204,8 @@
 			{ "start": [ 9,  7], "duration": 14, "event": "afttf" },
 			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [10,  1], "duration": 14, "event": "cc12" },
-			{ "start": [11,  7], "duration": 21, "event": "l" }
+			{ "start": [11,  7], "duration": 21, "event": "l" },
+			{ "start": [11, 28], "duration": 10, "event": "sn", "rerun": true }
 		]
 	},
 	"tw": {
@@ -283,7 +283,9 @@
 			{ "start": [ 9, 12], "duration": 21, "event": "is" },
 			{ "start": [10,  3], "duration": 14, "event": "cc11" },
 			{ "start": [10, 19], "duration": 14, "event": "wtfc" },
-			{ "start": [11,  2], "duration": 10, "event": "itw", "rerun": true }
+			{ "start": [11,  2], "duration": 10, "event": "itw", "rerun": true },
+			{ "start": [11, 14], "duration":  7, "event": "tfn2" },
+			{ "start": [11, 21], "duration": 14, "event": "wvwwnb" }
 		]
 	}
 }
