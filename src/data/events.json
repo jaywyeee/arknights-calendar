@@ -2,11 +2,11 @@
 	"future": {
 		"2023": [
 			{ "start": [11, 28], "duration": 10, "event": "sn", "rerun": true },
-			{ "start": [12,  8], "duration": 14, "event": "poeo" },
-			{ "start": [12, 22], "duration": 14, "event": "hde" }
+			{ "start": [12,  5], "duration": 14, "event": "peo" },
+			{ "start": [12, 19], "duration": 14, "event": "hde" }
 		],
 		"2024": [
-			{ "start": [ 1,  5], "duration": 10, "event": "le", "rerun": true },
+			{ "start": [ 1,  2], "duration": 10, "event": "le", "rerun": true },
 			{ "start": [ 1, 19], "duration": 21, "event": "slahafh" },
 			{ "start": [ 2,  9], "duration":  7, "event": "ssved" },
 			{ "start": [ 2, 16], "duration": 10, "event": "dv", "rerun": true },
@@ -16,7 +16,8 @@
 			{ "start": [ 4, 11], "duration": 14, "event": "dos" },
 			{ "start": [ 5,  9], "duration": 10, "event": "is", "rerun": true },
 			{ "start": [ 5, 23], "duration": 21, "event": "zih" },
-			{ "start": [ 6, 13], "duration": 14, "event": "ccb1" }
+			{ "start": [ 6, 13], "duration": 14, "event": "ccb1" },
+			{ "start": [ 6, 27], "duration": 14, "event": "trtls" }
 		]
 	},
 	"cn": {
@@ -106,7 +107,7 @@
 			{ "start": [ 3, 21], "duration": 14, "event": "cc12" },
 			{ "start": [ 4, 20], "duration": 10, "event": "sn", "rerun": true },
 			{ "start": [ 5,  1], "duration": 21, "event": "l" },
-			{ "start": [ 5, 22], "duration": 14, "event": "poeo" },
+			{ "start": [ 5, 22], "duration": 14, "event": "peo" },
 			{ "start": [ 6,  8], "duration": 14, "event": "hde" },
 			{ "start": [ 6, 20], "duration": 10, "event": "le", "rerun": true },
 			{ "start": [ 7,  6], "duration":  7, "event": "ssved" },
@@ -118,7 +119,8 @@
 			{ "start": [ 9, 27], "duration": 14, "event": "dos" },
 			{ "start": [10, 22], "duration": 10, "event": "is", "rerun": true },
 			{ "start": [11,  1], "duration": 21, "event": "zih" },
-			{ "start": [11, 21], "duration": 14, "event": "ccb1" }
+			{ "start": [11, 21], "duration": 14, "event": "ccb1" },
+			{ "start": [12,  5], "duration": 14, "event": "trtls" }
 		]
 	},
 	"en": {
@@ -205,7 +207,8 @@
 			{ "start": [ 9, 21], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [10,  1], "duration": 14, "event": "cc12" },
 			{ "start": [11,  7], "duration": 21, "event": "l" },
-			{ "start": [11, 28], "duration": 10, "event": "sn", "rerun": true }
+			{ "start": [11, 28], "duration": 10, "event": "sn", "rerun": true },
+			{ "start": [12,  5], "duration": 14, "event": "peo" }
 		]
 	},
 	"tw": {
@@ -285,7 +288,8 @@
 			{ "start": [10, 19], "duration": 14, "event": "wtfc" },
 			{ "start": [11,  2], "duration": 10, "event": "itw", "rerun": true },
 			{ "start": [11, 14], "duration":  7, "event": "tfn2" },
-			{ "start": [11, 21], "duration": 14, "event": "wvwwnb" }
+			{ "start": [11, 21], "duration": 14, "event": "wvwwnb" },
+			{ "start": [12, 12], "duration": 14, "event": "afttf" }
 		]
 	}
 }
