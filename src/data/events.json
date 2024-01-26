@@ -2,19 +2,19 @@
 	"future": {
 		"2024": [
 			{ "start": [ 1, 16], "duration": 21, "event": "slahafh" },
-			{ "start": [ 2,  8], "duration":  7, "event": "ssved" },
-			{ "start": [ 2, 15], "duration": 10, "event": "dv", "rerun": true },
-			{ "start": [ 2, 29], "duration": 14, "event": "tfn3" },
-			{ "start": [ 3, 14], "duration": 10, "event": "icec", "rerun": true },
-			{ "start": [ 3, 28], "duration": 14, "event": "ccowov" },
-			{ "start": [ 4, 11], "duration": 14, "event": "dos" },
+			{ "start": [ 2,  6], "duration": 10, "event": "icec", "rerun": true },
+			{ "start": [ 2, 16], "duration": 14, "event": "tfn3" },
+			{ "start": [ 3,  1], "duration":  7, "event": "ssved" },
+			{ "start": [ 3,  8], "duration": 10, "event": "dv", "rerun": true },
+			{ "start": [ 3, 19], "duration": 14, "event": "ccowov" },
+			{ "start": [ 4,  4], "duration": 14, "event": "dos" },
 			{ "start": [ 5,  9], "duration": 10, "event": "is", "rerun": true },
-			{ "start": [ 5, 23], "duration": 21, "event": "zih" },
-			{ "start": [ 6, 13], "duration": 14, "event": "ccb1" },
+			{ "start": [ 5, 21], "duration": 21, "event": "zih" },
+			{ "start": [ 6, 11], "duration": 14, "event": "ccb1" },
 			{ "start": [ 6, 27], "duration": 14, "event": "trtls" },
 			{ "start": [ 7, 11], "duration": 10, "event": "wtfc", "rerun": true },
-			{ "start": [ 7, 25], "duration":  7, "event": "ttgv" },
-			{ "start": [ 8,  1], "duration": 10, "event": "wvwwnb", "rerun": true }
+			{ "start": [ 7, 23], "duration":  7, "event": "ttgv" },
+			{ "start": [ 7, 30], "duration": 10, "event": "wvwwnb", "rerun": true }
 		]
 	},
 	"cn": {
