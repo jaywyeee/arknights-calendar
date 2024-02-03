@@ -14,7 +14,8 @@
 			{ "start": [ 6, 27], "duration": 14, "event": "trtls" },
 			{ "start": [ 7, 11], "duration": 10, "event": "wtfc", "rerun": true },
 			{ "start": [ 7, 23], "duration":  7, "event": "ttgv" },
-			{ "start": [ 7, 30], "duration": 10, "event": "wvwwnb", "rerun": true }
+			{ "start": [ 7, 30], "duration": 21, "event": "haps" },
+			{ "start": [ 8, 20], "duration": 10, "event": "wvwwnb", "rerun": true }
 		]
 	},
 	"cn": {
@@ -122,7 +123,8 @@
 		],
 		"2024": [
 			{ "start": [ 1,  9], "duration":  7, "event": "ttgv" },
-			{ "start": [ 1, 18], "duration": 10, "event": "wvwwnb", "rerun": true }
+			{ "start": [ 1, 18], "duration": 10, "event": "wvwwnb", "rerun": true },
+			{ "start": [ 2,  1], "duration": 21, "event": "haps" }
 		]
 	},
 	"en": {
@@ -215,7 +217,8 @@
 		],
 		"2024": [
 			{ "start": [ 1,  5], "duration": 10, "event": "le", "rerun": true },
-			{ "start": [ 1, 16], "duration": 21, "event": "slahafh" }
+			{ "start": [ 1, 16], "duration": 21, "event": "slahafh" },
+			{ "start": [ 2,  6], "duration": 10, "event": "icec", "rerun": true }
 		]
 	},
 	"tw": {
@@ -301,7 +304,8 @@
 		],
 		"2024": [
 			{ "start": [ 1,  9], "duration":  7, "event": "adic" },
-			{ "start": [ 1, 23], "duration": 10, "event": "ga", "rerun": true }
+			{ "start": [ 1, 23], "duration": 10, "event": "ga", "rerun": true },
+			{ "start": [ 2,  6], "duration": 14, "event": "cc12" }
 		]
 	}
 }
