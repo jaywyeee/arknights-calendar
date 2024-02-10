@@ -3,9 +3,9 @@
 		"2024": [
 			{ "start": [ 1, 16], "duration": 21, "event": "slahafh" },
 			{ "start": [ 2,  6], "duration": 10, "event": "icec", "rerun": true },
-			{ "start": [ 2, 16], "duration": 14, "event": "tfn3" },
-			{ "start": [ 3,  1], "duration":  7, "event": "ssved" },
-			{ "start": [ 3,  8], "duration": 10, "event": "dv", "rerun": true },
+			{ "start": [ 2, 12], "duration": 14, "event": "tfn3" },
+			{ "start": [ 2, 27], "duration":  7, "event": "ssved" },
+			{ "start": [ 3,  7], "duration": 10, "event": "dv", "rerun": true },
 			{ "start": [ 3, 19], "duration": 14, "event": "ccowov" },
 			{ "start": [ 4,  4], "duration": 14, "event": "dos" },
 			{ "start": [ 5,  9], "duration": 10, "event": "is", "rerun": true },
@@ -218,7 +218,8 @@
 		"2024": [
 			{ "start": [ 1,  5], "duration": 10, "event": "le", "rerun": true },
 			{ "start": [ 1, 16], "duration": 21, "event": "slahafh" },
-			{ "start": [ 2,  6], "duration": 10, "event": "icec", "rerun": true }
+			{ "start": [ 2,  6], "duration": 10, "event": "icec", "rerun": true },
+			{ "start": [ 2, 12], "duration": 14, "event": "tfn3" }
 		]
 	},
 	"tw": {
