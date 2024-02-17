@@ -15,7 +15,8 @@
 			{ "start": [ 7, 11], "duration": 10, "event": "wtfc", "rerun": true },
 			{ "start": [ 7, 23], "duration":  7, "event": "ttgv" },
 			{ "start": [ 7, 30], "duration": 21, "event": "haps" },
-			{ "start": [ 8, 20], "duration": 10, "event": "wvwwnb", "rerun": true }
+			{ "start": [ 8, 20], "duration": 10, "event": "wvwwnb", "rerun": true },
+			{ "start": [ 8, 27], "duration": 14, "event": "tfn4" }
 		]
 	},
 	"cn": {
@@ -124,7 +125,8 @@
 		"2024": [
 			{ "start": [ 1,  9], "duration":  7, "event": "ttgv" },
 			{ "start": [ 1, 18], "duration": 10, "event": "wvwwnb", "rerun": true },
-			{ "start": [ 2,  1], "duration": 21, "event": "haps" }
+			{ "start": [ 2,  1], "duration": 21, "event": "haps" },
+			{ "start": [ 2, 22], "duration": 14, "event": "tfn4" }
 		]
 	},
 	"en": {
