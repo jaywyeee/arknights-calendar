@@ -5,7 +5,7 @@
 
 // Variables
 // Miscellaneous
-$fonts: "Roboto Condensed", sans-serif;
+$fonts: "Satoshi", sans-serif;
 $gray: hsl(0, 0%, 50%);
 
 // Dimensions
@@ -34,6 +34,8 @@ body {
 	background-color: black;
 	display: flex;
 	font-family: $fonts;
+	font-weight: 500;
+	letter-spacing: -0.01em;
 	margin: 0;
 
 	@media (max-width: $bar-bottom) { flex-direction: column-reverse }
@@ -41,6 +43,7 @@ body {
 
 p {
 	color: hsl(0, 0%, 60%);
+	font-size: 0.91rem;
 	margin-top: 0;
 }
 
@@ -93,7 +96,7 @@ button {
 	color: white;
 	cursor: pointer;
 	font-family: $fonts;
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	min-width: 3.5rem;
 	padding: 0.3em 0.7em;
 	touch-action: none;
@@ -137,7 +140,7 @@ button {
 			position: absolute;
 			top: 0;
 			transform: translate(-50%, -5%);
-			width: 110%;
+			width: 105%;
 			z-index: -1;
 		}
 	}
@@ -192,8 +195,8 @@ section {
 // Header
 h1 {
 	color: white;
-	font-size: 1.2rem;
-	font-weight: 400;
+	font-size: 1.1rem;
+	font-weight: inherit;
 	left: -1.2em;
 	margin: 0;
 	position: absolute;
@@ -204,7 +207,9 @@ h1 {
 		color: $gray;
 		display: block;
 		font-family: "Bender", $fonts;
-		font-size: 1rem;
+		font-size: 0.95rem;
+		font-weight: initial;
+		letter-spacing: initial;
 	}
 
 	@media (max-width: $header-vertical) {
@@ -236,7 +241,8 @@ h1 {
 
 	div {
 		color: white;
-		font-size: 0.75rem;
+		font-size: 0.66rem;
+		font-weight: 400;
 		grid-column-start: var(--grid-start);   // Set inline.
 
 		&::after {
@@ -267,7 +273,7 @@ h1 {
 	div:not(.episode):not(.inst) {
 		-webkit-tap-highlight-color: transparent;
 		cursor: pointer;
-		font-size: 0.87rem;
+		font-size: 0.77rem;
 		grid-column: var(--grid-column);   // Set inline.
 		grid-row: var(--grid-row);   // Set inline.
 		height: -moz-fit-content;
@@ -348,8 +354,8 @@ h1 {
 	background: center / contain no-repeat url("/images/is.svg");
 	color: white;
 	filter: drop-shadow(0 0 0.5em rgb(0 0 0 / 80%));
-	font-size: 0.8rem;
-	font-weight: bold;
+	font-size: 0.7rem;
+	font-weight: 900;
 	grid-column: var(--grid-column);   // Set inline.
 	grid-row: var(--grid-row);   // Set inline.
 	height: 3.5rem;
@@ -366,7 +372,7 @@ h1 {
 		bottom: 0.25em;
 		content: var(--name);
 		font-style: italic;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.1em;
 		position: absolute;
 		text-shadow: var(--shadow), var(--shadow);
 		transform: translateX(-50%);
