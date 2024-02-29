@@ -327,22 +327,30 @@ h1 {
 	@include overlay($id, $color);
 }
 
-.episode {
-	border: 0.18em solid white;
+.permanent {
 	color: white;
 	filter: drop-shadow(0 0 0.5em rgb(0 0 0 / 80%));
-	font-size: 1.4rem;
-	font-weight: bold;
 	grid-column: var(--grid-column);   // Set inline.
 	grid-row: var(--grid-row);   // Set inline.
-	left: 0.17em;
-	line-height: 0.9;
-	padding: 0.14em 0.09em 0.07em;
 	place-self: center;
 	position: relative;
 	text-align: center;
-	user-select: none;
 	z-index: 1;
+
+	&:hover {
+		z-index: initial;
+		opacity: 70%;
+	}
+}
+
+.episode {
+	border: 0.18em solid white;
+	font-size: 1.4rem;
+	font-weight: bold;
+	left: 0.17em;
+	line-height: 0.9;
+	padding: 0.14em 0.09em 0.07em;
+	user-select: none;
 
 	@media (max-width: $main-shrink) {
 		font-size: calc(0.5rem + 2.3vw);
@@ -352,20 +360,12 @@ h1 {
 
 .inst {
 	background: center / contain no-repeat url("/images/is.svg");
-	color: white;
-	filter: drop-shadow(0 0 0.5em rgb(0 0 0 / 80%));
 	font-size: 0.7rem;
 	font-weight: 900;
-	grid-column: var(--grid-column);   // Set inline.
-	grid-row: var(--grid-row);   // Set inline.
 	height: 3.5rem;
 	left: 0.17em;
-	place-self: center;
-	position: relative;
-	text-align: center;
 	text-transform: uppercase;
 	width: 3.5rem;
-	z-index: 1;
 
 	&::after {
 		--shadow: 0 0 0.3em rgb(0 0 0 / 100%);

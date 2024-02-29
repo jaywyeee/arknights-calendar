@@ -6,6 +6,6 @@
 </script>
 
 <div
-	class="inst"
+	class="inst permanent"
 	style="--grid-row:{styles.row}; --grid-column:{styles.col}; --name:'{id}'">
 </div>

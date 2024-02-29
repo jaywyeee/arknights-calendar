@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="episode"
+	class="episode permanent"
 	style="--grid-row:{styles.row}; --grid-column:{styles.col}">
 		EP<br>{number}
 </div>
