@@ -116,17 +116,17 @@ button {
 		margin-bottom: 0.5em;
 		position: relative;
 
-		&.bolt { background-image: url("images/bolt.svg") }
-		&.elderly { background-image: url("images/elderly.svg") }
-		&.premium { background-image: url("images/premium.svg") }
-		&.schedule { background-image: url("images/schedule.svg") }
+		&.bolt { background-image: url("/images/bolt.svg") }
+		&.elderly { background-image: url("/images/elderly.svg") }
+		&.premium { background-image: url("/images/premium.svg") }
+		&.schedule { background-image: url("/images/schedule.svg") }
 	}
 
 	&.active .icon {
 		filter: none;
 
-		&.premium { background-image: url("images/premium_filled.svg") }
-		&.schedule { background-image: url("images/schedule_filled.svg") }
+		&.premium { background-image: url("/images/premium_filled.svg") }
+		&.schedule { background-image: url("/images/schedule_filled.svg") }
 
 		&::before {
 			animation: 150ms pillExpand;
@@ -345,7 +345,7 @@ h1 {
 }
 
 .inst {
-	background: center / contain no-repeat url("images/is.svg");
+	background: center / contain no-repeat url("/images/is.svg");
 	color: white;
 	filter: drop-shadow(0 0 0.5em rgb(0 0 0 / 80%));
 	font-size: 0.8rem;
@@ -388,7 +388,7 @@ aside {
 
 a {
 	-webkit-tap-highlight-color: transparent;
-	background: center / contain no-repeat url("images/closure.svg");
+	background: center / contain no-repeat url("/images/closure.svg");
 	border-radius: 50%;
 	display: block;
 	height: 1.8rem;
@@ -396,7 +396,7 @@ a {
 	width: 1.8rem;
 
 	&:hover {
-		background-image: url("images/github.svg");
+		background-image: url("/images/github.svg");
 		transition-duration: 300ms;
 	}
 
