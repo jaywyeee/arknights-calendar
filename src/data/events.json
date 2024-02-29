@@ -4,16 +4,18 @@
 			{ "start": [ 2, 27], "duration":  7, "event": "tbfwad" },
 			{ "start": [ 3,  5], "duration": 10, "event": "dv", "rerun": true },
 			{ "start": [ 3, 15], "duration": 14, "event": "ccowov" },
-			{ "start": [ 4,  4], "duration": 14, "event": "dos" },
-			{ "start": [ 5,  9], "duration": 10, "event": "is", "rerun": true },
-			{ "start": [ 5, 21], "duration": 21, "event": "zih" },
-			{ "start": [ 6, 11], "duration": 14, "event": "ccb1" },
-			{ "start": [ 6, 27], "duration": 14, "event": "trtls" },
-			{ "start": [ 7, 11], "duration": 10, "event": "wtfc", "rerun": true },
-			{ "start": [ 7, 23], "duration":  7, "event": "ttgv" },
-			{ "start": [ 7, 30], "duration": 21, "event": "haps" },
-			{ "start": [ 8, 20], "duration": 10, "event": "wvwwnb", "rerun": true },
-			{ "start": [ 8, 27], "duration": 14, "event": "tfn4" }
+			{ "start": [ 3, 29], "duration": 14, "event": "dos" },
+			{ "start": [ 4, 30], "duration": 10, "event": "is", "rerun": true },
+			{ "start": [ 5, 10], "duration": 21, "event": "zih" },
+			{ "start": [ 5, 31], "duration": 14, "event": "ccb1" },
+			{ "start": [ 6, 18], "duration": 14, "event": "trtls" },
+			{ "start": [ 7,  2], "duration": 10, "event": "wtfc", "rerun": true },
+			{ "start": [ 7, 12], "duration":  7, "event": "ttgv" },
+			{ "start": [ 7, 25], "duration": 21, "event": "haps" },
+			{ "start": [ 8, 15], "duration": 10, "event": "wvwwnb", "rerun": true },
+			{ "start": [ 8, 22], "duration": 14, "event": "tfn4" },
+			{ "start": [ 9,  5], "duration": 14, "event": "ola" },
+			{ "start": [ 9, 19], "duration": 10, "event": "ood", "rerun": true }
 		]
 	},
 	"cn": {
@@ -123,7 +125,8 @@
 			{ "start": [ 1,  9], "duration":  7, "event": "ttgv" },
 			{ "start": [ 1, 18], "duration": 10, "event": "wvwwnb", "rerun": true },
 			{ "start": [ 2,  1], "duration": 21, "event": "haps" },
-			{ "start": [ 2, 22], "duration": 14, "event": "tfn4" }
+			{ "start": [ 2, 22], "duration": 14, "event": "tfn4" },
+			{ "start": [ 3,  7], "duration": 14, "event": "ola" }
 		]
 	},
 	"en": {
