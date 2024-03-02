@@ -241,7 +241,7 @@ h1 {
 
 	div {
 		color: white;
-		font-size: 0.66rem;
+		font-size: 0.68rem;
 		font-weight: 400;
 		grid-column-start: var(--grid-start);   // Set inline.
 
@@ -254,8 +254,9 @@ h1 {
 			background-color: white;
 			border-radius: 50%;
 			color: initial;
+			font-weight: 700;
 			margin-left: -0.5em;
-			padding: 0.14em 0.5em;
+			padding: 0.15em 0.65em;
 		}
 	}
 }
@@ -273,13 +274,13 @@ h1 {
 	div:not(.episode):not(.inst) {
 		-webkit-tap-highlight-color: transparent;
 		cursor: pointer;
-		font-size: 0.77rem;
+		font-size: 0.8rem;
 		grid-column: var(--grid-column);   // Set inline.
 		grid-row: var(--grid-row);   // Set inline.
 		height: -moz-fit-content;
 		height: fit-content;
 		overflow: hidden;
-		padding: 0.2em 0.5em;
+		padding: 0.2em 0.55em;
 		position: relative;
 		scroll-margin-top: 7rem;
 		scroll-padding-top: 2rem;   // scroll-margin breaks without this?
