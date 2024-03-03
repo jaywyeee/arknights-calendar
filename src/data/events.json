@@ -222,7 +222,8 @@
 			{ "start": [ 1, 16], "duration": 21, "event": "slahafh" },
 			{ "start": [ 2,  6], "duration": 10, "event": "icec", "rerun": true },
 			{ "start": [ 2, 12], "duration": 14, "event": "tfn3" },
-			{ "start": [ 2, 27], "duration":  7, "event": "tbfwad" }
+			{ "start": [ 2, 27], "duration":  7, "event": "tbfwad" },
+			{ "start": [ 3,  5], "duration": 10, "event": "dv", "rerun": true }
 		]
 	},
 	"tw": {
@@ -309,7 +310,8 @@
 		"2024": [
 			{ "start": [ 1,  9], "duration":  7, "event": "adic" },
 			{ "start": [ 1, 23], "duration": 10, "event": "ga", "rerun": true },
-			{ "start": [ 2,  6], "duration": 14, "event": "cc12" }
+			{ "start": [ 2,  6], "duration": 14, "event": "cc12" },
+			{ "start": [ 3,  7], "duration": 10, "event": "sn", "rerun": true }
 		]
 	}
 }
