@@ -338,11 +338,11 @@ h1 {
 	place-self: center;
 	position: relative;
 	text-align: center;
+	transition-duration: 200ms;
 	z-index: 1;
 
 	&:hover {
-		z-index: initial;
-		opacity: 70%;
+		opacity: 25%;
 	}
 }
 
