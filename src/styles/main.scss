@@ -298,10 +298,12 @@ h1 {
 			top: 28%;
 			transform: scaleY(0.6);
 			transition: transform 150ms, color 150ms;
+			user-select: none;
 
 			&.expand {
 				color: initial;
 				transform: none;
+				user-select: initial;
 			}
 		}
 
