@@ -4,22 +4,22 @@
 		"name": "Future",
 		"icon": "schedule",
 		"description": [
-			"This is a tentative projection based on the CN schedule and past trends which will be updated to reflect new information as it becomes available."
+			"This is a tentative projection based on past trends which will be updated to reflect new information as it becomes available."
 		]
 	},
 	{
 		"id": "cn",
 		"icon": "premium",
-		"description": ["This is a complete timeline of the CN schedule."]
+		"description": ["A complete timeline of the CN schedule."]
 	},
 	{
 		"id": "en",
 		"icon": "elderly",
-		"description": ["This is a complete timeline of the EN/JP/KR schedule."]
+		"description": ["A complete timeline of the EN/JP/KR schedule."]
 	},
 	{
 		"id": "tw",
 		"icon": "bolt",
-		"description": ["This is a complete timeline of the TW schedule."]
+		"description": ["A complete timeline of the TW schedule."]
 	}
 ]
