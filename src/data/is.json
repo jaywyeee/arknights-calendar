@@ -1,16 +1,16 @@
 {
 	"future": [
-		{ "id": "jǫklumarkar", "date": [2024,  3,  5] }
+		{ "id": "joklumarkar", "date": [2024,  3,  5] }
 	],
 	"cn": [
 		{ "id": "phantom",     "date": [2022,  1,  5] },
 		{ "id": "mizuki",      "date": [2022,  9, 27] },
-		{ "id": "jǫklumarkar", "date": [2023,  7, 13] }
+		{ "id": "joklumarkar", "date": [2023,  7, 13] }
 	],
 	"en": [
 		{ "id": "phantom",     "date": [2022,  7, 14] },
 		{ "id": "mizuki",      "date": [2023,  5, 23] },
-		{ "id": "jǫklumarkar", "date": [2024,  3,  5] }
+		{ "id": "joklumarkar", "date": [2024,  3,  5] }
 	],
 	"tw": [
 		{ "id": "phantom", "date": [2022, 10, 13] },
