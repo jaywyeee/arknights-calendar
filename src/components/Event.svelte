@@ -11,7 +11,7 @@
 
 	// Copy permalink on click.
 	const url = window.location.origin + window.location.pathname;
-	const text = `${names[event]}${rerun ? " Rerun" : ""}`;
+	const text = `${names[event]}${rerun ? " (Rerun)" : ""}`;
 
 	function getPermalink() {
 		const copyUrl = url + `?schedule=${$activePage}&event=${event}${rerun ? ".rerun" : ""}`;
