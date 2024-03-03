@@ -5,3 +5,10 @@
 	font-display: swap;
 	src: url("/fonts/Bender-Regular.woff2") format("woff2");
 }
+
+@font-feature-values "Satoshi" {
+	@styleset {
+		alt-a: 1;   // ss01
+		alt-t: 3;   // ss03
+	}
+}
