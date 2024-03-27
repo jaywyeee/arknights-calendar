@@ -13,7 +13,8 @@
 			{ "start": [ 8, 15], "duration": 10, "event": "wvwwnb", "rerun": true },
 			{ "start": [ 8, 22], "duration": 14, "event": "tfn4" },
 			{ "start": [ 9,  5], "duration": 14, "event": "ola" },
-			{ "start": [ 9, 19], "duration": 10, "event": "ood", "rerun": true }
+			{ "start": [ 9, 19], "duration": 10, "event": "ood", "rerun": true },
+			{ "start": [ 9, 26], "duration": 14, "event": "ccb2" }
 		]
 	},
 	"cn": {
@@ -124,7 +125,9 @@
 			{ "start": [ 1, 18], "duration": 10, "event": "wvwwnb", "rerun": true },
 			{ "start": [ 2,  1], "duration": 21, "event": "haps" },
 			{ "start": [ 2, 22], "duration": 14, "event": "tfn4" },
-			{ "start": [ 3,  7], "duration": 14, "event": "ola" }
+			{ "start": [ 3,  7], "duration": 14, "event": "ola" },
+			{ "start": [ 3, 21], "duration": 10, "event": "ood", "rerun": true },
+			{ "start": [ 3, 28], "duration": 14, "event": "ccb2" }
 		]
 	},
 	"en": {
