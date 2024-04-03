@@ -225,7 +225,8 @@
 			{ "start": [ 2, 12], "duration": 14, "event": "tfn3" },
 			{ "start": [ 2, 27], "duration":  7, "event": "tbfwad" },
 			{ "start": [ 3,  5], "duration": 10, "event": "dv", "rerun": true },
-			{ "start": [ 3, 19], "duration": 14, "event": "ccowov" }
+			{ "start": [ 3, 19], "duration": 14, "event": "ccowov" },
+			{ "start": [ 4,  2], "duration": 14, "event": "dos" }
 		]
 	},
 	"tw": {
@@ -314,7 +315,8 @@
 			{ "start": [ 1, 23], "duration": 10, "event": "ga", "rerun": true },
 			{ "start": [ 2,  6], "duration": 14, "event": "cc12" },
 			{ "start": [ 3,  7], "duration": 10, "event": "sn", "rerun": true },
-			{ "start": [ 3, 19], "duration": 21, "event": "l" }
+			{ "start": [ 3, 19], "duration": 21, "event": "l" },
+			{ "start": [ 4,  9], "duration": 14, "event": "peo" }
 		]
 	}
 }
