@@ -1,8 +1,6 @@
 {
 	"future": {
 		"2024": [
-			{ "start": [ 3, 19], "duration": 14, "event": "ccowov" },
-			{ "start": [ 4,  2], "duration": 14, "event": "dos" },
 			{ "start": [ 4, 30], "duration": 10, "event": "is", "rerun": true },
 			{ "start": [ 5, 10], "duration": 21, "event": "zih" },
 			{ "start": [ 5, 31], "duration": 14, "event": "ccb1" },
