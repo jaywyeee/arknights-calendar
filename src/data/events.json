@@ -1,19 +1,19 @@
 {
 	"future": {
 		"2024": [
-			{ "start": [ 4, 30], "duration": 10, "event": "is", "rerun": true },
-			{ "start": [ 5, 10], "duration": 21, "event": "zih" },
-			{ "start": [ 5, 31], "duration": 14, "event": "ccb1" },
-			{ "start": [ 6, 18], "duration": 14, "event": "trtls" },
-			{ "start": [ 7,  2], "duration": 10, "event": "wtfc", "rerun": true },
-			{ "start": [ 7, 12], "duration":  7, "event": "ttgv" },
-			{ "start": [ 7, 25], "duration": 21, "event": "haps" },
-			{ "start": [ 8, 15], "duration": 10, "event": "wvwwnb", "rerun": true },
+			{ "start": [ 4, 30], "duration": 21, "event": "zih" },
+			{ "start": [ 5, 23], "duration": 10, "event": "is", "rerun": true },
+			{ "start": [ 6,  5], "duration": 14, "event": "ccb1" },
+			{ "start": [ 6, 20], "duration": 14, "event": "trtls" },
+			{ "start": [ 7,  4], "duration":  7, "event": "ttgv" },
+			{ "start": [ 7, 11], "duration": 10, "event": "wtfc", "rerun": true },
+			{ "start": [ 7, 26], "duration": 21, "event": "haps" },
+			{ "start": [ 8, 16], "duration": 10, "event": "wvwwnb", "rerun": true },
 			{ "start": [ 8, 22], "duration": 14, "event": "tfn4" },
 			{ "start": [ 9,  5], "duration": 14, "event": "ola" },
 			{ "start": [ 9, 19], "duration": 10, "event": "ood", "rerun": true },
-			{ "start": [ 9, 26], "duration": 14, "event": "ccb2" },
-			{ "start": [10, 10], "duration": 21, "event": "b" }
+			{ "start": [ 9, 29], "duration": 14, "event": "ccb2" },
+			{ "start": [10, 15], "duration": 21, "event": "b" }
 		]
 	},
 	"cn": {
