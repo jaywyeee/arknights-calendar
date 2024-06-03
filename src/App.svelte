@@ -1,4 +1,5 @@
 <script>
+	import Banner from "./components/Banner.svelte";
 	import Button from "./components/Button.svelte";
 	import Schedule from "./components/Schedule.svelte";
 	import pages from "./data/pages.json";
@@ -47,6 +48,7 @@
 	</aside>
 </div>
 <main>
+	<!-- <Banner text="This website will cease to be updated from 2024&NoBreak;-&NoBreak;00&NoBreak;-&NoBreak;00. Forking is welcomed. Thank you for the support all this time, it was fun."/> -->
 	{#each pages as page}
 		<Schedule {page}/>
 	{/each}

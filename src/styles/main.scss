@@ -53,6 +53,18 @@ p {
 	}
 }
 
+.banner {
+	background-color: white;
+	border-bottom: 1px solid black;
+	font-size: 0.91rem;
+	padding: 0.4em 0.5em;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
 
 // Bar
 // Container
@@ -163,6 +175,7 @@ article {
 	height: 100%;
 	overflow-y: auto;
 	padding: $page-margin;
+	// padding-top: calc(90px - 2vw);   // Compensate for banner.
 	position: absolute;
 	top: 0;
 	width: 100%;
