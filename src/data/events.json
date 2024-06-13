@@ -3,9 +3,9 @@
 		"2024": [
 			{ "start": [ 5, 23], "duration": 10, "event": "is", "rerun": true },
 			{ "start": [ 6,  5], "duration": 14, "event": "ccb1" },
-			{ "start": [ 6, 20], "duration": 14, "event": "trtls" },
-			{ "start": [ 7,  4], "duration":  7, "event": "ttgv" },
-			{ "start": [ 7, 11], "duration": 10, "event": "wtfc", "rerun": true },
+			{ "start": [ 6, 21], "duration": 14, "event": "trtls" },
+			{ "start": [ 7,  5], "duration":  7, "event": "ttgv" },
+			{ "start": [ 7, 12], "duration": 10, "event": "wtfc", "rerun": true },
 			{ "start": [ 7, 26], "duration": 21, "event": "haps" },
 			{ "start": [ 8, 16], "duration": 10, "event": "wvwwnb", "rerun": true },
 			{ "start": [ 8, 22], "duration": 14, "event": "tfn4" },
@@ -327,7 +327,8 @@
 			{ "start": [ 4,  9], "duration": 14, "event": "peo" },
 			{ "start": [ 4, 25], "duration": 14, "event": "hde" },
 			{ "start": [ 5, 14], "duration": 10, "event": "le", "rerun": true },
-			{ "start": [ 5, 24], "duration": 10, "event": "icec", "rerun": true }
+			{ "start": [ 5, 24], "duration": 10, "event": "icec", "rerun": true },
+			{ "start": [ 6, 13], "duration":  7, "event": "tbfwad" }
 		]
 	}
 }
