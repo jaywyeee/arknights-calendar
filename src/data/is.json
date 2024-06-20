@@ -10,7 +10,8 @@
 		{ "id": "joklumarkar", "date": [2024,  3,  5] }
 	],
 	"tw": [
-		{ "id": "phantom", "date": [2022, 10, 13] },
-		{ "id": "mizuki",  "date": [2023,  7, 27] }
+		{ "id": "phantom",     "date": [2022, 10, 13] },
+		{ "id": "mizuki",      "date": [2023,  7, 27] },
+		{ "id": "joklumarkar", "date": [2024,  6, 20] }
 	]
 }
