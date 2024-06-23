@@ -2,18 +2,19 @@
 	"future": {
 		"2024": [
 			{ "start": [ 6, 21], "duration": 14, "event": "trtls" },
-			{ "start": [ 7,  5], "duration":  7, "event": "ttgv" },
-			{ "start": [ 7, 12], "duration": 10, "event": "wtfc", "rerun": true },
-			{ "start": [ 7, 26], "duration": 21, "event": "haps" },
-			{ "start": [ 8, 16], "duration": 10, "event": "wvwwnb", "rerun": true },
-			{ "start": [ 8, 22], "duration": 14, "event": "tfn4" },
-			{ "start": [ 9,  5], "duration": 14, "event": "ola" },
-			{ "start": [ 9, 19], "duration": 10, "event": "ood", "rerun": true },
-			{ "start": [ 9, 29], "duration": 14, "event": "ccb2" },
+			{ "start": [ 7, 11], "duration":  7, "event": "ttgv" },
+			{ "start": [ 7, 18], "duration": 10, "event": "wvwwnb", "rerun": true },
+			{ "start": [ 7, 30], "duration": 21, "event": "haps" },
+			{ "start": [ 8, 20], "duration": 10, "event": "wtfc", "rerun": true },
+			{ "start": [ 8, 27], "duration": 14, "event": "tfn4" },
+			{ "start": [ 9, 10], "duration": 14, "event": "ola" },
+			{ "start": [ 9, 24], "duration": 10, "event": "ood", "rerun": true },
+			{ "start": [10,  1], "duration": 14, "event": "ccb2" },
 			{ "start": [10, 15], "duration": 21, "event": "b" },
 			{ "start": [11, 19], "duration": 14, "event": "riig" },
 			{ "start": [12,  3], "duration": 10, "event": "lt", "rerun": true },
-			{ "start": [12, 13], "duration": 14, "event": "pol" }
+			{ "start": [12, 13], "duration": 14, "event": "pol" },
+			{ "start": [12, 31], "duration": 10, "event": "hde", "rerun": true }
 		]
 	},
 	"cn": {
@@ -130,7 +131,8 @@
 			{ "start": [ 4, 11], "duration": 22, "event": "b" },
 			{ "start": [ 5, 15], "duration": 14, "event": "riig" },
 			{ "start": [ 5, 24], "duration": 10, "event": "lt", "rerun": true },
-			{ "start": [ 6,  5], "duration": 14, "event": "pol" }
+			{ "start": [ 6,  5], "duration": 14, "event": "pol" },
+			{ "start": [ 6, 25], "duration": 10, "event": "hde", "rerun": true }
 		]
 	},
 	"en": {
@@ -327,7 +329,8 @@
 			{ "start": [ 4, 25], "duration": 14, "event": "hde" },
 			{ "start": [ 5, 14], "duration": 10, "event": "le", "rerun": true },
 			{ "start": [ 5, 24], "duration": 10, "event": "icec", "rerun": true },
-			{ "start": [ 6, 13], "duration":  7, "event": "tbfwad" }
+			{ "start": [ 6, 13], "duration":  7, "event": "tbfwad" },
+			{ "start": [ 6, 27], "duration": 21, "event": "slahafh" }
 		]
 	}
 }
