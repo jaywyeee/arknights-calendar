@@ -294,7 +294,7 @@ h1 {
 		height: -moz-fit-content;
 		height: fit-content;
 		overflow: hidden;
-		padding: 0.2em 0.55em;
+		padding: 0.2em 0.7em;
 		position: relative;
 		scroll-margin-top: 7rem;
 		scroll-padding-top: 2rem;   // scroll-margin breaks without this?
@@ -330,13 +330,13 @@ h1 {
 }
 
 .start {
-	border-radius: 2px 0 0 2px;
-	margin-left: 0.625rem;
+	border-radius: 20px 0 0 20px;
+	margin-left: 0.4rem;
 }
 
 .end {
-	border-radius: 0 2px 2px 0;
-	margin-right: 0.625rem;
+	border-radius: 0 20px 20px 0;
+	margin-right: 0.4rem;
 	text-align: right;
 }
 
