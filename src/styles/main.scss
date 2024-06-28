@@ -308,6 +308,7 @@ h1 {
 		&:empty::after { content: "\2060" }
 
 		&.top, &.bottom {
+			--radius: 10px;
 			color: transparent;
 			top: 28%;
 			transform: scaleY(0.6);
@@ -315,6 +316,7 @@ h1 {
 			user-select: none;
 
 			&.expand {
+				--radius: 20px;
 				color: initial;
 				transform: none;
 				user-select: initial;
@@ -330,12 +332,14 @@ h1 {
 }
 
 .start {
-	border-radius: 20px 0 0 20px;
+	--radius: 20px;
+	border-radius: var(--radius) 0 0 var(--radius);
 	margin-left: 0.4rem;
 }
 
 .end {
-	border-radius: 0 20px 20px 0;
+	--radius: 20px;
+	border-radius: 0 var(--radius) var(--radius) 0;
 	margin-right: 0.4rem;
 	text-align: right;
 }
