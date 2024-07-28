@@ -1,20 +1,21 @@
 {
 	"future": {
 		"2024": [
-			{ "start": [ 7, 30], "duration": 21, "event": "haps" },
-			{ "start": [ 8, 20], "duration": 10, "event": "wtfc", "rerun": true },
-			{ "start": [ 8, 27], "duration": 14, "event": "tfn4" },
-			{ "start": [ 9, 10], "duration": 14, "event": "ola" },
-			{ "start": [ 9, 24], "duration": 10, "event": "ood", "rerun": true },
-			{ "start": [10,  1], "duration": 14, "event": "ccb2" },
-			{ "start": [10, 15], "duration": 21, "event": "b" },
-			{ "start": [11, 19], "duration": 14, "event": "riig" },
-			{ "start": [12,  3], "duration": 10, "event": "lt", "rerun": true },
-			{ "start": [12, 13], "duration": 14, "event": "pol" },
+			{ "start": [ 7, 31], "duration": 21, "event": "haps" },
+			{ "start": [ 8, 22], "duration": 10, "event": "wtfc", "rerun": true },
+			{ "start": [ 8, 29], "duration": 14, "event": "tfn4" },
+			{ "start": [ 9, 12], "duration": 14, "event": "ola" },
+			{ "start": [ 9, 26], "duration": 10, "event": "ood", "rerun": true },
+			{ "start": [10,  3], "duration": 14, "event": "ccb2" },
+			{ "start": [10, 17], "duration": 21, "event": "b" },
+			{ "start": [11, 21], "duration": 14, "event": "riig" },
+			{ "start": [12,  5], "duration": 10, "event": "lt", "rerun": true },
+			{ "start": [12, 17], "duration": 14, "event": "pol" },
 			{ "start": [12, 31], "duration": 10, "event": "hde", "rerun": true }
 		],
 		"2025": [
-			{ "start": [ 1, 14], "duration":  7, "event": "akr" }
+			{ "start": [ 1, 16], "duration": 21, "event": "ihh" },
+			{ "start": [ 2,  6], "duration":  7, "event": "akr" }
 		]
 	},
 	"cn": {
@@ -133,7 +134,8 @@
 			{ "start": [ 5, 24], "duration": 10, "event": "lt", "rerun": true },
 			{ "start": [ 6,  5], "duration": 14, "event": "pol" },
 			{ "start": [ 6, 25], "duration": 10, "event": "hde", "rerun": true },
-			{ "start": [ 7,  9], "duration":  7, "event": "akr" }
+			{ "start": [ 7,  9], "duration":  7, "event": "akr" },
+			{ "start": [ 8,  1], "duration": 21, "event": "ihh" }
 		]
 	},
 	"en": {
@@ -238,7 +240,8 @@
 			{ "start": [ 6,  5], "duration": 14, "event": "ccb1" },
 			{ "start": [ 6, 21], "duration": 14, "event": "trtls" },
 			{ "start": [ 7,  9], "duration":  7, "event": "ttgv" },
-			{ "start": [ 7, 18], "duration": 10, "event": "wvwwnb", "rerun": true }
+			{ "start": [ 7, 18], "duration": 10, "event": "wvwwnb", "rerun": true },
+			{ "start": [ 7, 31], "duration": 21, "event": "haps" }
 		]
 	},
 	"tw": {
