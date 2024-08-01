@@ -252,7 +252,7 @@
 		};
 	};
 
-	// "Temporary" fix for events not overlapping correctly
+	// "Temporary" (permanent) fix for events not overlapping correctly
 	onMount(() => {
 		if (["cn", "en"].includes(page.id)) {
 			const icec = document.querySelectorAll(`#${page.id} .icec.end`)[0];
@@ -294,6 +294,16 @@
 					part.classList.add("bottom");
 				};
 			};
+		};
+
+		if (["future"].includes(page.id)) {
+			const haps = document.querySelectorAll(`#${page.id} .haps.end`)[0];
+			const wtfc = document.querySelectorAll(`#${page.id} .wtfc.rerun.start`)[0];
+
+			haps.classList.remove("top");
+			haps.classList.add("bottom");
+			haps.style.cssText = "--grid-row: 4; --grid-column: 1 / span 7;"
+			wtfc.style.cssText = "--grid-row: 4; --grid-column: span 7 / -1;";
 		};
 	});
 
