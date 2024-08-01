@@ -2,11 +2,11 @@
 	"future": {
 		"2024": [
 			{ "start": [ 7, 31], "duration": 21, "event": "haps" },
-			{ "start": [ 8, 22], "duration": 10, "event": "wtfc", "rerun": true },
-			{ "start": [ 8, 29], "duration": 14, "event": "tfn4" },
-			{ "start": [ 9, 12], "duration": 14, "event": "ola" },
-			{ "start": [ 9, 26], "duration": 10, "event": "ood", "rerun": true },
-			{ "start": [10,  3], "duration": 14, "event": "ccb2" },
+			{ "start": [ 8, 14], "duration": 14, "event": "tfn4" },
+			{ "start": [ 8, 21], "duration": 10, "event": "wtfc", "rerun": true },
+			{ "start": [ 9,  5], "duration": 14, "event": "ola" },
+			{ "start": [ 9, 19], "duration": 10, "event": "ood", "rerun": true },
+			{ "start": [ 9, 26], "duration": 14, "event": "ccb2" },
 			{ "start": [10, 17], "duration": 21, "event": "b" },
 			{ "start": [11, 21], "duration": 14, "event": "riig" },
 			{ "start": [12,  5], "duration": 10, "event": "lt", "rerun": true },
@@ -338,7 +338,8 @@
 			{ "start": [ 6, 13], "duration":  7, "event": "tbfwad" },
 			{ "start": [ 6, 27], "duration": 21, "event": "slahafh" },
 			{ "start": [ 7, 11], "duration": 14, "event": "tfn3" },
-			{ "start": [ 7, 25], "duration": 10, "event": "dv", "rerun": true }
+			{ "start": [ 7, 25], "duration": 10, "event": "dv", "rerun": true },
+			{ "start": [ 8,  8], "duration": 14, "event": "ccowov" }
 		]
 	}
 }
