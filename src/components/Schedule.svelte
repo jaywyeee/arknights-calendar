@@ -269,9 +269,7 @@
 				icec.style.cssText = "--grid-row:5; --grid-column:1 / span 11;";
 				cc10[0].style.cssText = "--grid-row:1; --grid-column:span 3 / -1;";
 			};
-		};
 
-		if (["cn", "en"].includes(page.id)) {
 			const ra1 = document.querySelectorAll(`#${page.id} .ra1`);
 			const ga = document.querySelectorAll(`#${page.id} .ga.rerun`);
 			const cc12 = document.querySelectorAll(`#${page.id} .cc12`);
@@ -296,7 +294,7 @@
 			};
 		};
 
-		if (["future"].includes(page.id)) {
+		if (page.id === "en") {
 			const haps = document.querySelectorAll(`#${page.id} .haps.end`)[0];
 			const wtfc = document.querySelectorAll(`#${page.id} .wtfc.rerun.start`)[0];
 

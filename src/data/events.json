@@ -1,9 +1,6 @@
 {
 	"future": {
 		"2024": [
-			{ "start": [ 7, 31], "duration": 21, "event": "haps" },
-			{ "start": [ 8, 14], "duration": 14, "event": "tfn4" },
-			{ "start": [ 8, 21], "duration": 10, "event": "wtfc", "rerun": true },
 			{ "start": [ 9,  5], "duration": 14, "event": "ola" },
 			{ "start": [ 9, 19], "duration": 10, "event": "ood", "rerun": true },
 			{ "start": [ 9, 26], "duration": 14, "event": "ccb2" },
@@ -15,7 +12,8 @@
 		],
 		"2025": [
 			{ "start": [ 1, 16], "duration": 21, "event": "ihh" },
-			{ "start": [ 2,  6], "duration":  7, "event": "akr" }
+			{ "start": [ 2,  6], "duration":  7, "event": "akr" },
+			{ "start": [ 2, 13], "duration": 10, "event": "slahafh", "rerun": true }
 		]
 	},
 	"cn": {
@@ -135,7 +133,8 @@
 			{ "start": [ 6,  5], "duration": 14, "event": "pol" },
 			{ "start": [ 6, 25], "duration": 10, "event": "hde", "rerun": true },
 			{ "start": [ 7,  9], "duration":  7, "event": "akr" },
-			{ "start": [ 8,  1], "duration": 21, "event": "ihh" }
+			{ "start": [ 8,  1], "duration": 21, "event": "ihh" },
+			{ "start": [ 8, 22], "duration": 10, "event": "slahafh", "rerun": true }
 		]
 	},
 	"en": {
@@ -241,7 +240,9 @@
 			{ "start": [ 6, 21], "duration": 14, "event": "trtls" },
 			{ "start": [ 7,  9], "duration":  7, "event": "ttgv" },
 			{ "start": [ 7, 18], "duration": 10, "event": "wvwwnb", "rerun": true },
-			{ "start": [ 7, 31], "duration": 21, "event": "haps" }
+			{ "start": [ 7, 31], "duration": 21, "event": "haps" },
+			{ "start": [ 8, 14], "duration": 14, "event": "tfn4" },
+			{ "start": [ 8, 21], "duration": 10, "event": "wtfc", "rerun": true }
 		]
 	},
 	"tw": {
@@ -339,7 +340,8 @@
 			{ "start": [ 6, 27], "duration": 21, "event": "slahafh" },
 			{ "start": [ 7, 11], "duration": 14, "event": "tfn3" },
 			{ "start": [ 7, 25], "duration": 10, "event": "dv", "rerun": true },
-			{ "start": [ 8,  8], "duration": 14, "event": "ccowov" }
+			{ "start": [ 8,  8], "duration": 14, "event": "ccowov" },
+			{ "start": [ 8, 22], "duration": 14, "event": "dos" }
 		]
 	}
 }
