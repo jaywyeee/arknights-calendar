@@ -175,7 +175,7 @@ article {
 	height: 100%;
 	overflow-y: auto;
 	padding: $page-margin;
-	// padding-top: calc(90px - 2vw);   // Compensate for banner.
+	padding-top: calc(90px - 2vw);   // Compensate for banner.
 	position: absolute;
 	top: 0;
 	width: 100%;

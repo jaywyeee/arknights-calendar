@@ -48,7 +48,7 @@
 	</aside>
 </div>
 <main>
-	<!-- <Banner text="This website will cease to be updated from 2024&NoBreak;-&NoBreak;00&NoBreak;-&NoBreak;00. Forking is welcomed. Thank you for the support all this time, it was fun."/> -->
+	<Banner text="This website will not be updated any longer. Forking is welcomed. Thank you for the support all this time, it was fun."/>
 	{#each pages as page}
 		<Schedule {page}/>
 	{/each}
